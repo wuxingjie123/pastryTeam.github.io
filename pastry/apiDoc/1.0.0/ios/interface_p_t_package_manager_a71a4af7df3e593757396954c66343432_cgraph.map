@@ -1,0 +1,5 @@
+<map id="&#45;[PTPackageManager isNeedResource]" name="&#45;[PTPackageManager isNeedResource]">
+<area shape="rect" id="node2" href="$interface_p_t_hash.html#ac8b3eef01b0e178c0bc2235978471b4a" title="根据指定的Hash算法计算出输入流的Hash值 " alt="" coords="206,23,399,62"/>
+<area shape="rect" id="node3" href="$interface_p_t_m_d5.html#accf3cfb30afefb93143f7d8633f7d6fa" title="计算输入流MD5 " alt="" coords="452,5,649,30"/>
+<area shape="rect" id="node4" href="$interface_p_t_s_h_a1.html#a7033f10bd69656771f33351107202b1b" title="计算输入流SHA1 " alt="" coords="449,54,653,79"/>
+</map>

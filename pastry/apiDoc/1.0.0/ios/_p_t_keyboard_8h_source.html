@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>中信网络科技移动基础框架-iOS Lib: PT/keyboard/PTKeyboard.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">中信网络科技移动基础框架-iOS Lib
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_p_t_keyboard_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">PTKeyboard.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  PTKeyboard.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  PT</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by gengych on 16/3/14.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright © 2016年 中信网络科技. All rights reserved.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &lt;UIKit/UIKit.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &quot;PTKeyboardDelegate.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#import &quot;PTKeyboardConstant.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> @ingroup   keyboardModuleContant</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> @def NUMS</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> @brief 数字键盘 字符串</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="group__keyboard_module_contant.html#ga23482494bcfac1e2d8c51e515520fd80">   18</a></span>&#160;<span class="preprocessor">#define NUMS [NSArray arrayWithObjects:@&quot;1&quot;,@&quot;2&quot;,@&quot;3&quot;,@&quot;4&quot;,@&quot;5&quot;,@&quot;6&quot;,@&quot;7&quot;,@&quot;8&quot;,@&quot;9&quot;,@&quot;0&quot;,nil]</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define CHARACTERS [NSArray arrayWithObjects:@&quot;Q&quot;,@&quot;W&quot;,@&quot;E&quot;,@&quot;R&quot;,@&quot;T&quot;,@&quot;Y&quot;,@&quot;U&quot;,@&quot;I&quot;,@&quot;O&quot;,@&quot;P&quot;,@&quot;A&quot;,@&quot;S&quot;,@&quot;D&quot;,@&quot;F&quot;,@&quot;G&quot;,@&quot;H&quot;,@&quot;J&quot;,@&quot;K&quot;,@&quot;L&quot;,@&quot;Z&quot;,@&quot;X&quot;,@&quot;C&quot;,@&quot;V&quot;,@&quot;B&quot;,@&quot;N&quot;,@&quot;M&quot;,nil]</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define CHARACTERS_LOWER [NSArray arrayWithObjects:@&quot;q&quot;,@&quot;w&quot;,@&quot;e&quot;,@&quot;r&quot;,@&quot;t&quot;,@&quot;y&quot;,@&quot;u&quot;,@&quot;i&quot;,@&quot;o&quot;,@&quot;p&quot;,@&quot;a&quot;,@&quot;s&quot;,@&quot;d&quot;,@&quot;f&quot;,@&quot;g&quot;,@&quot;h&quot;,@&quot;j&quot;,@&quot;k&quot;,@&quot;l&quot;,@&quot;z&quot;,@&quot;x&quot;,@&quot;c&quot;,@&quot;v&quot;,@&quot;b&quot;,@&quot;n&quot;,@&quot;m&quot;,nil]</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define SPECIAI_CHARS_1 [NSArray arrayWithObjects:@&quot;-&quot;,@&quot;/&quot;,@&quot;:&quot;,@&quot;;&quot;,@&quot;(&quot;,@&quot;)&quot;,@&quot;$&quot;,@&quot;&amp;&quot;,@&quot;@&quot;,@&quot;\&quot;&quot;,@&quot;.&quot;,@&quot;,&quot;,@&quot;?&quot;,@&quot;!&quot;,@&quot;&#39;&quot;,nil]</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#define SPECIAI_CHARS_2 [NSArray arrayWithObjects:@&quot;[&quot;,@&quot;]&quot;,@&quot;{&quot;,@&quot;}&quot;,@&quot;#&quot;,@&quot;%&quot;,@&quot;^&quot;,@&quot;*&quot;,@&quot;+&quot;,@&quot;=&quot;,@&quot;_&quot;,@&quot;\\&quot;,@&quot;|&quot;,@&quot;~&quot;,@&quot;&lt;&quot;,@&quot;&gt;&quot;,@&quot;€&quot;,@&quot;£&quot;,@&quot;￥&quot;,@&quot;·&quot;,@&quot;.&quot;,@&quot;,&quot;,@&quot;?&quot;,@&quot;!&quot;,@&quot;&#39;&quot;,nil]</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> @ingroup   keyboardModuleEnum</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> @typedef PTKeyboardType</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> @brief 键盘种类 类型枚举</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="group__keyboard_module_enum.html#gab93f637b7ae53f05e07bb055565efa74">   32</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span>{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    PTKeyboardTypeDefault = 1000,                <span class="comment">// 默认为字母键盘.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    PTKeyboardTypeNumbersAndPunctuation = 1001,  <span class="comment">// 数字+字符.      (未使用)</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    PTKeyboardTypeSpecialPunctuation = 1002,     <span class="comment">// 特殊字符.       (未使用)</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    PTKeyboardTypeNumber = 1003,                 <span class="comment">// 纯数字（0-9）   (未使用)</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;} <a class="code" href="group__keyboard_module_enum.html#gab93f637b7ae53f05e07bb055565efa74">PTKeyboardType</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"> @ingroup keyboardModuleClass</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"> 键盘基类</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="interface_p_t_keyboard.html">   43</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_p_t_keyboard.html">PTKeyboard</a> : UIView</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"> * 键盘返回的协议实例</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="interface_p_t_keyboard.html#a6bbe10f9b165404b591c6464a465968d">   48</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) id&lt;PTKeyboardDelegate&gt; <a class="code" href="interface_p_t_keyboard.html#a6bbe10f9b165404b591c6464a465968d">keyDelegate</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"> * 加密后的密文</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="interface_p_t_keyboard.html#a751b15af11d1a87cb83ca43443832273">   53</a></span>&#160;<span class="keyword">@property</span> (nonatomic, retain) NSMutableData *<a class="code" href="interface_p_t_keyboard.html#a751b15af11d1a87cb83ca43443832273">encryptStrData</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"> * 标记数据是否加密</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="interface_p_t_keyboard.html#a68d59ca5cb78e8e938ee93f0e10e1bab">   58</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) BOOL <a class="code" href="interface_p_t_keyboard.html#a68d59ca5cb78e8e938ee93f0e10e1bab">needEncrypt</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"> * 初始化键盘的VIEW</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"> * @param  enable      按键时是否播放按键音</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"> * @param  isShowText  是否回传键盘输入的明文</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"> * @param  length      最大可输入的字符长度，但长度设置为小于0的值时，表示不做长度控制</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"> * @param  randomSort 是否随机排序字母</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"> * @param  key1        3DES加密的密钥1</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"> * @param  key2        3DES加密的密钥2</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"> * @param  key3        3DES加密的密钥3</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"> * @return 键盘UIView</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;- (id)initWithResponder:(BOOL)enable isShowText:(BOOL)isShowText isRandomSort:(BOOL)randomSort length:(NSInteger)length key1:(NSString *)key1 key2:(NSString *)key2 key3:(NSString *)key3;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"> * 清空加密数据</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;- (void)<a class="code" href="interface_p_t_keyboard.html#a29c68f536738e53c76b865556df38a95">emptyEncryptData</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"> * 加密方法</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment"> * @param  keyValue      要加密的字符串</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"> * @param  desKey1       3DES加密的密钥1</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"> * @param  desKey2       3DES加密的密钥2</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"> * @param  desKey3       3DES加密的密钥3</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;- (void)encryptInputString:(NSString *)keyValue desKey1:(NSString *)desKey1 desKey2:(NSString *)desKey2 desKey3:(NSString *)desKey3;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"> * 删除方法</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;- (void)<a class="code" href="interface_p_t_keyboard.html#a356e0a66becd3565f3261deadc18c4df">deleteEncryptData</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#pragma mark - 未使用的函数</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"> *（此函数未使用）</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"> * 初始化键盘的VIEW</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"> * @param  enable      按键时是否播放按键音</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment"> * @param  _value      设定默认值</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"> * @return 键盘UIView</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;- (id)initWithResponder:(BOOL)enable value:(NSString *)_value;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment"> *（此函数未使用）</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment"> * 判断当前单例键盘是否是需要的子类键盘，如果不是则移除并将keyboard释放</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;- (void)<a class="code" href="interface_p_t_keyboard.html#a911ef1c77a1367e362a91bded1e4ce4a">checkSuitableKeyboard</a>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment"> *（此函数未使用）</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment"> * 根据是否随机的属性刷新键盘</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;- (void)refreshKeyboardWithRandomValue:(BOOL)random;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment"> *（此属性未使用，只有在 PTKeyboardNumberPhone 类中被使用，但是 PTKeyboardNumberPhone 类 未被使用）</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment"> * 需要加密的字符串</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="interface_p_t_keyboard.html#a87d25448d5ff8938339cdfb44201a6bb">  119</a></span>&#160;<span class="keyword">@property</span> (nonatomic, retain) NSMutableString *<a class="code" href="interface_p_t_keyboard.html#a87d25448d5ff8938339cdfb44201a6bb">textData</a>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment"> *读取按键声音</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;-(void)<a class="code" href="interface_p_t_keyboard.html#ac54b5d62cf7ef3442be232daa45aead3">keySound</a>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keyword">@end</span></div>
+<div class="ttc" id="group__keyboard_module_enum_html_gab93f637b7ae53f05e07bb055565efa74"><div class="ttname"><a href="group__keyboard_module_enum.html#gab93f637b7ae53f05e07bb055565efa74">PTKeyboardType</a></div><div class="ttdeci">PTKeyboardType</div><div class="ttdoc">键盘种类 类型枚举 </div><div class="ttdef"><b>Definition:</b> PTKeyboard.h:32</div></div>
+<div class="ttc" id="interface_p_t_keyboard_html_a356e0a66becd3565f3261deadc18c4df"><div class="ttname"><a href="interface_p_t_keyboard.html#a356e0a66becd3565f3261deadc18c4df">-[PTKeyboard deleteEncryptData]</a></div><div class="ttdeci">void deleteEncryptData()</div><div class="ttdoc">删除方法 </div><div class="ttdef"><b>Definition:</b> PTKeyboard.m:73</div></div>
+<div class="ttc" id="interface_p_t_keyboard_html_a751b15af11d1a87cb83ca43443832273"><div class="ttname"><a href="interface_p_t_keyboard.html#a751b15af11d1a87cb83ca43443832273">PTKeyboard::encryptStrData</a></div><div class="ttdeci">NSMutableData * encryptStrData</div><div class="ttdoc">加密后的密文 </div><div class="ttdef"><b>Definition:</b> PTKeyboard.h:53</div></div>
+<div class="ttc" id="interface_p_t_keyboard_html_a29c68f536738e53c76b865556df38a95"><div class="ttname"><a href="interface_p_t_keyboard.html#a29c68f536738e53c76b865556df38a95">-[PTKeyboard emptyEncryptData]</a></div><div class="ttdeci">void emptyEncryptData()</div><div class="ttdoc">清空加密数据 </div><div class="ttdef"><b>Definition:</b> PTKeyboard.m:46</div></div>
+<div class="ttc" id="interface_p_t_keyboard_html_a6bbe10f9b165404b591c6464a465968d"><div class="ttname"><a href="interface_p_t_keyboard.html#a6bbe10f9b165404b591c6464a465968d">PTKeyboard::keyDelegate</a></div><div class="ttdeci">id&lt; PTKeyboardDelegate &gt; keyDelegate</div><div class="ttdoc">键盘返回的协议实例 </div><div class="ttdef"><b>Definition:</b> PTKeyboard.h:48</div></div>
+<div class="ttc" id="interface_p_t_keyboard_html_a68d59ca5cb78e8e938ee93f0e10e1bab"><div class="ttname"><a href="interface_p_t_keyboard.html#a68d59ca5cb78e8e938ee93f0e10e1bab">PTKeyboard::needEncrypt</a></div><div class="ttdeci">BOOL needEncrypt</div><div class="ttdoc">标记数据是否加密 </div><div class="ttdef"><b>Definition:</b> PTKeyboard.h:58</div></div>
+<div class="ttc" id="interface_p_t_keyboard_html_a87d25448d5ff8938339cdfb44201a6bb"><div class="ttname"><a href="interface_p_t_keyboard.html#a87d25448d5ff8938339cdfb44201a6bb">PTKeyboard::textData</a></div><div class="ttdeci">NSMutableString * textData</div><div class="ttdoc">（此属性未使用，只有在 PTKeyboardNumberPhone 类中被使用，但是 PTKeyboardNumberPhone 类 未被使用） 需�...</div><div class="ttdef"><b>Definition:</b> PTKeyboard.h:119</div></div>
+<div class="ttc" id="interface_p_t_keyboard_html_ac54b5d62cf7ef3442be232daa45aead3"><div class="ttname"><a href="interface_p_t_keyboard.html#ac54b5d62cf7ef3442be232daa45aead3">-[PTKeyboard keySound]</a></div><div class="ttdeci">void keySound()</div><div class="ttdoc">读取按键声音 </div><div class="ttdef"><b>Definition:</b> PTKeyboard.m:87</div></div>
+<div class="ttc" id="interface_p_t_keyboard_html"><div class="ttname"><a href="interface_p_t_keyboard.html">PTKeyboard</a></div><div class="ttdoc">键盘基类 </div><div class="ttdef"><b>Definition:</b> PTKeyboard.h:43</div></div>
+<div class="ttc" id="interface_p_t_keyboard_html_a911ef1c77a1367e362a91bded1e4ce4a"><div class="ttname"><a href="interface_p_t_keyboard.html#a911ef1c77a1367e362a91bded1e4ce4a">-[PTKeyboard checkSuitableKeyboard]</a></div><div class="ttdeci">void checkSuitableKeyboard()</div><div class="ttdoc">（此函数未使用） 判断当前单例键盘是否是需要的子类键盘，如果不是则移除并将keyboard释放 ...</div><div class="ttdef"><b>Definition:</b> PTKeyboard.m:52</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_b678e0da0dd1c076094d7b62ef5423cc.html">PT</a></li><li class="navelem"><a class="el" href="dir_7404340b2648231261d19cba1bc1e975.html">keyboard</a></li><li class="navelem"><b>PTKeyboard.h</b></li>
+    <li class="footer">生成于 2016年 六月 27日 星期一 08:53:41 , 为 中信网络科技移动基础框架-iOS Lib使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>

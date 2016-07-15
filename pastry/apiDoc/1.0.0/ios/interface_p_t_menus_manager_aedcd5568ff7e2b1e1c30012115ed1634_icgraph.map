@@ -1,0 +1,10 @@
+<map id="+[PTMenusManager getInstance]" name="+[PTMenusManager getInstance]">
+<area shape="rect" id="node2" href="$interface_p_t_framework.html#a8abc5d1d44882a2cb4b42111074e716d" title="初始化系统，实现的功能有: &#160;1、定位客户终端当前位置 &#160;2、协商初始会话密钥 &#160;3、检测文件清单列表，并下载(..." alt="" coords="571,205,760,231"/>
+<area shape="rect" id="node3" href="$interface_p_t_framework.html#a256032fc46c5fd535b78791e55b00202" title="获取菜单文件的rootElement " alt="" coords="299,52,496,91"/>
+<area shape="rect" id="node4" href="$interface_p_t_framework.html#a3d782e0280f3f36d906e798203160f77" title="将内存中的rootElement保存到沙盒，覆盖原文件 目标文件： 1、Documents/menus/menu.xml 2、Documents/menus..." alt="" coords="278,115,516,140"/>
+<area shape="rect" id="node5" href="$interface_p_t_framework.html#a935d0ce3c524b7e9c500099d59d32fec" title="获取当前客户端数据准备状态menu.xml文件 " alt="" coords="286,164,509,203"/>
+<area shape="rect" id="node6" href="$interface_p_t_framework.html#aaf013a078ecfbbb781db72cd786537f7" title="获取当前客户端菜单检测状态menu.xml文件 " alt="" coords="294,227,501,265"/>
+<area shape="rect" id="node7" href="$interface_p_t_framework.html#a4d2a6359ce8136f3cd5348942fcd8480" title="获取当前客户端系统初始化状态 " alt="" coords="303,289,491,315"/>
+<area shape="rect" id="node8" href="$interface_p_t_menus_manager.html#aca74c57ac3c9f45d557e1b98ae993be4" title="更新模板文件操作 " alt="" coords="272,339,523,377"/>
+<area shape="rect" id="node9" href="$interface_p_t_app_resource_manager.html#a8437a4bf0a7d7988550b80fe28fb6ee0" title="功能： &#160;1 加载menu.xml文件到树形节点 &#160;&#160;1.1 设置加载menu.xml结果状态 menuPreparedState &#160;&#160;1..." alt="" coords="308,401,487,440"/>
+</map>

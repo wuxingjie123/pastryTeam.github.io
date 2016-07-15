@@ -1,0 +1,8 @@
+<map id="通讯请求组件模块" name="通讯请求组件模块">
+<area shape="rect" id="node1" href="$group__http_request_module_protocol.html" title="协议" alt="" coords="311,4,359,30"/>
+<area shape="rect" id="node2" href="$group__communication_module.html" title=" 创建通讯请求；加密通讯请求；发送处理通讯请求。 &#160;&#160;" alt="" coords="5,103,80,129"/>
+<area shape="rect" id="node3" href="$group__http_request_module_struct.html" title="结构体" alt="" coords="304,54,365,80"/>
+<area shape="rect" id="node4" href="$group__http_request_module_contant.html" title="常量" alt="" coords="311,103,359,129"/>
+<area shape="rect" id="node5" href="$group__http_request_module_enum.html" title="枚举" alt="" coords="311,152,359,178"/>
+<area shape="rect" id="node6" href="$group__http_request_module_class.html" title="类" alt="" coords="315,202,354,228"/>
+</map>

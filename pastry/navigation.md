@@ -6,9 +6,8 @@
 
   * [快速开始](quickstart.md)
   * [使用IDE](ide.md)
-  * [常见问题](faq.md)
 
-[教程]()
+[功能]()
 
   * [JavaScript](tutorials/pastry-js.md)
   - - - -
@@ -17,12 +16,12 @@
 
 [API 文档]()
 
-  * [Pastry JS (pc)](pastry-doc/1.0.0/pc/index.html)
-  * [Pastry JS (mobile)](pastry-doc/1.0.0/mobile/index.html)
-  * [Pastry JS (wx)](pastry-doc/1.0.0/wx/index.html)
+  * [Pastry JS (pc)](pastry/apiDoc/1.0.0/pc/index.html)
+  * [Pastry JS (mobile)](pastry/apiDoc/1.0.0/mobile/index.html)
+  * [Pastry JS (wx)](pastry/apiDoc/1.0.0/wx/index.html)
   - - - -
-  * [Pastry Android](pastry-doc/1.0.0/android/index.html)
-  * [Pastry iOS](pastry-doc/1.0.0/ios/index.html)
+  * [Pastry Android](pastry/apiDoc/1.0.0/android/index.html)
+  * [Pastry iOS](pastry/apiDoc/1.0.0/ios/index.html)
       
 [脚手架]()
 
@@ -37,6 +36,7 @@
 [插件](plugins.md)
 [示例代码](examples.md)
 [下载](download.md)
+[常见问题](faq.md)
 [论坛](forum.md)
 
 

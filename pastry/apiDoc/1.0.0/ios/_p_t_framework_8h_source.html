@@ -1,0 +1,461 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>中信网络科技移动基础框架-iOS Lib: PT/main/PTFramework.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">中信网络科技移动基础框架-iOS Lib
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_p_t_framework_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">PTFramework.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  PTFramework.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  PT</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by gengych on 16/3/14.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright © 2016年 中信网络科技. All rights reserved.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &quot;PTFrameworkDelegate.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#import &quot;PTFrameworkConstant.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">@class</span> GDataXMLElement;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * @ingroup frameModuleClass</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * 功能：</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *      1、data.zip 资源文件的解压；&lt;br/&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *      2、初始化执行握手操作；&lt;br/&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="interface_p_t_framework.html">   21</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_p_t_framework.html">PTFramework</a> : NSObject</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">@property</span> (strong, nonatomic)   NSMutableArray *listeners;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma mark - app初始化</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * 以懒惰方式实现的单例模式，完成各种系统级事件的接收和转发</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> * @return PTFramework对象</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;+ (id)<a class="code" href="interface_p_t_framework.html#aa3e2ec64ddaed568c109fc890f92e8e8">getInstance</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> * 同步解压，阻塞UI线程；</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> * 解压缩模版文件包，需在所有用户界面调用之前调用，以保证所有的资源文件能够正常</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;- (void)<a class="code" href="interface_p_t_framework.html#aa610a8bcc23a49393674ba9eb6d7acb3">unpackResources</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"> * 获取模版资源包的状态，来判断是否需要解压；</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"> * @return data.zip状态</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"> * @note    新接口</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;- (<a class="code" href="group__resource_file_module_enum.html#gac4f3cbfd3d8e5e878f124f86a225fe70">PTDataZipState</a>)<a class="code" href="interface_p_t_framework.html#a3784408a5c96868380b0436dc17bb90f">isNeedResources</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"> * 异步解压，不阻塞UI线程（推荐使用）；</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"> * 解压缩模版文件包，需在所有用户界面调用之前调用，以保证所有的资源文件能够正常</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> * @param       beginBlock          解压开始 回调方法；</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"> * @param       completeBlock       解压完成 回调方法；</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"> * @note    新接口 异步解压（推荐使用）</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;- (void)<a class="code" href="interface_p_t_framework.html#aa610a8bcc23a49393674ba9eb6d7acb3">unpackResources</a>:(<span class="keywordtype">void</span>(^)(void)) beginBlock</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;          completeBlock:(void(^)(BOOL unzipResult))completeBlock;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"> * 初始化系统，实现的功能有:&lt;br /&gt;</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"> * 1、定位客户终端当前位置&lt;br /&gt;</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"> * 2、协商初始会话密钥&lt;br /&gt;</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"> * 3、检测文件清单列表，并下载(如需要)&lt;br /&gt;</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"> * 4、检测菜单文件，并下载(如需要)&lt;br /&gt;</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;- (void)<a class="code" href="interface_p_t_framework.html#a8abc5d1d44882a2cb4b42111074e716d">initialization</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"> * 客户端根据需要对框架进行重启操作&lt;br/&gt;</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"> * 重启以下模块&lt;br/&gt;</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"> *      1、服务器配置信息模块 PTConfigurationManager&lt;br/&gt;</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"> *      2、加密存储管理模块 PTStorageManager&lt;br/&gt;</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"> *      3、会话状态管理模块 PTSessionManager&lt;br/&gt;</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> * 不重启以下模块&lt;br/&gt;</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"> *      1、日志管理模块 PTLogManager&lt;br/&gt;</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"> *      2、开发模式模块 PTDeveloperManager&lt;br/&gt;</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"> *      3、网络状态管理模块 PTNetStateManager&lt;br/&gt;</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"> *      4、不清空 PTFramework 的 监听队列 listeners；</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;- (void)<a class="code" href="interface_p_t_framework.html#aea3dfa11ff3776a209fe4d5c054fb345">reset</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#pragma mark - 解密html文件</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"> * 获取指定业务的模板</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"> * @param  url  模版在包中的相对路径</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"> * @return NSData对象</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;- (NSData *)getTemplateByUrl:(NSString *)url;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#pragma mark - 握手相关</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"> * 配置客户端握手信息，只需配置一次</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"> * @param handShakeData 自定义握手信息</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"> *                      例如：{</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment"> *                            &quot;sys-version&quot;:1.3,</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"> *                            &quot;clientVersion&quot;:1.5</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"> *                           }</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;- (void)setCustomHandShakeData:(NSDictionary *)handShakeData;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment"> * 获取客户端配置的握手信息</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment"> * @return NSDictionary</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;- (NSDictionary *)<a class="code" href="interface_p_t_framework.html#a310e1dd381f96d5ded1cc253eb4f4439">getCustomHandShakeData</a>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment"> * 密钥协商</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment"> * @return</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment"> *     YES   协商成功&lt;br/&gt;</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment"> *      NO   协商失败&lt;br/&gt;</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;- (BOOL)<a class="code" href="interface_p_t_framework.html#aa7c8a5c584923fd70272b3d29408e8a9">handShake</a>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#pragma mark - menu.xml操作方法</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment"> * 获取菜单文件的rootElement</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment"> * @return 内存中只保存一份</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;- (GDataXMLElement *)<a class="code" href="interface_p_t_framework.html#a256032fc46c5fd535b78791e55b00202">getMenuRootElement</a>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment"> * 将内存中的rootElement保存到沙盒，覆盖原文件</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment"> * 目标文件：</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment"> *      1、Documents/menus/menu.xml</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment"> *      2、Documents/menus/menu.xml.bak</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment"> * @return YES 保存成功</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment"> *         NO  保存失败</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;- (BOOL)<a class="code" href="interface_p_t_framework.html#a3d782e0280f3f36d906e798203160f77">saveMenusXMLFile</a>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#pragma mark - business.xml操作方法</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment"> * 获取business.xml文件的rootElement</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="comment"> * @return 内存中只保存一份</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;- (GDataXMLElement *)<a class="code" href="interface_p_t_framework.html#aaea5bfc261bd0b3773c7b365bf2f0716">getBusinessRootElement</a>;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="comment"> * 将内存中的rootElement保存到沙盒，覆盖原文件</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="comment"> * 目标文件：</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="comment"> *      1、Documents/release/business.xml</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="comment"> *      2、Documents/release/business.xml.bak</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment"> * @return YES 保存成功</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="comment"> *         NO  保存失败</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;- (BOOL)<a class="code" href="interface_p_t_framework.html#ac5af76f662dfa84ccca970670398bca4">saveBusinessXMLFile</a>;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">#pragma mark - 获取框架内部的各种状态</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">#pragma mark 网络状态</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment"> * 获取当前的网络状态是否可用</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="comment"> * @return</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment"> *       NetworkStateNotReachable   网络不可用&lt;br/&gt;</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment"> *       NetworkStateWifiReachable   wifi网络可用&lt;br/&gt;</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment"> *       NetworkState3GReachable   3g网络可用&lt;br/&gt;</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;- (<a class="code" href="group__resource_config_module_enum.html#gafc8c24a6164365743dfe490b4f72b7fd">PTNetworkState</a>)<a class="code" href="interface_p_t_framework.html#ae394d05f6e7731a213078f8908991cdf">getCurrentNetworkState</a>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">#pragma mark 会话状态</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="comment"> * 设置当前客户端的session状态</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment"> * @param  state   session状态</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;- (void)setSessionState:(<a class="code" href="group__http_assist_module_enum.html#ga73bf820501aed4e59ad4bdd2c495683b">PTSessionState</a>)state;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment"> * 获取当前客户端的登陆状态</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment"> * @return</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment"> *      STATE_NULLSESSION       = 0,    //未建立会话</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment"> *      STATE_HANDSHAKEING      = 1,    //正在握手</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment"> *      STATE_HANDSHAKEFAILED   = 2,    //握手失败</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="comment"> *      STATE_SESSIONTIMEOUT    = 3,    //会话超时，需要重新握手</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment"> *      STATE_UNLOGIN           = 4,    //已建立会话，握手成功，未登录</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment"> *      STATE_LOGING            = 5,    //已建立回话，握手成功，正在登陆</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment"> *      STATE_LOGIN             = 6     //已建立会话，握手成功，登陆成功</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment"> *      STATE_LOGOUTING         = 7     //正在登出</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;- (<a class="code" href="group__http_assist_module_enum.html#ga73bf820501aed4e59ad4bdd2c495683b">PTSessionState</a>)<a class="code" href="interface_p_t_framework.html#ae4517b6a46f3abfc6692be645a2d2bb4">getSessionState</a>;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="preprocessor">#pragma mark menu.xml状态</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment"> * 获取当前客户端数据准备状态menu.xml文件</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment"> * @return</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment"> *      PTEventStateSuccess  准备成功&lt;br/&gt;</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment"> *      PTEventStateFailed   准备失败&lt;br/&gt;</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="comment"> *      PTEventStateDoing    准备中&lt;br/&gt;</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;- (<a class="code" href="group__resource_file_module_enum.html#gaaa112930bd78670b11023fbfdad44e18">PTEventState</a>)<a class="code" href="interface_p_t_framework.html#a935d0ce3c524b7e9c500099d59d32fec">getMenuPreparedState</a>;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="comment"> * 获取当前客户端菜单检测状态menu.xml文件</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment"> * @return</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="comment"> *      PTEventStateSuccess  菜单检测成功&lt;br/&gt;</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="comment"> *      PTEventStateFailed   菜单检测失败&lt;br/&gt;</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="comment"> *      PTEventStateDoing    菜单检测中&lt;br/&gt;</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;- (<a class="code" href="group__resource_file_module_enum.html#gaaa112930bd78670b11023fbfdad44e18">PTEventState</a>)<a class="code" href="interface_p_t_framework.html#aaf013a078ecfbbb781db72cd786537f7">getMenuCheckState</a>;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor">#pragma mark resource.json状态</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment"> * 获取当前客户端文件清单检测状态resoure.json文件</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment"> * @return</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment"> *      PTEventStateSuccess  文件清单检测成功&lt;br/&gt;</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="comment"> *      PTEventStateFailed   文件清单检测失败&lt;br/&gt;</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="comment"> *      PTEventStateDoing    文件清单检测中&lt;br/&gt;</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;- (<a class="code" href="group__resource_file_module_enum.html#gaaa112930bd78670b11023fbfdad44e18">PTEventState</a>)<a class="code" href="interface_p_t_framework.html#aff631d451e6a6b82afc2f98ceba079f3">getResourceJsonCheckState</a>;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="comment"> * 获取当前客户端文件清单更新状态resource.json文件</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="comment"> * @return</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="comment"> *      PTEventStateSuccess  文件清单更新成功&lt;br/&gt;</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="comment"> *      PTEventStateFailed   文件清单更新失败&lt;br/&gt;</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="comment"> *      PTEventStateDoing    文件清单更新中&lt;br/&gt;</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;- (<a class="code" href="group__resource_file_module_enum.html#gaaa112930bd78670b11023fbfdad44e18">PTEventState</a>)<a class="code" href="interface_p_t_framework.html#a4fcc7d007b7eef1b5e72267b88f70742">getResourceJsonUpdataState</a>;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="comment">//#pragma mark business.xml状态</span><span class="comment"></span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="comment">///**</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="comment"></span><span class="comment">// * 获取当前客户端文件business.xml检测状态</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="comment">// * @return</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="comment">// *      PTEventStateSuccess  文件business.xml检测成功&lt;br/&gt;</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="comment">// *      PTEventStateFailed   文件business.xml检测失败&lt;br/&gt;</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="comment">// *      PTEventStateDoing    文件business.xml检测中&lt;br/&gt;</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="comment">// */</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="comment">//- (PTEventState)getBusinessCheckState;</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment">//</span><span class="comment"></span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="comment">///**</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="comment"></span><span class="comment">// * 获取当前客户端文件business.xml更新状态</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="comment">// * @return</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment">// *      PTEventStateSuccess  文件business.xml更新成功&lt;br/&gt;</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="comment">// *      PTEventStateFailed   文件business.xml更新失败&lt;br/&gt;</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="comment">// *      PTEventStateDoing    文件business.xml更新中&lt;br/&gt;</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="comment">// */</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="comment">//- (PTEventState)getBusinessUpdataState;</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="preprocessor">#pragma mark 握手状态</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="comment"> * 获取当前客户端密钥协商状态</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="comment"> * @return</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="comment"> *      PTEventStateSuccess  密钥协商成功&lt;br/&gt;</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="comment"> *      PTEventStateFailed   密钥协商失败&lt;br/&gt;</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="comment"> *      PTEventStateDoing    密钥协商中&lt;br/&gt;</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;- (<a class="code" href="group__resource_file_module_enum.html#gaaa112930bd78670b11023fbfdad44e18">PTEventState</a>)<a class="code" href="interface_p_t_framework.html#a0d977c516daca4f01577e06cb778dbeb">getHandshakeState</a>;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="comment"> * 获取当前客户端系统初始化状态</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="comment"> * @return</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="comment"> *      PTEventStateSuccess  文件清单检测成功&lt;br/&gt;</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="comment"> *      PTEventStateFailed   文件清单检测失败&lt;br/&gt;</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="comment"> *      PTEventStateDoing    文件清单检测中&lt;br/&gt;</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;- (<a class="code" href="group__resource_file_module_enum.html#gaaa112930bd78670b11023fbfdad44e18">PTEventState</a>)<a class="code" href="interface_p_t_framework.html#a4d2a6359ce8136f3cd5348942fcd8480">getInitState</a>;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="preprocessor">#pragma mark - 事件监听处理</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="comment"> * 添加一个事件监听对象</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="comment"> * @param  listener   事件监听对象(需要实现PTFrameworkDelegate代理)</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;- (void)addListener:(id&lt;PTFrameworkDelegate&gt;)listener;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="comment"> * 删除一个事件监听对象</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="comment"> * @param  listener  事件监听对象</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;- (void)removeListener:(id&lt;PTFrameworkDelegate&gt;)listener;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="comment">//#pragma mark - 崩溃日志上传功能</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="comment">///**</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="comment"></span><span class="comment">// * 开启错误日志收集功能</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="comment">// * 默认是关闭的</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="comment">// * @param</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="comment">// * @return</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="comment">// */</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="comment">//- (void)openCrashCollect;</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="comment">//</span><span class="comment"></span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="comment">///**</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="comment"></span><span class="comment">// *  添加崩溃日志回调</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="comment">// *</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="comment">// *  @param onCompletion   回调block</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="comment">// *</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="comment">// *  @return</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="comment">// */</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="comment">//- (void)addCrashCompletion:(crashCompletion)onCompletion;</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="comment">//</span><span class="comment"></span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="comment">///**</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="comment"></span><span class="comment">// * 发送错误报告</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="comment">// * 前提是调用了openCrashCollect方法开启收集功能</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="comment">// */</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="comment">//- (void)sendCrashReports;</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="comment">//#pragma mark - 定义远程测试方法</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="comment">//#ifdef REMOTE_DEBUG</span><span class="comment"></span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="comment">///**</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="comment"></span><span class="comment">// * 设置系统远程debug调试模式状态</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="comment">// * @param   mode   调试模式</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="comment">// * @return</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="comment">// */</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="comment">//- (void)setRemoteDebugMode:(BOOL)mode;</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="comment">//</span><span class="comment"></span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="comment">///**</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="comment"></span><span class="comment">// * 获取当前系统远程debug调试模式状态</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="comment">// * @return</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="comment">// *     YES    远程debug调试模式打开&lt;br/&gt;</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="comment">// *      NO    远程debug调试模式关闭&lt;br/&gt;</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="comment">// */</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="comment">//- (BOOL)getRemoteDebugMode;</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="comment">//#endif</span></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="keyword">@end</span></div>
+<div class="ttc" id="interface_p_t_framework_html_a8abc5d1d44882a2cb4b42111074e716d"><div class="ttname"><a href="interface_p_t_framework.html#a8abc5d1d44882a2cb4b42111074e716d">-[PTFramework initialization]</a></div><div class="ttdeci">void initialization()</div><div class="ttdoc">初始化系统，实现的功能有:  1、定位客户终端当前位置  2、协商初始会话密钥  3、检测文件清单列表，并下载(...</div><div class="ttdef"><b>Definition:</b> PTFramework.m:121</div></div>
+<div class="ttc" id="interface_p_t_framework_html"><div class="ttname"><a href="interface_p_t_framework.html">PTFramework</a></div><div class="ttdoc">功能： 1、data.zip 资源文件的解压；  2、初始化执行握手操作；  </div><div class="ttdef"><b>Definition:</b> PTFramework.h:21</div></div>
+<div class="ttc" id="interface_p_t_framework_html_aa610a8bcc23a49393674ba9eb6d7acb3"><div class="ttname"><a href="interface_p_t_framework.html#aa610a8bcc23a49393674ba9eb6d7acb3">-[PTFramework unpackResources]</a></div><div class="ttdeci">void unpackResources()</div><div class="ttdoc">同步解压，阻塞UI线程； 解压缩模版文件包，需在所有用户界面调用之前调用，以保证所有的资源文件能够正常 ...</div><div class="ttdef"><b>Definition:</b> PTFramework.m:102</div></div>
+<div class="ttc" id="interface_p_t_framework_html_aea3dfa11ff3776a209fe4d5c054fb345"><div class="ttname"><a href="interface_p_t_framework.html#aea3dfa11ff3776a209fe4d5c054fb345">-[PTFramework reset]</a></div><div class="ttdeci">void reset()</div><div class="ttdoc">客户端根据需要对框架进行重启操作  重启以下模块  1、服务器配置信息模块 PTConfigurationManager  2、加密...</div><div class="ttdef"><b>Definition:</b> PTFramework.m:89</div></div>
+<div class="ttc" id="interface_p_t_framework_html_a935d0ce3c524b7e9c500099d59d32fec"><div class="ttname"><a href="interface_p_t_framework.html#a935d0ce3c524b7e9c500099d59d32fec">-[PTFramework getMenuPreparedState]</a></div><div class="ttdeci">PTEventState getMenuPreparedState()</div><div class="ttdoc">获取当前客户端数据准备状态menu.xml文件 </div><div class="ttdef"><b>Definition:</b> PTFramework.m:206</div></div>
+<div class="ttc" id="interface_p_t_framework_html_ac5af76f662dfa84ccca970670398bca4"><div class="ttname"><a href="interface_p_t_framework.html#ac5af76f662dfa84ccca970670398bca4">-[PTFramework saveBusinessXMLFile]</a></div><div class="ttdeci">BOOL saveBusinessXMLFile()</div><div class="ttdoc">将内存中的rootElement保存到沙盒，覆盖原文件 目标文件： 1、Documents/release/business.xml 2、Documents/release/business.xml.bak </div><div class="ttdef"><b>Definition:</b> PTFramework.m:185</div></div>
+<div class="ttc" id="interface_p_t_framework_html_a4d2a6359ce8136f3cd5348942fcd8480"><div class="ttname"><a href="interface_p_t_framework.html#a4d2a6359ce8136f3cd5348942fcd8480">-[PTFramework getInitState]</a></div><div class="ttdeci">PTEventState getInitState()</div><div class="ttdoc">获取当前客户端系统初始化状态 </div><div class="ttdef"><b>Definition:</b> PTFramework.m:228</div></div>
+<div class="ttc" id="interface_p_t_framework_html_a4fcc7d007b7eef1b5e72267b88f70742"><div class="ttname"><a href="interface_p_t_framework.html#a4fcc7d007b7eef1b5e72267b88f70742">-[PTFramework getResourceJsonUpdataState]</a></div><div class="ttdeci">PTEventState getResourceJsonUpdataState()</div><div class="ttdoc">获取当前客户端文件清单更新状态resource.json文件 </div><div class="ttdef"><b>Definition:</b> PTFramework.m:219</div></div>
+<div class="ttc" id="interface_p_t_framework_html_ae4517b6a46f3abfc6692be645a2d2bb4"><div class="ttname"><a href="interface_p_t_framework.html#ae4517b6a46f3abfc6692be645a2d2bb4">-[PTFramework getSessionState]</a></div><div class="ttdeci">PTSessionState getSessionState()</div><div class="ttdoc">获取当前客户端的登陆状态 </div><div class="ttdef"><b>Definition:</b> PTFramework.m:201</div></div>
+<div class="ttc" id="interface_p_t_framework_html_aff631d451e6a6b82afc2f98ceba079f3"><div class="ttname"><a href="interface_p_t_framework.html#aff631d451e6a6b82afc2f98ceba079f3">-[PTFramework getResourceJsonCheckState]</a></div><div class="ttdeci">PTEventState getResourceJsonCheckState()</div><div class="ttdoc">获取当前客户端文件清单检测状态resoure.json文件 </div><div class="ttdef"><b>Definition:</b> PTFramework.m:215</div></div>
+<div class="ttc" id="group__resource_file_module_enum_html_gaaa112930bd78670b11023fbfdad44e18"><div class="ttname"><a href="group__resource_file_module_enum.html#gaaa112930bd78670b11023fbfdad44e18">PTEventState</a></div><div class="ttdeci">PTEventState</div><div class="ttdoc">各种资源检查的状态 xml json js css文件的检查结果枚举   </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:35</div></div>
+<div class="ttc" id="interface_p_t_framework_html_a3d782e0280f3f36d906e798203160f77"><div class="ttname"><a href="interface_p_t_framework.html#a3d782e0280f3f36d906e798203160f77">-[PTFramework saveMenusXMLFile]</a></div><div class="ttdeci">BOOL saveMenusXMLFile()</div><div class="ttdoc">将内存中的rootElement保存到沙盒，覆盖原文件 目标文件： 1、Documents/menus/menu.xml 2、Documents/menus...</div><div class="ttdef"><b>Definition:</b> PTFramework.m:174</div></div>
+<div class="ttc" id="interface_p_t_framework_html_aaf013a078ecfbbb781db72cd786537f7"><div class="ttname"><a href="interface_p_t_framework.html#aaf013a078ecfbbb781db72cd786537f7">-[PTFramework getMenuCheckState]</a></div><div class="ttdeci">PTEventState getMenuCheckState()</div><div class="ttdoc">获取当前客户端菜单检测状态menu.xml文件 </div><div class="ttdef"><b>Definition:</b> PTFramework.m:210</div></div>
+<div class="ttc" id="interface_p_t_framework_html_aa7c8a5c584923fd70272b3d29408e8a9"><div class="ttname"><a href="interface_p_t_framework.html#aa7c8a5c584923fd70272b3d29408e8a9">-[PTFramework handShake]</a></div><div class="ttdeci">BOOL handShake()</div><div class="ttdoc">密钥协商 </div><div class="ttdef"><b>Definition:</b> PTFramework.m:164</div></div>
+<div class="ttc" id="interface_p_t_framework_html_a310e1dd381f96d5ded1cc253eb4f4439"><div class="ttname"><a href="interface_p_t_framework.html#a310e1dd381f96d5ded1cc253eb4f4439">-[PTFramework getCustomHandShakeData]</a></div><div class="ttdeci">NSDictionary * getCustomHandShakeData()</div><div class="ttdoc">获取客户端配置的握手信息 </div><div class="ttdef"><b>Definition:</b> PTFramework.m:160</div></div>
+<div class="ttc" id="interface_p_t_framework_html_a3784408a5c96868380b0436dc17bb90f"><div class="ttname"><a href="interface_p_t_framework.html#a3784408a5c96868380b0436dc17bb90f">-[PTFramework isNeedResources]</a></div><div class="ttdeci">PTDataZipState isNeedResources()</div><div class="ttdoc">获取模版资源包的状态，来判断是否需要解压； </div><div class="ttdef"><b>Definition:</b> PTFramework.m:106</div></div>
+<div class="ttc" id="interface_p_t_framework_html_aaea5bfc261bd0b3773c7b365bf2f0716"><div class="ttname"><a href="interface_p_t_framework.html#aaea5bfc261bd0b3773c7b365bf2f0716">-[PTFramework getBusinessRootElement]</a></div><div class="ttdeci">GDataXMLElement * getBusinessRootElement()</div><div class="ttdoc">获取business.xml文件的rootElement </div><div class="ttdef"><b>Definition:</b> PTFramework.m:181</div></div>
+<div class="ttc" id="interface_p_t_framework_html_a0d977c516daca4f01577e06cb778dbeb"><div class="ttname"><a href="interface_p_t_framework.html#a0d977c516daca4f01577e06cb778dbeb">-[PTFramework getHandshakeState]</a></div><div class="ttdeci">PTEventState getHandshakeState()</div><div class="ttdoc">获取当前客户端文件business.xml检测状态 </div><div class="ttdef"><b>Definition:</b> PTFramework.m:224</div></div>
+<div class="ttc" id="interface_p_t_framework_html_aa3e2ec64ddaed568c109fc890f92e8e8"><div class="ttname"><a href="interface_p_t_framework.html#aa3e2ec64ddaed568c109fc890f92e8e8">+[PTFramework getInstance]</a></div><div class="ttdeci">id getInstance()</div><div class="ttdoc">以懒惰方式实现的单例模式，完成各种系统级事件的接收和转发 </div><div class="ttdef"><b>Definition:</b> PTFramework.m:39</div></div>
+<div class="ttc" id="interface_p_t_framework_html_ae394d05f6e7731a213078f8908991cdf"><div class="ttname"><a href="interface_p_t_framework.html#ae394d05f6e7731a213078f8908991cdf">-[PTFramework getCurrentNetworkState]</a></div><div class="ttdeci">PTNetworkState getCurrentNetworkState()</div><div class="ttdoc">获取当前的网络状态是否可用 </div><div class="ttdef"><b>Definition:</b> PTFramework.m:192</div></div>
+<div class="ttc" id="interface_p_t_framework_html_a256032fc46c5fd535b78791e55b00202"><div class="ttname"><a href="interface_p_t_framework.html#a256032fc46c5fd535b78791e55b00202">-[PTFramework getMenuRootElement]</a></div><div class="ttdeci">GDataXMLElement * getMenuRootElement()</div><div class="ttdoc">获取菜单文件的rootElement </div><div class="ttdef"><b>Definition:</b> PTFramework.m:170</div></div>
+<div class="ttc" id="group__resource_config_module_enum_html_gafc8c24a6164365743dfe490b4f72b7fd"><div class="ttname"><a href="group__resource_config_module_enum.html#gafc8c24a6164365743dfe490b4f72b7fd">PTNetworkState</a></div><div class="ttdeci">PTNetworkState</div><div class="ttdoc">网络状态标识枚举   用于 PTNetStateManager 类 </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:98</div></div>
+<div class="ttc" id="group__http_assist_module_enum_html_ga73bf820501aed4e59ad4bdd2c495683b"><div class="ttname"><a href="group__http_assist_module_enum.html#ga73bf820501aed4e59ad4bdd2c495683b">PTSessionState</a></div><div class="ttdeci">PTSessionState</div><div class="ttdoc">会话状态标识枚举   </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:145</div></div>
+<div class="ttc" id="group__resource_file_module_enum_html_gac4f3cbfd3d8e5e878f124f86a225fe70"><div class="ttname"><a href="group__resource_file_module_enum.html#gac4f3cbfd3d8e5e878f124f86a225fe70">PTDataZipState</a></div><div class="ttdeci">PTDataZipState</div><div class="ttdoc">data.zip是否需要解压的状态枚举   </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:66</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_b678e0da0dd1c076094d7b62ef5423cc.html">PT</a></li><li class="navelem"><a class="el" href="dir_a1019c1f2787f47b2242771c1d460d6d.html">main</a></li><li class="navelem"><b>PTFramework.h</b></li>
+    <li class="footer">生成于 2016年 六月 27日 星期一 08:53:41 , 为 中信网络科技移动基础框架-iOS Lib使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>

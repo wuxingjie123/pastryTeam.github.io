@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>中信网络科技移动基础框架-iOS Lib: PT/netManager/security/PTDataPackage.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">中信网络科技移动基础框架-iOS Lib
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_p_t_data_package_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">PTDataPackage.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  PTDataPackage.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  PT</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by gengych on 16/3/16.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright © 2016年 中信网络科技. All rights reserved.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * @ingroup httpSecurityModuleClass</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * 功能：</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *      解密 服务器返回给客户端的 数据</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="interface_p_t_data_package.html">   16</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_p_t_data_package.html">PTDataPackage</a> : NSObject</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#pragma mark - 属性</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">/** 加密标志 */</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="interface_p_t_data_package.html#a26ce71c59b341ab08132ba06356a9052">   20</a></span>&#160;<span class="keyword">@property</span> (readonly) <a class="code" href="group__http_security_module_enum.html#gafe8ed79c5d2e5091e77bf5bc764f8c29">PTDataPackageCryptType</a> <a class="code" href="interface_p_t_data_package.html#a26ce71c59b341ab08132ba06356a9052">cryptFlag</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">/** 内容hash标志 */</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="interface_p_t_data_package.html#a3348f0bc840753f6a746b9982506a3d3">   23</a></span>&#160;<span class="keyword">@property</span> (readonly) <a class="code" href="group__http_security_module_enum.html#ga3f12ce2c8a5fd2a9a778d316a0a43c59">PTDataPackageHashType</a> <a class="code" href="interface_p_t_data_package.html#a3348f0bc840753f6a746b9982506a3d3">hashFlag</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">/** 数据内容签名标志 */</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="interface_p_t_data_package.html#a1780362885084fc659568b9c582e9e01">   26</a></span>&#160;<span class="keyword">@property</span> (readonly) <a class="code" href="group__http_security_module_enum.html#ga79cc40cbc943e67c94c40b8977ae63c7">PTDataPackageSignatureFlag</a> <a class="code" href="interface_p_t_data_package.html#a1780362885084fc659568b9c582e9e01">signatureFlag</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">/** 数据内容 */</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="interface_p_t_data_package.html#a1f496f563629f341b62b17308a9ae9e6">   29</a></span>&#160;<span class="keyword">@property</span> (readonly) NSData *<a class="code" href="interface_p_t_data_package.html#a1f496f563629f341b62b17308a9ae9e6">business</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#pragma mark - 方法</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"> * 初始化方法</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> * @param      cryptFlag     数据内容加密标志</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> *            CRYPT_NONE     不加密&lt;br /&gt;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> *            CRYPT_3DES     3DES加密&lt;br /&gt;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> *             CRYPT_AES     AES加密&lt;br /&gt;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"> *             CRYPT_RC5     RC5 加密</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"> * @param       hashFlag     数据内容hash标志</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"> *             HASH_NONE     不做Hash计算&lt;br /&gt;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"> *              HASH_MD5     用MD5算法做Hash计算&lt;br /&gt;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"> *             HASH_SHA1     用sha1算法做Hash计算</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"> * @param       signFlag     数据内容做签名标志</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"> *        SIGNATURE_NONE     不做签名&lt;br /&gt;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"> *     SIGNATURE_MD5_RSA     对MD5的hash值进行RSA签名&lt;br /&gt;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"> *    SIGNATURE_SHA1_RSA     对SHA1的hash值进行RSA签名</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"> * @param           busi     数据内容</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;- (id)init:(<a class="code" href="group__http_security_module_enum.html#gafe8ed79c5d2e5091e77bf5bc764f8c29">PTDataPackageCryptType</a>)cryptFlag hashFlag:(<a class="code" href="group__http_security_module_enum.html#ga3f12ce2c8a5fd2a9a778d316a0a43c59">PTDataPackageHashType</a>)hashFlag signFlag:(<a class="code" href="group__http_security_module_enum.html#ga79cc40cbc943e67c94c40b8977ae63c7">PTDataPackageSignatureFlag</a>)signFlag busi:(NSData *)busi;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"> * 将对象流化成JSON串</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"> * @return 结果</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;- (NSString *)<a class="code" href="interface_p_t_data_package.html#ad0786ec5f40685740a6aced1a728e593">toJSONString</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"> * 将对象流化成JSON串(明文)</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"> * @return 结果</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;- (NSString *)<a class="code" href="interface_p_t_data_package.html#ab9886873a44391b55ad98f77ec5be33c">toPlainJSONString</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#pragma mark - 静态方法</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"> * 解析JSON字符串，并赋值给对象各成员变量</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"> * @param  json  JSON字符串</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"> * @exception PTException(MPCC003 -- 参数错误)</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"> *            PTException(MPCC005 -- 验签异常(MD5))&lt;br /&gt;</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"> *            PTException(MPCC006 -- 验签异常(SHA1))&lt;br /&gt;</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> *            PTException(MPCC007 -- HASH比对异常(MD5))&lt;br /&gt;</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"> *            PTException(MPCC008 -- HASH比对异常(SHA1))&lt;br /&gt;</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"> *            PTException(MPCC009 -- 解密business数据异常)</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"> * @return</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"> *         非空   PTDataPackage对象</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"> *         nil   JSON解析失败</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;+ (<a class="code" href="interface_p_t_data_package.html">PTDataPackage</a> *)parseJSONString:(NSString *)json;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">@end</span></div>
+<div class="ttc" id="interface_p_t_data_package_html_ad0786ec5f40685740a6aced1a728e593"><div class="ttname"><a href="interface_p_t_data_package.html#ad0786ec5f40685740a6aced1a728e593">-[PTDataPackage toJSONString]</a></div><div class="ttdeci">NSString * toJSONString()</div><div class="ttdoc">将对象流化成JSON串 </div><div class="ttdef"><b>Definition:</b> PTDataPackage.m:62</div></div>
+<div class="ttc" id="interface_p_t_data_package_html_a1780362885084fc659568b9c582e9e01"><div class="ttname"><a href="interface_p_t_data_package.html#a1780362885084fc659568b9c582e9e01">PTDataPackage::signatureFlag</a></div><div class="ttdeci">PTDataPackageSignatureFlag signatureFlag</div><div class="ttdoc">数据内容签名标志 </div><div class="ttdef"><b>Definition:</b> PTDataPackage.h:26</div></div>
+<div class="ttc" id="group__http_security_module_enum_html_ga3f12ce2c8a5fd2a9a778d316a0a43c59"><div class="ttname"><a href="group__http_security_module_enum.html#ga3f12ce2c8a5fd2a9a778d316a0a43c59">PTDataPackageHashType</a></div><div class="ttdeci">PTDataPackageHashType</div><div class="ttdoc">Hash计算方式枚举   </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:257</div></div>
+<div class="ttc" id="interface_p_t_data_package_html"><div class="ttname"><a href="interface_p_t_data_package.html">PTDataPackage</a></div><div class="ttdoc">功能： 解密 服务器返回给客户端的 数据 </div><div class="ttdef"><b>Definition:</b> PTDataPackage.h:16</div></div>
+<div class="ttc" id="group__http_security_module_enum_html_gafe8ed79c5d2e5091e77bf5bc764f8c29"><div class="ttname"><a href="group__http_security_module_enum.html#gafe8ed79c5d2e5091e77bf5bc764f8c29">PTDataPackageCryptType</a></div><div class="ttdeci">PTDataPackageCryptType</div><div class="ttdoc">加密方式枚举   </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:231</div></div>
+<div class="ttc" id="interface_p_t_data_package_html_a26ce71c59b341ab08132ba06356a9052"><div class="ttname"><a href="interface_p_t_data_package.html#a26ce71c59b341ab08132ba06356a9052">PTDataPackage::cryptFlag</a></div><div class="ttdeci">PTDataPackageCryptType cryptFlag</div><div class="ttdoc">加密标志 </div><div class="ttdef"><b>Definition:</b> PTDataPackage.h:20</div></div>
+<div class="ttc" id="group__http_security_module_enum_html_ga79cc40cbc943e67c94c40b8977ae63c7"><div class="ttname"><a href="group__http_security_module_enum.html#ga79cc40cbc943e67c94c40b8977ae63c7">PTDataPackageSignatureFlag</a></div><div class="ttdeci">PTDataPackageSignatureFlag</div><div class="ttdoc">签名方式枚举   </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:281</div></div>
+<div class="ttc" id="interface_p_t_data_package_html_a1f496f563629f341b62b17308a9ae9e6"><div class="ttname"><a href="interface_p_t_data_package.html#a1f496f563629f341b62b17308a9ae9e6">PTDataPackage::business</a></div><div class="ttdeci">NSData * business</div><div class="ttdoc">数据内容 </div><div class="ttdef"><b>Definition:</b> PTDataPackage.h:29</div></div>
+<div class="ttc" id="interface_p_t_data_package_html_ab9886873a44391b55ad98f77ec5be33c"><div class="ttname"><a href="interface_p_t_data_package.html#ab9886873a44391b55ad98f77ec5be33c">-[PTDataPackage toPlainJSONString]</a></div><div class="ttdeci">NSString * toPlainJSONString()</div><div class="ttdoc">将对象流化成JSON串(明文) </div><div class="ttdef"><b>Definition:</b> PTDataPackage.m:124</div></div>
+<div class="ttc" id="interface_p_t_data_package_html_a3348f0bc840753f6a746b9982506a3d3"><div class="ttname"><a href="interface_p_t_data_package.html#a3348f0bc840753f6a746b9982506a3d3">PTDataPackage::hashFlag</a></div><div class="ttdeci">PTDataPackageHashType hashFlag</div><div class="ttdoc">内容hash标志 </div><div class="ttdef"><b>Definition:</b> PTDataPackage.h:23</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_b678e0da0dd1c076094d7b62ef5423cc.html">PT</a></li><li class="navelem"><a class="el" href="dir_938013879a13bd6a21c0ad6e6ff859ae.html">netManager</a></li><li class="navelem"><a class="el" href="dir_05f62c5ef6c5b279e1d581e0013a0bd5.html">security</a></li><li class="navelem"><b>PTDataPackage.h</b></li>
+    <li class="footer">生成于 2016年 六月 27日 星期一 08:53:41 , 为 中信网络科技移动基础框架-iOS Lib使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>

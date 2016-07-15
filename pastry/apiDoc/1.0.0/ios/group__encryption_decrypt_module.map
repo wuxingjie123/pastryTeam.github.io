@@ -1,0 +1,8 @@
+<map id="加解密模块" name="加解密模块">
+<area shape="rect" id="node1" href="$group__encryption_decrypt_module_contant.html" title="常量" alt="" coords="297,4,345,30"/>
+<area shape="rect" id="node2" href="$group__security_module.html" title=" 包括 编解码模块、Hash计算模块、加解密模块 等。 &#160;&#160;" alt="" coords="5,103,107,129"/>
+<area shape="rect" id="node3" href="$group__encryption_decrypt_module_protocol.html" title="协议" alt="" coords="297,54,345,80"/>
+<area shape="rect" id="node4" href="$group__encryption_decrypt_module_enum.html" title="枚举" alt="" coords="297,103,345,129"/>
+<area shape="rect" id="node5" href="$group__encryption_module_struct.html" title="结构体" alt="" coords="291,152,352,178"/>
+<area shape="rect" id="node7" href="$group__encryption_decrypt_module_class.html" title="类" alt="" coords="302,202,341,228"/>
+</map>

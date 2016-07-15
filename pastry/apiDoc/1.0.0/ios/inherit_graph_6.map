@@ -1,0 +1,6 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="node2" href="$interface_p_t_keyboard.html" title="键盘基类 " alt="" coords="118,54,213,79"/>
+<area shape="rect" id="node3" href="$interface_p_t_keyboardi_pad.html" title="iPad 键盘类 &#160;本类为类做为自定义键盘的View &#160;所有的有返回值的方法，指针类型返回值均返回nil &#160;NSInteger类..." alt="" coords="316,5,438,30"/>
+<area shape="rect" id="node4" href="$interface_p_t_keyboardi_phone.html" title="iPhone 键盘类 " alt="" coords="309,54,446,79"/>
+<area shape="rect" id="node5" href="$interface_p_t_keyboard_password_numer_phone.html" title="number 数字键盘类 " alt="" coords="261,103,494,129"/>
+</map>

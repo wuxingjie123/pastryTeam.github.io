@@ -1,0 +1,6 @@
+<map id="&#45;[PTMenusManager getMenuByKey:andValue:]" name="&#45;[PTMenusManager getMenuByKey:andValue:]">
+<area shape="rect" id="node2" href="$interface_p_t_menus_manager.html#af0ac8060129f74cdc8b22ceb096b3838" title="获取 指定 的key value 的节点 " alt="" coords="249,26,450,65"/>
+<area shape="rect" id="node3" href="$interface_p_t_menus_manager.html#afbab21c042b9fde16d8daf88181b94e0" title="获取处理后的菜单 " alt="" coords="499,26,688,65"/>
+<area shape="rect" id="node4" href="$interface_p_t_sign_tool.html#a0736ec6e62660432fad4b56d1f47084d" title="以懒惰方式实现的单例模式 " alt="" coords="743,5,921,30"/>
+<area shape="rect" id="node5" href="$interface_p_t_sign_tool.html#a8d980cbeecf3654c02b556479ead3a09" title="对 xml 文件验签 " alt="" coords="736,54,928,93"/>
+</map>

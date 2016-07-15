@@ -1,0 +1,4 @@
+<map id="+[PTAllMenusManager getInstance]" name="+[PTAllMenusManager getInstance]">
+<area shape="rect" id="node2" href="$interface_p_t_framework.html#a8abc5d1d44882a2cb4b42111074e716d" title="初始化系统，实现的功能有: &#160;1、定位客户终端当前位置 &#160;2、协商初始会话密钥 &#160;3、检测文件清单列表，并下载(..." alt="" coords="437,11,627,37"/>
+<area shape="rect" id="node3" href="$interface_p_t_app_resource_manager.html#a8437a4bf0a7d7988550b80fe28fb6ee0" title="功能： &#160;1 加载menu.xml文件到树形节点 &#160;&#160;1.1 设置加载menu.xml结果状态 menuPreparedState &#160;&#160;1..." alt="" coords="211,33,389,71"/>
+</map>

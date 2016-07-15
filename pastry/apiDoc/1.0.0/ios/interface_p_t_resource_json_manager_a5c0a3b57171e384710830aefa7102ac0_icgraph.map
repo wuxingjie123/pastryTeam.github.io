@@ -1,0 +1,7 @@
+<map id="+[PTResourceJsonManager getInstance]" name="+[PTResourceJsonManager getInstance]">
+<area shape="rect" id="node2" href="$interface_p_t_framework.html#a8abc5d1d44882a2cb4b42111074e716d" title="初始化系统，实现的功能有: &#160;1、定位客户终端当前位置 &#160;2、协商初始会话密钥 &#160;3、检测文件清单列表，并下载(..." alt="" coords="483,100,672,125"/>
+<area shape="rect" id="node3" href="$interface_p_t_framework.html#aff631d451e6a6b82afc2f98ceba079f3" title="获取当前客户端文件清单检测状态resoure.json文件 " alt="" coords="242,35,435,73"/>
+<area shape="rect" id="node4" href="$interface_p_t_framework.html#a4fcc7d007b7eef1b5e72267b88f70742" title="获取当前客户端文件清单更新状态resource.json文件 " alt="" coords="242,97,435,136"/>
+<area shape="rect" id="node5" href="$interface_p_t_framework.html#a4d2a6359ce8136f3cd5348942fcd8480" title="获取当前客户端系统初始化状态 " alt="" coords="245,160,433,185"/>
+<area shape="rect" id="node6" href="$interface_p_t_app_resource_manager.html#a8437a4bf0a7d7988550b80fe28fb6ee0" title="功能： &#160;1 加载menu.xml文件到树形节点 &#160;&#160;1.1 设置加载menu.xml结果状态 menuPreparedState &#160;&#160;1..." alt="" coords="249,209,428,248"/>
+</map>

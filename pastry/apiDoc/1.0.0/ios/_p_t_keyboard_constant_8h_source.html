@@ -1,0 +1,375 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>中信网络科技移动基础框架-iOS Lib: PT/keyboard/metrics/PTKeyboardConstant.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">中信网络科技移动基础框架-iOS Lib
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_p_t_keyboard_constant_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">PTKeyboardConstant.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  PTKeyboardConstant.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  PT</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by gengych on 16/3/14.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright © 2016年 中信网络科技. All rights reserved.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef PT_PTKeyboardConstant_h</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define PT_PTKeyboardConstant_h</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> @ingroup keyboardSingleKeyModuleContant</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> @def structToObjc(struct,structType)</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> @brief 将 struct 类型 转换为 objc 的宏定义</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_contant.html#gaf6f1347af392ee594ac395aeb97196ec">   17</a></span>&#160;<span class="preprocessor">#define structToObjc(struct,structType) [NSValue valueWithBytes:&amp;struct objCType:@encode(structType)]</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> @ingroup keyboardSingleKeyModuleContant</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> @def objcToStruct(objc,struct)</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> @brief 将 objc 类型 转换为 struct 的宏定义</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_contant.html#ga007f047b096a9e8d2df7e636bb11ddf3">   24</a></span>&#160;<span class="preprocessor">#define objcToStruct(objc,struct) [objc getValue:&amp;struct]</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> @ingroup keyboardSingleKeyModuleContant</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> @def Keyboard_W</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> @brief 计算键盘的宽度</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_contant.html#ga061213ff3466e9dc0f8d96acda93ef0e">   31</a></span>&#160;<span class="preprocessor">#define Keyboard_W [UIScreen mainScreen].bounds.size.width</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> @ingroup keyboardSingleKeyModuleContant</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> @def getKeyboard_H</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> @brief 根据宽度计算键盘的高度； 宽度＝＝414，高度 ＝ 226； 宽度 &lt; 414，高度 ＝ 216；否则：高度 ＝ 267</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_contant.html#gaeaef2cda87ccf8b8c9951a68b7c5c635">   38</a></span>&#160;<span class="preprocessor">#define getKeyboard_H(KeyboardH,KeyboardW) {\</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">if(KeyboardW == 414){\</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">    KeyboardH = 226;\</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">}else if(KeyboardW &lt; 414){\</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">    KeyboardH = 216;\</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">}else{\</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">    KeyboardH = 267;\</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">}\</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">}</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> @ingroup keyboardSingleKeyModuleContant</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"> @def CHARACTERS_LOWERCASE</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"> @brief 键盘中 所有小写字母的 集合</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_contant.html#gad8935e59cddd796f9d7c812171fb934b">   53</a></span>&#160;<span class="preprocessor">#define CHARACTERS_LOWERCASE @[@&quot;q&quot;,@&quot;w&quot;,@&quot;e&quot;,@&quot;r&quot;,@&quot;t&quot;,@&quot;y&quot;,@&quot;u&quot;,@&quot;i&quot;,@&quot;o&quot;,@&quot;p&quot;,@&quot;a&quot;,@&quot;s&quot;,@&quot;d&quot;,@&quot;f&quot;,@&quot;g&quot;,@&quot;h&quot;,@&quot;j&quot;,@&quot;k&quot;,@&quot;l&quot;,@&quot;z&quot;,@&quot;x&quot;,@&quot;c&quot;,@&quot;v&quot;,@&quot;b&quot;,@&quot;n&quot;,@&quot;m&quot;]</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"> @ingroup keyboardSingleKeyModuleContant</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"> @def CHARACTERS_UPPERCASE</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"> @brief 键盘中 所有大写字母的 集合</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_contant.html#ga1996377970646ec07c46c985fbc5f6b3">   60</a></span>&#160;<span class="preprocessor">#define CHARACTERS_UPPERCASE @[@&quot;Q&quot;,@&quot;W&quot;,@&quot;E&quot;,@&quot;R&quot;,@&quot;T&quot;,@&quot;Y&quot;,@&quot;U&quot;,@&quot;I&quot;,@&quot;O&quot;,@&quot;P&quot;,@&quot;A&quot;,@&quot;S&quot;,@&quot;D&quot;,@&quot;F&quot;,@&quot;G&quot;,@&quot;H&quot;,@&quot;J&quot;,@&quot;K&quot;,@&quot;L&quot;,@&quot;Z&quot;,@&quot;X&quot;,@&quot;C&quot;,@&quot;V&quot;,@&quot;B&quot;,@&quot;N&quot;,@&quot;M&quot;]</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"> @ingroup keyboardSingleKeyModuleContant</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"> @def NUM_SPECIAI</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"> @brief 键盘中 数字和特殊字母的 集合</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_contant.html#ga186db93c861426e9b77d7c9b24b88211">   67</a></span>&#160;<span class="preprocessor">#define NUM_SPECIAI @[@&quot;1&quot;,@&quot;2&quot;,@&quot;3&quot;,@&quot;4&quot;,@&quot;5&quot;,@&quot;6&quot;,@&quot;7&quot;,@&quot;8&quot;,@&quot;9&quot;,@&quot;0&quot;,@&quot;-&quot;,@&quot;/&quot;,@&quot;:&quot;,@&quot;;&quot;,@&quot;(&quot;,@&quot;)&quot;,@&quot;$&quot;,@&quot;&amp;&quot;,@&quot;@&quot;,@&quot;\&quot;&quot;,@&quot;.&quot;,@&quot;,&quot;,@&quot;?&quot;,@&quot;!&quot;,@&quot;&#39;&quot;]</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"> @ingroup keyboardSingleKeyModuleContant</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> @def SPECIAI</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"> @brief 键盘中 特殊字母的 集合</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_contant.html#ga36cd58b4451dce46061a3cc398cf9f31">   74</a></span>&#160;<span class="preprocessor">#define SPECIAI @[@&quot;[&quot;,@&quot;]&quot;,@&quot;{&quot;,@&quot;}&quot;,@&quot;#&quot;,@&quot;%&quot;,@&quot;^&quot;,@&quot;*&quot;,@&quot;+&quot;,@&quot;=&quot;,@&quot;_&quot;,@&quot;\\&quot;,@&quot;|&quot;,@&quot;~&quot;,@&quot;&lt;&quot;,@&quot;&gt;&quot;,@&quot;€&quot;,@&quot;£&quot;,@&quot;￥&quot;,@&quot;·&quot;,@&quot;.&quot;,@&quot;,&quot;,@&quot;?&quot;,@&quot;!&quot;,@&quot;&#39;&quot;]</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"> @ingroup keyboardSingleKeyModuleContant</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment"> @def NUM</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"> @brief 键盘中 数字的 集合</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_contant.html#gaaf0952059602752258dccaa015d7b54a">   81</a></span>&#160;<span class="preprocessor">#define NUM @[@&quot;1&quot;,@&quot;2&quot;,@&quot;3&quot;,@&quot;4&quot;,@&quot;5&quot;,@&quot;6&quot;,@&quot;7&quot;,@&quot;8&quot;,@&quot;9&quot;,@&quot;&quot;,@&quot;0&quot;,@&quot;完成&quot;]</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"> @ingroup keyboardSingleKeyModuleContant</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment"> @brief 获取键盘中 按键的图片资源所在的Bundle路径</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_contant.html#ga2b32705d4b2c1b878073f44c8ca4ccc0">   88</a></span>&#160;<span class="preprocessor">#define PTResourceBundle [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@&quot;PTResources&quot; withExtension:@&quot;bundle&quot;]]</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"> @ingroup keyboardSingleKeyModuleContant</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"> @def PTKeyboardResources_Char(name,type)</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"> @brief 获取 字符键盘中 按键的图片资源</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_contant.html#ga54e72df9006fdc71cded32846619a998">   96</a></span>&#160;<span class="preprocessor">#define PTKeyboardResources_Char(name,type) [UIImage imageWithData:[NSData dataWithContentsOfFile:[PTResourceBundle pathForResource:name ofType:type inDirectory:@&quot;char_keyboard&quot;]]]</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"> @ingroup keyboardSingleKeyModuleContant</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment"> @def PTKeyboardResources_Number(name,type)</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment"> @brief 获取 数字键盘中 按键的图片资源</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_contant.html#ga5176a0cca4ff8f28b5b7ea22055137dd">  104</a></span>&#160;<span class="preprocessor">#define PTKeyboardResources_Number(name,type) [UIImage imageWithData:[NSData dataWithContentsOfFile:[PTResourceBundle pathForResource:name ofType:type inDirectory:@&quot;number_keyboard&quot;]]]</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment"> @ingroup keyboardSingleKeyModuleEnum</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment"> * 按键的类型&lt;br/&gt;（包含 混合字符键、混合数字键、Shift ＋ 字符键、Shift ＋ 数字键、删除键、空格键、返回键、数字键）</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_enum.html#ga2833643415b6dda49b6dbda5940b8b1b">  110</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_enum.html#gga2833643415b6dda49b6dbda5940b8b1baf3ca32c15914b65ffbd6c2ca346303fd">  111</a></span>&#160;    <a class="code" href="group__keyboard_single_key_module_enum.html#gga2833643415b6dda49b6dbda5940b8b1baf3ca32c15914b65ffbd6c2ca346303fd">PTKeyType_Hybridkey_Chars</a> = 0,  <span class="comment">//!&lt; 混合字符键</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_enum.html#gga2833643415b6dda49b6dbda5940b8b1ba1cdf5c4e5c0d7d96a4756cd3c129d97b">  112</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__keyboard_single_key_module_enum.html#gga2833643415b6dda49b6dbda5940b8b1ba1cdf5c4e5c0d7d96a4756cd3c129d97b">PTKeyType_Hybridkey_NumAndS</a>,    <span class="comment">//!&lt; 混合数字键</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_enum.html#gga2833643415b6dda49b6dbda5940b8b1baa06fcdb3f41743a8eec8b996d44660d7">  113</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__keyboard_single_key_module_enum.html#gga2833643415b6dda49b6dbda5940b8b1baa06fcdb3f41743a8eec8b996d44660d7">PTKeyType_ShiftKey_Chars</a>,       <span class="comment">//!&lt; Shift键：⬆️ 小写字母键盘 和 大写字母键盘 切换；</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_enum.html#gga2833643415b6dda49b6dbda5940b8b1ba86c6076a8076cb5c9dcc14e6c2b13e93">  114</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__keyboard_single_key_module_enum.html#gga2833643415b6dda49b6dbda5940b8b1ba86c6076a8076cb5c9dcc14e6c2b13e93">PTKeyType_ShiftKey_NumAndS</a>,     <span class="comment">//!&lt; Shift键： 123 #+= 两个按键； 实现 数字、字符混合键盘 和 特殊字符键盘 的切换；</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_enum.html#gga2833643415b6dda49b6dbda5940b8b1bada139d70a81105c6addfe40728bf501c">  115</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__keyboard_single_key_module_enum.html#gga2833643415b6dda49b6dbda5940b8b1bada139d70a81105c6addfe40728bf501c">PTKeyType_DeleteKey</a>,            <span class="comment">//!&lt; 删除键</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_enum.html#gga2833643415b6dda49b6dbda5940b8b1ba28f7167a82b3e431be85aa7c39ddc6ef">  116</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__keyboard_single_key_module_enum.html#gga2833643415b6dda49b6dbda5940b8b1ba28f7167a82b3e431be85aa7c39ddc6ef">PTKeyType_NextKey</a>,              <span class="comment">//!&lt; 键盘切换按键: ABC #+123 两个按键； 实现 字母键盘 和 数字键盘 的切换；</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_enum.html#gga2833643415b6dda49b6dbda5940b8b1baadd3b5a6435a825d1ef4000376a9296e">  117</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__keyboard_single_key_module_enum.html#gga2833643415b6dda49b6dbda5940b8b1baadd3b5a6435a825d1ef4000376a9296e">PTKeyType_SpaceKey</a>,             <span class="comment">//!&lt; 空格键</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_enum.html#gga2833643415b6dda49b6dbda5940b8b1ba8aef0735dab2864fd8b176a56b8c4397">  118</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__keyboard_single_key_module_enum.html#gga2833643415b6dda49b6dbda5940b8b1ba8aef0735dab2864fd8b176a56b8c4397">PTKeyType_ReturnKey</a>,            <span class="comment">//!&lt; 完成键</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_enum.html#gga2833643415b6dda49b6dbda5940b8b1baffdaf631c904c728503f8746668fdd90">  119</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__keyboard_single_key_module_enum.html#gga2833643415b6dda49b6dbda5940b8b1baffdaf631c904c728503f8746668fdd90">PTKeyType_Num</a>,                  <span class="comment">//!&lt; 数字键</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment"></span>}<a class="code" href="group__keyboard_single_key_module_enum.html#ga2833643415b6dda49b6dbda5940b8b1b">PTKeyType</a>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment"> @ingroup keyboardSingleKeyModuleEnum</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment"> 键盘 按键种类 状态 的枚举</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_enum.html#ga744060f5e72af1661a42ae77e3d3764e">  126</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_enum.html#gga744060f5e72af1661a42ae77e3d3764ea38af6dcbabea9e18aa5c4a53692f6dfd">  127</a></span>&#160;    <a class="code" href="group__keyboard_single_key_module_enum.html#gga744060f5e72af1661a42ae77e3d3764ea38af6dcbabea9e18aa5c4a53692f6dfd">PTHybridKeyState_CHARACTERS_LOWERCASE</a> = 0,  <span class="comment">//!&lt; 小写字母键 状态</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_enum.html#gga744060f5e72af1661a42ae77e3d3764ea937dc4fa87ab3ff017cc882bf4b7eba1">  128</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__keyboard_single_key_module_enum.html#gga744060f5e72af1661a42ae77e3d3764ea937dc4fa87ab3ff017cc882bf4b7eba1">PTHybridKeyState_CHARACTERS_UPPERCASE</a>,      <span class="comment">//!&lt; 大写字母键 状态</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_enum.html#gga744060f5e72af1661a42ae77e3d3764ea45052f9e848730f1e973ab673c0dc91e">  129</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__keyboard_single_key_module_enum.html#gga744060f5e72af1661a42ae77e3d3764ea45052f9e848730f1e973ab673c0dc91e">PTHybridKeyState_NUM_SPECIAI</a>,               <span class="comment">//!&lt; 数字特殊字母键 状态</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_enum.html#gga744060f5e72af1661a42ae77e3d3764eab7bc8a679b5ea587e55aa37efb0de154">  130</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__keyboard_single_key_module_enum.html#gga744060f5e72af1661a42ae77e3d3764eab7bc8a679b5ea587e55aa37efb0de154">PTHybridKeyState_SPECIAI</a>,                   <span class="comment">//!&lt; 特殊键 状态</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_enum.html#gga744060f5e72af1661a42ae77e3d3764ea16007ce4a3347ed7ecccac93603112ed">  131</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__keyboard_single_key_module_enum.html#gga744060f5e72af1661a42ae77e3d3764ea16007ce4a3347ed7ecccac93603112ed">PTHybridKeyState_NUM</a>                        <span class="comment">//!&lt; 数字键 状态</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment"></span>}<a class="code" href="group__keyboard_single_key_module_enum.html#ga744060f5e72af1661a42ae77e3d3764e">PTHybridKeyState</a>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="comment"> @ingroup keyboardSingleKeyModuleEnum</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="comment"> * 混合键位置类型 &lt;br/&gt;（包括 左、中、右）</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_enum.html#ga14e6a0fb00eefe434b60f5190fdb9930">  138</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_enum.html#gga14e6a0fb00eefe434b60f5190fdb9930a7214c4167ad178b59090bccf33c4ab25">  139</a></span>&#160;    <a class="code" href="group__keyboard_single_key_module_enum.html#gga14e6a0fb00eefe434b60f5190fdb9930a7214c4167ad178b59090bccf33c4ab25">PTHybridKeySite_left</a> = 0,           <span class="comment">//!&lt; 左</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_enum.html#gga14e6a0fb00eefe434b60f5190fdb9930a5cdc218dbdfeb42a915062a20b604c01">  140</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__keyboard_single_key_module_enum.html#gga14e6a0fb00eefe434b60f5190fdb9930a5cdc218dbdfeb42a915062a20b604c01">PTHybridKeySite_center</a>,             <span class="comment">//!&lt; 中</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_enum.html#gga14e6a0fb00eefe434b60f5190fdb9930acd24dac303399537e00581c6466e887d">  141</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__keyboard_single_key_module_enum.html#gga14e6a0fb00eefe434b60f5190fdb9930acd24dac303399537e00581c6466e887d">PTHybridKeySite_right</a>,              <span class="comment">//!&lt; 右</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="comment"></span>}<a class="code" href="group__keyboard_single_key_module_enum.html#ga14e6a0fb00eefe434b60f5190fdb9930">PTHybridKeySite</a>;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="comment"> @ingroup keyboardSingleKeyModuleEnum</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment"> 键盘类型</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_enum.html#ga20445b301a5b93c65ca7c8214e0f497b">  148</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_enum.html#gga20445b301a5b93c65ca7c8214e0f497baede052306b4252fb8297575c670da1b2">  149</a></span>&#160;    <a class="code" href="group__keyboard_single_key_module_enum.html#gga20445b301a5b93c65ca7c8214e0f497baede052306b4252fb8297575c670da1b2">PTHybridKeyboardType_NumAndS</a>,       <span class="comment">//!&lt; 数字 字母 键盘</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="group__keyboard_single_key_module_enum.html#gga20445b301a5b93c65ca7c8214e0f497badae796c1eca951686b6fdac731ba43d1">  150</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__keyboard_single_key_module_enum.html#gga20445b301a5b93c65ca7c8214e0f497badae796c1eca951686b6fdac731ba43d1">PTHybridKeyboardType_Char</a>,          <span class="comment">//!&lt; 字母 键盘</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment"></span>}<a class="code" href="group__keyboard_single_key_module_enum.html#ga20445b301a5b93c65ca7c8214e0f497b">PTHybridKeyboardType</a>;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="comment"> @ingroup keyboardSingleKeyModuleStruct</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment"> iPhone 键盘的排列矩阵 结构体</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="struct_phone_keyboard_metrics.html">  157</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="struct_phone_keyboard_metrics.html#a3c7aa16e8479edbceb2ef094a0d0c885">  158</a></span>&#160;    CGRect <a class="code" href="struct_phone_keyboard_metrics.html#a3c7aa16e8479edbceb2ef094a0d0c885">leftShiftButtonFrame</a>;        <span class="comment">//!&lt; 左Shift按键的Frame</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="struct_phone_keyboard_metrics.html#ae20916d3daf2bcd597a5d9c90286c529">  159</a></span>&#160;<span class="comment"></span>    CGRect <a class="code" href="struct_phone_keyboard_metrics.html#ae20916d3daf2bcd597a5d9c90286c529">deleteButtonFrame</a>;           <span class="comment">//!&lt; 删除按键的Frame</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="comment"></span>    </div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="struct_phone_keyboard_metrics.html#ab3d1cd610eece3bf36b9d910005c54b6">  161</a></span>&#160;    CGRect <a class="code" href="struct_phone_keyboard_metrics.html#ab3d1cd610eece3bf36b9d910005c54b6">nextKeyboardButtonFrame</a>;     <span class="comment">//!&lt; 下一个 按键的Frame</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="struct_phone_keyboard_metrics.html#a1d97de9a774fcff7e9caada0eae9135a">  162</a></span>&#160;<span class="comment"></span>    CGRect <a class="code" href="struct_phone_keyboard_metrics.html#a1d97de9a774fcff7e9caada0eae9135a">spaceButtonFrame</a>;            <span class="comment">//!&lt; 空格键盘的Frame</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="struct_phone_keyboard_metrics.html#ae9c1ad06d4949a997ea7c74e4d8a6840">  163</a></span>&#160;<span class="comment"></span>    CGRect <a class="code" href="struct_phone_keyboard_metrics.html#ae9c1ad06d4949a997ea7c74e4d8a6840">returnButtonFrame</a>;           <span class="comment">//!&lt; 返回按键的Frame</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment"></span>    </div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="struct_phone_keyboard_metrics.html#a6695a212bb9ded81dea315a818117c27">  165</a></span>&#160;    CGFloat <a class="code" href="struct_phone_keyboard_metrics.html#a6695a212bb9ded81dea315a818117c27">cornerRadius</a>;               <span class="comment">//!&lt; 边框角度</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="struct_phone_keyboard_metrics.html#aa70195925d9a363a02b1888cbfddb1ed">  166</a></span>&#160;<span class="comment"></span>    CGSize <a class="code" href="struct_phone_keyboard_metrics.html#aa70195925d9a363a02b1888cbfddb1ed">hybridkeySize</a>;               <span class="comment">//!&lt; 按键大小</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment"></span>    </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;} <a class="code" href="struct_phone_keyboard_metrics.html">PhoneKeyboardMetrics</a>;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment"> @ingroup keyboardSingleKeyModuleStruct</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment"> * 按键所在键盘的位置 结构体：&lt;br/&gt;例如几行几列，</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="struct_p_t_section.html">  174</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="struct_p_t_section.html#a1771355b2ded3657afa9c6f1c2533c23">  175</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_p_t_section.html#a1771355b2ded3657afa9c6f1c2533c23">keyRow</a>;                         <span class="comment">//!&lt; 按键所在行</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="struct_p_t_section.html#ab9cadba3327a4e0ec44cd8ba28ea4e4b">  176</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">int</span> <a class="code" href="struct_p_t_section.html#ab9cadba3327a4e0ec44cd8ba28ea4e4b">keyColumn</a>;                      <span class="comment">//!&lt; 按键所在列</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="struct_p_t_section.html#ad3caa207d03325e64a1b6f01169f1571">  177</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__keyboard_single_key_module_enum.html#ga14e6a0fb00eefe434b60f5190fdb9930">PTHybridKeySite</a> <a class="code" href="struct_p_t_section.html#ad3caa207d03325e64a1b6f01169f1571">site</a>;               <span class="comment">//!&lt; 按键位置信息</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment"></span>} <a class="code" href="struct_p_t_section.html">PTSection</a>;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment"> @ingroup keyboardSingleKeyModuleStruct</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment"> * 按键大小，位置，类型结构体</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="struct_p_t_key_metric.html">  184</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00185"></a><span class="lineno"><a class="line" href="struct_p_t_key_metric.html#a8a231540170ae4846e8eccfe2510304b">  185</a></span>&#160;    CGRect <a class="code" href="struct_p_t_key_metric.html#a8a231540170ae4846e8eccfe2510304b">keyRect</a>;                     <span class="comment">//!&lt; 按键大小</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno"><a class="line" href="struct_p_t_key_metric.html#a99839008619b82ff01ed4a5424a98268">  186</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__keyboard_single_key_module_enum.html#ga14e6a0fb00eefe434b60f5190fdb9930">PTHybridKeySite</a> <a class="code" href="struct_p_t_key_metric.html#a99839008619b82ff01ed4a5424a98268">site</a>;               <span class="comment">//!&lt; 按键位置</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="struct_p_t_key_metric.html#ac81b6180e6e67810e1d13e0ede497317">  187</a></span>&#160;<span class="comment"></span>    <a class="code" href="struct_p_t_section.html">PTSection</a> <a class="code" href="struct_p_t_key_metric.html#ac81b6180e6e67810e1d13e0ede497317">keySection</a>;               <span class="comment">//!&lt; 按键位置</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="struct_p_t_key_metric.html#a74256cba62965308ddb1a259fd82a882">  188</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__keyboard_single_key_module_enum.html#ga2833643415b6dda49b6dbda5940b8b1b">PTKeyType</a> <a class="code" href="struct_p_t_key_metric.html#a74256cba62965308ddb1a259fd82a882">keyType</a>;                  <span class="comment">//!&lt; 按键类型</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="comment"></span>} <a class="code" href="struct_p_t_key_metric.html">PTKeyMetric</a>;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment"> @ingroup keyboardSingleKeyModuleStruct</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="comment"> 键盘 按键的排列方式 结构体</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="struct_sudoku_margin.html">  195</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00196"></a><span class="lineno"><a class="line" href="struct_sudoku_margin.html#a4bc18bd5979e340b8d7731a907a08a0e">  196</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="struct_sudoku_margin.html#a4bc18bd5979e340b8d7731a907a08a0e">keyEdgeMargin</a>;                <span class="comment">//!&lt; 边缘留白距离</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="struct_sudoku_margin.html#a1dd97f2984af17a2f56163725d27109e">  197</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">float</span> <a class="code" href="struct_sudoku_margin.html#a1dd97f2984af17a2f56163725d27109e">keyBottomMargin</a>;              <span class="comment">//!&lt; 顶部底部留白距离</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="struct_sudoku_margin.html#a55f276dbdf60fd3dcef3b66426a93a34">  198</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">float</span> <a class="code" href="struct_sudoku_margin.html#a55f276dbdf60fd3dcef3b66426a93a34">keyRowMargin</a>;                 <span class="comment">//!&lt; 行间距</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno"><a class="line" href="struct_sudoku_margin.html#af9b65e4eb711712da4556cf6d3209ac1">  199</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">float</span> <a class="code" href="struct_sudoku_margin.html#af9b65e4eb711712da4556cf6d3209ac1">keyColumnMargin</a>;              <span class="comment">//!&lt; 列间距</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="struct_sudoku_margin.html#a93a64c90198ddb583882d127b9fb24bb">  200</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">int</span> <a class="code" href="struct_sudoku_margin.html#a93a64c90198ddb583882d127b9fb24bb">rowNum</a>;                         <span class="comment">//!&lt; 行数</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="struct_sudoku_margin.html#a9a0c4322abdaf54adb28e1d621892203">  201</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">int</span> <a class="code" href="struct_sudoku_margin.html#a9a0c4322abdaf54adb28e1d621892203">columnNum</a>;                      <span class="comment">//!&lt; 列数</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="comment"></span>}<a class="code" href="struct_sudoku_margin.html">SudokuMargin</a>;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="struct_p_t_key_metric_html"><div class="ttname"><a href="struct_p_t_key_metric.html">PTKeyMetric</a></div><div class="ttdoc">按键大小，位置，类型结构体 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:184</div></div>
+<div class="ttc" id="struct_sudoku_margin_html_a4bc18bd5979e340b8d7731a907a08a0e"><div class="ttname"><a href="struct_sudoku_margin.html#a4bc18bd5979e340b8d7731a907a08a0e">SudokuMargin::keyEdgeMargin</a></div><div class="ttdeci">float keyEdgeMargin</div><div class="ttdoc">边缘留白距离 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:196</div></div>
+<div class="ttc" id="group__keyboard_single_key_module_enum_html_gga744060f5e72af1661a42ae77e3d3764ea937dc4fa87ab3ff017cc882bf4b7eba1"><div class="ttname"><a href="group__keyboard_single_key_module_enum.html#gga744060f5e72af1661a42ae77e3d3764ea937dc4fa87ab3ff017cc882bf4b7eba1">PTHybridKeyState_CHARACTERS_UPPERCASE</a></div><div class="ttdoc">大写字母键 状态 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:128</div></div>
+<div class="ttc" id="group__keyboard_single_key_module_enum_html_gga2833643415b6dda49b6dbda5940b8b1ba8aef0735dab2864fd8b176a56b8c4397"><div class="ttname"><a href="group__keyboard_single_key_module_enum.html#gga2833643415b6dda49b6dbda5940b8b1ba8aef0735dab2864fd8b176a56b8c4397">PTKeyType_ReturnKey</a></div><div class="ttdoc">完成键 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:118</div></div>
+<div class="ttc" id="struct_phone_keyboard_metrics_html_a3c7aa16e8479edbceb2ef094a0d0c885"><div class="ttname"><a href="struct_phone_keyboard_metrics.html#a3c7aa16e8479edbceb2ef094a0d0c885">PhoneKeyboardMetrics::leftShiftButtonFrame</a></div><div class="ttdeci">CGRect leftShiftButtonFrame</div><div class="ttdoc">左Shift按键的Frame </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:158</div></div>
+<div class="ttc" id="group__keyboard_single_key_module_enum_html_ga14e6a0fb00eefe434b60f5190fdb9930"><div class="ttname"><a href="group__keyboard_single_key_module_enum.html#ga14e6a0fb00eefe434b60f5190fdb9930">PTHybridKeySite</a></div><div class="ttdeci">PTHybridKeySite</div><div class="ttdoc">混合键位置类型  （包括 左、中、右） </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:138</div></div>
+<div class="ttc" id="group__keyboard_single_key_module_enum_html_ga20445b301a5b93c65ca7c8214e0f497b"><div class="ttname"><a href="group__keyboard_single_key_module_enum.html#ga20445b301a5b93c65ca7c8214e0f497b">PTHybridKeyboardType</a></div><div class="ttdeci">PTHybridKeyboardType</div><div class="ttdoc">键盘类型 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:148</div></div>
+<div class="ttc" id="struct_phone_keyboard_metrics_html_aa70195925d9a363a02b1888cbfddb1ed"><div class="ttname"><a href="struct_phone_keyboard_metrics.html#aa70195925d9a363a02b1888cbfddb1ed">PhoneKeyboardMetrics::hybridkeySize</a></div><div class="ttdeci">CGSize hybridkeySize</div><div class="ttdoc">按键大小 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:166</div></div>
+<div class="ttc" id="struct_p_t_key_metric_html_a99839008619b82ff01ed4a5424a98268"><div class="ttname"><a href="struct_p_t_key_metric.html#a99839008619b82ff01ed4a5424a98268">PTKeyMetric::site</a></div><div class="ttdeci">PTHybridKeySite site</div><div class="ttdoc">按键位置 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:186</div></div>
+<div class="ttc" id="struct_p_t_key_metric_html_a8a231540170ae4846e8eccfe2510304b"><div class="ttname"><a href="struct_p_t_key_metric.html#a8a231540170ae4846e8eccfe2510304b">PTKeyMetric::keyRect</a></div><div class="ttdeci">CGRect keyRect</div><div class="ttdoc">按键大小 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:185</div></div>
+<div class="ttc" id="group__keyboard_single_key_module_enum_html_gga2833643415b6dda49b6dbda5940b8b1baf3ca32c15914b65ffbd6c2ca346303fd"><div class="ttname"><a href="group__keyboard_single_key_module_enum.html#gga2833643415b6dda49b6dbda5940b8b1baf3ca32c15914b65ffbd6c2ca346303fd">PTKeyType_Hybridkey_Chars</a></div><div class="ttdoc">混合字符键 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:111</div></div>
+<div class="ttc" id="group__keyboard_single_key_module_enum_html_gga744060f5e72af1661a42ae77e3d3764eab7bc8a679b5ea587e55aa37efb0de154"><div class="ttname"><a href="group__keyboard_single_key_module_enum.html#gga744060f5e72af1661a42ae77e3d3764eab7bc8a679b5ea587e55aa37efb0de154">PTHybridKeyState_SPECIAI</a></div><div class="ttdoc">特殊键 状态 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:130</div></div>
+<div class="ttc" id="group__keyboard_single_key_module_enum_html_gga14e6a0fb00eefe434b60f5190fdb9930a5cdc218dbdfeb42a915062a20b604c01"><div class="ttname"><a href="group__keyboard_single_key_module_enum.html#gga14e6a0fb00eefe434b60f5190fdb9930a5cdc218dbdfeb42a915062a20b604c01">PTHybridKeySite_center</a></div><div class="ttdoc">中 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:140</div></div>
+<div class="ttc" id="group__keyboard_single_key_module_enum_html_gga2833643415b6dda49b6dbda5940b8b1bada139d70a81105c6addfe40728bf501c"><div class="ttname"><a href="group__keyboard_single_key_module_enum.html#gga2833643415b6dda49b6dbda5940b8b1bada139d70a81105c6addfe40728bf501c">PTKeyType_DeleteKey</a></div><div class="ttdoc">删除键 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:115</div></div>
+<div class="ttc" id="struct_phone_keyboard_metrics_html_ae9c1ad06d4949a997ea7c74e4d8a6840"><div class="ttname"><a href="struct_phone_keyboard_metrics.html#ae9c1ad06d4949a997ea7c74e4d8a6840">PhoneKeyboardMetrics::returnButtonFrame</a></div><div class="ttdeci">CGRect returnButtonFrame</div><div class="ttdoc">返回按键的Frame </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:163</div></div>
+<div class="ttc" id="group__keyboard_single_key_module_enum_html_gga2833643415b6dda49b6dbda5940b8b1ba28f7167a82b3e431be85aa7c39ddc6ef"><div class="ttname"><a href="group__keyboard_single_key_module_enum.html#gga2833643415b6dda49b6dbda5940b8b1ba28f7167a82b3e431be85aa7c39ddc6ef">PTKeyType_NextKey</a></div><div class="ttdoc">键盘切换按键: ABC #+123 两个按键； 实现 字母键盘 和 数字键盘 的切换； </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:116</div></div>
+<div class="ttc" id="struct_p_t_section_html_ad3caa207d03325e64a1b6f01169f1571"><div class="ttname"><a href="struct_p_t_section.html#ad3caa207d03325e64a1b6f01169f1571">PTSection::site</a></div><div class="ttdeci">PTHybridKeySite site</div><div class="ttdoc">按键位置信息 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:177</div></div>
+<div class="ttc" id="group__keyboard_single_key_module_enum_html_gga14e6a0fb00eefe434b60f5190fdb9930acd24dac303399537e00581c6466e887d"><div class="ttname"><a href="group__keyboard_single_key_module_enum.html#gga14e6a0fb00eefe434b60f5190fdb9930acd24dac303399537e00581c6466e887d">PTHybridKeySite_right</a></div><div class="ttdoc">右 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:141</div></div>
+<div class="ttc" id="struct_sudoku_margin_html"><div class="ttname"><a href="struct_sudoku_margin.html">SudokuMargin</a></div><div class="ttdoc">键盘 按键的排列方式 结构体 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:195</div></div>
+<div class="ttc" id="group__keyboard_single_key_module_enum_html_gga2833643415b6dda49b6dbda5940b8b1baa06fcdb3f41743a8eec8b996d44660d7"><div class="ttname"><a href="group__keyboard_single_key_module_enum.html#gga2833643415b6dda49b6dbda5940b8b1baa06fcdb3f41743a8eec8b996d44660d7">PTKeyType_ShiftKey_Chars</a></div><div class="ttdoc">Shift键：⬆️ 小写字母键盘 和 大写字母键盘 切换； </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:113</div></div>
+<div class="ttc" id="group__keyboard_single_key_module_enum_html_gga20445b301a5b93c65ca7c8214e0f497badae796c1eca951686b6fdac731ba43d1"><div class="ttname"><a href="group__keyboard_single_key_module_enum.html#gga20445b301a5b93c65ca7c8214e0f497badae796c1eca951686b6fdac731ba43d1">PTHybridKeyboardType_Char</a></div><div class="ttdoc">字母 键盘 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:150</div></div>
+<div class="ttc" id="group__keyboard_single_key_module_enum_html_gga14e6a0fb00eefe434b60f5190fdb9930a7214c4167ad178b59090bccf33c4ab25"><div class="ttname"><a href="group__keyboard_single_key_module_enum.html#gga14e6a0fb00eefe434b60f5190fdb9930a7214c4167ad178b59090bccf33c4ab25">PTHybridKeySite_left</a></div><div class="ttdoc">左 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:139</div></div>
+<div class="ttc" id="group__keyboard_single_key_module_enum_html_ga2833643415b6dda49b6dbda5940b8b1b"><div class="ttname"><a href="group__keyboard_single_key_module_enum.html#ga2833643415b6dda49b6dbda5940b8b1b">PTKeyType</a></div><div class="ttdeci">PTKeyType</div><div class="ttdoc">按键的类型 （包含 混合字符键、混合数字键、Shift ＋ 字符键、Shift ＋ 数字键、删除键、空格键、返回键、�...</div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:110</div></div>
+<div class="ttc" id="struct_p_t_section_html_ab9cadba3327a4e0ec44cd8ba28ea4e4b"><div class="ttname"><a href="struct_p_t_section.html#ab9cadba3327a4e0ec44cd8ba28ea4e4b">PTSection::keyColumn</a></div><div class="ttdeci">int keyColumn</div><div class="ttdoc">按键所在列 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:176</div></div>
+<div class="ttc" id="group__keyboard_single_key_module_enum_html_gga2833643415b6dda49b6dbda5940b8b1ba86c6076a8076cb5c9dcc14e6c2b13e93"><div class="ttname"><a href="group__keyboard_single_key_module_enum.html#gga2833643415b6dda49b6dbda5940b8b1ba86c6076a8076cb5c9dcc14e6c2b13e93">PTKeyType_ShiftKey_NumAndS</a></div><div class="ttdoc">Shift键： 123 #+= 两个按键； 实现 数字、字符混合键盘 和 特殊字符键盘 的切换； </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:114</div></div>
+<div class="ttc" id="group__keyboard_single_key_module_enum_html_gga2833643415b6dda49b6dbda5940b8b1ba1cdf5c4e5c0d7d96a4756cd3c129d97b"><div class="ttname"><a href="group__keyboard_single_key_module_enum.html#gga2833643415b6dda49b6dbda5940b8b1ba1cdf5c4e5c0d7d96a4756cd3c129d97b">PTKeyType_Hybridkey_NumAndS</a></div><div class="ttdoc">混合数字键 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:112</div></div>
+<div class="ttc" id="struct_p_t_key_metric_html_ac81b6180e6e67810e1d13e0ede497317"><div class="ttname"><a href="struct_p_t_key_metric.html#ac81b6180e6e67810e1d13e0ede497317">PTKeyMetric::keySection</a></div><div class="ttdeci">PTSection keySection</div><div class="ttdoc">按键位置 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:187</div></div>
+<div class="ttc" id="group__keyboard_single_key_module_enum_html_ga744060f5e72af1661a42ae77e3d3764e"><div class="ttname"><a href="group__keyboard_single_key_module_enum.html#ga744060f5e72af1661a42ae77e3d3764e">PTHybridKeyState</a></div><div class="ttdeci">PTHybridKeyState</div><div class="ttdoc">键盘 按键种类 状态 的枚举 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:126</div></div>
+<div class="ttc" id="struct_phone_keyboard_metrics_html_a6695a212bb9ded81dea315a818117c27"><div class="ttname"><a href="struct_phone_keyboard_metrics.html#a6695a212bb9ded81dea315a818117c27">PhoneKeyboardMetrics::cornerRadius</a></div><div class="ttdeci">CGFloat cornerRadius</div><div class="ttdoc">边框角度 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:165</div></div>
+<div class="ttc" id="group__keyboard_single_key_module_enum_html_gga2833643415b6dda49b6dbda5940b8b1baffdaf631c904c728503f8746668fdd90"><div class="ttname"><a href="group__keyboard_single_key_module_enum.html#gga2833643415b6dda49b6dbda5940b8b1baffdaf631c904c728503f8746668fdd90">PTKeyType_Num</a></div><div class="ttdoc">数字键 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:119</div></div>
+<div class="ttc" id="struct_sudoku_margin_html_a1dd97f2984af17a2f56163725d27109e"><div class="ttname"><a href="struct_sudoku_margin.html#a1dd97f2984af17a2f56163725d27109e">SudokuMargin::keyBottomMargin</a></div><div class="ttdeci">float keyBottomMargin</div><div class="ttdoc">顶部底部留白距离 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:197</div></div>
+<div class="ttc" id="group__keyboard_single_key_module_enum_html_gga744060f5e72af1661a42ae77e3d3764ea45052f9e848730f1e973ab673c0dc91e"><div class="ttname"><a href="group__keyboard_single_key_module_enum.html#gga744060f5e72af1661a42ae77e3d3764ea45052f9e848730f1e973ab673c0dc91e">PTHybridKeyState_NUM_SPECIAI</a></div><div class="ttdoc">数字特殊字母键 状态 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:129</div></div>
+<div class="ttc" id="struct_phone_keyboard_metrics_html_ab3d1cd610eece3bf36b9d910005c54b6"><div class="ttname"><a href="struct_phone_keyboard_metrics.html#ab3d1cd610eece3bf36b9d910005c54b6">PhoneKeyboardMetrics::nextKeyboardButtonFrame</a></div><div class="ttdeci">CGRect nextKeyboardButtonFrame</div><div class="ttdoc">下一个 按键的Frame </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:161</div></div>
+<div class="ttc" id="struct_sudoku_margin_html_a9a0c4322abdaf54adb28e1d621892203"><div class="ttname"><a href="struct_sudoku_margin.html#a9a0c4322abdaf54adb28e1d621892203">SudokuMargin::columnNum</a></div><div class="ttdeci">int columnNum</div><div class="ttdoc">列数 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:201</div></div>
+<div class="ttc" id="struct_sudoku_margin_html_a55f276dbdf60fd3dcef3b66426a93a34"><div class="ttname"><a href="struct_sudoku_margin.html#a55f276dbdf60fd3dcef3b66426a93a34">SudokuMargin::keyRowMargin</a></div><div class="ttdeci">float keyRowMargin</div><div class="ttdoc">行间距 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:198</div></div>
+<div class="ttc" id="struct_phone_keyboard_metrics_html_ae20916d3daf2bcd597a5d9c90286c529"><div class="ttname"><a href="struct_phone_keyboard_metrics.html#ae20916d3daf2bcd597a5d9c90286c529">PhoneKeyboardMetrics::deleteButtonFrame</a></div><div class="ttdeci">CGRect deleteButtonFrame</div><div class="ttdoc">删除按键的Frame </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:159</div></div>
+<div class="ttc" id="struct_p_t_section_html_a1771355b2ded3657afa9c6f1c2533c23"><div class="ttname"><a href="struct_p_t_section.html#a1771355b2ded3657afa9c6f1c2533c23">PTSection::keyRow</a></div><div class="ttdeci">int keyRow</div><div class="ttdoc">按键所在行 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:175</div></div>
+<div class="ttc" id="struct_sudoku_margin_html_af9b65e4eb711712da4556cf6d3209ac1"><div class="ttname"><a href="struct_sudoku_margin.html#af9b65e4eb711712da4556cf6d3209ac1">SudokuMargin::keyColumnMargin</a></div><div class="ttdeci">float keyColumnMargin</div><div class="ttdoc">列间距 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:199</div></div>
+<div class="ttc" id="struct_p_t_section_html"><div class="ttname"><a href="struct_p_t_section.html">PTSection</a></div><div class="ttdoc">按键所在键盘的位置 结构体： 例如几行几列， </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:174</div></div>
+<div class="ttc" id="struct_sudoku_margin_html_a93a64c90198ddb583882d127b9fb24bb"><div class="ttname"><a href="struct_sudoku_margin.html#a93a64c90198ddb583882d127b9fb24bb">SudokuMargin::rowNum</a></div><div class="ttdeci">int rowNum</div><div class="ttdoc">行数 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:200</div></div>
+<div class="ttc" id="group__keyboard_single_key_module_enum_html_gga2833643415b6dda49b6dbda5940b8b1baadd3b5a6435a825d1ef4000376a9296e"><div class="ttname"><a href="group__keyboard_single_key_module_enum.html#gga2833643415b6dda49b6dbda5940b8b1baadd3b5a6435a825d1ef4000376a9296e">PTKeyType_SpaceKey</a></div><div class="ttdoc">空格键 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:117</div></div>
+<div class="ttc" id="group__keyboard_single_key_module_enum_html_gga744060f5e72af1661a42ae77e3d3764ea16007ce4a3347ed7ecccac93603112ed"><div class="ttname"><a href="group__keyboard_single_key_module_enum.html#gga744060f5e72af1661a42ae77e3d3764ea16007ce4a3347ed7ecccac93603112ed">PTHybridKeyState_NUM</a></div><div class="ttdoc">数字键 状态 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:131</div></div>
+<div class="ttc" id="struct_p_t_key_metric_html_a74256cba62965308ddb1a259fd82a882"><div class="ttname"><a href="struct_p_t_key_metric.html#a74256cba62965308ddb1a259fd82a882">PTKeyMetric::keyType</a></div><div class="ttdeci">PTKeyType keyType</div><div class="ttdoc">按键类型 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:188</div></div>
+<div class="ttc" id="struct_phone_keyboard_metrics_html"><div class="ttname"><a href="struct_phone_keyboard_metrics.html">PhoneKeyboardMetrics</a></div><div class="ttdoc">iPhone 键盘的排列矩阵 结构体 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:157</div></div>
+<div class="ttc" id="group__keyboard_single_key_module_enum_html_gga744060f5e72af1661a42ae77e3d3764ea38af6dcbabea9e18aa5c4a53692f6dfd"><div class="ttname"><a href="group__keyboard_single_key_module_enum.html#gga744060f5e72af1661a42ae77e3d3764ea38af6dcbabea9e18aa5c4a53692f6dfd">PTHybridKeyState_CHARACTERS_LOWERCASE</a></div><div class="ttdoc">小写字母键 状态 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:127</div></div>
+<div class="ttc" id="group__keyboard_single_key_module_enum_html_gga20445b301a5b93c65ca7c8214e0f497baede052306b4252fb8297575c670da1b2"><div class="ttname"><a href="group__keyboard_single_key_module_enum.html#gga20445b301a5b93c65ca7c8214e0f497baede052306b4252fb8297575c670da1b2">PTHybridKeyboardType_NumAndS</a></div><div class="ttdoc">数字 字母 键盘 </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:149</div></div>
+<div class="ttc" id="struct_phone_keyboard_metrics_html_a1d97de9a774fcff7e9caada0eae9135a"><div class="ttname"><a href="struct_phone_keyboard_metrics.html#a1d97de9a774fcff7e9caada0eae9135a">PhoneKeyboardMetrics::spaceButtonFrame</a></div><div class="ttdeci">CGRect spaceButtonFrame</div><div class="ttdoc">空格键盘的Frame </div><div class="ttdef"><b>Definition:</b> PTKeyboardConstant.h:162</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_b678e0da0dd1c076094d7b62ef5423cc.html">PT</a></li><li class="navelem"><a class="el" href="dir_7404340b2648231261d19cba1bc1e975.html">keyboard</a></li><li class="navelem"><a class="el" href="dir_c3735e2d258a30f6d9eefc8bbaac212f.html">metrics</a></li><li class="navelem"><b>PTKeyboardConstant.h</b></li>
+    <li class="footer">生成于 2016年 六月 27日 星期一 08:53:41 , 为 中信网络科技移动基础框架-iOS Lib使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>

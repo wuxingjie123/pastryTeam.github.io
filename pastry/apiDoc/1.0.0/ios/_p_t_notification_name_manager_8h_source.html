@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>中信网络科技移动基础框架-iOS Lib: PT/main/PTNotificationNameManager.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">中信网络科技移动基础框架-iOS Lib
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_p_t_notification_name_manager_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">PTNotificationNameManager.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  PTNotificationNameManager.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  PT</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by gengych on 16/3/17.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright © 2016年 中信网络科技. All rights reserved.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *  @ingroup resourceConfigModuleEnum</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *  PT框架发送的通知名称枚举   &lt;br/&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *  &lt;table&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *         &lt;td&gt;对外通知 &lt;/td&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *         &lt;td&gt;PTNotification_DATAZIP_PROGRESS&lt;/td&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> *         &lt;td&gt;对外通知 : 通知data.zip的解压进度，用于客户端UI显示进度&lt;/td&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> *         &lt;td&gt;对内通知 &lt;/td&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> *         &lt;td&gt;PTNotification_SESSION_LOGOUT&lt;/td&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> *         &lt;td&gt;对内通知 : 通知Session退出&lt;/td&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> *         &lt;td&gt;PTNotification_SESSION_LOGIN&lt;/td&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> *         &lt;td&gt;对内通知 : 通知Session登录&lt;/td&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> *         &lt;td&gt;PTNotification_LOGIN_REQUIRED&lt;/td&gt;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> *         &lt;td&gt;对内通知 : 发送需要用户登陆状态改变通知&lt;/td&gt;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"> *         &lt;td&gt;PTNotification_SESSION_TIMEOUT_NAME&lt;/td&gt;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"> *         &lt;td&gt;对内通知 : 发送session超时通知&lt;/td&gt;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"> *         &lt;td&gt;PTNotification_CONSULT_NAME&lt;/td&gt;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"> *         &lt;td&gt;对内通知 : 发送握手结果通知&lt;/td&gt;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"> *         &lt;td&gt;PTNotification_DATA_PREPARED&lt;/td&gt;</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"> *         &lt;td&gt;对内通知 : 发送菜单(menu.xml)-加载 完成通知名称：结果：成功、失败&lt;/td&gt;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"> *         &lt;td&gt;PTNotification_MENU_CHECK_NAME&lt;/td&gt;</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"> *         &lt;td&gt;对内通知 : 发送菜单(menu.xml)-检查更新 完成通知：结果：成功、失败&lt;/td&gt;</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"> *         &lt;td&gt;PTNotification_ALLMENU_CHECK_NAME&lt;/td&gt;</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"> *         &lt;td&gt;对内通知 : 发送文件(allmenu.xml)-检查更新 完成通知：结果：成功、失败&lt;/td&gt;</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"> *         &lt;td&gt;PTNotification_ALLMENU_DATA_PREPARED&lt;/td&gt;</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"> *         &lt;td&gt;对内通知 : 对内通知 : 发送文件(allmenu.xml)-加载 完成通知名称：结果：成功、失败&lt;/td&gt;</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"> *         &lt;td&gt;PTNotification_RESOURCEJSON_UPDATE&lt;/td&gt;</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"> *         &lt;td&gt;对内通知 : 发送文件(resource.json)-检查更新 完成通知名称：结果：成功、失败&lt;/td&gt;</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"> *         &lt;td&gt;PTNotification_FILELIST_CHECK_NAME&lt;/td&gt;</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"> *         &lt;td&gt;对内通知 : 发送文件(js，css，图片等文件)-检查更新 完成通知名称：结果：成功、失败&lt;/td&gt;</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"> *         &lt;td&gt;PTNotification_ReachabilityChanged&lt;/td&gt;</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> *         &lt;td&gt;对内通知 : 发送网络状态变更&lt;/td&gt;</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"> *         &lt;td&gt;PTNotification_StorageChanged&lt;/td&gt;</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"> *         &lt;td&gt;对内通知 : 发送加密存储模块是否可用状态变更 完成通知名称：结果：成功、失败&lt;/td&gt;</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment"> *         &lt;td&gt;PTNotification_CompareMenuData&lt;/td&gt;</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"> *         &lt;td&gt;对内通知 : 发送框架处理后的 menu.xml、business.xml、allmenu.xml 文件对比结果：结果：成功、失败&lt;/td&gt;</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"> *  &lt;/table&gt;</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="group__resource_config_module_enum.html#gab1bf79f136f2330bddb98f2c1902eb11">   83</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11ad19e99f2e9e70cf9eda46914a989998a">   84</a></span>&#160;    <a class="code" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11ad19e99f2e9e70cf9eda46914a989998a">PTNotification_DATAZIP_PROGRESS</a>,        <span class="comment">//!&lt; 对外通知 : 通知data.zip的解压进度，用于客户端UI显示进度；</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment"></span>    </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11a03d16ad3ff3c85e178c256ee85b3365e">   87</a></span>&#160;    <a class="code" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11a03d16ad3ff3c85e178c256ee85b3365e">PTNotification_SESSION_LOGOUT</a>,          <span class="comment">//!&lt; 对内通知 : 通知Session退出</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11afa8937a75d08ab64307dd3812178e90c">   88</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11afa8937a75d08ab64307dd3812178e90c">PTNotification_SESSION_LOGIN</a>,           <span class="comment">//!&lt; 对内通知 : 通知Session登录</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11a52684cd1123a36a036b0e2e388962948">   89</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11a52684cd1123a36a036b0e2e388962948">PTNotification_LOGIN_REQUIRED</a>,          <span class="comment">//!&lt; 对内通知 : 发送需要用户登陆状态改变通知</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11ac9b2da79d2a3cf2ea61afa87843ec0b8">   90</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11ac9b2da79d2a3cf2ea61afa87843ec0b8">PTNotification_SESSION_TIMEOUT_NAME</a>,    <span class="comment">//!&lt; 对内通知 : 发送session超时通知</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11a151201c7910e38ac44b219cb11e26afa">   91</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11a151201c7910e38ac44b219cb11e26afa">PTNotification_CONSULT_NAME</a>,            <span class="comment">//!&lt; 对内通知 : 发送握手结果通知</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11ad9c53b6a8ae267bdc527630e1c5ce35d">   92</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11ad9c53b6a8ae267bdc527630e1c5ce35d">PTNotification_DATA_PREPARED</a>,           <span class="comment">//!&lt; 对内通知 : 发送菜单(menu.xml)-加载 完成通知名称：结果：成功、失败；</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"></span>    <span class="comment">// 暂时未用</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11ae66e34ec65c84677ad1ab4bbecd46682">   94</a></span>&#160;    <a class="code" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11ae66e34ec65c84677ad1ab4bbecd46682">PTNotification_MENU_CHECK_NAME</a>,         <span class="comment">//!&lt; 对内通知 : 发送菜单(menu.xml)-检查更新 完成通知：结果：成功、失败；</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"></span>    </div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11a17966aaa6494ffad900b0b2f1facff8c">   96</a></span>&#160;    <a class="code" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11a17966aaa6494ffad900b0b2f1facff8c">PTNotification_ALLMENU_CHECK_NAME</a>,      <span class="comment">//!&lt; 对内通知 : 发送文件(allmenu.xml)-检查更新 完成通知：结果：成功、失败；</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11a0169c700b9f9a7bb542a142eff50a45b">   97</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11a0169c700b9f9a7bb542a142eff50a45b">PTNotification_ALLMENU_DATA_PREPARED</a>,   <span class="comment">//!&lt; 对内通知 : 发送文件(allmenu.xml)-加载 完成通知名称：结果：成功、失败；</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment"></span>    </div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11abed83170ad834187650329f0eddd4519">   99</a></span>&#160;    <a class="code" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11abed83170ad834187650329f0eddd4519">PTNotification_RESOURCEJSON_UPDATE</a>,     <span class="comment">//!&lt; 对内通知 : 发送文件(resource.json)-检查更新 完成通知名称：结果：成功、失败</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment"></span>    </div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11a666a923d3851b86972fbfecdadc0f74b">  101</a></span>&#160;    <a class="code" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11a666a923d3851b86972fbfecdadc0f74b">PTNotification_FILELIST_CHECK_NAME</a>,     <span class="comment">//!&lt; 对内通知 : 发送文件(js，css，图片等文件)-检查更新 完成通知名称：结果：成功、失败</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment"></span>    </div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11adf6802a12dd6088c8a56bb19f3b72969">  103</a></span>&#160;    <a class="code" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11adf6802a12dd6088c8a56bb19f3b72969">PTNotification_ReachabilityChanged</a>,     <span class="comment">//!&lt; 对内通知 : 发送网络状态变更</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment"></span>    </div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11ab3ffd8942df0a89e9f8c5f3e2cbe5fd0">  105</a></span>&#160;    <a class="code" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11ab3ffd8942df0a89e9f8c5f3e2cbe5fd0">PTNotification_StorageChanged</a>,          <span class="comment">//!&lt; 对内通知 : 发送加密存储模块是否可用状态变更 完成通知名称：结果：成功、失败</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment"></span>    </div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11a48da192ac59621edb1b57a5e33ba3bcd">  107</a></span>&#160;    <a class="code" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11a48da192ac59621edb1b57a5e33ba3bcd">PTNotification_CompareMenuData</a>,         <span class="comment">//!&lt; 对内通知 : 发送框架处理后的 menu.xml、business.xml、allmenu.xml 文件对比结果：结果：成功、失败</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;} <a class="code" href="group__resource_config_module_enum.html#gab1bf79f136f2330bddb98f2c1902eb11">PTNotificationType</a>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment"> *  @ingroup resourceConfigModuleClass</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="interface_p_t_notification_name_manager.html">  114</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_p_t_notification_name_manager.html">PTNotificationNameManager</a> : NSObject</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;+ (NSString *)getNotificationName:(<a class="code" href="group__resource_config_module_enum.html#gab1bf79f136f2330bddb98f2c1902eb11">PTNotificationType</a>)pathType;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">//+ (void)checkPath;</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">@end</span></div>
+<div class="ttc" id="group__resource_config_module_enum_html_ggab1bf79f136f2330bddb98f2c1902eb11ab3ffd8942df0a89e9f8c5f3e2cbe5fd0"><div class="ttname"><a href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11ab3ffd8942df0a89e9f8c5f3e2cbe5fd0">PTNotification_StorageChanged</a></div><div class="ttdoc">对内通知 : 发送加密存储模块是否可用状态变更 完成通知名称：结果：成功、失败 </div><div class="ttdef"><b>Definition:</b> PTNotificationNameManager.h:105</div></div>
+<div class="ttc" id="group__resource_config_module_enum_html_ggab1bf79f136f2330bddb98f2c1902eb11abed83170ad834187650329f0eddd4519"><div class="ttname"><a href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11abed83170ad834187650329f0eddd4519">PTNotification_RESOURCEJSON_UPDATE</a></div><div class="ttdoc">对内通知 : 发送文件(resource.json)-检查更新 完成通知名称：结果：成功、失败 </div><div class="ttdef"><b>Definition:</b> PTNotificationNameManager.h:99</div></div>
+<div class="ttc" id="group__resource_config_module_enum_html_ggab1bf79f136f2330bddb98f2c1902eb11ae66e34ec65c84677ad1ab4bbecd46682"><div class="ttname"><a href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11ae66e34ec65c84677ad1ab4bbecd46682">PTNotification_MENU_CHECK_NAME</a></div><div class="ttdoc">对内通知 : 发送菜单(menu.xml)-检查更新 完成通知：结果：成功、失败； </div><div class="ttdef"><b>Definition:</b> PTNotificationNameManager.h:94</div></div>
+<div class="ttc" id="group__resource_config_module_enum_html_ggab1bf79f136f2330bddb98f2c1902eb11ac9b2da79d2a3cf2ea61afa87843ec0b8"><div class="ttname"><a href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11ac9b2da79d2a3cf2ea61afa87843ec0b8">PTNotification_SESSION_TIMEOUT_NAME</a></div><div class="ttdoc">对内通知 : 发送session超时通知 </div><div class="ttdef"><b>Definition:</b> PTNotificationNameManager.h:90</div></div>
+<div class="ttc" id="group__resource_config_module_enum_html_ggab1bf79f136f2330bddb98f2c1902eb11a52684cd1123a36a036b0e2e388962948"><div class="ttname"><a href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11a52684cd1123a36a036b0e2e388962948">PTNotification_LOGIN_REQUIRED</a></div><div class="ttdoc">对内通知 : 发送需要用户登陆状态改变通知 </div><div class="ttdef"><b>Definition:</b> PTNotificationNameManager.h:89</div></div>
+<div class="ttc" id="group__resource_config_module_enum_html_ggab1bf79f136f2330bddb98f2c1902eb11afa8937a75d08ab64307dd3812178e90c"><div class="ttname"><a href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11afa8937a75d08ab64307dd3812178e90c">PTNotification_SESSION_LOGIN</a></div><div class="ttdoc">对内通知 : 通知Session登录 </div><div class="ttdef"><b>Definition:</b> PTNotificationNameManager.h:88</div></div>
+<div class="ttc" id="group__resource_config_module_enum_html_ggab1bf79f136f2330bddb98f2c1902eb11a17966aaa6494ffad900b0b2f1facff8c"><div class="ttname"><a href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11a17966aaa6494ffad900b0b2f1facff8c">PTNotification_ALLMENU_CHECK_NAME</a></div><div class="ttdoc">对内通知 : 发送文件(allmenu.xml)-检查更新 完成通知：结果：成功、失败； </div><div class="ttdef"><b>Definition:</b> PTNotificationNameManager.h:96</div></div>
+<div class="ttc" id="group__resource_config_module_enum_html_ggab1bf79f136f2330bddb98f2c1902eb11a03d16ad3ff3c85e178c256ee85b3365e"><div class="ttname"><a href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11a03d16ad3ff3c85e178c256ee85b3365e">PTNotification_SESSION_LOGOUT</a></div><div class="ttdoc">对内通知 : 通知Session退出 </div><div class="ttdef"><b>Definition:</b> PTNotificationNameManager.h:87</div></div>
+<div class="ttc" id="group__resource_config_module_enum_html_ggab1bf79f136f2330bddb98f2c1902eb11a0169c700b9f9a7bb542a142eff50a45b"><div class="ttname"><a href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11a0169c700b9f9a7bb542a142eff50a45b">PTNotification_ALLMENU_DATA_PREPARED</a></div><div class="ttdoc">对内通知 : 发送文件(allmenu.xml)-加载 完成通知名称：结果：成功、失败； </div><div class="ttdef"><b>Definition:</b> PTNotificationNameManager.h:97</div></div>
+<div class="ttc" id="interface_p_t_notification_name_manager_html"><div class="ttname"><a href="interface_p_t_notification_name_manager.html">PTNotificationNameManager</a></div><div class="ttdef"><b>Definition:</b> PTNotificationNameManager.h:114</div></div>
+<div class="ttc" id="group__resource_config_module_enum_html_ggab1bf79f136f2330bddb98f2c1902eb11adf6802a12dd6088c8a56bb19f3b72969"><div class="ttname"><a href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11adf6802a12dd6088c8a56bb19f3b72969">PTNotification_ReachabilityChanged</a></div><div class="ttdoc">对内通知 : 发送网络状态变更 </div><div class="ttdef"><b>Definition:</b> PTNotificationNameManager.h:103</div></div>
+<div class="ttc" id="group__resource_config_module_enum_html_ggab1bf79f136f2330bddb98f2c1902eb11a48da192ac59621edb1b57a5e33ba3bcd"><div class="ttname"><a href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11a48da192ac59621edb1b57a5e33ba3bcd">PTNotification_CompareMenuData</a></div><div class="ttdoc">对内通知 : 发送框架处理后的 menu.xml、business.xml、allmenu.xml 文件对比结果：结果：成功、失败 ...</div><div class="ttdef"><b>Definition:</b> PTNotificationNameManager.h:107</div></div>
+<div class="ttc" id="group__resource_config_module_enum_html_ggab1bf79f136f2330bddb98f2c1902eb11ad9c53b6a8ae267bdc527630e1c5ce35d"><div class="ttname"><a href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11ad9c53b6a8ae267bdc527630e1c5ce35d">PTNotification_DATA_PREPARED</a></div><div class="ttdoc">对内通知 : 发送菜单(menu.xml)-加载 完成通知名称：结果：成功、失败； </div><div class="ttdef"><b>Definition:</b> PTNotificationNameManager.h:92</div></div>
+<div class="ttc" id="group__resource_config_module_enum_html_ggab1bf79f136f2330bddb98f2c1902eb11ad19e99f2e9e70cf9eda46914a989998a"><div class="ttname"><a href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11ad19e99f2e9e70cf9eda46914a989998a">PTNotification_DATAZIP_PROGRESS</a></div><div class="ttdoc">对外通知 : 通知data.zip的解压进度，用于客户端UI显示进度； </div><div class="ttdef"><b>Definition:</b> PTNotificationNameManager.h:84</div></div>
+<div class="ttc" id="group__resource_config_module_enum_html_ggab1bf79f136f2330bddb98f2c1902eb11a151201c7910e38ac44b219cb11e26afa"><div class="ttname"><a href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11a151201c7910e38ac44b219cb11e26afa">PTNotification_CONSULT_NAME</a></div><div class="ttdoc">对内通知 : 发送握手结果通知 </div><div class="ttdef"><b>Definition:</b> PTNotificationNameManager.h:91</div></div>
+<div class="ttc" id="group__resource_config_module_enum_html_gab1bf79f136f2330bddb98f2c1902eb11"><div class="ttname"><a href="group__resource_config_module_enum.html#gab1bf79f136f2330bddb98f2c1902eb11">PTNotificationType</a></div><div class="ttdeci">PTNotificationType</div><div class="ttdoc">PT框架发送的通知名称枚举   </div><div class="ttdef"><b>Definition:</b> PTNotificationNameManager.h:83</div></div>
+<div class="ttc" id="group__resource_config_module_enum_html_ggab1bf79f136f2330bddb98f2c1902eb11a666a923d3851b86972fbfecdadc0f74b"><div class="ttname"><a href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11a666a923d3851b86972fbfecdadc0f74b">PTNotification_FILELIST_CHECK_NAME</a></div><div class="ttdoc">对内通知 : 发送文件(js，css，图片等文件)-检查更新 完成通知名称：结果：成功、失败 </div><div class="ttdef"><b>Definition:</b> PTNotificationNameManager.h:101</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_b678e0da0dd1c076094d7b62ef5423cc.html">PT</a></li><li class="navelem"><a class="el" href="dir_a1019c1f2787f47b2242771c1d460d6d.html">main</a></li><li class="navelem"><b>PTNotificationNameManager.h</b></li>
+    <li class="footer">生成于 2016年 六月 27日 星期一 08:53:41 , 为 中信网络科技移动基础框架-iOS Lib使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>

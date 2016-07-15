@@ -1,0 +1,5 @@
+<map id="&#45;[PTTemplateUtil getTemplateByUrl:]" name="&#45;[PTTemplateUtil getTemplateByUrl:]">
+<area shape="rect" id="node2" href="$interface_p_t_template_util.html#a17914a2ada8ad8d17646481692b383a1" title="以懒惰方式实现的单例模式 " alt="" coords="252,5,452,30"/>
+<area shape="rect" id="node3" href="$interface_p_t_configuration_manager.html#ad1b78d04bb716c95ec5f101e17c5aee5" title="根据 SERVER_URL_FROM_SETTINGS 设置读取 服务器地址 " alt="" coords="263,54,441,93"/>
+<area shape="rect" id="node4" href="$interface_p_t_device_manager.html#a71fbdc5531d11ddb151294f2e2a027cd" title="获取当前设备类型，如iPhone或iPad或iPod等 &#160;返回的字符串全部为小写 " alt="" coords="251,117,453,155"/>
+</map>

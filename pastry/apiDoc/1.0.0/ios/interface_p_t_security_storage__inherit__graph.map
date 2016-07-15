@@ -1,0 +1,5 @@
+<map id="PTSecurityStorage" name="PTSecurityStorage">
+<area shape="rect" id="node5" href="$interface_p_t_private_storage.html" title="{PTPrivateStorage\n||+ init\l+ getString:\l+ put:value:\l+ remove:\l+ commit\l+ getName\l}" alt="" coords="5,561,131,701"/>
+<area shape="rect" id="node6" href="$interface_p_t_system_storage.html" title="{PTSystemStorage\n||+ init\l+ getString:\l+ put:value:\l+ remove:\l+ commit\l+ getName\l}" alt="" coords="155,561,284,701"/>
+<area shape="rect" id="node3" href="$protocol_p_t_storage_delegate-p.html" title="PTStorageDelegate 协议 " alt="" coords="138,129,291,255"/>
+</map>

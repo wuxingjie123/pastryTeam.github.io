@@ -1,0 +1,5 @@
+<map id="+[PTPackageManager getInstance]" name="+[PTPackageManager getInstance]">
+<area shape="rect" id="node2" href="$interface_p_t_framework.html#aa610a8bcc23a49393674ba9eb6d7acb3" title="同步解压，阻塞UI线程； 解压缩模版文件包，需在所有用户界面调用之前调用，以保证所有的资源文件能够正常 ..." alt="" coords="208,5,435,30"/>
+<area shape="rect" id="node3" href="$interface_p_t_framework.html#a3784408a5c96868380b0436dc17bb90f" title="获取模版资源包的状态，来判断是否需要解压； " alt="" coords="208,54,434,79"/>
+<area shape="rect" id="node4" href="$interface_p_t_framework.html#a378f5a612fb01bd2b1b5f4df46ddad9d" title="异步解压，不阻塞UI线程（推荐使用）； 解压缩模版文件包，需在所有用户界面调用之前调用，以保证所有的资源..." alt="" coords="210,103,433,142"/>
+</map>

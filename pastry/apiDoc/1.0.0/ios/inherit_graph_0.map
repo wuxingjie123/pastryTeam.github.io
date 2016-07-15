@@ -1,0 +1,52 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="node2" href="$interface_p_t3_des.html" title="3DES加密算法,请保证密钥长度是8 " alt="" coords="429,5,499,30"/>
+<area shape="rect" id="node3" href="$interface_p_t_all_menus_manager.html" title="PTAllMenusManager" alt="" coords="392,54,536,79"/>
+<area shape="rect" id="node4" href="$interface_p_t_app_resource_manager.html" title="功能 1 初始化检查 menu.xml resource.json js文件 css文件 2 对html进行解密 " alt="" coords="379,103,549,129"/>
+<area shape="rect" id="node5" href="$interface_p_t_base64.html" title="Base64基础类 " alt="" coords="422,153,506,178"/>
+<area shape="rect" id="node6" href="$interface_p_t_b_c_d.html" title="实现BCD编码的加解码 (未实现) " alt="" coords="431,202,497,227"/>
+<area shape="rect" id="node7" href="$interface_p_t_business_manager.html" title="PTBusinessManager" alt="" coords="391,251,537,277"/>
+<area shape="rect" id="node8" href="$interface_p_t_communication_helper.html" title="PTCommunicationHelper 类 " alt="" coords="379,301,549,326"/>
+<area shape="rect" id="node9" href="$interface_p_t_com_package.html" title="功能： 1、加密 客户端发给服务器的 数据 2、加密 服务器发给客户端的 数据 " alt="" coords="405,350,523,375"/>
+<area shape="rect" id="node10" href="$interface_p_t_configuration_manager.html" title="PTConfigurationManager" alt="" coords="379,399,549,425"/>
+<area shape="rect" id="node11" href="$interface_p_t_consult_password.html" title="ddddd " alt="" coords="393,449,535,474"/>
+<area shape="rect" id="node12" href="$interface_p_t_converter.html" title="Byte数组转成不同编码方式的String. " alt="" coords="416,498,512,523"/>
+<area shape="rect" id="node13" href="$interface_p_t_data_package.html" title="功能： 解密 服务器返回给客户端的 数据 " alt="" coords="405,547,523,573"/>
+<area shape="rect" id="node14" href="$interface_p_t_developer_manager.html" title="PTDeveloperManager" alt="" coords="388,597,540,622"/>
+<area shape="rect" id="node15" href="$interface_p_t_device_manager.html" title="设备信息类 " alt="" coords="398,646,530,671"/>
+<area shape="rect" id="node16" href="$interface_p_t_framework.html" title="功能： 1、data.zip 资源文件的解压； &#160;2、初始化执行握手操作； &#160;" alt="" coords="411,695,517,721"/>
+<area shape="rect" id="node17" href="$interface_p_t_gzip.html" title="实现gzip格式的文件及数据的解压缩 " alt="" coords="431,745,497,770"/>
+<area shape="rect" id="node18" href="$interface_p_t_hash.html" title="各种Hash算法的总入口类,目前支持MD5和SHA1两种Hash算法 " alt="" coords="429,794,499,819"/>
+<area shape="rect" id="node19" href="$interface_p_t_hex.html" title="实现Hex与Byte之间的互转 " alt="" coords="433,843,495,869"/>
+<area shape="rect" id="node20" href="$interface_p_t_http_request.html" title="本类为类似于java中的interface &#160;所有的有返回值的方法，指针类型返回值均返回nil &#160;NSInteger类型的参见具体..." alt="" coords="408,893,520,918"/>
+<area shape="rect" id="node23" href="$interface_p_t_http_response.html" title="该基类中只定义接口，并未实现， 需要子类去实现这些接口 " alt="" coords="403,942,525,967"/>
+<area shape="rect" id="node26" href="$interface_p_t_key_store.html" title="PTKeyStore 类 " alt="" coords="417,991,511,1017"/>
+<area shape="rect" id="node27" href="$interface_p_t_license_key.html" title="PTLicenseKey 读取证书的内容key值 " alt="" coords="410,1041,518,1066"/>
+<area shape="rect" id="node28" href="$interface_p_t_log_manager.html" title="方法： &#160;客户端使用 宏定义 PTLogDebug 代替 NSLog &#160;文件日志路径： &#160;应用App/Library/Caches/Logs 目录下；..." alt="" coords="407,1090,521,1115"/>
+<area shape="rect" id="node29" href="$interface_p_t_m_d5.html" title="生成MD5的类 " alt="" coords="431,1139,497,1165"/>
+<area shape="rect" id="node30" href="$interface_p_t_menus_manager.html" title="menu.xml 操作类 " alt="" coords="398,1189,530,1214"/>
+<area shape="rect" id="node31" href="$interface_p_t_net_state_manager.html" title="PTNetStateManager" alt="" coords="393,1238,535,1263"/>
+<area shape="rect" id="node32" href="$interface_p_t_notification_name_manager.html" title="PTNotificationNameManager" alt="" coords="368,1287,560,1313"/>
+<area shape="rect" id="node33" href="$interface_p_t_package_manager.html" title="PTPackageManager" alt="" coords="393,1337,535,1362"/>
+<area shape="rect" id="node34" href="$interface_p_t_path_manager.html" title="PTPathManager" alt="" coords="405,1386,523,1411"/>
+<area shape="rect" id="node35" href="$interface_p_t_request_factory.html" title="完成PTHttpRequest创建 " alt="" coords="398,1435,530,1461"/>
+<area shape="rect" id="node36" href="$interface_p_t_resource_json_manager.html" title="功能： &#160;1、更新 resource.json 文件，保证文件和服务器一致； &#160;文件更新完毕，框架发送 [PTNotificationNam..." alt="" coords="376,1485,552,1510"/>
+<area shape="rect" id="node37" href="$interface_p_t_r_s_a.html" title="PTRSA类 " alt="" coords="431,1534,497,1559"/>
+<area shape="rect" id="node38" href="$interface_p_t_security_storage.html" title="该存储类只是实现数据的加密与解密，并不实现正真的存储，可以作为其他存储类的基类 " alt="" coords="397,1978,531,2003"/>
+<area shape="rect" id="node41" href="$interface_p_t_session_manager.html" title="Request请求会话管理 " alt="" coords="395,1583,533,1609"/>
+<area shape="rect" id="node42" href="$interface_p_t_s_h_a1.html" title="实现SHA1 Hash算法 " alt="" coords="427,1633,501,1658"/>
+<area shape="rect" id="node43" href="$interface_p_t_sign_tool.html" title="PTSignTool" alt="" coords="419,1682,509,1707"/>
+<area shape="rect" id="node44" href="$interface_p_t_storage_manager.html" title="PTStorageManager类 " alt="" coords="395,1731,533,1757"/>
+<area shape="rect" id="node45" href="$interface_p_t_template_util.html" title="PTTemplateUtil类 " alt="" coords="408,1781,520,1806"/>
+<area shape="rect" id="node46" href="$interface_p_t_tools.html" title="PTTools" alt="" coords="429,1830,499,1855"/>
+<area shape="rect" id="node47" href="$interface_p_t_u_u_i_d___i_n.html" title="PTUUID_IN" alt="" coords="418,1879,510,1905"/>
+<area shape="rect" id="node48" href="$interface_p_t_version_compare.html" title="比较版本号 " alt="" coords="395,1929,533,1954"/>
+<area shape="rect" id="node21" href="$interface_p_t_http_request_a_f_n.html" title="PTHttpRequestAFN" alt="" coords="613,843,752,869"/>
+<area shape="rect" id="node22" href="$interface_p_t_http_request_imp.html" title="http请求子类 " alt="" coords="615,893,750,918"/>
+<area shape="rect" id="node24" href="$interface_p_t_http_response_a_f_n.html" title="PTHttpResponseAFN" alt="" coords="608,942,757,967"/>
+<area shape="rect" id="node25" href="$interface_p_t_http_response_imp.html" title="PTHttpResponseImp类 " alt="" coords="610,991,755,1017"/>
+<area shape="rect" id="node39" href="$interface_p_t_private_storage.html" title="PTPrivateStorage" alt="" coords="619,1953,746,1978"/>
+<area shape="rect" id="node40" href="$interface_p_t_system_storage.html" title="PTSystemStorage" alt="" coords="618,2002,747,2027"/>
+<area shape="rect" id="node50" href="$protocol_p_t_framework_delegate-p.html" title="本代理协议是框架层的代理，所有方法都是可选实现的， &#160;协议实现者可以根据需要实现其中的一个、几个或全部 ..." alt="" coords="146,1879,320,1905"/>
+<area shape="rect" id="node51" href="$protocol_p_t_keyboard_delegate-p.html" title="本协议为自定义按钮中按钮按下的各项操作 " alt="" coords="151,1929,316,1954"/>
+<area shape="rect" id="node52" href="$protocol_p_t_storage_delegate-p.html" title="PTStorageDelegate 协议 " alt="" coords="156,1978,310,2003"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="模板管理组件模块" name="模板管理组件模块">
+<area shape="rect" id="node1" href="$group__template_module_struct.html" title="结构体" alt="" coords="181,4,243,30"/>
+<area shape="rect" id="node2" href="$group__template_module_enum.html" title="枚举" alt="" coords="188,54,236,80"/>
+<area shape="rect" id="node3" href="$group__template_module_class.html" title="类" alt="" coords="193,103,231,129"/>
+<area shape="rect" id="node4" href="$group__template_module_contant.html" title="常量" alt="" coords="188,152,236,178"/>
+<area shape="rect" id="node5" href="$group__template_module_protocol.html" title="协议" alt="" coords="188,202,236,228"/>
+</map>

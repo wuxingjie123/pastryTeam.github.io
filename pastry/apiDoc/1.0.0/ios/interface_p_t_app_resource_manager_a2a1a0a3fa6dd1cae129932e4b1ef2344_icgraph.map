@@ -1,0 +1,6 @@
+<map id="+[PTAppResourceManager getInstance]" name="+[PTAppResourceManager getInstance]">
+<area shape="rect" id="node2" href="$interface_p_t_framework.html#aea3dfa11ff3776a209fe4d5c054fb345" title="客户端根据需要对框架进行重启操作 &#160;重启以下模块 &#160;1、服务器配置信息模块 PTConfigurationManager &#160;2、加密..." alt="" coords="252,5,402,30"/>
+<area shape="rect" id="node3" href="$interface_p_t_framework.html#a8abc5d1d44882a2cb4b42111074e716d" title="初始化系统，实现的功能有: &#160;1、定位客户终端当前位置 &#160;2、协商初始会话密钥 &#160;3、检测文件清单列表，并下载(..." alt="" coords="691,85,880,110"/>
+<area shape="rect" id="node4" href="$interface_p_t_app_resource_manager.html#a8da4df096bd34c75a9a8ac54cdd16788" title="1、对比 allmenu.xml 和 business.xml 2、对比 menu.xml 和 business.xml " alt="" coords="237,106,416,145"/>
+<area shape="rect" id="node5" href="$interface_p_t_app_resource_manager.html#a8437a4bf0a7d7988550b80fe28fb6ee0" title="功能： &#160;1 加载menu.xml文件到树形节点 &#160;&#160;1.1 设置加载menu.xml结果状态 menuPreparedState &#160;&#160;1..." alt="" coords="464,106,643,145"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="存储器模块" name="存储器模块">
+<area shape="rect" id="node1" href="$group__storage_module_class.html" title="类" alt="" coords="153,4,191,30"/>
+<area shape="rect" id="node2" href="$group__storage_module_enum.html" title="枚举" alt="" coords="148,54,196,80"/>
+<area shape="rect" id="node3" href="$group__storage_module_struct.html" title="结构体" alt="" coords="141,103,203,129"/>
+<area shape="rect" id="node4" href="$group__storage_module_contant.html" title="常量" alt="" coords="148,152,196,178"/>
+<area shape="rect" id="node5" href="$group__storage_module_protocol.html" title="协议" alt="" coords="148,202,196,228"/>
+</map>
