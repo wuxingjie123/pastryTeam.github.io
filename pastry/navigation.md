@@ -28,15 +28,17 @@
       
 [脚手架]()
 
-  * [Pastry](cli/cli.md)
+  * [pastry](cli/cli.md)
   - - - -
-  * [Bake](pastry-cli/bake.md)
-  * [Emulator](pastry-cli/emulator.md)
-  * [Taste](pastry-cli/taste.md)
-  * [IDE](pastry-cli/ide.md)
+  * [bake](pastry-cli/bake.md)
+  * [emulator`不支持`](pastry-cli/emulator.md)
+  * [emulator-server`不支持`](pastry-cli/emulator-server.md)
+  * [ide`支持部分功能`](pastry-cli/ide.md)
+  * [taste`不支持`](pastry-cli/taste.md)
+  * [taste-server`不支持`](pastry-cli/taste-server.md)
+  * [test-server](pastry-cli/test-server.md)
 
 [常见问题](faq.md)
-[论坛](forum.md)
 
 
 <!-- counter pixel for counting visitors -->
