@@ -1,16 +1,16 @@
 # 简介(平台架构)
 
 ## JS选型
-![本地图片](/images/abstract/js_compare.png)
+![本地图片](/pastry/images/abstract/js_compare.png)
 
 ## backbone
-![本地图片](/images/abstract/js_backbone.png)
+![本地图片](/pastry/images/abstract/js_backbone.png)
 
 ## JS桥
-![本地图片](/images/abstract/js_bridge.png)
+![本地图片](/pastry/images/abstract/js_bridge.png)
 
 ## 平台整体结构
-![本地图片](/images/abstract/pastry_struct.png)
+![本地图片](/pastry/images/abstract/pastry_struct.png)
 
 ## Native框架架构
 
