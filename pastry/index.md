@@ -48,25 +48,23 @@ Pastry平台支持纯网页、微信及混合开发.
 
 Pastry平台基于以下开源框架
 
-  * [Bootstrap][bootstrap]
-  * [jQuery][jQuery]
-  * [Backbone][Backbone]
-  * [RequireJS][RequireJS]
-  * [NodeJs][NodeJs]
-  * [Gulp][Gulp]
-  * [Cordova][Cordova]
+  * [Bootstrap][net_bootstrap]
+  * [jQuery][net_jQuery]
+  * [Backbone][net_Backbone]
+  * [RequireJS][net_RequireJS]
+  * [NodeJs][net_NodeJs]
+  * [Gulp][net_Gulp]
+  * [Cordova][net_Cordova]
 
 # 版权
 
 Copyright &copy; asp.citic.com 2016
 
 [license]: https://github.com/Dynalon/mdwiki/blob/master/LICENSE.txt
-[download]: download.md
-[quickstart]: quickstart.md
-[jQuery]: http://www.jquery.org
-[bootstrap]: http://www.getbootstrap.com
-[Backbone]: #
-[RequireJS]: #
-[NodeJs]: #
-[Gulp]: #
-[Cordova]: #
+[net_jQuery]: http://www.jquery.org
+[net_bootstrap]: http://www.getbootstrap.com
+[net_Backbone]: http://backbonejs.org/
+[net_RequireJS]: http://requirejs.org/
+[net_NodeJs]: https://nodejs.org/zh-cn/
+[net_Gulp]: http://www.gulpjs.com.cn/
+[net_Cordova]: http://cordova.apache.org/

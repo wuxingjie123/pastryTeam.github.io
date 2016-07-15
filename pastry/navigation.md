@@ -38,6 +38,7 @@
 [示例代码](examples.md)
 [下载](download.md)
 [论坛](forum.md)
+[简介](abstract.md)
 
 
 <!-- counter pixel for counting visitors -->
