@@ -47,7 +47,7 @@ Pastry平台支持纯网页、微信及混合开发.
 ![平台整体结构图](/pastry/images/abstract/pastry_struct.png)
 
 ----
-## ---JS框架架构
+## ------JS框架架构
 ### 技术栈
 
 Pastry平台基于以下开源框架
@@ -73,11 +73,11 @@ Pastry平台基于以下开源框架
 ![JS桥图](/pastry/images/abstract/js_bridge.png)
 
 ----
-## ---Native框架架构
+## ------Native框架架构
 ![Native框架架构图](/pastry/images/abstract/pastry_native.png)
 
 ----
-## ---服务器框架架构
+## ------服务器框架架构
 ![服务器框架架构图](/pastry/images/abstract/pastry_server.png)
 
 ----

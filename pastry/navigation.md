@@ -22,20 +22,19 @@
   - - - -
   * [Pastry Android](apiDoc/1.0.0/android/index.html)
   * [Pastry iOS](apiDoc/1.0.0/ios/index.html)
+  
+[插件](plugins.md)
+[下载](download.md)
       
 [脚手架]()
 
   * [Pastry](cli/cli.md)
   - - - -
-  * [Bake](cli/bake.md)
-  * [Emulator](cli/emulator.md)
-  * [Taste](cli/taste.md)
-  * [IDE](cli/ide.md)
-  * [Wiki](cli/wiki.md)
-  
-[插件](plugins.md)
-[示例代码](examples.md)
-[下载](download.md)
+  * [Bake](pastry-cli/bake.md)
+  * [Emulator](pastry-cli/emulator.md)
+  * [Taste](pastry-cli/taste.md)
+  * [IDE](pastry-cli/ide.md)
+
 [常见问题](faq.md)
 [论坛](forum.md)
 
