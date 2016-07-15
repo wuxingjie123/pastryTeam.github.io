@@ -10,7 +10,7 @@
 
   * MacOSX
   
-    打开 [NodeJS][net_nodejs官网],点击硕大的绿色Download按钮，它会根据系统信息选择对应版本（.msi文件|.pkg文件）。然后像安装QQ一样安装它就可以了（安装路径随意）。
+    打开 [NodeJS][net_nodejs官网] ,点击硕大的绿色Download按钮，它会根据系统信息选择对应版本（.msi文件|.pkg文件）。然后像安装QQ一样安装它就可以了（安装路径随意）。
     安装完成在终端输入 node -v 正确显示 node 版本号，即安装成功
         node -v
 
@@ -52,6 +52,10 @@
 ### Html5 开发配置
 
 * Chrome浏览器
+
+### NodeJS 测试服务器配置
+
+* NodeJS
 
 ### Android 开发配置
 
@@ -108,6 +112,10 @@
 * FO 开发人员
 
 ## 联调流程
+### 开发模式配置
+* iOS 开发模式配置 详见 [iOS功能 - 开发模式配置][md_pastry-ios]
+* android 开发模式配置 详见 `待定`
+* h5 开发模式配置 详见 `待定`
 
 ## Wiki文档本地化
 * 支持无网状态下，浏览平台Wiki
@@ -124,11 +132,12 @@
         
         http-server
 
-    4、输入地址 http://localhost:8081/pastry 即可离线读取 Wiki；
+    4、输入地址 http://127.0.0.1:8081/pastry 即可离线读取 Wiki；
 
 [moreCli]: (cli/bake.md)
 [net_XcodeColors]: https://github.com/robbiehanson/XcodeColors
-[net_Alcatraz]:https://github.com/mneorr/Alcatraz
-[net_nodejs官网]:https://nodejs.org/zh-cn/
-[net_pastryWiki]:https://github.com/pastryTeam/pastryTeam.github.io
+[net_Alcatraz]: https://github.com/mneorr/Alcatraz
+[net_nodejs官网]: https://nodejs.org/zh-cn/
+[net_pastryWiki]: https://github.com/pastryTeam/pastryTeam.github.io
 [md_download]: download.md
+[md_pastry-ios]: tutorials/pastry-ios.md
