@@ -110,9 +110,25 @@
 ## 联调流程
 
 ## Wiki文档本地化
+* 支持无网状态下，浏览平台Wiki
+
+    1、进入 [pastry wiki Github][net_pastryWiki] 下载源码，并解压的到 pastryTeam.github.io-master 目录；
+
+    2、安装 http-server ，需要NodeJS支持
+
+        sudo npm install -g http-server
+
+    3、启动服务，浏览Wiki
+    
+        cd 下载目录/pastryTeam.github.io-master
+        
+        http-server
+
+    4、输入地址 http://localhost:8081/pastry 即可离线读取 Wiki；
 
 [moreCli]: (cli/bake.md)
 [net_XcodeColors]: https://github.com/robbiehanson/XcodeColors
 [net_Alcatraz]:https://github.com/mneorr/Alcatraz
 [net_nodejs官网]:https://nodejs.org/zh-cn/
+[net_pastryWiki]:https://github.com/pastryTeam/pastryTeam.github.io
 [md_download]: download.md
