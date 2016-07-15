@@ -1,4 +1,4 @@
 <map id="&#45;[PTFramework handShake]" name="&#45;[PTFramework handShake]">
-<area shape="rect" id="node2" href="$interface_p_t_consult_password.html#af9ae3a06544cb3fdbfa22a7cacf578f6" title="以懒惰方式实现的单例模式 " alt="" coords="255,5,409,43"/>
-<area shape="rect" id="node3" href="$interface_p_t_configuration_manager.html#ad1b78d04bb716c95ec5f101e17c5aee5" title="根据 SERVER_URL_FROM_SETTINGS 设置读取 服务器地址 " alt="" coords="243,67,421,106"/>
+<area shape="rect" id="node2" href="$interface_p_t_consult_password.html#af9ae3a06544cb3fdbfa22a7cacf578f6" title="以懒惰方式实现的单例模式 " alt="" coords="254,5,407,44"/>
+<area shape="rect" id="node3" href="$interface_p_t_configuration_manager.html#ad1b78d04bb716c95ec5f101e17c5aee5" title="根据 SERVER_URL_FROM_SETTINGS 设置读取 服务器地址 " alt="" coords="241,68,420,107"/>
 </map>

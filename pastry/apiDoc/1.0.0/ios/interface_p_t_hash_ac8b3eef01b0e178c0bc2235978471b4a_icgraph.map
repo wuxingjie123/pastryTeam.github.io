@@ -1,5 +1,5 @@
 <map id="+[PTHash getHashByStream:stream:]" name="+[PTHash getHashByStream:stream:]">
-<area shape="rect" id="node2" href="$interface_p_t_package_manager.html#a2db6072bd811289302aa3ec5145c7404" title="解压缩模版文件包，需在所有用户界面调用之前调用，以保证所有的资源文件能够正常 " alt="" coords="248,5,400,43"/>
-<area shape="rect" id="node3" href="$interface_p_t_package_manager.html#a71a4af7df3e593757396954c66343432" title="获取模版资源包的状态，来判断是否需要解压； " alt="" coords="248,67,400,106"/>
-<area shape="rect" id="node4" href="$interface_p_t_package_manager.html#a242ddbbf4a586951d54cf58aae671b8a" title="解压缩模版文件包，需在所有用户界面调用之前调用，以保证所有的资源文件能够正常 " alt="" coords="449,97,671,135"/>
+<area shape="rect" id="node2" href="$interface_p_t_package_manager.html#a2db6072bd811289302aa3ec5145c7404" title="解压缩模版文件包，需在所有用户界面调用之前调用，以保证所有的资源文件能够正常 " alt="" coords="246,5,397,44"/>
+<area shape="rect" id="node3" href="$interface_p_t_package_manager.html#a71a4af7df3e593757396954c66343432" title="获取模版资源包的状态，来判断是否需要解压； " alt="" coords="246,68,397,107"/>
+<area shape="rect" id="node4" href="$interface_p_t_package_manager.html#a242ddbbf4a586951d54cf58aae671b8a" title="解压缩模版文件包，需在所有用户界面调用之前调用，以保证所有的资源文件能够正常 " alt="" coords="445,97,668,136"/>
 </map>

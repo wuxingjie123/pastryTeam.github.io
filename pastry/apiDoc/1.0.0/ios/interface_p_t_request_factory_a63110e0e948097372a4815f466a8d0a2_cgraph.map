@@ -3,5 +3,6 @@
 <area shape="rect" id="node3" href="$interface_p_t_http_request_imp.html#a5d9269f05b467f78bbac564540875bf7" title="是否开启使用Cookies功能 " alt="" coords="267,67,410,106"/>
 <area shape="rect" id="node4" href="$interface_p_t_http_request_imp.html#adcf7f7fe77df13ba58bc0d5c5211fcbe" title="是否开启安全证书校验 " alt="" coords="235,130,442,169"/>
 <area shape="rect" id="node5" href="$interface_p_t_http_request_imp.html#ae67f757e5d9fe5cc1d265e79b531791c" title="是否允许压缩Response信息 " alt="" coords="230,193,448,231"/>
-<area shape="rect" id="node6" href="$interface_p_t_http_request_imp.html#a2af20fb205cb15aa694066f1d65521b2" title="设置请求超时时间 " alt="" coords="267,255,410,294"/>
+<area shape="rect" id="node6" href="$interface_p_t_http_request_imp.html#ac99f23bd0fd2af9461ff1cad0b0d57ce" title="添加Http Request头 " alt="" coords="247,255,430,294"/>
+<area shape="rect" id="node7" href="$interface_p_t_http_request_imp.html#a2af20fb205cb15aa694066f1d65521b2" title="设置请求超时时间 " alt="" coords="267,318,410,357"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="&#45;[PTSignTool getBase64Length:]" name="&#45;[PTSignTool getBase64Length:]">
-<area shape="rect" id="node2" href="$interface_p_t_resource_json_manager.html#a0e4ca561592a8839cd485e45315eaaab" title="读取清单文件resource.json的内容 &#160;1、获取key&#45;value键值对 &#160;2、获取version版本号 &#160;" alt="" coords="266,5,451,43"/>
-<area shape="rect" id="node3" href="$interface_p_t_resource_json_manager.html#a979ba684d53bd16784271c24d786ada4" title="框架内部方法 1、更新检测清单文件resource.json，保证resource.json为与服务器相同； &#160;2、加载 resource..." alt="" coords="498,5,683,43"/>
+<area shape="rect" id="node2" href="$interface_p_t_resource_json_manager.html#a0e4ca561592a8839cd485e45315eaaab" title="读取清单文件resource.json的内容 &#160;1、获取key&#45;value键值对 &#160;2、获取version版本号 &#160;" alt="" coords="267,5,451,44"/>
+<area shape="rect" id="node3" href="$interface_p_t_resource_json_manager.html#a979ba684d53bd16784271c24d786ada4" title="框架内部方法 1、更新检测清单文件resource.json，保证resource.json为与服务器相同； &#160;2、加载 resource..." alt="" coords="499,5,683,44"/>
 </map>

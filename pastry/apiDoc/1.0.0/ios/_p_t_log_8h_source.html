@@ -123,77 +123,78 @@ $(document).ready(function(){initNavTree('_p_t_log_8h_source.html','');});
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> @{</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> DDLogLevel ddLogLevel = DDLogLevelVerbose;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> DDLogLevel ddLogLevel = DDLogLevelOff;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// 提供客户端的 日志输出 ，替换 NSLog 方法；</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">/** </span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * 客户端使用 宏定义 PTLogDebug 代替 NSLog； </span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#define PTLogDebug(fmt, ...) do {                         \</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">NSString *file = [[NSString alloc] initWithFormat:@&quot;%s&quot;, __FILE__]; \</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">DDLogDebug((@&quot;%@(%d)&quot; fmt), [file lastPathComponent], __LINE__, ##__VA_ARGS__); \</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">} while (0)</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"> * 原生开发者不需要关注、不需要使用</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> * H5使用 宏定义 H5LogDebug 来显示来自 html 的日志；</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#define H5LogDebug(fmt, ...) do {                         \</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">NSString *file = [[NSString alloc] initWithFormat:@&quot;%s&quot;, __FILE__]; \</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">DDLogVerbose((@&quot;%@(%d)&quot; fmt), [file lastPathComponent], __LINE__, ##__VA_ARGS__); \</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">} while (0)</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">/** </span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"> * 客户端使用 宏定义 PTLogDebug 代替 NSLog； </span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group__logger_module_contant.html#ga373d076523f042c62a1ed14e2a7889d0">   45</a></span>&#160;<span class="preprocessor">#define PTLogDebug(...)</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">/** </span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"> * 原生开发者不需要关注、不需要使用</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> * H5使用 宏定义 H5LogDebug 来显示来自 html 的日志； </span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group__logger_module_contant.html#ga67728c34041448e15b548eec1179a47a">   51</a></span>&#160;<span class="preprocessor">#define H5LogDebug(...)</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">//#ifdef DEBUG</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//static const DDLogLevel ddLogLevel = DDLogLevelVerbose;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">//#else</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//static const DDLogLevel ddLogLevel = DDLogLevelOff;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">//#endif</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//// 提供客户端的 日志输出 ，替换 NSLog 方法；</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"></span><span class="comment">//#ifdef DEBUG</span><span class="comment"></span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">///** </span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"></span><span class="comment">// * 客户端使用 宏定义 PTLogDebug 代替 NSLog； </span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// */</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">//#define PTLogDebug(fmt, ...) do {                         \</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">//NSString *file = [[NSString alloc] initWithFormat:@&quot;%s&quot;, __FILE__]; \</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">//DDLogDebug((@&quot;%@(%d)&quot; fmt), [file lastPathComponent], __LINE__, ##__VA_ARGS__); \</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">//} while (0)</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">//</span><span class="comment"></span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">///**</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"></span><span class="comment">// * 原生开发者不需要关注、不需要使用</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">// * H5使用 宏定义 H5LogDebug 来显示来自 html 的日志；</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">// */</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">//#define H5LogDebug(fmt, ...) do {                         \</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">//NSString *file = [[NSString alloc] initWithFormat:@&quot;%s&quot;, __FILE__]; \</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">//DDLogVerbose((@&quot;%@(%d)&quot; fmt), [file lastPathComponent], __LINE__, ##__VA_ARGS__); \</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">//} while (0)</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">//#else</span><span class="comment"></span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">///** </span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"></span><span class="comment">// * 客户端使用 宏定义 PTLogDebug 代替 NSLog； </span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">// */</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">//#define PTLogDebug(...)</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">//</span><span class="comment"></span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">///** </span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"></span><span class="comment">// * 原生开发者不需要关注、不需要使用</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">// * H5使用 宏定义 H5LogDebug 来显示来自 html 的日志； </span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">// */</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">//#define H5LogDebug(...)</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">//#endif</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">////框架开发者使用，其他开发者不需要关注；</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"></span><span class="comment">//static const DDLogLevel ddLogLevel = DDLogLevelVerbose;</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">//</span><span class="comment"></span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">///**</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"></span><span class="comment">// * 客户端使用 宏定义 PTLogDebug 代替 NSLog；</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">// */</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">//#define PTLogDebug(fmt, ...) do {                         \</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">//NSString *file = [[NSString alloc] initWithFormat:@&quot;%s&quot;, __FILE__]; \</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">//DDLogDebug((@&quot;%@(%d)&quot; fmt), [file lastPathComponent], __LINE__, ##__VA_ARGS__); \</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">//} while (0)</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">//</span><span class="comment"></span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">///**</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"></span><span class="comment">// * 原生开发者不需要关注、不需要使用</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">// * H5使用 宏定义 H5LogDebug 来显示来自 html 的日志；</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">// */</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">//#define H5LogDebug(fmt, ...) do {                         \</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">//NSString *file = [[NSString alloc] initWithFormat:@&quot;%s&quot;, __FILE__]; \</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">//DDLogVerbose((@&quot;%@(%d)&quot; fmt), [file lastPathComponent], __LINE__, ##__VA_ARGS__); \</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">//} while (0)</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">//框架开发者使用，其他开发者不需要关注；</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="group__logger_module_contant.html#ga89120793f847b5553bee2ed52e5c44bc">   59</a></span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> DDLogLevel <a class="code" href="group__logger_module_contant.html#ga89120793f847b5553bee2ed52e5c44bc">ddLogLevel</a> = DDLogLevelVerbose;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"> * 客户端使用 宏定义 PTLogDebug 代替 NSLog；</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="group__logger_module_contant.html#ga67b2d6ea877bee6a749a25490b98389a">   64</a></span>&#160;<span class="preprocessor">#define PTLogDebug(fmt, ...) do {                         \</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">NSString *file = [[NSString alloc] initWithFormat:@&quot;%s&quot;, __FILE__]; \</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">DDLogDebug((@&quot;%@(%d)&quot; fmt), [file lastPathComponent], __LINE__, ##__VA_ARGS__); \</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">} while (0)</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"> * 原生开发者不需要关注、不需要使用</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> * H5使用 宏定义 H5LogDebug 来显示来自 html 的日志；</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="group__logger_module_contant.html#ga9f37a0516f418cafabcaab6777eaed3b">   73</a></span>&#160;<span class="preprocessor">#define H5LogDebug(fmt, ...) do {                         \</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">NSString *file = [[NSString alloc] initWithFormat:@&quot;%s&quot;, __FILE__]; \</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">DDLogVerbose((@&quot;%@(%d)&quot; fmt), [file lastPathComponent], __LINE__, ##__VA_ARGS__); \</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">} while (0)</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">/*! @} */</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="ttc" id="group__logger_module_contant_html_ga89120793f847b5553bee2ed52e5c44bc"><div class="ttname"><a href="group__logger_module_contant.html#ga89120793f847b5553bee2ed52e5c44bc">ddLogLevel</a></div><div class="ttdeci">static const DDLogLevel ddLogLevel</div><div class="ttdoc">客户端使用 宏定义 PTLogDebug 代替 NSLog； </div><div class="ttdef"><b>Definition:</b> PTLog.h:59</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b678e0da0dd1c076094d7b62ef5423cc.html">PT</a></li><li class="navelem"><a class="el" href="dir_4f5709241555c9815d942685e4612db7.html">logger</a></li><li class="navelem"><b>PTLog.h</b></li>
-    <li class="footer">生成于 2016年 六月 27日 星期一 08:53:41 , 为 中信网络科技移动基础框架-iOS Lib使用 
+    <li class="footer">生成于 2016年 七月 15日 星期五 20:21:40 , 为 中信网络科技移动基础框架-iOS Lib使用 
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

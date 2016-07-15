@@ -1,5 +1,5 @@
 <map id="&#45;[PTDeviceManager getIMEI]" name="&#45;[PTDeviceManager getIMEI]">
-<area shape="rect" id="node2" href="$interface_p_t_device_manager.html#a0cf134dd3ff95185306d59119f3a4783" title="获取设备Key，从OpenUDID中截取出来的 " alt="" coords="248,5,477,30"/>
-<area shape="rect" id="node3" href="$interface_p_t_device_manager.html#a579e35542ee0256a314b0408acc033be" title="获取设备ID，同getIMEI " alt="" coords="254,54,472,79"/>
-<area shape="rect" id="node4" href="$interface_p_t_device_manager.html#acc7bd41feeccdda6f3531b3a092ccc80" title="获取组装后的设备信息，用于同前置完成初始化工作 " alt="" coords="526,47,746,86"/>
+<area shape="rect" id="node2" href="$interface_p_t_device_manager.html#a0cf134dd3ff95185306d59119f3a4783" title="获取设备Key，从OpenUDID中截取出来的 " alt="" coords="247,5,476,31"/>
+<area shape="rect" id="node3" href="$interface_p_t_device_manager.html#a579e35542ee0256a314b0408acc033be" title="获取设备ID，同getIMEI " alt="" coords="253,55,470,80"/>
+<area shape="rect" id="node4" href="$interface_p_t_device_manager.html#acc7bd41feeccdda6f3531b3a092ccc80" title="获取组装后的设备信息，用于同前置完成初始化工作 " alt="" coords="524,48,745,87"/>
 </map>

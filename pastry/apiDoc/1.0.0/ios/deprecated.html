@@ -104,17 +104,25 @@ $(document).ready(function(){initNavTree('deprecated.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
-<dt><a class="anchor" id="_deprecated000002"></a>全局 <a class="el" href="interface_p_t_app_resource_manager.html#af2172b31d4186235b8340d9b4779fb24">[PTAppResourceManager startNetworkRequest]</a>  </dt>
-<dd></dd>
 <dt><a class="anchor" id="_deprecated000001"></a>全局 <a class="el" href="interface_p_t_consult_password.html#ae1306ea59124c4629658424e48ccdfca">[PTConsultPassword getServerRandom:]</a>  </dt>
-<dd></dd>
+<dd>废除，使用 getServerRandom_New 代替； 与服务器完成密钥协商 <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">baseUrl</td><td>服务器的基地址(不带参数，如https://22.5.153.192:8080/app) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>result<br />
+ !nil 密钥协商成功<br />
+ nil 密钥协商失败<br />
+ </dd></dl>
+</dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">生成于 2016年 五月 23日 星期一 13:56:41 , 为 中信网络科技移动基础框架-iOS Lib使用 
+    <li class="footer">生成于 2016年 五月 17日 星期二 15:27:35 , 为 中信网络科技移动基础框架-iOS Lib使用 
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

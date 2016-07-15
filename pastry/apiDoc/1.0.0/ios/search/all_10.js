@@ -93,7 +93,7 @@ var searchData=
   ['ptkeytype_5fspacekey',['PTKeyType_SpaceKey',['../group__keyboard_single_key_module_enum.html#gga2833643415b6dda49b6dbda5940b8b1baadd3b5a6435a825d1ef4000376a9296e',1,'PTKeyboardConstant.h']]],
   ['ptkeyviewlayer',['PTKeyViewLayer',['../interface_p_t_key_view_layer.html',1,'']]],
   ['ptlicensekey',['PTLicenseKey',['../interface_p_t_license_key.html',1,'']]],
-  ['ptlogdebug',['PTLogDebug',['../group__logger_module_contant.html#ga373d076523f042c62a1ed14e2a7889d0',1,'PTLog.h']]],
+  ['ptlogdebug',['PTLogDebug',['../group__logger_module_contant.html#ga67b2d6ea877bee6a749a25490b98389a',1,'PTLog.h']]],
   ['ptlogmanager',['PTLogManager',['../interface_p_t_log_manager.html',1,'']]],
   ['ptmd5',['PTMD5',['../interface_p_t_m_d5.html',1,'']]],
   ['ptmenusmanager',['PTMenusManager',['../interface_p_t_menus_manager.html',1,'']]],

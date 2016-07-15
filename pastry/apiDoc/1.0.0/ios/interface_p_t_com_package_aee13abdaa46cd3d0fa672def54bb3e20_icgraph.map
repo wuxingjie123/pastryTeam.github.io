@@ -7,9 +7,8 @@
 <area shape="rect" id="node7" href="$interface_p_t_communication_helper.html#abade23424dfb3eb35bf3ae56276f2dd0" title="发送异步业务请求 " alt="" coords="528,233,710,285"/>
 <area shape="rect" id="node8" href="$interface_p_t_communication_helper.html#ab8d6ca3b8f347dd2b10e82a56af72ef1" title="发送异步业务请求 " alt="" coords="528,309,710,361"/>
 <area shape="rect" id="node9" href="$interface_p_t_communication_helper.html#ae7e1cd39e9f8cad77aca7dea5c9b6b12" title="发送异步业务请求 " alt="" coords="528,385,710,437"/>
-<area shape="rect" id="node10" href="$interface_p_t_consult_password.html#ae1306ea59124c4629658424e48ccdfca" title="与服务器完成密钥协商:废除，使用 getServerRandom_New 代替； " alt="" coords="544,461,694,499"/>
+<area shape="rect" id="node10" href="$interface_p_t_consult_password.html#ae1306ea59124c4629658424e48ccdfca" title="&#45;[PTConsultPassword\l getServerRandom:]" alt="" coords="544,461,694,499"/>
 <area shape="rect" id="node12" href="$interface_p_t_consult_password.html#a24d6d50f4d652dcc6d951f6956e9e8b4" title="与服务器完成密钥协商 " alt="" coords="531,523,706,562"/>
 <area shape="rect" id="node11" href="$interface_p_t_app_resource_manager.html#af2172b31d4186235b8340d9b4779fb24" title="初始化的网络请求 &#160;&#160;1 初始化会话密钥 &#160;2 检测文件 resource.json 清单列表，并下载(如需要) &#160;3 握手成功 ：..." alt="" coords="763,461,941,499"/>
-<area shape="rect" id="node13" href="$interface_p_t_framework.html#aa7c8a5c584923fd70272b3d29408e8a9" title="密钥协商 " alt="" coords="758,526,946,551"/>
-<area shape="rect" id="node14" href="$interface_p_t_app_resource_manager.html#a0a2a428a54b167d519428d4cbb3e9b66" title="初始化的网络请求 &#160;&#160;1 初始化会话密钥 &#160;2 检测文件 resource.json 清单列表，并下载(如需要) &#160;3 对js、css等..." alt="" coords="758,575,946,614"/>
+<area shape="rect" id="node13" href="$interface_p_t_framework.html#aa7c8a5c584923fd70272b3d29408e8a9" title="密钥协商 " alt="" coords="758,530,946,555"/>
 </map>
