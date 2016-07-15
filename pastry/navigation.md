@@ -1,6 +1,6 @@
 # Pastry Wiki
 
-[关于](index.md)
+[简介](index.md)
 
 [指南]()
 
@@ -38,7 +38,6 @@
 [示例代码](examples.md)
 [下载](download.md)
 [论坛](forum.md)
-[简介](abstract.md)
 
 
 <!-- counter pixel for counting visitors -->
