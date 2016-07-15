@@ -10,7 +10,7 @@
 
   * MacOSX
   
-    打开 [nodejs官网][net_nodejs官网],点击硕大的绿色Download按钮，它会根据系统信息选择对应版本（.msi文件|.pkg文件）。然后像安装QQ一样安装它就可以了（安装路径随意）。
+    打开 [NodeJS][net_nodejs官网],点击硕大的绿色Download按钮，它会根据系统信息选择对应版本（.msi文件|.pkg文件）。然后像安装QQ一样安装它就可以了（安装路径随意）。
     安装完成在终端输入 node -v 正确显示 node 版本号，即安装成功
         node -v
 
@@ -119,7 +119,7 @@
         sudo npm install -g http-server
 
     3、启动服务，浏览Wiki
-    
+
         cd 下载目录/pastryTeam.github.io-master
         
         http-server
