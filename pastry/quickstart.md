@@ -109,6 +109,8 @@
 
 ## 联调流程
 
+## Wiki文档本地化
+
 [moreCli]: (cli/bake.md)
 [net_XcodeColors]: https://github.com/robbiehanson/XcodeColors
 [net_Alcatraz]:https://github.com/mneorr/Alcatraz

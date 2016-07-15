@@ -16,12 +16,12 @@
 
 [API 文档]()
 
-  * [Pastry JS (pc)](pastry/apiDoc/1.0.0/pc/index.html)
-  * [Pastry JS (mobile)](pastry/apiDoc/1.0.0/mobile/index.html)
-  * [Pastry JS (wx)](pastry/apiDoc/1.0.0/wx/index.html)
+  * [Pastry JS (pc)](apiDoc/1.0.0/pc/index.html)
+  * [Pastry JS (mobile)](apiDoc/1.0.0/mobile/index.html)
+  * [Pastry JS (wx)](apiDoc/1.0.0/wx/index.html)
   - - - -
-  * [Pastry Android](pastry/apiDoc/1.0.0/android/index.html)
-  * [Pastry iOS](pastry/apiDoc/1.0.0/ios/index.html)
+  * [Pastry Android](apiDoc/1.0.0/android/index.html)
+  * [Pastry iOS](apiDoc/1.0.0/ios/index.html)
       
 [脚手架]()
 
