@@ -21,6 +21,22 @@
 
   * 下载 [pastry脚手架][md_download] 到任意目录并解压缩
 
+    目录结构
+    
+        pastry
+         ┣ bin                    **公共文件**
+         ┣ lib                    **公共文件**
+         ┣ node_modules           **公共文件**
+         ┣ package.json           **公共文件**
+         ┗ tools
+         ┃  ┣ common_data         **公共文件** 
+         ┃  ┣ pastry-bake         **公共文件**
+         ┃  ┣ pastry-emulator     `不支持`
+         ┃  ┣ pastry-ide          **支持部分功能**
+         ┃  ┣ pastry-taste        `不支持`
+         ┃  ┗ pastry-xtools       **公共文件**
+
+
   * 配置环境变量
 
     * Windows
@@ -29,7 +45,7 @@
 
       或启动命令行窗口,cd至`pastry`目录,执行
 
-          set PATH=%PATH%;pastry目录\bin
+            set PATH=%PATH%;pastry目录\bin
 
     * MacOSX
 
@@ -37,20 +53,45 @@
 
       或启动命令行窗口,cd至`pastry`目录,执行
 
-          export PATH=$PATH:`pwd`/bin
+            export PATH=$PATH:`pwd`/bin
 
 * pastry测试服务器
 
   * 下载 [pastry测试服务器][md_download] 到任意目录并解压
+    
+    目录结构
+    
+        pastry-server
+         ┣ bin                          `公共文件(暂时无用)`
+         ┣ lib                          `公共文件(暂时无用)`
+         ┣ node_modules                 `公共文件(暂时无用)`
+         ┣ package.json                 `公共文件(暂时无用)`
+         ┗ tools
+         ┃  ┣ common_data               `公共文件(暂时无用)`
+         ┃  ┣ pastry-emulator-server    `不支持`
+         ┃  ┣ pastry-taste-server       `不支持`
+         ┃  ┗ pastry-test-server        **支持**
 
-  * 配置环境变量
 
-      * Windows
-        待定
+  * 模拟服务器数据
 
-      * MacOSX
-        待定
-          
+      * 拷贝 pastry-test-server 目录 到 任意目录
+        
+        目录结构
+    
+            pastry-test-server
+            ┣ bin                          **公共文件**
+            ┣ data                         **公共文件 : 保存握手使用的证书**
+            ┣ lib                          **公共文件**
+            ┣ package.json                 **公共文件**
+            ┗ wwwroot
+            ┃  ┣ images                    **公共文件**
+            ┃  ┣ mockdata                  **模拟数据 例如:helloworld.do.js**
+            ┃  ┗ ptframework               **用于热更新**
+
+      * 编写服务器模拟数据
+      
+          具体编写方式 详见 [服务器模拟数据指导][md_pastry-cli-test-server]
 
 ### Html5 开发配置
 
@@ -145,7 +186,6 @@
 * h5 开发模式配置 详见 `待定`
 
 ## Wiki文档本地化
-
 * 支持无网状态下，浏览平台Wiki
 
     1、进入 [pastry wiki Github][net_pastryWiki] 下载源码，并解压的到 pastryTeam.github.io-master 目录；
@@ -169,3 +209,4 @@
 [net_pastryWiki]: https://github.com/pastryTeam/pastryTeam.github.io
 [md_download]: download.md
 [md_pastry-ios]: tutorials/pastry-ios.md
+[md_pastry-cli-test-server]: pastry-cli/test-server.md
