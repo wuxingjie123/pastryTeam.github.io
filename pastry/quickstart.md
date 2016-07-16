@@ -155,6 +155,8 @@
 
   * 将创建完的项目代码保存到代码仓库；`编译项目后产生临时文件，临时文件不需要保存到代码仓库`
 
+  * 根据目录与开发人员的不同创建SVN、Git权限，确保代码管理的有序
+
 ## 编译项目
 
     cd HelloWorld
@@ -191,6 +193,11 @@
          ┣ FO                 **Java开发人员工作目录**
          ┗ pastry-test-server **NodeJS开发人员工作目录**
 
+## 演示示例
+
+  * 运行 app 浏览示例效果
+
+  * 查看 `HelloWorld/www/examples` 里代码进行业务开发
 
 ## 开发流程/人员职责
 
@@ -217,6 +224,8 @@
     * html组件开发
 
     * 基于 cordova 插件html开发
+
+    * 学习 `HelloWorld/www/examples` 里代码进行业务开发
 
 * NodeJS版 pastry测试服务器 开发人员 (H5开发人员)
 
