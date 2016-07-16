@@ -10,7 +10,7 @@
 
   * MacOSX
   
-    打开 [NodeJS][net_nodejs官网] ,点击硕大的绿色Download按钮，它会根据系统信息选择对应版本（.msi文件|.pkg文件）。然后像安装QQ一样安装它就可以了（安装路径随意）。
+    打开 [NodeJS官网][net_nodejs官网] ,点击硕大的绿色Download按钮，它会根据系统信息选择对应版本（.msi文件|.pkg文件）。然后像安装QQ一样安装它就可以了（安装路径随意）。
     
     安装完成在终端输入 node -v 正确显示 node 版本号，即安装成功
     
@@ -39,20 +39,30 @@
   * 配置环境变量
 
     * Windows
+      * 配置环境变量
 
-      将解压后的`pastry`目录路径添加到PATH环境变量中
+        将解压后的`pastry目录\bin` 路径添加到 系统环境变量 `PATH` 中
 
-      或启动命令行窗口,cd至`pastry`目录,执行
+      * 查看运行结果
 
-            set PATH=%PATH%;pastry目录\bin
+        重新启动命令行窗口，执行 pastry，配置成功将显示以下信息
+
+            usage: pastry {bake,emulator,taste,ide} ...
 
     * MacOSX
+      * 配置环境变量
 
-      为解压后的`pastry`路径创建到 `usr/local/bin` 的软连接
+        为解压后的`pastry`路径创建到 `usr/local/bin` 的软连接
 
-      启动命令行窗口,cd至`pastry`目录,执行
+        启动命令行窗口,cd至`pastry`目录,执行
 
-            ln -s `pwd`/bin/pastry /usr/local/bin
+              ln -s `pwd`/bin/pastry /usr/local/bin
+      
+      * 查看运行结果
+
+        重新启动命令行窗口，执行 pastry，配置成功将显示以下信息
+
+            usage: pastry {bake,emulator,taste,ide} ...
 
 3、 pastry测试服务器
 
