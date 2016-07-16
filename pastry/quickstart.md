@@ -103,11 +103,11 @@
 
           具体编写方式 详见 [pastry测试服务器模拟数据指导][md_pastry-cli-test-server]
 
-### Html5 开发配置
+#### Html5 开发配置
 
 * Chrome浏览器
 
-### FO 开发配置
+#### FO 开发配置
 
   * NodeJS pastry测试服务器
 
@@ -118,7 +118,7 @@
 
     * `待定`
 
-### Android 开发配置
+#### Android 开发配置
 
 * JDK 6
 
@@ -126,7 +126,7 @@
 
 * Android Studio
 
-### iOS 开发配置
+#### iOS 开发配置
 
 * 安装 XCode 7.0 以上
 
@@ -144,12 +144,16 @@
 
   * 配置 `pastry测试服务器` 到 客户端项目  `HelloWorld`
     
-        cp -rf pastry-test-server目录 指定项目目录/HelloWorld
+        cp -rf pastry-test-server目录 ./HelloWorld
 
 
   * 配置 `FO服务器` 到 客户端项目  `HelloWorld`
       
       `待定`
+
+## 保存代码到代码仓库
+
+  * 将创建完的项目代码保存到代码仓库；`编译项目后产生临时文件，临时文件不需要保存到代码仓库`
 
 ## 编译项目
 
@@ -158,6 +162,16 @@
     pastry bake build android -m debug
     
     pastry bake build ios -m debug -si 描述文件名称
+
+  * 备注
+
+    * 编译失败原因 : 证书id 是否与本机证书保持一致；
+
+          The following build commands failed:
+            Check dependencies
+          (1 failure)
+          ERROR building one of the platforms: Error code 65 for command: xcodebuild with args: -xcconfig,/Users/gengyuanchao/Desktop/PastryProduct/HelloWorld/platforms/ios/cordova/build-debug.xcconfig,-project,HelloWorld.xcodeproj,ARCHS=armv7 arm64,-target,HelloWorld,-configuration,Debug,-sdk,iphoneos,build,VALID_ARCHS=armv7 arm64,CONFIGURATION_BUILD_DIR=/Users/gengyuanchao/Desktop/PastryProduct/HelloWorld/platforms/ios/build/device,SHARED_PRECOMPS_DIR=/Users/gengyuanchao/Desktop/PastryProduct/HelloWorld/platforms/ios/build/sharedpch
+          You may not have the required environment or OS to build this project
 
 ## 更多命令
 
@@ -268,7 +282,7 @@
           pastry bake build ios -m release -si 'iPhone Developer: Min Tan (RWTVR85F43)'
 
   * android
-  
+
     * `待定`
 
 ## Wiki文档本地化
