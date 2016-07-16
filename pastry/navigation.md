@@ -7,13 +7,24 @@
   * [快速开始](quickstart.md)
   * [使用IDE`不支持`](ide.md)
 
-[功能]()
+[框架功能]()
 
   * [JavaScript](tutorials/pastry-js.md)
   - - - -
   * [Android](tutorials/pastry-android.md)
   - - - -
   * [iOS](tutorials/pastry-ios.md)
+  
+[客户端组件库]()
+
+  * [JS 组件](plugins/plugins-js.md)
+  - - - -
+  * [Cordova 组件](plugins/plugins-cordova.md)
+  - - - -
+  * [iOS 组件](plugins/plugins-ios.md)
+  * [android 组件](plugins/plugins-android.md)
+  - - - -
+  * [FO 组件](plugins/plugins-fo.md)
 
 [API 文档]()
 
@@ -24,17 +35,6 @@
   * [Pastry Android](apiDoc/1.0.0/android/index.html)
   - - - -
   * [Pastry iOS](apiDoc/1.0.0/ios/index.html)
-  
-[组件库]()
-
-  * [JS 组件](plugins/plugins-js.md)
-  - - - -
-  * [Cordova 组件](plugins/plugins-cordova.md)
-  - - - -
-  * [iOS 组件](plugins/plugins-ios.md)
-  * [android 组件](plugins/plugins-android.md)
-  - - - -
-  * [FO 组件](plugins/plugins-fo.md)
 
 [下载](download.md)
       
