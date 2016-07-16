@@ -48,11 +48,11 @@
 
     * MacOSX
 
-      将解压后的`pastry`目录路径添加到PATH环境变量中
+      为解压后的`pastry`路径创建到 `usr/local/bin` 的软连接
 
-      或启动命令行窗口,cd至`pastry`目录,执行
+      启动命令行窗口,cd至`pastry`目录,执行
 
-            export PATH=$PATH:`pwd`/bin
+            ln -s `pwd`/bin/pastry /usr/local/bin
 
 3、 pastry测试服务器
 

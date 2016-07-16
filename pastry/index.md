@@ -61,6 +61,7 @@ Pastry平台基于以下开源框架
   * [Cordova][net_Cordova]
     
 ![Native框架架构图](/pastry/images/abstract/pastry_js.png)
+
 ![Native框架架构图2](/pastry/images/abstract/pastry_js2.png)
 
 ### JS选型
