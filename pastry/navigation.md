@@ -12,6 +12,7 @@
   * [JavaScript](tutorials/pastry-js.md)
   - - - -
   * [Android](tutorials/pastry-android.md)
+  - - - -
   * [iOS](tutorials/pastry-ios.md)
 
 [API 文档]()
@@ -21,6 +22,7 @@
   * [Pastry JS (wx)](apiDoc/1.0.0/wx/index.html)
   - - - -
   * [Pastry Android](apiDoc/1.0.0/android/index.html)
+  - - - -
   * [Pastry iOS](apiDoc/1.0.0/ios/index.html)
   
 [插件](plugins.md)
