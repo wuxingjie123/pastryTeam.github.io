@@ -5,7 +5,7 @@
 [指南]()
 
   * [快速开始](quickstart.md)
-  * [使用IDE](ide.md)
+  * [使用IDE`不支持`](ide.md)
 
 [功能]()
 
