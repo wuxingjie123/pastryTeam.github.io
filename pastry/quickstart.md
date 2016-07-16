@@ -197,6 +197,8 @@
 
   * 运行 app 浏览示例效果
 
+    ![效果图](/pastry/images/ios/iosDemo.png)
+
   * 查看 `HelloWorld/www/examples` 里代码进行业务开发
 
 ## 开发流程/人员职责
