@@ -12,7 +12,7 @@
   
     打开 [NodeJS官网][net_nodejs官网] ,点击硕大的绿色Download按钮，它会根据系统信息选择对应版本（.msi文件|.pkg文件）。然后像安装QQ一样安装它就可以了（安装路径随意）。
     
-    安装完成在终端输入 node -v 正确显示 node 版本号，即安装成功
+    安装完成在终端输入 `node -v` 正确显示 node 版本号，即安装成功
     
         node -v
 
@@ -28,17 +28,18 @@
          ┣ lib                    **公共文件**
          ┣ node_modules           **公共文件**
          ┣ package.json           **公共文件**
-         ┗ tools
-         ┃  ┣ common_data         **公共文件** 
-         ┃  ┣ pastry-bake         **公共文件**
+         ┣ tools
+         ┃  ┣ common_data         **功能 : 存放h5、iOS、android项目模版数据** 
+         ┃  ┣ pastry-bake         **功能 : 项目创建、编译、打包等命令**
          ┃  ┣ pastry-emulator     `不支持`
-         ┃  ┣ pastry-ide          **支持部分功能**
+         ┃  ┣ pastry-ide          **功能 : 支持部分功能**
          ┃  ┣ pastry-taste        `不支持`
-         ┃  ┗ pastry-xtools       **公共文件**
+         ┃  ┗ pastry-xtools       **功能 : 对html、js、css等文件进行签名、加密**
 
   * 配置环境变量
 
     * Windows
+
       * 配置环境变量
 
         将解压后的`pastry目录\bin` 路径添加到 系统环境变量 `PATH` 中
@@ -50,6 +51,7 @@
             usage: pastry {bake,emulator,taste,ide} ...
 
     * MacOSX
+
       * 配置环境变量
 
         为解压后的`pastry`路径创建到 `usr/local/bin` 的软连接
@@ -64,7 +66,7 @@
 
             usage: pastry {bake,emulator,taste,ide} ...
 
-3、 pastry测试服务器
+3、 pastry测试服务器:`备注：调试过程中，网络请求异常，检查 pastry测试服务器 是否开启`
 
   * 下载 [pastry测试服务器][md_download] 到任意目录并解压
     
@@ -75,11 +77,11 @@
          ┣ lib                          `公共文件(暂时无用)`
          ┣ node_modules                 `公共文件(暂时无用)`
          ┣ package.json                 `公共文件(暂时无用)`
-         ┗ tools
+         ┣ tools
          ┃  ┣ common_data               `公共文件(暂时无用)`
          ┃  ┣ pastry-emulator-server    `不支持`
          ┃  ┣ pastry-taste-server       `不支持`
-         ┃  ┗ pastry-test-server        **支持**
+         ┃  ┗ pastry-test-server        **功能 : 开发过程中的NodeJS版pastry测试服务器 == FO服务器**
 
   * 模拟服务器数据
 
@@ -89,25 +91,32 @@
     
             pastry-test-server
             ┣ bin                          **公共文件**
-            ┣ data                         **公共文件 : 保存握手使用的证书**
+            ┣ data                         **功能 : 保存握手使用的证书**
             ┣ lib                          **公共文件**
             ┣ package.json                 **公共文件**
-            ┗ wwwroot
+            ┣ wwwroot
             ┃  ┣ images                    **公共文件**
-            ┃  ┣ mockdata                  **模拟数据 例如:helloworld.do.js**
-            ┃  ┗ ptframework               **用于热更新**
+            ┃  ┣ mockdata                  **功能 : 模拟服务器接口、数据 例如:helloworld.do.js**
+            ┃  ┗ ptframework               **功能 : 用于热更新**
 
       * 编写服务器模拟数据
 
-          具体编写方式 详见 [服务器模拟数据指导][md_pastry-cli-test-server]
+          具体编写方式 详见 [pastry测试服务器模拟数据指导][md_pastry-cli-test-server]
 
 ### Html5 开发配置
 
 * Chrome浏览器
 
-### NodeJS 测试服务器配置
+### FO 开发配置
 
-* NodeJS
+  * NodeJS pastry测试服务器
+
+    * NodeJS
+
+
+  * Java FO
+
+    * `待定`
 
 ### Android 开发配置
 
@@ -127,9 +136,20 @@
 
 ## 创建项目
 
-    cd 指定项目目录
+  * 创建客户端项目 `HelloWorld`，包含 h5、iOS、android;
+
+        cd 指定项目目录
+      
+        pastry bake create HelloWorld com.test.helloworld --add-platforms android,ios --add-plugins pastry-plugin-request,pastry-plugin-keyboard,pastry-plugin-browser
+
+  * 配置 `pastry测试服务器` 到 客户端项目  `HelloWorld`
     
-    pastry bake create HelloWorld com.test.helloworld --add-platforms android,ios --add-plugins pastry-plugin-request,pastry-plugin-keyboard,pastry-plugin-browser
+        cp -rf pastry-test-server目录 指定项目目录/HelloWorld
+
+
+  * 配置 `FO服务器` 到 客户端项目  `HelloWorld`
+      
+      `待定`
 
 ## 编译项目
 
@@ -137,7 +157,7 @@
     
     pastry bake build android -m debug
     
-    pastry bake build ios -m debug 
+    pastry bake build ios -m debug -si 描述文件名称
 
 ## 更多命令
 
@@ -153,7 +173,9 @@
          ┃  ┗ ios             **iOS开发人员工作目录**
          ┣ plugins            **插件源码目录，开发人员不需要关注**
          ┣ www                **H5开发人员工作目录**
-         ┗ config.xml         **开发人员不需要关注**
+         ┣ config.xml         **开发人员不需要关注**
+         ┣ FO                 **Java开发人员工作目录**
+         ┗ pastry-test-server **NodeJS开发人员工作目录**
 
 
 ## 开发流程/人员职责
@@ -182,11 +204,12 @@
 
     * 基于 cordova 插件html开发
 
-* NodeJS版 FO 开发人员 (H5开发人员)
+* NodeJS版 pastry测试服务器 开发人员 (H5开发人员)
 
   * 职责
 
     * 模拟服务器接口、数据开发
+
 
 * FO 开发人员(Java)
 
@@ -208,38 +231,44 @@
 
 * 使用 Chrome 调试
 
-### 真机调试流程
+### 发布给测试人员调试流程
 
   * iOS
 
-    * 修改 PastryFramework/PastryResources/release/System.plist 里的 list Item0 为 真实服务器地址;
-
     * 更新项目仓库里的项目代码到本地；
 
-    * 执行 `pastry bake build` 命令
+    * 执行 `pastry bake build ios -m debug -si 描述文件名称` 命令,
+
+      CODE_SIGN_IDENTITY = "iPhone Developer: Min Tan (RWTVR85F43)";
     
           cd 项目根目录
 
-          pastry bake build ios -m debug -si 描述文件名称
+          pastry bake build ios -m debug -si 'iPhone Developer: Min Tan (RWTVR85F43)'
+
+    * 测试人员通过修改 app 的 Setting 设置来连接不同的服务器；详见 [iOS功能 - 开发模式配置][md_pastry-ios]
 
   * android
+
     * `待定`
 
 ### 发布流程
 
   * iOS
 
-    * 修改 PastryFramework/PastryResources/release/System.plist 里的 list Item0 为 真实服务器地址;
+    * `修改 PastryFramework/PastryResources/release/System.plist 里的 list Item0 为 真实服务器地址;`
 
     * 更新项目仓库里的项目代码到本地；
 
-    * 执行 `pastry bake build` 命令
+    * 执行 `pastry bake build ios -m release -si 描述文件名称` 命令,
+
+      CODE_SIGN_IDENTITY = "iPhone Developer: Min Tan (RWTVR85F43)";
     
           cd 项目根目录
 
-          pastry bake build ios -m release -si 描述文件名称
+          pastry bake build ios -m release -si 'iPhone Developer: Min Tan (RWTVR85F43)'
 
   * android
+  
     * `待定`
 
 ## Wiki文档本地化
