@@ -27,4 +27,6 @@
 ----
 ## 更多插件
 
-cordova 插件地址
+[cordova 插件地址][net_cordovaplugins]
+
+[net_cordovaplugins]: https://github.com/apache?utf8=%E2%9C%93&query=cordova-

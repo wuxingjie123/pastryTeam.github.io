@@ -25,7 +25,17 @@
   - - - -
   * [Pastry iOS](apiDoc/1.0.0/ios/index.html)
   
-[插件](plugins.md)
+[组件库]()
+
+  * [JS 组件](plugins/plugins-js.md)
+  - - - -
+  * [Cordova 组件](plugins/plugins-cordova.md)
+  - - - -
+  * [iOS 组件](plugins/plugins-ios.md)
+  * [android 组件](plugins/plugins-android.md)
+  - - - -
+  * [FO 组件](plugins/plugins-fo.md)
+
 [下载](download.md)
       
 [脚手架]()

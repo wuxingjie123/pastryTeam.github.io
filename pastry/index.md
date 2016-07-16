@@ -126,10 +126,12 @@ Pastry平台基于以下开源框架
     待定
 
 #### 5、组件库管理
-  
+
   * H5 组件库
 
     待定
+  
+  * cordova 插件
 
   * iOS 组件库
   
@@ -139,8 +141,10 @@ Pastry平台基于以下开源框架
 
     待定 maven待调查
 
+  * NodeJS FO、 Java FO 组件库
 
-[license]: https://github.com/Dynalon/mdwiki/blob/master/LICENSE.txt
+    待定
+
 [net_jQuery]: http://www.jquery.org
 [net_bootstrap]: http://www.getbootstrap.com
 [net_Backbone]: http://backbonejs.org/

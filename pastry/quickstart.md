@@ -128,6 +128,20 @@
 
 #### iOS 开发配置
 
+* 安装 cocoapods
+
+      # 移除现有Ruby默认源
+      gem sources --remove https://rubygems.org/
+
+      # 使用新的源
+      gem sources -a https://ruby.taobao.org/
+
+      # 安装CocoaPods
+      sudo gem install cocoapods
+
+      # 初始化 pod 仓库，耗时时间长，需要等待
+      pod setup
+
 * 安装 XCode 7.0 以上
 
 * 安装 XCode插件管理工具 [Alcatraz][net_Alcatraz]
