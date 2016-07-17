@@ -34,8 +34,61 @@
 * 使用方法
 
 ----
-## 更多插件
+## cocoapods私有仓库创建指南
 
-[cordova 插件地址][net_cordovaplugins]
+* 前提条件 : cocoapods 已经正确安装完成。
 
-[net_cordovaplugins]: https://github.com/apache?utf8=%E2%9C%93&query=cordova-
+* 在 GitHub 创建私有仓库 pastrySpecs
+
+    * 将 pastrySpecs 仓库 添加到本地
+
+            # pod repo add [Private Repo Name] [GitHub HTTPS clone URL]
+            pod repo add pastrySpecs https://github.com/pastryTeam/pastrySpecs.git
+            
+            # 成功后进入到 ~/.cocoapods/repos 目录；
+            # 看到 pastrySpecs 这个目录，说明私有仓库 pastrySpecs 创建成功；
+
+* 创建iOS组件 引导页面组件(component-iOS-guide)
+    
+    * 本地任意目录 /Users/用户名/Desktop/PodProject 执行 `pod lib create component-iOS-guide` 命令
+
+            pod lib create component-iOS-guide
+
+            # 输入 该组件使用的邮箱
+            # 输入 该组件使用的语言 [ Swift / ObjC ]
+            # 选择 该组件是否包含示例Demo；YES：包含；NO：不包含；
+            # 选择 该组件使用哪种单元测试方式； [ Specta / Kiwi / None ]
+            # 选择 该组件是否支持基于view的测试；YES：支持；NO：不支持；
+            # 输入 该组件的使用的类前缀；
+
+    * 将 component-iOS-guide 上传到远程服务器；
+        
+        * 通过 GitHub客户端将 component-iOS-guide 上传到远程服务器；
+
+        * 登录 GitHub 网站，对 component-iOS-guide 工程，打tag 0.1.0 (`否则会在后续的验证中失败`)；
+    
+    * 验证 .podspec 正确性
+
+            cd component-iOS-guide
+
+            # pod ipc spec Name.podspec >> Name.podspec.json
+            # pod ipc spec component-iOS-guide.podspec >> component-iOS-guide.podspec.json
+            # rm component-iOS-guide.podspec
+
+            # 打开 component-iOS-guide.podspec 
+            #   将 <GITHUB_USERNAME> 改为 GitHub 的账号名称；
+            #   修改 summary 内容
+            #   修改 description 内容
+
+            pod lib lint
+            # 根据错误提示，修改 .podspec 文件内容
+
+    * 将 component-iOS-guide.podspec 提交到 pastrySpec 私有仓库
+
+            pod repo push /Users/gengyuanchao/Documents/Github/pastrySpecs /Users/gengyuanchao/Desktop/PodProject/component-iOS-guide/component-iOS-guide.podspec
+            
+
+
+* cocoapods 更新指定私有仓库 pastrySpecs
+
+        pod repo update pastrySpecs
