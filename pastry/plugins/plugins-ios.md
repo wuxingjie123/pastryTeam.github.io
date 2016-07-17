@@ -92,3 +92,25 @@
 * cocoapods 更新指定私有仓库 pastrySpecs
 
         pod repo update pastrySpecs
+
+* pastrySpecs 的使用
+
+    * 创建 Podfile 文件，在文件头添加 `source 'https://github.com/pastryTeam/pastrySpecs.git'  #我们自己的私有spec仓库的地址` 保证搜索的时候使用我们自己的仓库
+
+      Podfile 文件内容示例
+
+            source 'https://github.com/pastryTeam/pastrySpecs.git'  #我们自己的私有spec仓库的地址
+            #source 'https://github.com/CocoaPods/Specs.git'  #官方仓库的地址
+            #不再使用 cocoapods 官方仓库，便于以后的统一管理
+
+            platform :ios, '6.0'
+            #inhibit_all_warnings!
+            use_frameworks!
+
+            target '工程名称' do
+                pod 'component-iOS-guide', '0.1.0'
+            end
+
+            target '工程名称Tests' do
+            end
+
