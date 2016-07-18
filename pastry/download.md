@@ -14,4 +14,4 @@
 
 
 [pastry-1.0]: http://pan.baidu.com/s/1jIhNYjs
-[pastry-server1.0]: http://pan.baidu.com/s/1mi501C0
+[pastry-server1.0]: http://pan.baidu.com/s/1hrYyNT6
