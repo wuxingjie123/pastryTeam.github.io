@@ -12,7 +12,7 @@
   - - - -
   * [使用IDE`不支持`](ide.md)
 
-[框架功能]()
+[框架组件库]()
 
   * [JavaScript](tutorials/pastry-js.md)
   - - - -
