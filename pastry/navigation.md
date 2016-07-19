@@ -34,9 +34,9 @@
 
 [代码规范]()
   
-  * [JS 代码规范]()
-  * [iOS 代码规范]()
-  * [android 代码规范]()
+  * [JS 代码规范](codingSpecification/specification-js.md)
+  * [iOS 代码规范](codingSpecification/specification-ios.md)
+  * [android 代码规范](codingSpecification/specification-android.md)
 
 [API 文档]()
 
