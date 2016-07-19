@@ -20,7 +20,7 @@
   - - - -
   * [iOS](tutorials/pastry-ios.md)
   
-[客户端组件库]()
+[业务组件库]()
 
   * [JS 组件](plugins/plugins-js.md)
   - - - -
