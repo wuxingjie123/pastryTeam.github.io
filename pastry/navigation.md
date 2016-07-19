@@ -4,7 +4,12 @@
 
 [指南]()
 
-  * [快速开始](quickstart.md)
+  * [快速开始](quickstart/quickstart.md)
+  - - - -
+  * [JS指南](quickstart/quickstart-js.md)
+  * [iOS指南](quickstart/quickstart-ios.md)
+  * [android指南](quickstrt/quickstart-android.md)
+  - - - -
   * [使用IDE`不支持`](ide.md)
 
 [框架功能]()
@@ -25,6 +30,13 @@
   * [android 组件](plugins/plugins-android.md)
   - - - -
   * [FO 组件](plugins/plugins-fo.md)
+
+
+[代码规范]()
+  
+  * [JS 代码规范]()
+  * [iOS 代码规范]()
+  * [android 代码规范]()
 
 [API 文档]()
 

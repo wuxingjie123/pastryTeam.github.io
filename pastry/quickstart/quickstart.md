@@ -191,7 +191,7 @@
 
 ## 更多命令
 
-* [更多命令][moreCli]
+* [更多命令][md_moreCli]
 
 ## 工程结构
 
@@ -217,7 +217,7 @@
 
 ## 开发流程/人员职责
 
-* ios 开发人员
+* ios 开发人员 (开发流程见 [iOS指南-快速开始][md_quickstart-ios])
 
   * 职责
 
@@ -225,7 +225,7 @@
 
     * 基于 cordova 插件原生开发
 
-* android 开发人员
+* android 开发人员 (开发流程见 [android指南-快速开始][md_quickstart-android])
 
   * 职责
 
@@ -233,7 +233,7 @@
 
     * 基于 cordova 插件原生开发
 
-* H5 开发人员
+* H5 开发人员 (开发流程见 [JS指南-快速开始][md_quickstart-js])
 
   * 职责
 
@@ -328,11 +328,15 @@
 
     4、输入地址 http://127.0.0.1:8081/pastry 即可离线读取 Wiki；
 
-[moreCli]: pastry-cli/bake.md
 [net_XcodeColors]: https://github.com/robbiehanson/XcodeColors
 [net_Alcatraz]: https://github.com/mneorr/Alcatraz
 [net_nodejs官网]: https://nodejs.org/zh-cn/
 [net_pastryWiki]: https://github.com/pastryTeam/pastryTeam.github.io
-[md_download]: download.md
-[md_pastry-ios]: tutorials/pastry-ios.md
-[md_pastry-cli-test-server]: pastry-cli/test-server.md
+[md_download]: ../download.md
+[md_pastry-ios]: ../tutorials/pastry-ios.md
+[md_pastry-cli-test-server]: ../pastry-cli/test-server.md
+[md_moreCli]: ../pastry-cli/bake.md
+
+[md_quickstart-android]: quickstart-android.md
+[md_quickstart-ios]: quickstart-ios.md
+[md_quickstart-js]: quickstart-js.md
