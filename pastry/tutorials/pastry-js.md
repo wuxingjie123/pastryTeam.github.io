@@ -11,15 +11,15 @@
           ┣ demo                            **功能 : 示例 Demo**
           ┣ login                           **功能 : 示例 Demo**
           ┣ examples                        **功能 : 示例 Demo，集合所有h5框架封装组件的用法**
-          ┣ mockdata                        **功能 : pastry测试服务器示例 Demo**
+          ┣ mockdata                        **功能 : html开发人员 模拟数据请求 目录**
           ┣ make.xml                        **功能 : 对JS、CSS等文件签名、加解密的配置文件**
           ┣ pastry
-          ┃  ┣ components                   **功能 : 框架组件** 
-          ┃  ┣ core                         **功能 : 待定**
-          ┃  ┣ debug                        **功能 : 待定**
-          ┃  ┣ lib                          **功能 : 待定**
-          ┃  ┣ main.js                      **功能 : 待定**
-          ┃  ┗ plugins                      **功能 : 待定**
+          ┃  ┣ components                   **功能 : 框架自定义的组件** 
+          ┃  ┣ core                         **功能 : 框架核心代码**
+          ┃  ┣ debug                        **功能 : 框架为项目配置的debug选项集合**
+          ┃  ┣ lib                          **功能 : 框架使用的第三方库**
+          ┃  ┣ main.js                      **功能 : 框架入口**
+          ┃  ┗ plugins                      **功能 : 框架组件依赖的第三方库**
 
 
 ----
