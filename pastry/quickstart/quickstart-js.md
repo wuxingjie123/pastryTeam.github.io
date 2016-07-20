@@ -649,8 +649,8 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
     <script type="text/javascript"
             data-main="pastry/main.js"
             data-debug="@mockdata"
-            data-lib="E:base64,E:md5"
-            data-component="E:switch,E:tab">
+            data-lib="C:base64,C:md5"
+            data-component="C:switch,C:tab">
     </script>
 
 其中:
