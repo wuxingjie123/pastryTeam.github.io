@@ -69,13 +69,17 @@
 
 模拟服务端返回数据，调试业务逻辑的重要手段。
 
-1.模拟数据对客户端请求无效。
+1. 模拟数据对客户端请求无效。
 
-2.默认读取路径为 `mockdata/server/` 请求的URL对应的文件，例如：
+2. 默认读取路径为 `mockdata/server/` 请求的URL对应的文件，例如：
 
-模型请求的地址为“url: 'helloworld.do?act=getAllData'”，则模拟数据为 `mockdata/server/helloworld.do.js` 的文件中 `act=getAllData` 对应的对象。
+   模型请求的地址为“url: 'helloworld.do?act=getAllData'”，则模拟数据为 `mockdata/server/helloworld.do.js` 的文件中 `act=getAllData` 对应的对象。
 
-3.模拟数据内容如下：
+   `mockdata/server/*.js 与 pastry-test-server/wwwroot/mockdata/*.js 等同`
+
+   `将 mockdata/server/*.js 直接拷贝到 pastry-test-server/wwwroot/mockdata/*.js ，可以用于 nodejs 服务器的测试数据`
+
+3. 模拟数据内容如下：
 
     define({
         "act=getAllData": [
