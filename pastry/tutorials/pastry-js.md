@@ -8,6 +8,7 @@
          HelloWorld/www
           ┣ components                      **功能 : h5客户端 组件目录**
           ┣ css                             **功能 : h5客户端 css目录**
+          ┣ lib                             **功能 : h5客户端 第三库引用目录**
           ┣ demo                            **功能 : 示例 Demo**
           ┣ login                           **功能 : 示例 Demo**
           ┣ examples                        **功能 : 示例 Demo，集合所有h5框架封装组件的用法**
