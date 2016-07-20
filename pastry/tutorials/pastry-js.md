@@ -44,7 +44,7 @@
 在HTML模板页面中开启调试模式，需要在头部的依赖配置中加入data-debug选项，例如:
 
     <script type="text/javascript" src="pastry/js/lib/require.js"
-          data-main="pastry/js/main.js"
+          data-main="pastry/main.js"
           data-debug="@mockdata"
     ……></script>
   
