@@ -648,7 +648,7 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
     <!-- js、css引用及调试配置 -->
     <script type="text/javascript"
             data-main="pastry/main.js"
-            data-debug="@titlebar,@simdata,@simbridge,@weinre"
+            data-debug="@mockdata"
             data-lib="base64,md5"
             data-component="switch,tab"
             data-libex="custom,public"
@@ -661,12 +661,10 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
 |属性|作用|说明|
 |-----|-----|----|
 |data-main|项目配置依赖文件require|固定为pastry/main.js|
-|data-debug|项目调试选项|所有的模式是否都支持？？框架调试模块,发布时会去掉该属性 <br/>对应js文件保存路径为pastry/debug 说明:<br/>前缀 ! :仅客户端生效 <br/>前缀 @ :仅网页生效 <br/>前缀 $ :仅网页且地址以file://开头生效 <br/>前缀 # :客户端、网页均不生效 <br/>无前缀:客户端、网页均生效|
-|data-lib|引用框架第三方库|框架中定义的第三方库 <br/>对应js文件保存路径为pastry/lib/|
-|data-component|引用框架组件|框架中定义的公共组件 <br/>对应js文件保存路径为pastry/components/|
-|data-cssex|项目引用CSS|项目中定义的CSS <br/>对应css文件保存路径为css/|
-|data-libex|项目引用其它第三方库|项目中定义的第三方库 <br/>对应js文件保存路径为js/libex/ 这个目录是不是 lib目录|
-|data-componentex|项目引用其它自定义组件|项目中定义的公共组件 <br/>对应js文件保存路径为js/componentex/ 这个目录是不是 componentexs 目录|
+|data-debug|项目调试选项|框架调试模块,发布时会去掉该属性 <br/>对应js文件保存路径为 根/pastry/debug 说明:<br/>前缀 ! :仅客户端生效 <br/>前缀 @ :仅网页生效 <br/>前缀 $ :仅网页且地址以file://开头生效 <br/>前缀 # :客户端、网页均不生效 <br/>无前缀:客户端、网页均生效|
+|data-lib|项目引用 库|引入框架/项目中定义的第三方库 <br/>说明：<br/>C:框架级  对应js文件保存路径为 根/pastry/lib/ <br/>E:项目级  对应js文件保存路径为 根/lib/ <br>B:业务级  对应js文件保存路径为 当前路经/lib/|
+|data-components|项目引用 组件|引入框架/项目中定义的公共组件 <br/>说明：<br/>C:框架级  对应js文件保存路径为 根/pastry/components/ <br/>E:项目级  对应js文件保存路径为 根/components <br/>B:业务级 对应js文件保存路径为 当前路经/components/|
+|data-css|项目引用 CSS|引入框架/项目中定义的CSS <br/>说明：<br/>C:框架级  对应css文件保存路径为 根/pastry/css <br/>E:项目级  对应css文件保存路径为 根/css <br/>B:业务级 对应css文件保存路径为 当前路径/css/|
 
 `调试选项 更多信息参考` [JS 开发模式配置][md_pastry-js]
 
