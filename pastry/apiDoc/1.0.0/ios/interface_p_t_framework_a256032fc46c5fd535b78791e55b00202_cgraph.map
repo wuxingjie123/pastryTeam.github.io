@@ -1,6 +1,0 @@
-<map id="&#45;[PTFramework getMenuRootElement]" name="&#45;[PTFramework getMenuRootElement]">
-<area shape="rect" id="node2" href="$interface_p_t_menus_manager.html#aedcd5568ff7e2b1e1c30012115ed1634" title="以懒惰方式实现的单例模式 " alt="" coords="250,5,469,31"/>
-<area shape="rect" id="node3" href="$interface_p_t_menus_manager.html#afbab21c042b9fde16d8daf88181b94e0" title="获取处理后的菜单 " alt="" coords="265,55,454,93"/>
-<area shape="rect" id="node4" href="$interface_p_t_sign_tool.html#a0736ec6e62660432fad4b56d1f47084d" title="以懒惰方式实现的单例模式 " alt="" coords="524,33,701,59"/>
-<area shape="rect" id="node5" href="$interface_p_t_sign_tool.html#a8d980cbeecf3654c02b556479ead3a09" title="对 xml 文件验签 " alt="" coords="517,83,708,121"/>
-</map>

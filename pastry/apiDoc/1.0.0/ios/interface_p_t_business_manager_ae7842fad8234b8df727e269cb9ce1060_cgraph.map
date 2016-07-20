@@ -1,8 +1,0 @@
-<map id="&#45;[PTBusinessManager refreshBusinessWithHTMLUrl:andNewVersion:]" name="&#45;[PTBusinessManager refreshBusinessWithHTMLUrl:andNewVersion:]">
-<area shape="rect" id="node2" href="$interface_p_t_business_manager.html#a45463078ce6ac38bf6edc0e744bb066b" title="根据url获得Business节点 " alt="" coords="506,44,674,83"/>
-<area shape="rect" id="node6" href="$interface_p_t_business_manager.html#a3d6554e438d42a083084181b90b852b8" title="创建并添加新节点 " alt="" coords="254,108,458,160"/>
-<area shape="rect" id="node7" href="$interface_p_t_business_manager.html#aa185b266bb4ab665575ca1a733b7c770" title="强制添加一个初始UPDATE属性 " alt="" coords="258,32,454,84"/>
-<area shape="rect" id="node3" href="$interface_p_t_business_manager.html#adb313b6bd5c978648bfdcf97e6a82841" title="获取处理后的Business根节点 " alt="" coords="722,77,876,116"/>
-<area shape="rect" id="node4" href="$interface_p_t_sign_tool.html#a0736ec6e62660432fad4b56d1f47084d" title="以懒惰方式实现的单例模式 " alt="" coords="930,56,1108,81"/>
-<area shape="rect" id="node5" href="$interface_p_t_sign_tool.html#a8d980cbeecf3654c02b556479ead3a09" title="对 xml 文件验签 " alt="" coords="924,105,1115,144"/>
-</map>

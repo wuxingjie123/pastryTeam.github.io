@@ -1,4 +1,0 @@
-<map id="&#45;[PTAppResourceManager getTemplateByUrl:]" name="&#45;[PTAppResourceManager getTemplateByUrl:]">
-<area shape="rect" id="node2" href="$interface_p_t_app_resource_manager.html#a2a1a0a3fa6dd1cae129932e4b1ef2344" title="以懒惰方式实现的单例模式 " alt="" coords="242,5,424,43"/>
-<area shape="rect" id="node3" href="$interface_p_t_device_manager.html#a71fbdc5531d11ddb151294f2e2a027cd" title="获取当前设备类型，如iPhone或iPad或iPod等 &#160;返回的字符串全部为小写 " alt="" coords="233,67,434,106"/>
-</map>

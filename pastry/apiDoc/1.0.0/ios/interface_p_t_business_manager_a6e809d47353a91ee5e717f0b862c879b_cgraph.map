@@ -1,7 +1,0 @@
-<map id="&#45;[PTBusinessManager getUpdateParamsWithHTMLUrl:]" name="&#45;[PTBusinessManager getUpdateParamsWithHTMLUrl:]">
-<area shape="rect" id="node2" href="$interface_p_t_business_manager.html#a45463078ce6ac38bf6edc0e744bb066b" title="根据url获得Business节点 " alt="" coords="273,27,442,65"/>
-<area shape="rect" id="node6" href="$interface_p_t_business_manager.html#a920e39d06c44188e2ff495290538ba9d" title="获取菜单的update属性，并将该属性转为数组 " alt="" coords="281,89,434,128"/>
-<area shape="rect" id="node3" href="$interface_p_t_business_manager.html#adb313b6bd5c978648bfdcf97e6a82841" title="获取处理后的Business根节点 " alt="" coords="490,27,643,65"/>
-<area shape="rect" id="node4" href="$interface_p_t_sign_tool.html#a0736ec6e62660432fad4b56d1f47084d" title="以懒惰方式实现的单例模式 " alt="" coords="698,5,875,31"/>
-<area shape="rect" id="node5" href="$interface_p_t_sign_tool.html#a8d980cbeecf3654c02b556479ead3a09" title="对 xml 文件验签 " alt="" coords="691,55,882,93"/>
-</map>

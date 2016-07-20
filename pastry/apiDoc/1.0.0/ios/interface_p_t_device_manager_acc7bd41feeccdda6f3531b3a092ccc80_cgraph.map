@@ -1,5 +1,0 @@
-<map id="&#45;[PTDeviceManager getAssembleEquipmentId]" name="&#45;[PTDeviceManager getAssembleEquipmentId]">
-<area shape="rect" id="node2" href="$interface_p_t_device_manager.html#a579e35542ee0256a314b0408acc033be" title="获取设备ID，同getIMEI " alt="" coords="275,5,493,30"/>
-<area shape="rect" id="node4" href="$interface_p_t_device_manager.html#a38c22dd67360939d900ec8f4e74fd56c" title="获取设备MAC address " alt="" coords="287,54,481,93"/>
-<area shape="rect" id="node3" href="$interface_p_t_device_manager.html#a1a7a9990ca48c52c85ca116fb1a276be" title="获取设备IMEI号，因Apple设备不提供IMEI获取功能，因此此处获取到的IMEI是通过OpenUDID得到的 ..." alt="" coords="542,5,735,30"/>
-</map>

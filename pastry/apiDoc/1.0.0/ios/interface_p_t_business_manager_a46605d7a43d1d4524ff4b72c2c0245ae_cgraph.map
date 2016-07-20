@@ -1,8 +1,0 @@
-<map id="&#45;[PTBusinessManager loadBusinessXMLFile]" name="&#45;[PTBusinessManager loadBusinessXMLFile]">
-<area shape="rect" id="node2" href="$interface_p_t_business_manager.html#a62e58132743ea11b2796813aa1c2a76c" title="检测是否有遗留未处理的UPDATE中间状态，若有则重置 " alt="" coords="211,66,373,105"/>
-<area shape="rect" id="node3" href="$interface_p_t_business_manager.html#adb313b6bd5c978648bfdcf97e6a82841" title="获取处理后的Business根节点 " alt="" coords="422,5,575,43"/>
-<area shape="rect" id="node6" href="$interface_p_t_business_manager.html#a920e39d06c44188e2ff495290538ba9d" title="获取菜单的update属性，并将该属性转为数组 " alt="" coords="422,67,575,106"/>
-<area shape="rect" id="node7" href="$interface_p_t_business_manager.html#a30f5b2288483c1a9e1fe3b6d10a224bc" title="将update属性数组转为特定格式的字符串 " alt="" coords="422,130,575,169"/>
-<area shape="rect" id="node4" href="$interface_p_t_tools.html#a392fc7f6f30ab57a605a4a7783cea568" title="对 xml 文件验签 " alt="" coords="625,5,799,43"/>
-<area shape="rect" id="node5" href="$interface_p_t_sign_tool.html#a0736ec6e62660432fad4b56d1f47084d" title="以懒惰方式实现的单例模式 " alt="" coords="849,11,1026,37"/>
-</map>

@@ -1,3 +1,0 @@
-<map id="结构体" name="结构体">
-<area shape="rect" id="node1" href="$group__keyboard_module.html" title=" 自定义键盘，当用户在密码输入框获得焦点时，弹出自定义的加密键盘，每键入的一个值就进行一次3DES加密，再..." alt="" coords="5,4,80,30"/>
-</map>

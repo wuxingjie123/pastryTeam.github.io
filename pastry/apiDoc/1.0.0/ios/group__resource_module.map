@@ -1,9 +1,0 @@
-<map id="资源文件管理模块" name="资源文件管理模块">
-<area shape="rect" id="node1" href="$group__resource_module_contant.html" title="常量" alt="" coords="235,4,283,30"/>
-<area shape="rect" id="node2" href="$group__resource_file_module.html" title=" 用于将字节数组转换为字符串和将字符串转换为字节数组。 &#160;&#160;属性 内容 &#160;功能描述 用于将字节数组转换为字符�..." alt="" coords="182,55,336,81"/>
-<area shape="rect" id="node4" href="$group__resource_module_protocol.html" title="协议" alt="" coords="235,106,283,132"/>
-<area shape="rect" id="node5" href="$group__resource_module_enum.html" title="枚举" alt="" coords="235,155,283,181"/>
-<area shape="rect" id="node6" href="$group__resource_config_module.html" title=" 用于将字节数组转换为字符串和将字符串转换为字节数组。 &#160;&#160;属性 内容 &#160;功能描述 用于将字节数组转换为字符�..." alt="" coords="208,204,309,230"/>
-<area shape="rect" id="node7" href="$group__resource_module_struct.html" title="结构体" alt="" coords="228,254,289,280"/>
-<area shape="rect" id="node8" href="$group__resource_module_class.html" title="类" alt="" coords="239,303,278,329"/>
-</map>

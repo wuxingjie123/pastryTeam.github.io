@@ -1,6 +1,0 @@
-<map id="&#45;[PTBusinessManager refreshBusinessWithHTMLUrl:andNewVersion:]" name="&#45;[PTBusinessManager refreshBusinessWithHTMLUrl:andNewVersion:]">
-<area shape="rect" id="node2" href="$interface_p_t_business_manager.html#a3d6554e438d42a083084181b90b852b8" title="创建并添加新节点 " alt="" coords="254,5,458,57"/>
-<area shape="rect" id="node5" href="$interface_p_t_menus_manager.html#ad0d0f9ec445cec4854d0da431c459656" title="设置刷新菜单标识为True，会在refreshMenus:andBlock:方法里统一发送刷新通知 对应PTFrameworkDelegate中的h..." alt="" coords="264,81,448,120"/>
-<area shape="rect" id="node3" href="$interface_p_t_menus_manager.html#ab072ad8dcadc1b3447c09a51ebe55dae" title="添加菜单 " alt="" coords="506,12,756,51"/>
-<area shape="rect" id="node4" href="$interface_p_t_menus_manager.html#a75b1fd597194ce67f3d810e57cf702b8" title="添加菜单，默认添加到根节点 " alt="" coords="804,12,1029,51"/>
-</map>

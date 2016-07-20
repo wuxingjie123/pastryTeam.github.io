@@ -1,5 +1,0 @@
-<map id="&#45;[PTMenusManager getFinalMenuByKey:andValue:]" name="&#45;[PTMenusManager getFinalMenuByKey:andValue:]">
-<area shape="rect" id="node2" href="$interface_p_t_menus_manager.html#ab972eaaa7486c28b22b860ef7e1b591e" title="根据菜单ID获取菜单节点 " alt="" coords="245,5,440,43"/>
-<area shape="rect" id="node3" href="$interface_p_t_menus_manager.html#ab072ad8dcadc1b3447c09a51ebe55dae" title="添加菜单 " alt="" coords="488,5,738,43"/>
-<area shape="rect" id="node4" href="$interface_p_t_menus_manager.html#a75b1fd597194ce67f3d810e57cf702b8" title="添加菜单，默认添加到根节点 " alt="" coords="787,5,1013,43"/>
-</map>

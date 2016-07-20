@@ -1,5 +1,0 @@
-<map id="+[PTUUID_IN createUUID]" name="+[PTUUID_IN createUUID]">
-<area shape="rect" id="node2" href="$interface_p_t_session_manager.html#a7ce5fdd264e541446edcb2a967218489" title="更新用户端随机数 " alt="" coords="234,37,388,76"/>
-<area shape="rect" id="node3" href="$interface_p_t_session_manager.html#a4a8bf182c942a3accb39b9199f3819dc" title="初始化 会话状态模块 " alt="" coords="440,5,586,44"/>
-<area shape="rect" id="node4" href="$interface_p_t_session_manager.html#aa84b4903b41387759eb3ffdcfe8d282b" title="清空服务器随机数队列(每次做密钥协商之前，需要清空) " alt="" coords="436,68,590,107"/>
-</map>

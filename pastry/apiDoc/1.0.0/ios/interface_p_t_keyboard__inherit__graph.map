@@ -1,5 +1,0 @@
-<map id="PTKeyboard" name="PTKeyboard">
-<area shape="rect" id="node3" href="$interface_p_t_keyboardi_pad.html" title="iPad 键盘类 &#160;本类为类做为自定义键盘的View &#160;所有的有返回值的方法，指针类型返回值均返回nil &#160;NSInteger类..." alt="" coords="4,465,192,671"/>
-<area shape="rect" id="node4" href="$interface_p_t_keyboardi_phone.html" title="iPhone 键盘类 " alt="" coords="216,438,404,698"/>
-<area shape="rect" id="node5" href="$interface_p_t_keyboard_password_numer_phone.html" title="number 数字键盘类 " alt="" coords="429,465,661,671"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="编解码模块" name="编解码模块">
-<area shape="rect" id="node1" href="$group__code_encode_module_enum.html" title="枚举" alt="" coords="297,4,345,30"/>
-<area shape="rect" id="node2" href="$group__security_module.html" title=" 包括 编解码模块、Hash计算模块、加解密模块 等。 &#160;&#160;" alt="" coords="5,103,107,129"/>
-<area shape="rect" id="node3" href="$group__code_encode_module_class.html" title="类" alt="" coords="302,54,341,80"/>
-<area shape="rect" id="node4" href="$group__code_encode_module_struct.html" title="结构体" alt="" coords="291,103,352,129"/>
-<area shape="rect" id="node6" href="$group__code_encode_module_protocol.html" title="协议" alt="" coords="297,152,345,178"/>
-<area shape="rect" id="node7" href="$group__code_encode_module_contant.html" title="常量" alt="" coords="297,202,345,228"/>
-</map>

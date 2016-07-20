@@ -1,8 +1,0 @@
-<map id="&#45;[PTMenusManager getTemplateVersionByUrl:]" name="&#45;[PTMenusManager getTemplateVersionByUrl:]">
-<area shape="rect" id="node2" href="$interface_p_t_business_manager.html#aa29fb9c2e38a3d424acec476d2dc2d46" title="以懒惰方式实现的单例模式 " alt="" coords="272,5,429,44"/>
-<area shape="rect" id="node3" href="$interface_p_t_business_manager.html#a6f1c641883fecbf17c777a7cf4a04d6c" title="根据url获得本地模板版本号 " alt="" coords="269,68,432,107"/>
-<area shape="rect" id="node4" href="$interface_p_t_business_manager.html#a45463078ce6ac38bf6edc0e744bb066b" title="根据url获得Business节点 " alt="" coords="480,68,649,107"/>
-<area shape="rect" id="node5" href="$interface_p_t_business_manager.html#adb313b6bd5c978648bfdcf97e6a82841" title="获取处理后的Business根节点 " alt="" coords="697,68,850,107"/>
-<area shape="rect" id="node6" href="$interface_p_t_sign_tool.html#a0736ec6e62660432fad4b56d1f47084d" title="以懒惰方式实现的单例模式 " alt="" coords="905,47,1082,72"/>
-<area shape="rect" id="node7" href="$interface_p_t_sign_tool.html#a8d980cbeecf3654c02b556479ead3a09" title="对 xml 文件验签 " alt="" coords="898,96,1089,135"/>
-</map>

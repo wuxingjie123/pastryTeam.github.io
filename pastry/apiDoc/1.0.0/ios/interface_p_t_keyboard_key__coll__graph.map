@@ -1,4 +1,0 @@
-<map id="PTKeyboardKey" name="PTKeyboardKey">
-<area shape="rect" id="node3" href="$struct_p_t_key_metric.html" title="按键大小，位置，类型结构体 " alt="" coords="131,169,228,269"/>
-<area shape="rect" id="node4" href="$struct_p_t_section.html" title="按键所在键盘的位置 结构体： 例如几行几列， " alt="" coords="130,6,229,106"/>
-</map>

@@ -1,3 +1,0 @@
-<map id="&#45;[PTDeviceManager getDeviceId]" name="&#45;[PTDeviceManager getDeviceId]">
-<area shape="rect" id="node2" href="$interface_p_t_device_manager.html#a1a7a9990ca48c52c85ca116fb1a276be" title="获取设备IMEI号，因Apple设备不提供IMEI获取功能，因此此处获取到的IMEI是通过OpenUDID得到的 ..." alt="" coords="273,5,466,30"/>
-</map>

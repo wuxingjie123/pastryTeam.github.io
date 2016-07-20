@@ -1,7 +1,0 @@
-<map id="框架配置模块" name="框架配置模块">
-<area shape="rect" id="node1" href="$group__frame_module_enum.html" title="枚举" alt="" coords="161,4,209,30"/>
-<area shape="rect" id="node3" href="$group__frame_module_class.html" title="类" alt="" coords="166,54,205,80"/>
-<area shape="rect" id="node4" href="$group__frame_module_struct.html" title="结构体" alt="" coords="155,103,216,129"/>
-<area shape="rect" id="node5" href="$group__frame_module_contant.html" title="常量" alt="" coords="161,152,209,178"/>
-<area shape="rect" id="node6" href="$group__frame_module_protocol.html" title="协议" alt="" coords="161,202,209,228"/>
-</map>

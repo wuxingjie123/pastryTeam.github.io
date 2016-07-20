@@ -1,5 +1,0 @@
-<map id="&#45;[PTSessionManager updateSession:headers:]" name="&#45;[PTSessionManager updateSession:headers:]">
-<area shape="rect" id="node2" href="$interface_p_t_http_request_a_f_n.html#ad5189db02821e72772b68da5a08f4a0e" title="开启新线程，发送异步请求 " alt="" coords="226,5,391,44"/>
-<area shape="rect" id="node3" href="$interface_p_t_http_request_a_f_n.html#ab0a8c7376e73e73107c6b59c326f16ea" title="发送同步请求 " alt="" coords="235,68,382,107"/>
-<area shape="rect" id="node4" href="$interface_p_t_http_request_imp.html#aa583182cf53949852903f9eb55c31522" title="发送同步请求 " alt="" coords="237,131,380,169"/>
-</map>

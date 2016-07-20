@@ -1,6 +1,0 @@
-<map id="&#45;[PTSystemStorage commit]" name="&#45;[PTSystemStorage commit]">
-<area shape="rect" id="node2" href="$interface_p_t_security_storage.html#aaf40e1c36e11af90fc7f27ec04acc724" title="采用系统保存的3DES密钥加密 " alt="" coords="277,5,419,43"/>
-<area shape="rect" id="node4" href="$interface_p_t_converter.html#a89bb4a7fd9172cc85d3e33973129271c" title="将NSData数据转换成Base64编码的字符串 " alt="" coords="243,67,453,93"/>
-<area shape="rect" id="node3" href="$interface_p_t3_des.html#a851b262028369ad862e7c58bb9a77f80" title="3DES加密 " alt="" coords="501,5,661,43"/>
-<area shape="rect" id="node5" href="$interface_p_t_base64.html#a551fea5c09a802b3e026071aa793f55d" title="Base64编码 " alt="" coords="506,67,656,93"/>
-</map>
