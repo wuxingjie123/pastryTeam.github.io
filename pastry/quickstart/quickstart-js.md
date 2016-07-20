@@ -280,27 +280,31 @@ PT JS框架力求接管一切与业务无关的通用事务处理,具体说主�
 
         <!DOCTYPE html>
         <html>
-        <head>
-            <title>Hello World</title>
-            <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-            <meta name="viewport" content="width=device-width, user-scalable=0">
-            <meta name="apple-mobile-web-app-capable" content="yes"/>
-            <meta content="telephone=no" name="format-detection"/>
-            <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
-        <!--引入框架-->
-        <script type="text/javascript" src="../pastry/main.js"
-                    data-debug="@simbridge"></script>
-        </head>
-        <body>
-        <!--设置加载页-->
-        <div data-page-loading>
-            Loading...
-        </div>
-        </body>
+            <head>
+                <title>Hello World</title>
+                <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+                <meta name="viewport" content="width=device-width, user-scalable=0">
+                <meta name="apple-mobile-web-app-capable" content="yes"/>
+                <meta content="telephone=no" name="format-detection"/>
+                <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+                <!--引入框架-->
+                <script type="text/javascript" src="../pastry/main.js"
+                            data-debug="@simbridge">
+                </script>
+            </head>
+
+            <body>
+                <!--设置加载页-->
+                <div data-page-loading>
+                    Loading...
+                </div>
+            </body>
         </html>
+
         <script type="text/template" id="tp_HomePage" data-title="Hello World ~">
             Hello World!
         </script>
+
         <script type="text/javascript">
             $(function (param) {
                 var Browser = this.Browser;
@@ -493,176 +497,178 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
 
     <!DOCTYPE html>
     <html>
-    <head>
-        <title>Hello World</title>
-        <!-- 移动APP优化配置 -->
-        <meta name="apple-mobile-web-app-capable" content="yes"/> <meta name="viewport"
-        content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scal
-        e=1.0,user-scalable=no,target-densitydpi=medium-dpi"/>
-        <meta content="telephone=no" name="format-detection"/>
-        <!-- 页面编码配置 -->
-        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-        <!-- js、css引用及调试配置 -->
-        <script type="text/javascript" src="../pastry/main.js"
-                data-debug="@titlebar,@simdata,@simbridge,@weinre"
-                data-cssex="project,style"
-                data-lib="base64,md5"
-                data-libex="custom,public"
-                data-component="switch,tab"
-                data-componentex="menu"></script>
-    </head>
-    <body>
-        <!-- 加载页 -->
-        <div data-page-loading>page loading...</div> 
-    </body>
+        <head>
+            <title>Hello World</title>
+            <!-- 移动APP优化配置 -->
+            <meta name="apple-mobile-web-app-capable" content="yes"/> <meta name="viewport"
+                content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi"/>
+            <meta content="telephone=no" name="format-detection"/>
+            <!-- 页面编码配置 -->
+            <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+            <!-- js、css引用及调试配置 -->
+            <script type="text/javascript" src="../pastry/main.js"
+                    data-debug="@titlebar,@simdata,@simbridge,@weinre"
+                    data-cssex="project,style"
+                    data-lib="base64,md5"
+                    data-libex="custom,public"
+                    data-component="switch,tab"
+                    data-componentex="menu"></script>
+        </head>
+        
+        <body>
+            <!-- 加载页 -->
+            <div data-page-loading>page loading...</div> 
+        </body>
     
-    <!-- 模板定义 -->
-    <script type="text/template" id="homePage" data-component="HomePage" data-title="首页">
-        <div style="color:#111111">
-            Hello World!
-            <br/> 
-            模板数据:<%=data.TEXT%>
-            <br/>
-            标签组件:<span data-component="Label" data-name="TEXT"></span>
-            <br/>
-            用户名:<input data-component="Input" id="userName" data-name="USERNAME">
-            <br/>
-            密码:<input data-component="Password" id="password" data-name="PASSWORD">
-            <br/>
-            <input type="button" data-submit-button="next" value="下一步"/> 
-        </div>
-    </script>
+        <!-- 模板定义 -->
+        <script type="text/template" id="homePage" data-component="HomePage" data-title="首页">
+            <div style="color:#111111">
+                Hello World!
+                <br/> 
+                模板数据:<%=data.TEXT%>
+                <br/>
+                标签组件:<span data-component="Label" data-name="TEXT"></span>
+                <br/>
+                用户名:<input data-component="Input" id="userName" data-name="USERNAME">
+                <br/>
+                密码:<input data-component="Password" id="password" data-name="PASSWORD">
+                <br/>
+                <input type="button" data-submit-button="next" value="下一步"/> 
+            </div>
+        </script>
 
-    <!-- 模板定义 -->
-    <script type="text/template" id="secondPage" data-component="SecondPage" data-title="第二页">
-        <div style="color:#111111">
-            Second Page!
-            <br/> 
-            模板数据:<%=data.TEXT1%>,<%=data.TEXT2%>
-            <br/>
-            标签组件:<span data-component="Label" data-name="TEXT1"></span>
-            <br/>
-            标签组件:<span data-component="Label" data-name="TEXT2"></span>
-            <br/>
-            数据分发测试:<input data-component="Input" style="width:100%" id="test1"/>
-            <br/>
-            数据分发测试:<input data-component="Input" style="width:100%" id="test2"/>
-        </div>
-    </script>
+        <!-- 模板定义 -->
+        <script type="text/template" id="secondPage" data-component="SecondPage" data-title="第二页">
+            <div style="color:#111111">
+                Second Page!
+                <br/> 
+                模板数据:<%=data.TEXT1%>,<%=data.TEXT2%>
+                <br/>
+                标签组件:<span data-component="Label" data-name="TEXT1"></span>
+                <br/>
+                标签组件:<span data-component="Label" data-name="TEXT2"></span>
+                <br/>
+                数据分发测试:<input data-component="Input" style="width:100%" id="test1"/>
+                <br/>
+                数据分发测试:<input data-component="Input" style="width:100%" id="test2"/>
+            </div>
+        </script>
 
-    <!--入口-->
-    <script type="text/javascript">
-        $(function (param) {
-            var Component = this.Component;
-            var Model = this.Model;
-            var Browser = this.Browser;
-            var Fn = this.Fn;
-            var $ = Fn.$;//解决$冲突问题
-            //定制数据模型 
-            Fn.setModels({
-                "homePage": new Model.PTJSON(null,
-                {
-                    url: "helloworld.do?act=getText",
+        <!--入口-->
+        <script type="text/javascript">
+            $(function (param) {
+                var Component = this.Component;
+                var Model = this.Model;
+                var Browser = this.Browser;
+                var Fn = this.Fn;
+                var $ = Fn.$;//解决$冲突问题
+                //定制数据模型 
+                Fn.setModels({
+                    "homePage": new Model.PTJSON(null,
+                    {
+                        url: "helloworld.do?act=getText",
+                        filter: function (data) {
+                            data.TEXT = data.TEXT + "[add by filter]";
+                            return data;
+                        }
+                    }),
+                    "secondPage": new Model.PTJSON(null,
+                    {
+                        url: "helloworld.do?act=getSecondText",
+                        dispatcher: function (data) {
+                        this.dispatch({
+                            test1: {value: "by dispatcher:" + data.TEXT1},
+                            test2: {value: "by dispatcher:" + data.TEXT2}
+                        });
+                    },
                     filter: function (data) {
-                        data.TEXT = data.TEXT + "[add by filter]";
+                        data.TEXT1 += "[add by filter]";
+                        data.TEXT2 += "[add by filter]";
                         return data;
                     }
-                }),
-                "secondPage": new Model.PTJSON(null,
-                {
-                    url: "helloworld.do?act=getSecondText",
-                    dispatcher: function (data) {
-                    this.dispatch({
-                        test1: {value: "by dispatcher:" + data.TEXT1},
-                        test2: {value: "by dispatcher:" + data.TEXT2}
-                    });
-                },
-                filter: function (data) {
-                    data.TEXT1 += "[add by filter]";
-                    data.TEXT2 += "[add by filter]";
-                    return data;
-                }
+                });
+            
+                //定制组件
+                Component.HomePage = Component.Page.extend({
+                    onSubmit: function (data, submitId) {
+                        alert(_.template("提交按钮ID:<%=id%>\n提交数据:<%=data%>", {id:submitId, data: JSON.stringify(data)}));
+
+                        var option;
+                        var sendData = {
+                            USERNAME: data.USERNAME,
+                            PASSWORD: data.PASSWORD
+                        };
+
+                        var initVal = {
+                            TEXT1: "Loading A...",
+                            TEXT2: "Loading B..."
+                        };
+
+                        option = {
+                            refresh: {
+                                initVal: initVal,
+                                param: sendData
+                            }
+                        };
+
+                        Browser.history_goto("secondPage", option);
+                    }
+                });
+
+                //定制组件
+                Component.SecondPage = Component.Page.extend({
+
+                    onError:function(state,response){ 
+                        alert('请求数据出错,state='+state+'\nresponse'+JSON.stringify(response));
+                    }
+                });
+
+                //配置首页
+                var option;
+                var sendData = {
+                    TYPE: "A" 
+                };
+                var initVal = {
+                    TEXT: "Loading..."
+                };
+                option = {
+                    refresh: {
+                        initVal: initVal,
+                        param: sendData
+                    }
+                };
+
+                Browser.history_goto("homePage", option);
             });
-        
-            //定制组件
-            Component.HomePage = Component.Page.extend({
-                onSubmit: function (data, submitId) {
-                    alert(_.template("提交按钮ID:<%=id%>\n提交数据:<%=data%>", {id:submitId, data: JSON.stringify(data)}));
-
-                    var option;
-                    var sendData = {
-                        USERNAME: data.USERNAME,
-                        PASSWORD: data.PASSWORD
-                    };
-
-                    var initVal = {
-                        TEXT1: "Loading A...",
-                        TEXT2: "Loading B..."
-                    };
-
-                    option = {
-                        refresh: {
-                            initVal: initVal,
-                            param: sendData
-                        }
-                    };
-
-                    Browser.history_goto("secondPage", option);
-                }
-            });
-
-            //定制组件
-            Component.SecondPage = Component.Page.extend({
-
-                onError:function(state,response){ 
-                    alert('请求数据出错,state='+state+'\nresponse'+JSON.stringify(response));
-                }
-            });
-
-            //配置首页
-            var option;
-            var sendData = {
-                TYPE: "A" 
-            };
-            var initVal = {
-                TEXT: "Loading..."
-            };
-            option = {
-                refresh: {
-                    initVal: initVal,
-                    param: sendData
-                }
-            };
-
-            Browser.history_goto("homePage", option);
-        });
-    </script>
+        </script>
     </html>
 
-## 模块依赖配置
+## 模块依赖配置`待定`
 
     <!-- js、css引用及调试配置 -->
-    <script type="text/javascript" src="pastry/js/lib/require.js"
-            data-main="pastry/js/main.js"
+    <script type="text/javascript"
+            data-main="pastry/main.js"
             data-debug="@titlebar,@simdata,@simbridge,@weinre"
-            data-cssex="project,style"
             data-lib="base64,md5"
-            data-libex="custom,public"
             data-component="switch,tab"
-            data-componentex="menu">
+            data-libex="custom,public"
+            data-componentex="menu"
+            data-cssex="project,style">
     </script>
 
 其中:
 
 |属性|作用|说明|
 |-----|-----|----|
-|data-main|require依赖配置文件|固定为pastry/js/main.js|
-|data-debug|调试选项|框架调试模块,发布时会去掉该属性 <br/>对应js文件保存路径为pastry/js/debug 说明:<br/>前缀!:仅客户端生效 <br/>前缀@:仅网页生效 <br/>前缀$:仅网页且地址以file://开头生效 <br/>前缀#:客户端、网页均不生效 <br/>无前缀:客户端、网页均生效|
-|data-lib|框架第三方库|框架中定义的第三方库 <br/>对应js文件保存路径为pastry/js/lib/|
-|data-component|框架组件|框架中定义的公共组件 <br/>对应js文件保存路径为pastry/js/component/|
-|data-cssex|项目CSS|项目中定义的CSS <br/>对应css文件保存路径为css/|
-|data-libex|项目第三方库|项目中定义的第三方库 <br/>对应js文件保存路径为js/libex/|
-|data-componentex|项目组件|项目中定义的公共组件 <br/>对应js文件保存路径为js/componentex/|
+|data-main|项目配置依赖文件require|固定为pastry/main.js|
+|data-debug|项目调试选项|所有的模式是否都支持？？框架调试模块,发布时会去掉该属性 <br/>对应js文件保存路径为pastry/debug 说明:<br/>前缀 ! :仅客户端生效 <br/>前缀 @ :仅网页生效 <br/>前缀 $ :仅网页且地址以file://开头生效 <br/>前缀 # :客户端、网页均不生效 <br/>无前缀:客户端、网页均生效|
+|data-lib|引用框架第三方库|框架中定义的第三方库 <br/>对应js文件保存路径为pastry/lib/|
+|data-component|引用框架组件|框架中定义的公共组件 <br/>对应js文件保存路径为pastry/components/|
+|data-cssex|项目引用CSS|项目中定义的CSS <br/>对应css文件保存路径为css/|
+|data-libex|项目引用其它第三方库|项目中定义的第三方库 <br/>对应js文件保存路径为js/libex/ 这个目录是不是 lib目录|
+|data-componentex|项目引用其它自定义组件|项目中定义的公共组件 <br/>对应js文件保存路径为js/componentex/ 这个目录是不是 componentexs 目录|
+
+`调试选项 更多信息参考` [JS 开发模式配置][md_pastry-js]
 
 ----
 ## 模版配置
@@ -685,21 +691,21 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
 
   例如：
 
-    <%if(data.test){%>
-        <div>test</div>
-    <%}%>
-    <%=data.test%>
-    <%-data.test%>
+        <%if(data.test){%>
+            <div>test</div>
+        <%}%>
+        <%=data.test%>
+        <%-data.test%>
 
   写在元素属性中的模板,一般使用{%表达式%}{%=表达式%}{%-表达式%}作为语法分割,
 
   例如：
 
-    {%if(data.test){%}
-        <div>test</div>
-    {%}%}
-    {%=data.test%}
-    {%-data.test%}
+        {%if(data.test){%}
+            <div>test</div>
+        {%}%}
+        {%=data.test%}
+        {%-data.test%}
 
 ----
 ## 程序入口
@@ -709,7 +715,7 @@ PT JS的入口函数framework_ready简化成大家熟悉的jquery选择器形式
     <script type="text/javascript">
         $(function (param) {
             //...your code
-        })
+        });
     </script>
 
   `其中param参数为json对象，是从原生应用中传来的配置参数，具体数据格式根据项目需要自行定义。`
@@ -749,7 +755,7 @@ PT JS的入口函数framework_ready简化成大家熟悉的jquery选择器形式
         refresh:{
             id:'id1'
         }
-    }
+    };
 
   多组件刷新：
 
@@ -762,7 +768,7 @@ PT JS的入口函数framework_ready简化成大家熟悉的jquery选择器形式
             id:'id2'
             }
         ]
-    }
+    };
 
 |属性	|数据类型	|默认值	|功能	|说明|
    |-----|-----|-----|-----|-----|
@@ -883,7 +889,7 @@ option中配置返回的选项参数
                     })
                 }
             }
-        )
+        );
 
 * **mapping**
 
@@ -1023,11 +1029,11 @@ option中配置返回的选项参数
   请求数据返回后还有后续请求。
 
 ----
-## 调试支持
+## 调试支持 `待定`
 
 * **模拟数据**
 
-  模拟报文文件存储路径为data/_common/simdata/server/XXX.js
+  模拟报文文件存储路径为 `mockdata/server/XXX.js`
 
   模拟报文支持不同平台返回不同模拟报文，将模拟报文文件存入对应的路径即可,如：
 
@@ -1035,7 +1041,7 @@ option中配置返回的选项参数
 
   data/iphone/simdata/server/XXX.js
 
-  上面的helloworld.do的模拟报文文件对应的文件为data/_common/simdata/server/helloworld.do.js
+  上面的helloworld.do的模拟报文文件对应的文件为 `mockdata/server/helloworld.do.js`
 
         define({
             "act=getText": [
