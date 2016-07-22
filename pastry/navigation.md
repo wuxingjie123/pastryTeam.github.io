@@ -8,7 +8,8 @@
   - - - -
   * [JS指南](quickstart/quickstart-js.md)
   * [iOS指南](quickstart/quickstart-ios.md)
-  * [android指南](quickstrt/quickstart-android.md)
+  * [android指南](quickstart/quickstart-android.md)
+  * [FO指南](quickstart/quickstart-fo.md)
   - - - -
   * [使用IDE`不支持`](ide.md)
 

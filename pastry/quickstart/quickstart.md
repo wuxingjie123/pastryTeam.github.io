@@ -29,7 +29,7 @@
          ┣ node_modules           **公共文件**
          ┣ package.json           **公共文件**
          ┣ tools
-         ┃  ┣ common_data         **功能 : 存放h5、iOS、android项目模版数据** 
+         ┃  ┣ common_data         **功能 : 存放h5、iOS、android项目模版数据 及 FO服务器** 
          ┃  ┣ pastry-bake         **功能 : 项目创建、编译、打包等命令**
          ┃  ┣ pastry-emulator     `不支持`
          ┃  ┣ pastry-ide          **功能 : 支持部分功能**
@@ -65,43 +65,6 @@
         重新启动命令行窗口，执行 pastry，配置成功将显示以下信息
 
             usage: pastry {bake,emulator,taste,ide} ...
-
-3、 pastry测试服务器:`备注：调试过程中，网络请求异常，检查 pastry测试服务器 是否开启`
-
-  * 下载 [pastry测试服务器][md_download] 到任意目录并解压
-    
-    目录结构
-    
-        pastry-server
-         ┣ bin                          `公共文件(暂时无用)`
-         ┣ lib                          `公共文件(暂时无用)`
-         ┣ node_modules                 `公共文件(暂时无用)`
-         ┣ package.json                 `公共文件(暂时无用)`
-         ┣ tools
-         ┃  ┣ common_data               `公共文件(暂时无用)`
-         ┃  ┣ pastry-emulator-server    `不支持`
-         ┃  ┣ pastry-taste-server       `不支持`
-         ┃  ┗ pastry-test-server        **功能 : 开发过程中的NodeJS版pastry测试服务器 == FO服务器**
-
-  * 模拟服务器数据
-
-      * 拷贝 pastry-test-server 目录 到 任意目录
-        
-        目录结构
-    
-            pastry-test-server
-            ┣ bin                          **公共文件**
-            ┣ data                         **功能 : 保存握手使用的证书**
-            ┣ lib                          **公共文件**
-            ┣ package.json                 **公共文件**
-            ┣ wwwroot
-            ┃  ┣ images                    **公共文件**
-            ┃  ┣ mockdata                  **功能 : 模拟服务器接口、数据 例如:helloworld.do.js**
-            ┃  ┗ ptframework               **功能 : 用于热更新**
-
-      * 编写服务器模拟数据
-
-          具体编写方式 详见 [pastry测试服务器模拟数据指导][md_pastry-cli-test-server]
 
 #### Html5 开发配置
 
@@ -156,14 +119,6 @@
       
         pastry bake create HelloWorld com.test.helloworld --add-platforms android,ios --add-plugins pastry-plugin-request,pastry-plugin-keyboard,pastry-plugin-browser
 
-  * 配置 `pastry测试服务器` 到 客户端项目  `HelloWorld`
-    
-        cp -rf pastry-test-server目录 ./HelloWorld
-
-
-  * 配置 `FO服务器` 到 客户端项目  `HelloWorld`
-      
-      `待定`
 
 ## 保存代码到代码仓库
 
@@ -204,8 +159,8 @@
          ┣ plugins            **插件源码目录，开发人员不需要关注**
          ┣ www                **H5开发人员工作目录**
          ┣ config.xml         **开发人员不需要关注**
-         ┣ FO                 **Java开发人员工作目录**
-         ┗ pastry-test-server **NodeJS开发人员工作目录**
+         ┣ pastry-fo-java     **FO Java开发人员工作目录**
+         ┗ pastry-fo-nodejs   **FO NodeJS开发人员工作目录**
 
 ## 演示示例
 
@@ -334,7 +289,6 @@
 [net_pastryWiki]: https://github.com/pastryTeam/pastryTeam.github.io
 [md_download]: ../download.md
 [md_pastry-ios]: ../tutorials/pastry-ios.md
-[md_pastry-cli-test-server]: ../pastry-cli/test-server.md
 [md_moreCli]: ../pastry-cli/bake.md
 
 [md_quickstart-android]: quickstart-android.md
