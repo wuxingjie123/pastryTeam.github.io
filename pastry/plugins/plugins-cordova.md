@@ -9,9 +9,9 @@
     
   [更多cordova插件添加方法见 bake 的 plugin 命令][md_moreCli]
 
-  [更多的pastry制作的cordova地址][net_pastryplugins]
-
         pastry bake plugin add gitPath
+
+  [** `更多的pastry制作的cordova地址` **][net_pastryplugins]
 
 ----
 ## pastry-plugin-browser 插件
