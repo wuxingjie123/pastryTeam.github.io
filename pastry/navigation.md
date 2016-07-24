@@ -55,15 +55,13 @@
       
 [脚手架]()
 
-  * [pastry](cli/cli.md)
-  - - - -
+  * # pastry
   * [bake](pastry-cli/bake.md)
   * [emulator`不支持`](pastry-cli/emulator.md)
   * [emulator-server`不支持`](pastry-cli/emulator-server.md)
   * [ide`支持部分功能`](pastry-cli/ide.md)
   * [taste`不支持`](pastry-cli/taste.md)
   * [taste-server`不支持`](pastry-cli/taste-server.md)
-  * [test-server](pastry-cli/test-server.md)
 
 [常见问题](faq.md)
 
