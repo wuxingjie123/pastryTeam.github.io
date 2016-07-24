@@ -20,6 +20,8 @@
   * [Android](tutorials/pastry-android.md)
   - - - -
   * [iOS](tutorials/pastry-ios.md)
+  - - - -
+  * [FO](tutorials/pastry-fo.md)
   
 [业务组件库]()
 
