@@ -1,11 +1,17 @@
 # 平台插件
 
 ----
-## cordova插件私有仓库使用指南
+## pastry制作的cordova插件使用指南
 
 * 前提条件 : `pastry` 已经正确安装完成。
 
-* ???
+* 使用 `pastry bake plugin add gitPath` 命令添加pastry制作的cordova插件。
+    
+  [更多cordova插件添加方法见 bake 的 plugin 命令][md_moreCli]
+
+  [更多的pastry制作的cordova地址][net_pastryplugins]
+
+        pastry bake plugin add gitPath
 
 ----
 ## pastry-plugin-browser 插件
@@ -48,4 +54,7 @@
 
 [cordova 插件地址][net_cordovaplugins]
 
+
 [net_cordovaplugins]: https://github.com/apache?utf8=%E2%9C%93&query=cordova-
+[md_moreCli]: ../pastry-cli/bake.md
+[net_pastryplugins]: https://github.com/search?utf8=%E2%9C%93&q=user%3ApastryTeam+pastry-plugin&type=Repositories&ref=searchresults
