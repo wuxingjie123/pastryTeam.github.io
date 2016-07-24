@@ -81,6 +81,9 @@
             target '工程名称Tests' do
             end
 
+
+  [** `更多的pastry制作的android组件地址` **][net_pastryiOS]
+
 ----
 ## guide page（引导页面组件）
 
@@ -113,3 +116,6 @@
 * 功能
     * 提供H5使用 console.log() 将日志输出到 原生端的开发IDE输出框；
 * 使用方法
+
+
+[net_pastryiOS]: https://github.com/search?utf8=%E2%9C%93&q=user%3ApastryTeam+component-iOS-&type=Repositories&ref=searchresults

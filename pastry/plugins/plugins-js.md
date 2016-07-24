@@ -3,9 +3,7 @@
 ----
 ## bower私有仓库使用指南
 
-* 前提条件 : bower 已经正确安装完成。
-
-* ???
+  [** `更多的pastry制作的js组件地址` **][net_pastryjs]
 
 ----
 ## register (注册组件)
@@ -47,3 +45,4 @@
 [cordova 插件地址][net_cordovaplugins]
 
 [net_cordovaplugins]: https://github.com/apache?utf8=%E2%9C%93&query=cordova-
+[net_pastryjs]: https://github.com/search?utf8=%E2%9C%93&q=user%3ApastryTeam+component-js-&type=Repositories&ref=searchresults
