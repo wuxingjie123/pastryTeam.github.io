@@ -133,6 +133,10 @@
 
 ## 编译项目
 
+`如果是编译 iOS 项目`
+
+`确认是否执行过  等待 pod install 命令执行完毕，打开 HelloWorld.xcworkspace，XCode 会完成工程依赖的创建 这一步`
+
     cd HelloWorld
     
     pastry bake build android -m debug
