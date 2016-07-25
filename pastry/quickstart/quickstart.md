@@ -119,6 +119,11 @@
       
         pastry bake create HelloWorld com.test.helloworld --add-platforms android,ios --add-plugins pastry-plugin-request,pastry-plugin-keyboard,pastry-plugin-browser
 
+  `如果是在 mac 环境下，会自动进入 HelloWorld/platforms/ios 目录下执行 pod install 安装iOS原生组件依赖`
+
+  `等待 pod install 命令执行完毕，打开 HelloWorld.xcworkspace，XCode 会完成工程依赖的创建，`
+  
+  `否则，导致 pastry bake build ios 命令失败` 
 
 ## 保存代码到代码仓库
 
@@ -136,13 +141,20 @@
 
   * 备注
 
-    * 编译失败原因 : 证书id 是否与本机证书保持一致；
+    * `编译失败原因 : 证书id 是否与本机证书保持一致；`
 
           The following build commands failed:
             Check dependencies
           (1 failure)
           ERROR building one of the platforms: Error code 65 for command: xcodebuild with args: -xcconfig,/Users/gengyuanchao/Desktop/PastryProduct/HelloWorld/platforms/ios/cordova/build-debug.xcconfig,-project,HelloWorld.xcodeproj,ARCHS=armv7 arm64,-target,HelloWorld,-configuration,Debug,-sdk,iphoneos,build,VALID_ARCHS=armv7 arm64,CONFIGURATION_BUILD_DIR=/Users/gengyuanchao/Desktop/PastryProduct/HelloWorld/platforms/ios/build/device,SHARED_PRECOMPS_DIR=/Users/gengyuanchao/Desktop/PastryProduct/HelloWorld/platforms/ios/build/sharedpch
           You may not have the required environment or OS to build this project
+
+    * `编译失败原因 : pod install 命令执行完毕，未打开 HelloWorld.xcworkspace，XCode 会完成工程依赖的创建。`
+
+          xcodebuild: error: The workspace named "HelloWorld" does not contain a scheme named "HelloWorld". The "-list" option can be used to find the names of the schemes in the workspace.
+          ERROR building one of the platforms: Error code 65 for command: xcodebuild with args: -xcconfig,/Users/gengyuanchao/Desktop/TestPastry/HelloWorld/platforms/ios/cordova/build-debug.xcconfig,-scheme,HelloWorld,ARCHS=armv7 arm64,-workspace,HelloWorld.xcworkspace,-configuration,Debug,-sdk,iphoneos,build,VALID_ARCHS=armv7 arm64,CONFIGURATION_BUILD_DIR=/Users/gengyuanchao/Desktop/TestPastry/HelloWorld/platforms/ios/build/device,SHARED_PRECOMPS_DIR=/Users/gengyuanchao/Desktop/TestPastry/HelloWorld/platforms/ios/build/sharedpch
+          You may not have the required environment or OS to build this project
+          Error: Error code 65 for command: xcodebuild with args: -xcconfig,/Users/gengyuanchao/Desktop/TestPastry/HelloWorld/platforms/ios/cordova/build-debug.xcconfig,-scheme,HelloWorld,ARCHS=armv7 arm64,-workspace,HelloWorld.xcworkspace,-configuration,Debug,-sdk,iphoneos,build,VALID_ARCHS=armv7 arm64,CONFIGURATION_BUILD_DIR=/Users/gengyuanchao/Desktop/TestPastry/HelloWorld/platforms/ios/build/device,SHARED_PRECOMPS_DIR=/Users/gengyuanchao/Desktop/TestPastry/HelloWorld/platforms/ios/build/sharedpch
 
 ## 更多命令
 
@@ -168,7 +180,7 @@
 
     ![效果图](/pastry/images/ios/iosDemo.png)
 
-  * 查看 `HelloWorld/www/examples` 里代码进行业务开发
+  * 查看 `HelloWorld/www/app` 里代码进行业务开发
 
 ## 开发流程/人员职责
 

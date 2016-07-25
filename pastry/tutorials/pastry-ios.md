@@ -3,21 +3,28 @@
 ----
 ## iOS工程结构
 
-  * 目录结构
-    
+  * 目录结构        
+
          ios
-          ┣ cordova                      **功能 : cordova辅助命令**
-          ┣ CordovaLib                   **功能 : cordova 原生端 JS 桥**
-          ┣ HelloWorld.xcodeproj         **功能 : 项目工程文件**
-          ┣ ios.json                     **功能 : iOS工程配置文件**
-          ┣ platform_www                 **功能 : iOS平台专属JS文件**
-          ┣ www                          **功能 : iOS平台专属JS文件 + 通用JS文件**
-          ┣ HelloWorld
-          ┃  ┣ Classes                   **功能 : 存放h5、iOS、android项目模版数据** 
-          ┃  ┣ config.xml                **功能 : iOS工程配置文件，配置插件等信息**
-          ┃  ┣ Plugins                   **功能 : corodva插件 iOS端源码**
-          ┃  ┣ Resources                 **功能 : iOS图片资源目录**
-          ┃  ┗ PastryFramework           **功能 : iOS端重要的资源文件**
+          ├── CordovaLib                  **功能 : cordova 原生端 JS 桥**
+          ├── HelloWorld
+          │   ├── Classes                 **功能 : 存放h5、iOS、android项目模版数据** 
+          │   ├── HelloWorld-Info.plist
+          │   ├── HelloWorld-Prefix.pch
+          │   ├── PastryFramework         **功能 : iOS端重要的资源文件**
+          │   ├── Plugins                 **功能 : corodva插件 iOS端源码**
+          │   ├── Resources               **功能 : iOS图片资源目录**
+          │   ├── config.xml              **功能 : iOS工程配置文件，配置插件等信息**
+          │   └── main.m
+          ├── HelloWorld.xcodeproj        **功能 : 项目工程文件(不使用，无须改变)**
+          ├── HelloWorld.xcworkspace      **功能 : Pods 项目工程文件（开发使用的工程文件）**
+          ├── Podfile                     **功能 : Pods 配置文件**
+          ├── Podfile.lock
+          ├── Pods                        **功能 : 项目依赖的原生端业务组件Pods库**
+          ├── cordova                     **iOS开发者不关注  功能 : cordova辅助命令**
+          ├── ios.json                    **iOS开发者不关注  功能 : iOS工程配置文件**
+          ├── platform_www                **iOS开发者不关注  功能 : iOS平台专属JS文件**
+          └── www                         **iOS开发者不关注  功能 : iOS平台专属JS文件 + 通用JS文件**
 
   * PastryFramework 目录结构
 
