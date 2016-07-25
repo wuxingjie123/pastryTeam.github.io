@@ -6,6 +6,8 @@
   * 目录结构
     
          HelloWorld/www
+          ┣ app                      
+          ┃  ┗ index.html                   **功能 : Web端 入口**
           ┣ components                      **功能 : h5客户端 组件目录**
           ┣ css                             **功能 : h5客户端 css目录**
           ┣ lib                             **功能 : h5客户端 第三库引用目录**
