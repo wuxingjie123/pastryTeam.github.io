@@ -101,9 +101,27 @@
 
   * 创建客户端项目 `HelloWorld`，包含 h5、iOS、android;
 
+  `依赖的插件(以下插件默认添加到新工程里)`
+
+    * [cordova-plugin-console][net_cordova-plugin-console]
+
+    * [cordova-plugin-whitelist][net_cordova-plugin-whitelist]
+
+    * [pastry-plugin-browser][net_pastry-plugin-browser]
+
+    * [pastry-plugin-keyboard][net_pastry-plugin-keyboard]
+
+    * [pastry-plugin-request][net_pastry-plugin-request]
+
+    * [pastry-plugin-unzip][net_pastry-plugin-unzip]
+
+    * [pastry-plugin-guide][net_pastry-plugin-guide]
+
+
         cd 指定项目目录
       
         pastry bake create HelloWorld com.test.helloworld --add-platforms android,ios --add-plugins pastry-plugin-request,pastry-plugin-keyboard,pastry-plugin-browser
+
 
 ## 保存代码到代码仓库
 
@@ -272,6 +290,15 @@
 [net_Alcatraz]: https://github.com/mneorr/Alcatraz
 [net_nodejs官网]: https://nodejs.org/zh-cn/
 [net_pastryWiki]: https://github.com/pastryTeam/pastryTeam.github.io
+
+[net_cordova-plugin-console]: https://github.com/pastryTeam/cordova-plugin-console
+[net_cordova-plugin-whitelist]: https://github.com/pastryTeam/cordova-plugin-whitelist
+[net_pastry-plugin-browser]: https://github.com/pastryTeam/pastry-plugin-browser
+[net_pastry-plugin-keyboard]: https://github.com/pastryTeam/pastry-plugin-keyboard
+[net_pastry-plugin-request]: https://github.com/pastryTeam/pastry-plugin-request
+[net_pastry-plugin-unzip]: https://github.com/pastryTeam/pastry-plugin-unzip
+[net_pastry-plugin-guide]: https://github.com/pastryTeam/pastry-plugin-guide
+
 [md_download]: ../download.md
 [md_pastry-ios]: ../tutorials/pastry-ios.md
 [md_moreCli]: ../pastry-cli/bake.md
