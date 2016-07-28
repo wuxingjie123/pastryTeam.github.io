@@ -16,11 +16,7 @@
           │   ├── Resources               **功能 : iOS图片资源目录**
           │   ├── config.xml              **功能 : iOS工程配置文件，配置插件等信息**
           │   └── main.m
-          ├── HelloWorld.xcodeproj        **功能 : 项目工程文件(不使用，无须改变)**
-          ├── HelloWorld.xcworkspace      **功能 : Pods 项目工程文件（开发使用的工程文件）**
-          ├── Podfile                     **功能 : Pods 配置文件**
-          ├── Podfile.lock
-          ├── Pods                        **功能 : 项目依赖的原生端业务组件Pods库**
+          ├── HelloWorld.xcodeproj        **功能 : 项目工程文件**
           ├── cordova                     **iOS开发者不关注  功能 : cordova辅助命令**
           ├── ios.json                    **iOS开发者不关注  功能 : iOS工程配置文件**
           ├── platform_www                **iOS开发者不关注  功能 : iOS平台专属JS文件**

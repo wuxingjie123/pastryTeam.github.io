@@ -127,23 +127,7 @@ Pastry平台基于以下开源框架
 
 #### 5、组件库管理
 
-  * H5 组件库
-
-    待定
-  
-  * cordova 插件
-
-  * iOS 组件库
-  
-    待定 cocoapods待调查
-
-  * android 组件库
-
-    待定 maven待调查
-
-  * NodeJS FO、 Java FO 组件库
-
-    待定
+  * cordova 组件 管理方式
 
 [net_jQuery]: http://www.jquery.org
 [net_bootstrap]: http://www.getbootstrap.com
