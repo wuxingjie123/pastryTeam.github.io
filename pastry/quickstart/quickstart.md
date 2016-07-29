@@ -117,6 +117,10 @@
 
     * [pastry-plugin-guide][net_pastry-plugin-guide]
 
+    * [pastry-plugin-storageDemo][net_pastry-plugin-storageDemo]
+
+    * [pastry-plugin-sideMain][net_pastry-plugin-sideMain]
+
 
         cd 指定项目目录
       
@@ -298,6 +302,8 @@
 [net_pastry-plugin-request]: https://github.com/pastryTeam/pastry-plugin-request
 [net_pastry-plugin-unzip]: https://github.com/pastryTeam/pastry-plugin-unzip
 [net_pastry-plugin-guide]: https://github.com/pastryTeam/pastry-plugin-guide
+[net_pastry-plugin-storageDemo]: https://github.com/pastryTeam/pastry-plugin-storageDemo
+[net_pastry-plugin-sideMain]: https://github.com/pastryTeam/pastry-plugin-sideMain
 
 [md_download]: ../download.md
 [md_pastry-ios]: ../tutorials/pastry-ios.md
