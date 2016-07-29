@@ -21,13 +21,13 @@
     pastry bake create HelloWorld com.example.test
 
 ----  
-## platfrom
+## platform
 
 添加或移除支持的平台
 
 使用：
 
-    pastry bake platfrom 
+    pastry bake platform 
     子命令：
       list                       列出目前支持平台平台
       add 平台名称{android,ios}   添加支持平台
@@ -35,9 +35,9 @@
      
 样例：
 
-    pastry bake platfrom list
-    pastry bake platfrom add android
-    pastry bake platfrom rm ios
+    pastry bake platform list
+    pastry bake platform add android
+    pastry bake platform rm ios
 
 ----
 ## plugin
