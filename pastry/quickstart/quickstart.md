@@ -169,6 +169,14 @@
          ┣ pastry-fo-java     **FO Java开发人员工作目录**
          ┗ pastry-fo-nodejs   **FO NodeJS开发人员工作目录**
 
+* [JS工程详细目录结构介绍][md_tutorials-js]
+
+* [iOS工程详细目录结构介绍][md_tutorials-ios]
+
+* [Android工程详细目录结构介绍][md_tutorials-android]
+
+* [FO工程详细目录结构介绍][md_tutorials-fo]
+
 ## 演示示例
 
   * 运行 app 浏览示例效果
@@ -308,6 +316,11 @@
 [md_download]: ../download.md
 [md_pastry-ios]: ../tutorials/pastry-ios.md
 [md_moreCli]: ../pastry-cli/bake.md
+
+[md_tutorials-js]: ../tutorials/pastry-js.md
+[md_tutorials-ios]: ../tutorials/pastry-ios.md
+[md_tutorials-android]: ../tutorials/pastry-android.md
+[md_tutorials-fo]: ../tutorials/pastry-fo.md
 
 [md_quickstart-android]: quickstart-android.md
 [md_quickstart-ios]: quickstart-ios.md

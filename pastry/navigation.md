@@ -15,24 +15,19 @@
 
 [框架组件库]()
 
-  * [JavaScript](tutorials/pastry-js.md)
-  - - - -
-  * [Android](tutorials/pastry-android.md)
+  * [JS](tutorials/pastry-js.md)
   - - - -
   * [iOS](tutorials/pastry-ios.md)
+  - - - -
+  * [Android](tutorials/pastry-android.md)
   - - - -
   * [FO](tutorials/pastry-fo.md)
   
 [业务组件库]()
 
-  * [JS 组件](plugins/plugins-js.md)
+  * [业务 JS 组件](plugins/plugins-js.md)
   - - - -
-  * [Cordova 组件](plugins/plugins-cordova.md)
-  - - - -
-  * [iOS 组件](plugins/plugins-ios.md)
-  * [android 组件](plugins/plugins-android.md)
-  - - - -
-  * [FO 组件](plugins/plugins-fo.md)
+  * [Cordova 业务组件(JS || iOS || Android)](plugins/plugins-cordova.md)
 
 
 [代码规范]()
@@ -47,9 +42,9 @@
   * [Pastry JS (mobile)](apiDoc/1.0.0/mobile/index.html)
   * [Pastry JS (wx)](apiDoc/1.0.0/wx/index.html)
   - - - -
-  * [Pastry Android](apiDoc/1.0.0/android/index.html)
-  - - - -
   * [Pastry iOS](apiDoc/1.0.0/ios/index.html)
+  - - - -
+  * [Pastry Android](apiDoc/1.0.0/android/index.html)
 
 [下载](download.md)
       
