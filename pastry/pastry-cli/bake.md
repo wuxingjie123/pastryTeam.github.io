@@ -23,7 +23,9 @@
 ----  
 ## platform
 
-添加或移除支持的平台
+添加或移除支持的平台 
+
+`平台模版代码 指向 pastry/tools/common_data/platforms `
 
 使用：
 
@@ -36,13 +38,19 @@
 样例：
 
     pastry bake platform list
+    pastry bake platform rm android
     pastry bake platform add android
     pastry bake platform rm ios
+    pastry bake platform add ios
 
 ----
 ## plugin
 
-添加或移除引入的插件
+添加或移除引入的插件 
+
+`插件模版代码 在使用 pastry bake create 时，默认使用的插件模版代码 指向 pastry/tools/common_data/plugins `
+
+`使用 pastry bake plugin 时，插件模版代码不再指向 pastry/tools/common_data/plugins 目录`
 
 使用：
 
