@@ -101,10 +101,6 @@
 
     pastry bake build ios -m release -si 描述文件名称
 
-----
-## run(`待定`)
-
-运行工程
 
 # License
 
