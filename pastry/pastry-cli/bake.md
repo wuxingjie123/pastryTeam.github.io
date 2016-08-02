@@ -23,61 +23,95 @@
 ----  
 ## platform
 
-添加或移除支持的平台 
-
-`平台模版代码 指向 pastry/tools/common_data/platforms `
-
 使用：
 
     pastry bake platform 
     子命令：
       list                       列出目前支持平台平台
-      add 平台名称{android,ios}   添加支持平台
-      rm 平台名称{android,ios}    移除支持平台
-     
+      add 平台参数{android,ios}   添加支持平台
+      rm 平台参数{android,ios}    移除支持平台
+
+`平台参数`
+
+* android ios
+
+  `平台模版代码 指向 pastry/tools/common_data/platforms `
+
+* 本地路经
+
+* 在线地址
+
 样例：
 
     pastry bake platform list
+    
+    // 删除指定平台
     pastry bake platform rm android
-    pastry bake platform add android
     pastry bake platform rm ios
+
+    // 添加指定平台
+    // 字符串参数
+    pastry bake platform add android
+    // 本地路经
+    pastry bake platform add /Users/用户名/Desktop/android
+    // 在线地址 获取最新开发版本
+    pastry bake platform add https://github.com/pastryTeam/android-template.git
+    // 在线地址 获取指定tag版本
+    pastry bake platform add https://github.com/pastryTeam/android-template.git#0.1.0
+
+    // 字符串参数
     pastry bake platform add ios
+    // 本地路经
+    pastry bake platform add /Users/用户名/Desktop/ios
+    // 在线地址 获取最新开发版本
+    pastry bake platform add https://github.com/pastryTeam/ios-template.git
+    // 在线地址 获取指定tag版本
+    pastry bake platform add https://github.com/pastryTeam/ios-template.git#0.1.0
 
 ----
 ## plugin
-
-添加或移除引入的插件 
-
-`插件模版代码 在使用 pastry bake create 时，默认使用的插件模版代码 指向 pastry/tools/common_data/plugins `
-
-`使用 pastry bake plugin 时，插件模版代码不再指向 pastry/tools/common_data/plugins 目录`
 
 使用：
 
     pastry bake plugin 
     子命令：
       list          列出目前进入的插件
-      add 插件名称   添加cordova插件
-      rm 插件名称    移除cordova插件
-     
+      add 插件参数   添加cordova插件
+      rm 插件参数    移除cordova插件
+
+`平台参数`
+
+* pastry-plugin-XXX cordova-plugin-XXX
+
+  `平台模版代码 指向 pastry/tools/common_data/plugins `
+
+* 本地路经
+
+* 在线地址
+
 样例：
     # 显示已存在的插件列表
     pastry bake plugin list
 
+    // 字符串参数
     # 添加 cordova 支持的插件，name：插件名称
     # pastry bake plugin add name
     # 例如 : name = cordova-plugin-camera
     pastry bake plugin add cordova-plugin-camera
 
-    # 添加 在线git地址，gitPath：git在线地址
-    # pastry bake plugin add gitPath
-    # 例如 : gitPath = https://github.com/apache/cordova-plugin-camera
-    pastry bake plugin add https://github.com/apache/cordova-plugin-camera
-
+    // 本地路经
     # 添加 本地文件插件，filePath：本地文件路径
     # pastry bake plugin add filePath
     # 例如 : filePath = /Users/用户名/Desktop/pastry-plugin-browser
     pastry bake plugin add /Users/用户名/Desktop/pastry-plugin-browser
+
+    # 添加 在线git地址，gitPath：git在线地址
+    # pastry bake plugin add gitPath
+    # 例如 : gitPath = https://github.com/apache/cordova-plugin-camera.git
+    // 在线地址 获取最新开发版本
+    pastry bake plugin add https://github.com/apache/cordova-plugin-camera.git
+    // 在线地址 获取指定tag版本
+    pastry bake plugin add https://github.com/apache/cordova-plugin-camera.git#0.1.0
 
     # 删除以存在的插件，name：插件名称
     # pastry bake plugin rm name
