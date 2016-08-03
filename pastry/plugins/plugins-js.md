@@ -3,7 +3,9 @@
 ----
 ## bower私有仓库使用指南
 
-  [** `更多的pastry制作的js组件地址` **][net_pastryjs]
+* [命令行 pastry bake bower ][md_pastrybower]
+
+* [** `更多的pastry制作的js组件地址` **][net_pastryjs]
 
 ----
 ## register (注册组件)
@@ -46,3 +48,5 @@
 
 [net_cordovaplugins]: https://github.com/apache?utf8=%E2%9C%93&query=cordova-
 [net_pastryjs]: https://github.com/search?utf8=%E2%9C%93&q=user%3ApastryTeam+component-js-&type=Repositories&ref=searchresults
+
+[md_pastrybower]: ../pastry-cli/bake.md

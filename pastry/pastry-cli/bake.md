@@ -1,6 +1,9 @@
 # Pastry Bake
 
-提供项目构建相关命令
+# 提供项目构建相关命令
+
+* # `create 可以在任意目录下 执行`
+* # `platform/plugin/build/bower 在项目工程目录下 执行`
 
 ----
 ## create
@@ -134,6 +137,19 @@
     pastry bake build android -m release
 
     pastry bake build ios -m release -si 描述文件名称
+
+----
+## bower
+
+给JS添加业务组件
+
+样例：
+
+    # 安装指定JS业务组件 component-js-register
+    pastry bake bower install component-js-register
+
+    # 卸载指定JS业务组件 component-js-register
+    pastry bake bower uninstall component-js-register
 
 
 # License
