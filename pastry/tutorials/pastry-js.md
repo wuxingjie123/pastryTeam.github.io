@@ -4,8 +4,10 @@
 ## JS工程结构
 
   * 目录结构
-    
+
          HelloWorld/www
+          ┣ .bowerrc **功能 : bower配置文件**            
+          ┣ bowerScript **功能 : bower的Hook脚本文件**            
           ┣ app                      
           ┃  ┗ index.html                   **功能 : Web端 入口**
           ┣ components                      **功能 : h5客户端 组件目录**
@@ -15,7 +17,7 @@
           ┣ mockdata                        **功能 : html开发人员 模拟数据请求 目录**
           ┣ make.xml                        **功能 : 对JS、CSS等文件签名、加解密的配置文件**
           ┣ pastry
-          ┃  ┣ components                   **功能 : 框架自定义的组件** 
+          ┃  ┣ components                   **功能 : 框架自定义的组件**
           ┃  ┣ core                         **功能 : 框架核心代码**
           ┃  ┣ debug                        **功能 : 框架为项目配置的debug选项集合**
           ┃  ┣ lib                          **功能 : 框架使用的第三方库**
@@ -32,8 +34,8 @@
 ----
 ## 密码键盘
 * 功能描述：
-    
-    
+
+
 ----
 ## 数据存储
 
@@ -48,7 +50,7 @@
           data-main="pastry/main.js"
           data-debug="@mockdata"
     ……></script>
-  
+
 当需要引入多个调试模块时，用逗号隔开如上所示，目前框架提供的调试模块有：
 
 |名称	|功能|
@@ -114,5 +116,3 @@
 |delay	|模拟的延迟，为number型|
 |param	|模拟上送服务端的参数（测试时参数顺序与请求一致，否则可能不识别）|
 |data	|客户端返回的业务数据(为接近真实效果，所有字段请置为字符型)|
-
-
