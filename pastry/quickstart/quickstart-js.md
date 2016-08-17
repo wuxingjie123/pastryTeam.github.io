@@ -1087,5 +1087,20 @@ option中配置返回的选项参数
 
   模拟器可以提高开发调试效率，通过模拟器测试的业务流程，在手机上一般都可以通过测试。
 
+* **调试方法对比表**
+
+|开发阶段|调试方法|应用场景|设备依赖|设备支持|无线支持|JS调试|编译打包|加密网络请求|优点|缺点|
+|----|----|----|----|----|----|----|----|----|----|----|
+|模拟网络请求阶段|mockdata|-|-|web|-|√|-|×| | |
+| | | | | | | | | | |
+|UI开发阶段|console()|-|-|web<br/>iOS真机/模拟器<br/>android真机/模拟器|-|-|√|-|||
+|原生联调阶段|Ripple仿真|业务开发严重依赖 Cordova API 的测试|ripple-emulator npm包|web|-|×|×|-|||
+|-|Weinre|-|Weinre npm包|web<br/>iOS真机/模拟器<br/>android真机/模拟器|√|√|√|web×<br/>其它√<br/>||1 weinre这类调试工具仍属于插件性质，诸如“网络”、“本地资源”等高级调试功能无法支持<br/> 2 需要额外添加代码|
+|-|PhoneGap Developer App|与 PhoneGap Desktop App 配合使用<br/>或者使用 phonegap serve 命令|PhoneGap Developer App 手机软件|iOS真机/模拟器<br/> android真机/模拟器<br/>|√|×|×|×|1 无须配置任何iOS、android、nodejs环境<br/> 2 支持 console 输出到 PhoneGap Desktop App 终端|1 严重依赖phoneGap的cordova API <br/>2 热加载效率低 <br/>3 不能使用自定义的cordova插件|
+|-|PhoneGap Desktop App|用于给 Cordova 项目开启 serve 命令<br/>与 PhoneGap Developer App 配合使用|PhoneGapDesktop客户端软件包|-|-|-|-|-|见 PhoneGap Developer App 优点|1 只是作为 phonegap serve的客户端 <br/>2 热加载效率低|
+|-|基于 Safari 的调试||safari|iOS真机/模拟器|真机不支持|√|√|√||依赖 Mac、XCode 环境|
+|-|基于 Chrome 的调试||chrome|android真机/模拟器|真机不支持|√|√|√||依赖 Android Studio 环境|
+|-|GapDebug|-|GapDebug软件包|iOS真机<br/> android真机<br/> 模拟器待定|×|√|√|√|不依赖app的开发环境|-|
+
 [md_specification-js]: ../codingSpecification/specification-js.md
 [md_pastry-js]: ../tutorials/pastry-js.md
