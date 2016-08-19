@@ -188,3 +188,5 @@
 |-|基于 Safari 的调试||safari|iOS真机/模拟器|真机不支持|√|√|√||依赖 Mac、XCode 环境|
 |-|基于 Chrome 的调试||chrome|android真机/模拟器|真机不支持|√|√|√||依赖 Android Studio 环境|
 |-|GapDebug|-|GapDebug软件包|iOS真机<br/> android真机<br/> 模拟器待定|×|√|√|√|不依赖app的开发环境|-|
+
+[更多介绍参考 Debugging Cordova apps](http://cordova.apache.org/docs/en/latest/guide/next/index.html#debugging-cordova-apps)
