@@ -1,6 +1,12 @@
 # Pastry Wiki
 
-[简介](index.md)
+[简介]()
+
+  * [简介](index.md)
+  - - - -
+  * [JS简介](abstract/abstract-js.md)
+  * [iOS简介`待定`](abstract/abstract-ios.md)
+  * [android简介`待定`](abstract/abstract-android.md)
 
 [指南]()
 
@@ -22,7 +28,7 @@
   * [Android](tutorials/pastry-android.md)
   - - - -
   * [FO](tutorials/pastry-fo.md)
-  
+
 [业务组件库]()
 
   * [业务 JS 组件](plugins/plugins-js.md)
@@ -31,7 +37,7 @@
 
 
 [代码规范]()
-  
+
   * [JS 代码规范](codingSpecification/specification-js.md)
   * [iOS 代码规范](codingSpecification/specification-ios.md)
   * [android 代码规范](codingSpecification/specification-android.md)
@@ -47,7 +53,7 @@
   * [Pastry Android](apiDoc/1.0.0/android/index.html)
 
 [下载](download.md)
-      
+
 [脚手架]()
 
   * # pastry
@@ -61,6 +67,8 @@
 [常见问题](faq.md)
 
 [联系方式](contact.md)
+
+[Hybrid发展史](hybrid.md)
 
 
 <!-- counter pixel for counting visitors -->

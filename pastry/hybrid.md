@@ -1,0 +1,190 @@
+# Hybrid App 发展史
+
+## Web 发展史
+### 静态网页
+
+### 动态网页
+* 问题
+> 动态网页问题
+
+* 技术
+  * CGI
+  * [Perl](http://baike.baidu.com/view/46614.htm)
+    * 年 : 1987
+    * 问题 : 服务器端动态网页
+  * [PHP](http://baike.baidu.com/subview/99/5828265.htm)
+    * 年 : 1995
+    * 问题 : 服务器端动态网页
+  * [JSP](http://baike.baidu.com/subview/3387/16963334.htm)
+    * 年 : 1996
+    * 问题 : 服务器端动态网页
+  * [ASP](http://baike.baidu.com/subview/2616/14622918.htm)
+    * 年 : 1996
+    * 问题 : 服务器端动态网页
+  * Javascript
+    * 年 : 1996
+    * 问题 : 客户端脚本语言
+
+### 客户端异步交互
+* 问题
+> 客户端交互->异步、局部页面交互
+
+* 技术
+  * [Ajax](http://baike.baidu.com/subview/1641/5762264.htm)
+  * 年 : 1998—2005
+
+### 开发效率提速阶段
+* 问题
+> 加快开发效率
+
+* 技术
+  * jQuery
+    * 年 : 2006
+    * 问题 : JS库、浏览器的兼容性、简化dom操作，加快开发效率
+  * Ruby on Rails
+    * 年 : 2007
+    * 问题 : 开发模式->MVC
+  * NodeJS
+    * 年 : 2009
+    * 问题 : 待定
+  * Prototypejs
+    * 年 : 2009
+    * 问题 : 待定
+  * UnderScore
+    * 年 : 2009
+    * 问题 : 待定
+  * AngularJS
+    * 年 : 2009
+    * 问题 : 谷歌 JS 前端框架
+  * CoffeeScript
+    * 年 : 2009-2010
+    * 问题 : 作为JavaScript的转译语言
+  * Backbone
+    * 年 : 2010
+    * 问题 : JS 前端框架
+  * Web2.0 Html5
+    * 年 : 2010
+    * 问题 : 待定
+  * EmberJS
+    * 年 : 2011
+    * 问题 : 待定
+  * Bootstrap
+    * 年 : 2011
+    * 问题 : 待定
+  * TypeScript
+    * 年 : 2012
+    * 问题 : 待定
+  * React
+    * 年 : 2013
+    * 问题 : 构建随着时间数据不断变化的大规模应用程序
+  * Vue
+    * 年 : 2013
+    * 问题 : 待定
+
+### 移动平台
+* 问题
+> 移动平台
+
+* 技术
+  * Web App
+    * 年 : 待定
+  * Hybrid App
+    * 年 : 2008-2011
+  * React Native
+    * 年 : 2015
+    * 问题 : 既拥有Native的用户体验、又保留React的开发效率
+  * Weex
+    * 年 : 2016
+
+## Hybrid App 分类一
+### 多View混合型
+* 描述
+> 2012年常见的Hybrid App是Native View与WebView交替的场景出现。这种应用混合逻辑相对简单。
+即在需要的时候，将WebView当成一个独立的View（Activity）运行起来，在WebView内完成相关的展示操作。开发难度和Native App基本相当。
+
+* 特点
+> 即Native View和Web View独立展示，交替出现。
+这种移动应用主体通常是Native App，Web技术只是起到补充作用。
+
+* 开发难度
+> 开发难度与native app相当
+
+### 单View混合型
+* 描述
+> 这种Hybrid App的开发成本较高，开发难度较大，但是体验较好。
+如百度搜索为代表的单View混合型移动应用，既可以实现充分的灵活性，又能实现较好的用户体验。
+
+* 特点
+> 即在同一个View内，同时包括Native View和Web View。互相之间是覆盖（层叠）的关系。(会牺牲内存，达到显示快的效果)
+
+* 开发难度
+> 开发成本较高，难度较大，但是体验较好。
+
+### Web主体型
+* 描述
+> 这种类型开发的移动应用体验相对而言存在缺陷，但整体开发难度大幅降低，并且基本可以实现跨平台。Web主体型的移动应用用户体验的好坏，主要取决于底层中间件的交互与跨平台的能力。
+从分析可见，Hybrid App中的Web主体型只要能够解决用户体验差的问题，就可以变成最佳Hybrid App解决方案类型。
+
+* 特点
+> 即移动应用的主体是Web View，主要以网页语言编写，穿插Native功能的Hybrid App开发类型。
+
+* 开发难度
+> 整体开发难度低，基本可以实现跨平台
+
+* 平台
+  * appMobi : 除基础的底层能力更多是通过插件（Plugins）扩展的机制实现Hybrid
+  * PhoneGap : 除基础的底层能力更多是通过插件（Plugins）扩展的机制实现Hybrid
+  * WeX5 : WeX5则在揉合PhoneGap和Bootstrap等主流技术的基础上，对性能进一步做了深度优化，不但完全具备Native App对本地资源的调用能力，性能体验也不输原生；WeX5所开发出来的app具备完全的跨端运行能力，可以无需任何修改直接运行在各种前端环境上。
+  * AppCan : 除了插件机制，还提供了大量的单View混合型的接口来完善和弥补Web主体型Hybrid App体验差的问题，接近Native App的体验。
+
+### 多主体共存型（灵活型）
+* 描述
+> 这是一种新型的开发模式，即支持Web主体型的应用，又支持以Native主体的应用，也支持两者混合的开发模式。
+
+* 平台
+  * kerkee : 它具有跨平台、用户体验好、性能高、扩展性好、灵活性强、易维护、规范化、具有Debug环境、彻底解决跨域问题等特点。用户体验与Native App媲美。功能方面，开发者可随意扩展接口。
+
+## Hybrid App 分类二
+### 重架构混合模式
+* 原因
+> “重混”架构这种依赖Native UI的混合框架，本着“Web不够，就Native来凑”的核心思路，的确提升了交互体验，但同时也带来了无法回避的显著缺点：Web和Native技术的交叉混杂让开发者的编程和调试都很不方便；尤其是无法直接运行在微信这类超级App平台之上，更是“重混”App的致命硬伤。
+
+### 轻架构混合模式
+* 原因
+> Hybrid APP就必须坚持几个原则：UI部分必须用纯Web技术，完全采用H5技术；在底层的设备接口上，确实是JS无法完成的原生部分，需要Native技术来弥补的，也必须坚持Native技术不去侵入UI。这样一个框架就是“轻混”Hybrid APP框架。“轻混”框架才是真正的HTML5 APP框架，在技术上更轻量，成本更低、也更容易推广，能真正做到只需一次开发就能跨Android、iOS和微信等各种端发布。“轻混”才是Hybrid APP技术发展的必然方向。
+
+## Hybrid 平台调查
+
+|平台         |时间|Native端|JS端|特点||||||
+|----|----|----|----|----|----|----|----|----|----|
+|PhoneGap     |2006|Cordova||||||||
+|Ionic        |2006|Cordova|AngularJS|||||||
+|WeX5         |2006|Cordova||||||||
+|APICloud     |2006|||||||||
+|Appcelerator |2006|||||||||
+|NativeScript |2006|||||||||
+|Kinvey       |2006|||||||||
+|ExMobi       |2006|||||||||
+|AppCan       |2006|Cordova||||||||
+|Kerkee       |2015|待定    ||||||||
+
+|平台         |时间|Native端|JS端|特点||||||
+|----|----|----|----|----|----|----|----|----|----|
+|React Native |2006|||||||||
+|Weex         |2006|||||||||
+|Tianium      |2006|||||||||
+
+## Hybrid App 调试方法
+
+|开发阶段|调试方法|应用场景|设备依赖|设备支持|无线支持|JS调试|编译打包|加密网络请求|优点|缺点|
+|----|----|----|----|----|----|----|----|----|----|----|
+|模拟网络请求阶段|mockdata|-|-|web|-|√|-|×| | |
+| | | | | | | | | | |
+|UI开发阶段|console()|-|-|web<br/>iOS真机/模拟器<br/>android真机/模拟器|-|-|√|-|||
+|原生联调阶段|Ripple仿真|业务开发严重依赖 Cordova API 的测试|ripple-emulator npm包|web|-|×|×|-|||
+|-|Weinre|-|Weinre npm包|web<br/>iOS真机/模拟器<br/>android真机/模拟器|√|√|√|web×<br/>其它√<br/>||1 weinre这类调试工具仍属于插件性质，诸如“网络”、“本地资源”等高级调试功能无法支持<br/> 2 需要额外添加代码|
+|-|PhoneGap Developer App|与 PhoneGap Desktop App 配合使用<br/>或者使用 phonegap serve 命令|PhoneGap Developer App 手机软件|iOS真机/模拟器<br/> android真机/模拟器<br/>|√|×|×|×|1 无须配置任何iOS、android、nodejs环境<br/> 2 支持 console 输出到 PhoneGap Desktop App 终端|1 严重依赖phoneGap的cordova API <br/>2 热加载效率低 <br/>3 不能使用自定义的cordova插件|
+|-|PhoneGap Desktop App|用于给 Cordova 项目开启 serve 命令<br/>与 PhoneGap Developer App 配合使用|PhoneGapDesktop客户端软件包|-|-|-|-|-|见 PhoneGap Developer App 优点|1 只是作为 phonegap serve的客户端 <br/>2 热加载效率低|
+|-|基于 Safari 的调试||safari|iOS真机/模拟器|真机不支持|√|√|√||依赖 Mac、XCode 环境|
+|-|基于 Chrome 的调试||chrome|android真机/模拟器|真机不支持|√|√|√||依赖 Android Studio 环境|
+|-|GapDebug|-|GapDebug软件包|iOS真机<br/> android真机<br/> 模拟器待定|×|√|√|√|不依赖app的开发环境|-|
