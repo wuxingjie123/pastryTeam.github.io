@@ -157,24 +157,26 @@
 
 |平台         |时间|Native端|JS端|特点|归属|优点||||
 |----|----|----|----|----|----|----|----|----|----|
-|PhoneGap     |2008-2011/7|Cordova|||国外|||||
+|PhoneGap     |2008-2011/7|Cordova|jQuery Mobile||国外|||||
 |Ionic        |2015|Cordova|AngularJS||国外|||||
-|WeX5         |2014|Cordova|||国内|||||
+|[WeX5](http://docs.wex5.com/)         |2014|Cordova|Knockoutjs(MVVM)、requirejs、bootstrap、jquery等||国内|||||
 | | | | | | | | | | |
-|APICloud     |2016前|Cordova||APICloud推行“云端一体”的理念，重新定义了移动应用开发。<br/>APICloud为开发者从“云”和“端”两个方向提供API，简化移动应用开发技术，让移动应用的开发周期从一个月缩短到7天。<br/>APICloud由“云API”和“端API”两部分组成，可以帮助开发者快速实现移动应用的开发、测试、发布、管理和运营的全生命周期管理|国内|SuperWebview比基础的webview或phonegap拥有更丰富的功能，支持用HTML5开发具有原生UI和UE体验的界面、同时支持调用二维码等系统功能，并且能很好的把蓝牙、WiFi和智能硬件相连接。||||
+|APICloud     |2016前|Cordova|[JS前端文档](http://docs.apicloud.com/Front-end-Framework/framework-dev-guide)|APICloud推行“云端一体”的理念，重新定义了移动应用开发。<br/>APICloud为开发者从“云”和“端”两个方向提供API，简化移动应用开发技术，让移动应用的开发周期从一个月缩短到7天。<br/>APICloud由“云API”和“端API”两部分组成，可以帮助开发者快速实现移动应用的开发、测试、发布、管理和运营的全生命周期管理|国内|SuperWebview比基础的webview或phonegap拥有更丰富的功能，支持用HTML5开发具有原生UI和UE体验的界面、同时支持调用二维码等系统功能，并且能很好的把蓝牙、WiFi和智能硬件相连接。||||
 |ExMobi       |2014|Cordova|||国内(烽火星空)|||||
 |AppCan       |2010|Cordova|||国内(正益无线)|||||
 | | | | | | | | | | |
 |Titanium |2009-2012|Cordova|||国外(Appcelerator)|||||
 |NativeScript |2006|Cordova||||国外(telerik)||||
-|Kinvey       |2011|Cordova||||||||
+|Kinvey       |2011|Cordova||||国外||||
 | | | | | | | | | | |
-|Kerkee       |2015|待定(等待发展)    ||||||||
+|Kerkee       |2015|待定(等待发展)    |||国内|||||
+| | | | | | | | | | |
+|Pastry       |----|Cordova    |backbone(MVVM)、requirejs、bootstrap、jquery等||--|||||
 
 |平台         |时间|Native端|JS端|特点||||||
 |----|----|----|----|----|----|----|----|----|----|
-|React Native |2015|||||||||
-|Weex         |2016|||||||||
+|React Native |2015||||国外|||||
+|Weex         |2016||||国内|||||
 
 ## Hybrid App 调试方法
 
