@@ -155,38 +155,48 @@
 
 ## Hybrid 平台调查
 
-|平台         |时间|Native端|JS端|特点||||||
+|平台         |时间|Native端|JS端|特点|归属|优点||||
 |----|----|----|----|----|----|----|----|----|----|
-|PhoneGap     |2006|Cordova||||||||
-|Ionic        |2006|Cordova|AngularJS|||||||
-|WeX5         |2006|Cordova||||||||
-|APICloud     |2006|||||||||
-|Appcelerator |2006|||||||||
-|NativeScript |2006|||||||||
-|Kinvey       |2006|||||||||
-|ExMobi       |2006|||||||||
-|AppCan       |2006|Cordova||||||||
-|Kerkee       |2015|待定    ||||||||
+|PhoneGap     |2008-2011/7|Cordova|||国外|||||
+|Ionic        |2015|Cordova|AngularJS||国外|||||
+|WeX5         |2014|Cordova|||国内|||||
+| | | | | | | | | | |
+|APICloud     |2016前|Cordova||APICloud推行“云端一体”的理念，重新定义了移动应用开发。<br/>APICloud为开发者从“云”和“端”两个方向提供API，简化移动应用开发技术，让移动应用的开发周期从一个月缩短到7天。<br/>APICloud由“云API”和“端API”两部分组成，可以帮助开发者快速实现移动应用的开发、测试、发布、管理和运营的全生命周期管理|国内|SuperWebview比基础的webview或phonegap拥有更丰富的功能，支持用HTML5开发具有原生UI和UE体验的界面、同时支持调用二维码等系统功能，并且能很好的把蓝牙、WiFi和智能硬件相连接。||||
+|ExMobi       |2014|Cordova|||国内(烽火星空)|||||
+|AppCan       |2010|Cordova|||国内(正益无线)|||||
+| | | | | | | | | | |
+|Titanium |2009-2012|Cordova|||国外(Appcelerator)|||||
+|NativeScript |2006|Cordova||||国外(telerik)||||
+|Kinvey       |2011|Cordova||||||||
+| | | | | | | | | | |
+|Kerkee       |2015|待定(等待发展)    ||||||||
 
 |平台         |时间|Native端|JS端|特点||||||
 |----|----|----|----|----|----|----|----|----|----|
-|React Native |2006|||||||||
-|Weex         |2006|||||||||
-|Tianium      |2006|||||||||
+|React Native |2015|||||||||
+|Weex         |2016|||||||||
 
 ## Hybrid App 调试方法
 
+### 调试方法汇总
+
 |开发阶段|调试方法|应用场景|设备依赖|设备支持|无线支持|JS调试|编译打包|加密网络请求|优点|缺点|
 |----|----|----|----|----|----|----|----|----|----|----|
-|模拟网络请求阶段|mockdata|-|-|web|-|√|-|×| | |
+|UI开发阶段|mockdata|开发H5端UI界面，UI界面显示模拟数据，非网络请求真实数据。|-|web|-|√|-|×| | |
 | | | | | | | | | | |
-|UI开发阶段|console()|-|-|web<br/>iOS真机/模拟器<br/>android真机/模拟器|-|-|√|-|||
-|原生联调阶段|Ripple仿真|业务开发严重依赖 Cordova API 的测试|ripple-emulator npm包|web|-|×|×|-|||
-|-|Weinre|-|Weinre npm包|web<br/>iOS真机/模拟器<br/>android真机/模拟器|√|√|√|web×<br/>其它√<br/>||1 weinre这类调试工具仍属于插件性质，诸如“网络”、“本地资源”等高级调试功能无法支持<br/> 2 需要额外添加代码|
-|-|PhoneGap Developer App|与 PhoneGap Desktop App 配合使用<br/>或者使用 phonegap serve 命令|PhoneGap Developer App 手机软件|iOS真机/模拟器<br/> android真机/模拟器<br/>|√|×|×|×|1 无须配置任何iOS、android、nodejs环境<br/> 2 支持 console 输出到 PhoneGap Desktop App 终端|1 严重依赖phoneGap的cordova API <br/>2 热加载效率低 <br/>3 不能使用自定义的cordova插件|
-|-|PhoneGap Desktop App|用于给 Cordova 项目开启 serve 命令<br/>与 PhoneGap Developer App 配合使用|PhoneGapDesktop客户端软件包|-|-|-|-|-|见 PhoneGap Developer App 优点|1 只是作为 phonegap serve的客户端 <br/>2 热加载效率低|
-|-|基于 Safari 的调试||safari|iOS真机/模拟器|真机不支持|√|√|√||依赖 Mac、XCode 环境|
-|-|基于 Chrome 的调试||chrome|android真机/模拟器|真机不支持|√|√|√||依赖 Android Studio 环境|
-|-|GapDebug|-|GapDebug软件包|iOS真机<br/> android真机<br/> 模拟器待定|×|√|√|√|不依赖app的开发环境|-|
+|整个开发阶段|console.log()|将H5日志输出到浏览器、原生端输出窗口、iOS真机日志文件。|-|web<br/>iOS真机/模拟器<br/>android真机/模拟器|-|-|√|-| |依赖开发人员打印日志的完整性|
+|原生联调阶段|Ripple仿真|业务开发严重依赖 Cordova API 的测试|[ripple-emulator npm包 教程](http://cordova.apache.org/docs/en/latest/guide/next/index.html#ripple)|web|-|×|×|-|不依赖真机，模拟出真机的API接口|可以使用基于 Safari、Chrome 的调试方法代替|
+|原生联调阶段|Weinre|调试JS业务逻辑，监听实时变量|[Weinre npm包 教程](http://cordova.apache.org/docs/en/latest/guide/next/index.html#weinre)|web<br/>iOS真机/模拟器<br/>android真机/模拟器|√|√|√|√<br/>||1 weinre这类调试工具仍属于插件性质，诸如“网络”、“本地资源”等高级调试功能无法支持<br/> 2 需要额外添加代码<br/>|
+| | | | | | | | | | |
+|-|PhoneGap Developer App|与 PhoneGap Desktop App 配合使用<br/>或者使用 phonegap serve 命令|[PhoneGap Developer App 手机软件 按照教程](http://docs.phonegap.com/getting-started/1-install-phonegap/desktop/)|iOS真机/模拟器<br/> android真机/模拟器<br/>|√|×|×|×|1 无须配置任何iOS、android、nodejs环境<br/> 2 支持 console 输出到 PhoneGap Desktop App 终端|1 严重依赖phoneGap的cordova API <br/>2 热加载效率低 <br/>3 不能使用自定义的cordova插件|
+|-|PhoneGap Desktop App|用于给 Cordova 项目开启 serve 命令<br/>与 PhoneGap Developer App 配合使用|[PhoneGapDesktop客户端软件包 安装教程](http://docs.phonegap.com/getting-started/1-install-phonegap/desktop/)|-|-|-|-|-|见 PhoneGap Developer App 优点|1 只是作为 phonegap serve的客户端 <br/>2 热加载效率低|
+| | | | | | | | | | |
+|原生联调阶段|基于 Safari 的调试|适用 Weinre 应用场景|[safari 教程](http://cordova.apache.org/docs/en/latest/guide/next/index.html#ios-debugging)|iOS真机/模拟器|真机不支持|√|√|√||依赖 Mac、XCode 环境|
+|原生联调阶段|基于 Chrome 的调试|适用 Weinre 应用场景|[chrome 教程](http://cordova.apache.org/docs/en/latest/guide/next/index.html#chrome-remote-debugging)|android真机/模拟器|真机不支持|√|√|√||依赖 Android Studio 环境|
+|原生联调阶段|GapDebug|适用 Weinre 应用场景|[GapDebug软件包下载](https://www.genuitec.com/products/gapdebug/)|iOS真机<br/> android真机<br/> 模拟器待定|×|√|√|√|不依赖app的开发环境|-|
 
 [更多介绍参考 Debugging Cordova apps](http://cordova.apache.org/docs/en/latest/guide/next/index.html#debugging-cordova-apps)
+
+### 推荐调试方法
+* **推荐调试方法**
+  * **`mockdata & console.log() -> GapDebug -> 基于Safari、Chrome方法 -> Weinre`**
