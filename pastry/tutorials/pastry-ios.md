@@ -8,7 +8,9 @@
          ios
           ├── CordovaLib                  **功能 : cordova 原生端 JS 桥**
           ├── HelloWorld
-          │   ├── Classes                 **功能 : 存放h5、iOS、android项目模版数据** 
+          │   ├── Classes                 **功能 : iOS 开发目录**
+          │   │   ├── lib                 **功能 : 存放 第三方库 位置(根据模块功能划分可能一个工程里出现多个lib目录)**
+          │   │   └── components          **功能 : 存放 自定义的 控件库位置(根据模块功能划分可能一个工程里出现多个lib目录)**
           │   ├── HelloWorld-Info.plist
           │   ├── HelloWorld-Prefix.pch
           │   ├── PastryFramework         **功能 : iOS端重要的资源文件**
@@ -80,7 +82,7 @@
 
   * **真机日志文件目录：对应App应用/Library/Caches/Logs;**
 
-  * 日志颜色 
+  * 日志颜色
 
     * iOS PT框架日志颜色
 
@@ -130,6 +132,3 @@
 
   * 生产模式 文件验签模式
     **支持**
-
-
-
