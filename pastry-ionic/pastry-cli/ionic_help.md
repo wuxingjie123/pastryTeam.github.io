@@ -1,62 +1,57 @@
-# Pastry Bake
-
-# 提供项目构建相关命令
-
-* # `create 可以在任意目录下 执行`
-* # `platform/plugin/build/bower 在项目工程目录下 执行`
+# ionic
 
 ----
-## create
+## 创建工程
+### ionic start projectName tabs
 
 创建工程，根据选项自动添加支持的平台和插件
 
 使用：
 
-    pastry bake create 项目名 项目ID
-    
+    ionic start 项目名 (tabs/sidemenu/blank) -i com.mobilebank.develop
+
     选项：
       -w --work-dir       设置工作目录
       -t --add-platforms   设置支持平台
       -p --add-plugins     设置引入插件
 
-`--add-platforms`
-
-* 指定 `--add-platforms ios` 参数，只添加指定的ios平台
-
-* 不指定 `--add-platforms` 参数，添加iOS、android平台
-
-
-`--add-plugin`
-
-* 指定/不指定 `--add-plugins` 参数，都会加载默认的9个插件；
-    * cordova-plugin-whitelist
-    
-    * cordova-plugin-console
-    
-    * pastry-plugin-browser
-    
-    * pastry-plugin-request
-    
-    * pastry-plugin-keyboard
-    
-    * pastry-plugin-unzip
-    
-    * pastry-plugin-guide
-    
-    * pastry-plugin-tabMain
-    
-    * pastry-plugin-storageDemo
-
 样例：
 
-    pastry bake create HelloWorld com.example.test
+      start [options] <PATH> [template] .............  Starts a new Ionic project in the specified PATH
+                                                   [options] any flags for the command
+                                                   <PATH> directory for the new project
+                                                   [template] Starter templates can either come from a named template,
+                                                              (ex: tabs, sidemenu, blank),
+                                                              a Github repo, a Codepen url, or a local directory.
+                                                              Codepen url, ex: http://codepen.io/ionic/pen/odqCz
+                                                              Defaults to Ionic "tabs" starter template
+        [--appname|-a]  .........................  Human readable name for the app (Use quotes around the name)
+
+        [--id|-i]  ..............................  Package name for <widget id> config, ex: com.mycompany.myapp
+
+        [--skip-npm]  ...........................  Skip npm package installation
+
+        [--no-cordova|-w]  ......................  Create a basic structure without Cordova requirements
+
+        [--sass|-s]  ............................  Setup the project to use Sass CSS precompiling
+
+        [--list|-l]  ............................  List starter templates available
+
+        [--io-app-id]  ..........................  The Ionic.io app ID to use
+
+        [--template|-t]  ........................  Project starter template
+
+        [--v2|-v]  ..............................  Start a Ionic v2 project
+
+        [--zip-file|-z]  ........................  URL to download zipfile for starter template
 
 ----  
-## platform
+## 添加 pastry 原生插件依赖
+### ionic plugin add https://github.com/pastryTeam/pastry-plugin-base-ionic
 
 使用：
 
-    pastry bake platform 子命令
+    ionic plugin add https://github.com/pastryTeam/pastry-plugin-base-ionic
     子命令：
       list                       列出目前支持平台平台
       add 平台参数{android,ios}   添加支持平台
@@ -75,7 +70,7 @@
 样例：
 
     pastry bake platform list
-    
+
     // 删除指定平台
     pastry bake platform rm android
     pastry bake platform rm ios
@@ -100,17 +95,18 @@
     pastry bake platform add https://github.com/pastryTeam/ios-template.git#0.1.0
 
 ----
-## plugin
+## 编译平台
+### ionic build ios --release --device --codeSignIdentity=com.mobilebank.develop
 
 使用：
 
-    pastry bake plugin 子命令
+    pastry bake plugin
     子命令：
       list          列出目前进入的插件
       add 插件参数   添加cordova插件
       rm 插件参数    移除cordova插件
 
-`插件参数`
+`平台参数`
 
 * pastry-plugin-XXX cordova-plugin-XXX
 
@@ -149,32 +145,16 @@
     # 例如 : name = cordova-plugin-camera
     pastry bake plugin rm cordova-plugin-camera
 
-更多插件:
-
-[pastry Cordova插件库地址][net_pastry_Cordova_plugins]
-
-[net_pastry_Cordova_plugins]: https://github.com/search?utf8=%E2%9C%93&q=user%3ApastryTeam+pastry-plugin&type=Repositories&ref=searchresults
-
 ----
-## build
+## generate
 
-对工程进行打包操作
-
-使用：
-
-    pastry bake build 
-    
-    选项：
-      平台参数{ios、android}       平台参数
-      -m{debug、release}         打包方式：debug用于测试，release用于生产
-      -si{描述文件名称}            描述文件名称
-
+构建工程
 
 样例：
 
     # 进行 debug 编译
     pastry bake build android -m debug
-    
+
     pastry bake build ios -m debug -si 描述文件名称
 
     # 进行 release 编译
@@ -183,17 +163,9 @@
     pastry bake build ios -m release -si 描述文件名称
 
 ----
-## bower
+## platform
 
 给JS添加业务组件
-
-使用：
-
-    pastry bake bower 子命令 
-    
-    选项：
-      install 组件名称
-      uninstall 组件名称         
 
 样例：
 
@@ -203,12 +175,54 @@
     # 卸载指定JS业务组件 component-js-register
     pastry bake bower uninstall component-js-register
 
-更多组件:
+## run
 
-[pastry JS组件库地址][net_pastry_js_plugins]
+## emulate
 
-[net_pastry_js_plugins]: https://github.com/search?utf8=%E2%9C%93&q=user%3ApastryTeam+component-js&type=Repositories&ref=searchresults
+## build
+
+## plugin
+
+## resources
+
+## upload
+
+## share
+
+## lib
+
+## io
+
+## security
+
+## push
+
+## package
+
+## config
+
+## service
+
+## add
+
+## remove
+
+## list
+
+## link
+
+## hooks
+
+## state
+
+## docs
+
+## info
+
+## help
+
+
 
 # License
 
-Copyright &copy; asp.citic.com 2016 
+Copyright &copy; asp.citic.com 2016

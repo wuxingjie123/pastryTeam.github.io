@@ -19,34 +19,6 @@
       -t --add-platforms   设置支持平台
       -p --add-plugins     设置引入插件
 
-`--add-platforms`
-
-* 指定 `--add-platforms ios` 参数，只添加指定的ios平台
-
-* 不指定 `--add-platforms` 参数，添加iOS、android平台
-
-
-`--add-plugin`
-
-* 指定/不指定 `--add-plugins` 参数，都会加载默认的9个插件；
-    * cordova-plugin-whitelist
-    
-    * cordova-plugin-console
-    
-    * pastry-plugin-browser
-    
-    * pastry-plugin-request
-    
-    * pastry-plugin-keyboard
-    
-    * pastry-plugin-unzip
-    
-    * pastry-plugin-guide
-    
-    * pastry-plugin-tabMain
-    
-    * pastry-plugin-storageDemo
-
 样例：
 
     pastry bake create HelloWorld com.example.test
@@ -56,7 +28,7 @@
 
 使用：
 
-    pastry bake platform 子命令
+    pastry bake platform 
     子命令：
       list                       列出目前支持平台平台
       add 平台参数{android,ios}   添加支持平台
@@ -104,13 +76,13 @@
 
 使用：
 
-    pastry bake plugin 子命令
+    pastry bake plugin 
     子命令：
       list          列出目前进入的插件
       add 插件参数   添加cordova插件
       rm 插件参数    移除cordova插件
 
-`插件参数`
+`平台参数`
 
 * pastry-plugin-XXX cordova-plugin-XXX
 
@@ -149,26 +121,10 @@
     # 例如 : name = cordova-plugin-camera
     pastry bake plugin rm cordova-plugin-camera
 
-更多插件:
-
-[pastry Cordova插件库地址][net_pastry_Cordova_plugins]
-
-[net_pastry_Cordova_plugins]: https://github.com/search?utf8=%E2%9C%93&q=user%3ApastryTeam+pastry-plugin&type=Repositories&ref=searchresults
-
 ----
 ## build
 
-对工程进行打包操作
-
-使用：
-
-    pastry bake build 
-    
-    选项：
-      平台参数{ios、android}       平台参数
-      -m{debug、release}         打包方式：debug用于测试，release用于生产
-      -si{描述文件名称}            描述文件名称
-
+构建工程
 
 样例：
 
@@ -187,14 +143,6 @@
 
 给JS添加业务组件
 
-使用：
-
-    pastry bake bower 子命令 
-    
-    选项：
-      install 组件名称
-      uninstall 组件名称         
-
 样例：
 
     # 安装指定JS业务组件 component-js-register
@@ -203,11 +151,6 @@
     # 卸载指定JS业务组件 component-js-register
     pastry bake bower uninstall component-js-register
 
-更多组件:
-
-[pastry JS组件库地址][net_pastry_js_plugins]
-
-[net_pastry_js_plugins]: https://github.com/search?utf8=%E2%9C%93&q=user%3ApastryTeam+component-js&type=Repositories&ref=searchresults
 
 # License
 
