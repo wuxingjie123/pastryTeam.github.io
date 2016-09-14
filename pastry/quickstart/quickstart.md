@@ -124,7 +124,7 @@
 
         cd 指定项目目录
       
-        pastry bake create HelloWorld com.test.helloworld --add-platforms android,ios --add-plugins pastry-plugin-request,pastry-plugin-keyboard,pastry-plugin-browser
+        pastry bake create HelloWorld com.test.helloworld
 
 
 ## 保存代码到代码仓库
