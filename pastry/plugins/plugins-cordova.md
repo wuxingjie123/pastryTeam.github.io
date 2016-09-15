@@ -1,20 +1,75 @@
 # 平台插件
 
 ----
-## pastry制作的cordova插件使用指南
+## 插件目录通用结构
 
-* 前提条件 : `pastry` 已经正确安装完成。
 
-* 使用 `pastry bake plugin add gitPath` 命令添加pastry制作的cordova插件。
-    
-  [更多cordova插件添加方法见 bake 的 plugin 命令][md_moreCli]
-
-        pastry bake plugin add gitPath
-
-  [** `更多的pastry制作的cordova地址` **][net_pastryplugins]
 
 ----
-## pastry-plugin-browser 插件
+## --------------------------
+
+----
+## 插件总览
+
+|插件名称|pastry|ionic|进度|JS /进度|iOS /进度|android /进度|
+|-----|-----|-----|-----|-----|-----|-----|
+|框架级别插件|||||||
+|[pastry-plugin-blankMain][net_blankMain]|Y|-|Loading|N|Y /Complete|Y /   Await|
+|[pastry-plugin-sideMain][net_sideMain] |Y| - | Loading |N|Y /Complete|Y /   Await|
+|[pastry-plugin-tabMain][net_tabMain] |Y|-|Loading|N|Y /Complete|Y /   Await|
+|基础库级别插件|||||||
+|pastry-plugin-base-ionic |-|Y|Loading|-|Y /Complete|Y /   Await|
+|交互级别插件|||||||
+|[pastry-plugin-keyboard][net_keyboard] |Y|Y|Complete|Y|Y /Complete|Y /   Await|
+|[pastry-plugin-request][net_request] |Y|Y|Complete|Y|Y /Complete|Y /   Await|
+|[pastry-plugin-browser][net_browser] |Y|-|Complete|N|Y /Complete|Y /Complete|
+|[pastry-plugin-storage][net_storage] |Y|Y|Loading|Y|Y /Complete|Y /   Await|
+|[pastry-plugin-pastryState][net_pastryState]|Y|Y|   Await|Y|Y /   Await|Y /   Await|
+|UI级别插件|||||||
+|[pastry-plugin-unzip][net_unzip] |Y|Y|Complete|-|Y /Complete|Y /   Await|
+|[pastry-plugin-guide][net_guide] |Y|-|Loading|N|Y /Complete|Y /   Await|
+|[pastry-plugin-login][net_login] |Y|-|Loading|N|Y /Complete|Y /   Await|
+|[pastry-plugin-share][net_share] |Y|-|   Await|N|Y /Complete|Y /   Await|
+|[pastry-plugin-DB][net_DB] |Y|-|   Await|N|Y /Complete|Y /   Await|
+
+## CLI进展
+
+|平台|build|plugin|platform|JS /进度|iOS /进度|android /进度|
+|-----|-----|-----|-----|-----|-----|-----|
+|pastry CLI|Y|Y|Y|Y|Y|Y|
+|ionic CLI||Y|||||
+
+----
+## --------------------------
+
+----
+## 日志插件
+
+* 功能
+
+    * 提供H5使用 console.log() 将日志输出到 原生端的开发IDE输出框；
+
+* 使用方法
+
+    * [cordova-plugin-console 地址][net_console]
+
+[net_console]: https://github.com/pastryTeam/cordova-plugin-console
+
+----
+## 白名单插件
+
+* 功能
+
+    * 提供 android 白名单功能。
+
+* 使用方法
+
+    * [cordova-plugin-whitelist 地址][net_whitelist]
+
+[net_whitelist]: https://github.com/pastryTeam/cordova-plugin-whitelist
+
+----
+## 浏览器插件
 
 * 功能
 
@@ -22,8 +77,12 @@
 
 * 使用方法
 
+    * [pastry-plugin-browser 地址][net_browser]
+
+[net_browser]: https://github.com/pastryTeam/pastry-plugin-browser
+
 ----
-## pastry-plugin-request 插件
+## 网络请求插件
 
 * 功能
 
@@ -31,8 +90,12 @@
 
 * 使用方法
 
+    * [pastry-plugin-request 地址][net_request]
+
+[net_request]: https://github.com/pastryTeam/pastry-plugin-request
+
 ----
-## pastry-plugin-keyboard 插件
+## 密码键盘插件
 
 * 功能
 
@@ -40,14 +103,83 @@
 
 * 使用方法
 
+    * [pastry-plugin-keyboard 地址][net_keyboard]
+
+[net_keyboard]: https://github.com/pastryTeam/pastry-plugin-keyboard
+
+## --------模版插件--------
+
 ----
-## cordova-plugin-console 插件
+## 选项库模版插件
 
 * 功能
 
-    * 提供H5使用 console.log() 将日志输出到 原生端的开发IDE输出框；
+    * 提供选项卡模版功能
 
 * 使用方法
+
+    * [pastry-plugin-tabMain 地址][net_tabMain]
+
+[net_tabMain]: https://github.com/pastryTeam/pastry-plugin-tabMain
+
+----
+## 侧边框模版插件
+
+* 功能
+
+    * 提供侧边框功能
+
+* 使用方法
+
+    * [pastry-plugin-sideMain 地址][net_sideMain]
+
+[net_sideMain]: https://github.com/pastryTeam/pastry-plugin-sideMain
+
+----
+## 空白模版插件
+
+* 功能
+
+    * 提供空白模版功能
+
+* 使用方法
+
+    * [pastry-plugin-blackMain 地址][net_blankMain]
+
+[net_blankMain]: https://github.com/pastryTeam/pastry-plugin-blankMain
+
+----
+## ------------UI------------
+
+----
+## 解压缩页面组件
+
+* 功能
+
+    * 提供data.zip解压缩的页面功能
+
+* 使用方法
+
+    * [pastry-plugin-unzip 地址][net_unzip]
+
+[net_unzip]: https://github.com/pastryTeam/pastry-plugin-unzip
+
+----
+## 引导页面组件
+
+* 功能
+
+    * 提供引导页面功能
+
+* 使用方法
+
+    * [pastry-plugin-guide 地址][net_guide]
+
+[net_guide]: https://github.com/pastryTeam/pastry-plugin-guide
+
+
+----
+## --------------------------
 
 ----
 ## 更多插件
@@ -58,47 +190,4 @@
 
 
 [net_cordovaplugins]: https://github.com/apache?utf8=%E2%9C%93&query=cordova-
-[md_moreCli]: ../pastry-cli/bake.md
 [net_pastryplugins]: https://github.com/search?utf8=%E2%9C%93&q=user%3ApastryTeam+pastry-plugin&type=Repositories&ref=searchresults
-
-# iOS 客户端组件
-
-----
-## iOS组件使用指南
-
-
-----
-## guide page（引导页面组件）
-
-* 功能
-
-    * 提供引导页面功能
-
-* 使用方法
-
-----
-## tip control (提示对话框组件)
-
-* 功能
-
-    * 提示对话框组件
-
-* 使用方法
-
-----
-## side (侧边框组件)
-
-* 功能
-
-    * 提供侧边框功能
-
-* 使用方法
-
-----
-## QRCodeGenerator (二维码组件)
-* 功能
-    * 提供H5使用 console.log() 将日志输出到 原生端的开发IDE输出框；
-* 使用方法
-
-
-[net_pastryiOS]: https://github.com/search?utf8=%E2%9C%93&q=user%3ApastryTeam+component-iOS-&type=Repositories&ref=searchresults

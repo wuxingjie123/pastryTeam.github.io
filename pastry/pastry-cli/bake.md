@@ -45,7 +45,7 @@
     
     * pastry-plugin-tabMain
     
-    * pastry-plugin-storageDemo
+    * pastry-plugin-storage
 
 样例：
 

@@ -40,8 +40,8 @@
             ┃    ┣ release                    **功能 : release产品模式使用的证书、框架等资源**
             ┃    ┃    ┣ certificate           **功能 : 相关证书**
             ┃    ┃    ┣ PT.framework          **功能 : release PT动态库**
-            ┃    ┃    ┗ System.plist          **功能 : 最终产品使用的配置信息，服务器URL设置。
-            ┃    ┃                            测试时，使用Setting.bundle/Root.plist的服务器URL设置**
+            ┗    ┗    ┗ System.plist          **功能 : 最终产品使用的配置信息，服务器URL设置。
+                                              测试时，使用Setting.bundle/Root.plist的服务器URL设置**
 
 ----
 ## 模版管理

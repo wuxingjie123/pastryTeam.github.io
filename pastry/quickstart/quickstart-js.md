@@ -83,7 +83,7 @@
                 <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
                 <!--引入框架-->
                 <script type="text/javascript" src="../pastry/main.js"
-                            data-debug="@simbridge">
+                            data-debug="mockdata">
                 </script>
             </head>
 
@@ -298,7 +298,7 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
             <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
             <!-- js、css引用及调试配置 -->
             <script type="text/javascript" src="../pastry/main.js"
-                    data-debug="@titlebar,@simdata,@simbridge,@weinre"
+                    data-debug="mockdata"
                     data-cssex="project,style"
                     data-lib="base64,md5"
                     data-libex="custom,public"

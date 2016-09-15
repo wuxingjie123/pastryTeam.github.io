@@ -1,23 +1,25 @@
 # Pastry Wiki
 
-[简介]()
-
-  * [简介](index.md)
-  - - - -
-  * [JS简介](abstract/abstract-js.md)
-  * [iOS简介`待定`](abstract/abstract-ios.md)
-  * [android简介`待定`](abstract/abstract-android.md)
-
 [指南]()
 
-  * [快速开始](quickstart/quickstart.md)
+  * [快速开始](index.md)
   - - - -
   * [JS指南](quickstart/quickstart-js.md)
   * [iOS指南](quickstart/quickstart-ios.md)
   * [android指南](quickstart/quickstart-android.md)
-  * [FO指南](quickstart/quickstart-fo.md)
+  * [前置指南](quickstart/quickstart-fo.md)
   - - - -
   * [使用IDE`不支持`](ide.md)
+
+[命令行工具]()
+
+  * # pastry
+  * [bake](pastry-cli/bake.md)
+ <!-- * [emulator`不支持`](pastry-cli/emulator.md)-->
+ <!-- * [emulator-server`不支持`](pastry-cli/emulator-server.md)-->
+ <!-- * [ide`支持部分功能`](pastry-cli/ide.md)-->
+ <!-- * [taste`不支持`](pastry-cli/taste.md)-->
+ <!-- * [taste-server`不支持`](pastry-cli/taste-server.md)-->
 
 [框架组件库]()
 
@@ -27,13 +29,23 @@
   - - - -
   * [Android](tutorials/pastry-android.md)
   - - - -
-  * [FO](tutorials/pastry-fo.md)
+  * [前置](tutorials/pastry-fo.md)
 
 [业务组件库]()
 
   * [业务 JS 组件](plugins/plugins-js.md)
   - - - -
   * [Cordova 业务组件(JS || iOS || Android)](plugins/plugins-cordova.md)
+
+[平台简介]()
+
+  * [简介](abstract/abstract.md)
+  - - - -
+  * [JS简介](abstract/abstract-js.md)
+  * [iOS简介`待定`](abstract/abstract-ios.md)
+  * [android简介`待定`](abstract/abstract-android.md)
+
+[平台下载](download.md)
 
 
 [代码规范]()
@@ -42,6 +54,7 @@
   * [iOS 代码规范](codingSpecification/specification-ios.md)
   * [android 代码规范](codingSpecification/specification-android.md)
 
+<!--
 [API 文档]()
 
   * [Pastry JS (pc)](apiDoc/1.0.0/pc/index.html)
@@ -51,18 +64,7 @@
   * [Pastry iOS](apiDoc/1.0.0/ios/index.html)
   - - - -
   * [Pastry Android](apiDoc/1.0.0/android/index.html)
-
-[下载](download.md)
-
-[脚手架]()
-
-  * # pastry
-  * [bake](pastry-cli/bake.md)
- <!-- * [emulator`不支持`](pastry-cli/emulator.md)-->
- <!-- * [emulator-server`不支持`](pastry-cli/emulator-server.md)-->
- <!-- * [ide`支持部分功能`](pastry-cli/ide.md)-->
- <!-- * [taste`不支持`](pastry-cli/taste.md)-->
- <!-- * [taste-server`不支持`](pastry-cli/taste-server.md)-->
+-->
 
 [常见问题](faq.md)
 
