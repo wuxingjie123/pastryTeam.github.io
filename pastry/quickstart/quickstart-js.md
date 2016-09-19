@@ -54,21 +54,20 @@
 * 在 `HelloWorld/www/` 目录下,新建一个文本文件,命名为 HelloWorld.html
 
          HelloWorld/www
+          ┣ app                             **H5入口 **
+          ┃  ┗ HelloWorld.html              **功能 : 开发者新增示例文件**
           ┣ components                      **功能 : h5客户端 组件目录**
           ┣ css                             **功能 : h5客户端 css目录**
-          ┣ demo                            **功能 : 示例 Demo**
-          ┣ login                           **功能 : 示例 Demo**
           ┣ examples                        **功能 : 示例 Demo，集合所有h5框架封装组件的用法**
           ┣ mockdata                        **功能 : pastry测试服务器示例 Demo**
           ┣ make.xml                        **功能 : 对JS、CSS等文件签名、加解密的配置文件**
           ┣ pastry
           ┃  ┣ components                   **功能 : 框架组件**
-          ┃  ┣ core                         **功能 : 待定**
-          ┃  ┣ debug                        **功能 : 待定**
-          ┃  ┣ lib                          **功能 : 待定**
-          ┃  ┣ main.js                      **功能 : 待定**
-          ┃  ┗ plugins                      **功能 : 待定**
-          ┣ HelloWorld.html                 **开发者新增文件 **
+          ┃  ┣ core                         **功能 : 框架核心代码**
+          ┃  ┣ debug                        **功能 : debug相关**
+          ┃  ┣ lib                          **功能 : 框架依赖的第三方**
+          ┃  ┣ main.js                      **功能 : 框架入口**
+          ┗  ┗ plugins                      **功能 : 框架插件**
 
   并键入以下内容:
 
@@ -77,13 +76,15 @@
             <head>
                 <title>Hello World</title>
                 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-                <meta name="viewport" content="width=device-width, user-scalable=0">
+                <meta http-equiv="Pragma" content="no-cache" />
+                <!-- 移动APP优化配置 -->
                 <meta name="apple-mobile-web-app-capable" content="yes"/>
-                <meta content="telephone=no" name="format-detection"/>
-                <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+                <meta name="format-detection" content="telephone=no" />
+                <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,target-densitydpi=medium-dpi"/>
                 <!--引入框架-->
-                <script type="text/javascript" src="../pastry/main.js"
-                            data-debug="mockdata">
+                <!--注意data-debug推荐使用 @mockdata 属性-->
+                <script type="text/javascript" src="../../pastry/main.js"
+                            data-debug="@mockdata">
                 </script>
             </head>
 
@@ -108,7 +109,7 @@
 
 * 运行页面
 
-  在浏览器中打开HelloWorld.html,将会显示Hello World!
+  在浏览器中打开 app/HelloWorld.html,将会显示Hello World!
 
 
 
@@ -291,19 +292,18 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
         <head>
             <title>Hello World</title>
             <!-- 移动APP优化配置 -->
-            <meta name="apple-mobile-web-app-capable" content="yes"/> <meta name="viewport"
+            <meta name="apple-mobile-web-app-capable" content="yes"/> 
+            <meta name="viewport"
                 content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi"/>
             <meta content="telephone=no" name="format-detection"/>
             <!-- 页面编码配置 -->
             <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
             <!-- js、css引用及调试配置 -->
             <script type="text/javascript" src="../pastry/main.js"
-                    data-debug="mockdata"
-                    data-cssex="project,style"
-                    data-lib="base64,md5"
-                    data-libex="custom,public"
-                    data-component="switch,tab"
-                    data-componentex="menu"></script>
+                    data-debug="@mockdata"
+                    data-css="E:project,E:style"
+                    data-lib="C:base64,C:md5,E:custom,E:public"
+                    data-components="C:switch,C:tab,E:menu">
         </head>
 
         <body>
@@ -438,10 +438,11 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
 
     <!-- js、css引用及调试配置 -->
     <script type="text/javascript"
-            data-main="pastry/main.js"
+            data-main="../pastry/main.js"
             data-debug="@mockdata"
             data-lib="C:base64,C:md5"
-            data-component="C:switch,C:tab">
+            data-css="E:project,E:style"
+            data-components="C:switch,C:tab">
     </script>
 
 其中:
@@ -449,7 +450,7 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
 |属性|作用|说明|
 |-----|-----|----|
 |data-main|项目配置依赖文件require|固定为pastry/main.js|
-|data-debug|项目调试选项|框架调试模块,发布时会去掉该属性 <br/>对应js文件保存路径为 根/pastry/debug 说明:<br/>前缀 ! :仅客户端生效 <br/>前缀 @ :仅网页生效 <br/>前缀 $ :仅网页且地址以file://开头生效 <br/>前缀 # :客户端、网页均不生效 <br/>无前缀:客户端、网页均生效|
+|data-debug|项目调试选项|`强烈推荐使用 debug-main="@mockdata" `<br/>框架调试模块,发布时会去掉该属性 <br/>对应js文件保存路径为 根/pastry/debug 说明:<br/>前缀 ! :仅客户端生效 <br/>前缀 @ :仅网页生效 <br/>前缀 $ :仅网页且地址以file://开头生效 <br/>前缀 # :客户端、网页均不生效 <br/>无前缀:客户端、网页均生效|
 |data-lib|项目引用 库|引入框架/项目中定义的第三方库 <br/>说明：<br/>C:框架级  对应js文件保存路径为 根/pastry/lib/ <br/>E:项目级  对应js文件保存路径为 根/lib/ <br/>B:业务级  对应js文件保存路径为 当前路经/lib/ <br/>查找规则：components/组件名称/index.js |
 |data-components|项目引用 组件|引入框架/项目中定义的公共组件 <br/>说明：<br/>C:框架级  对应js文件保存路径为 根/pastry/components/ <br/>E:项目级  对应js文件保存路径为 根/components <br/>B:业务级 对应js文件保存路径为 当前路经/components/|
 |data-css|项目引用 CSS|引入框架/项目中定义的CSS <br/>说明：<br/>C:框架级  对应css文件保存路径为 根/pastry/css <br/>E:项目级  对应css文件保存路径为 根/css <br/>B:业务级 对应css文件保存路径为 当前路径/css/|
