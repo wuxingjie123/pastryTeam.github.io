@@ -121,7 +121,7 @@
 [net_keyboard]: https://github.com/pastryTeam/pastry-plugin-keyboard
 
 ----
-## pastry平台原生状态插件
+## 原生端状态信息插件
 
 * 功能
 
