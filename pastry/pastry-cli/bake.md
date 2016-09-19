@@ -115,6 +115,8 @@
 * pastry-plugin-XXX cordova-plugin-XXX
 
   `平台模版代码 指向 pastry/tools/common_data/plugins `
+  
+  `如果本地路经不存在，则在 Github 的 pastryTeam 仓库里查找。`
 
 * 本地路经
 
