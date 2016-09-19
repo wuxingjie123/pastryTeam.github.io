@@ -1,5 +1,24 @@
 # 快速开始
 
+## 预备知识
+### `Cordova 开发流程`
+
+* [Cordova 文档地址][cordova_doc]
+
+* Cordova 功能对比
+    
+    * Cordova CLI + JS端打包功能 = pastry CLI
+    
+    * Cordova 项目目录结构 ＋  pastry-fo-java + pastry-fo-nodejs = pastry 项目目录结构
+
+    * Cordova 项目ios模版 + pastry ios框架 = pastry ios 模版
+
+    * Cordova 项目android模版 + pastry android框架 = pastry android 模版
+
+    * Cordova 项目www模版 + pastry js框架 = pastry js 模版
+
+[cordova_doc]: http://cordova.apache.org/docs/en/latest/plugin_ref/spec.html
+
 ## 配置环境
 
 ### 基础环境
