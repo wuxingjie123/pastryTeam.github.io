@@ -95,6 +95,19 @@
 [net_request]: https://github.com/pastryTeam/pastry-plugin-request
 
 ----
+## 本地加密存储插件
+
+* 功能
+
+    * 提供H5使用原生的本地加密存储功能。
+
+* 使用方法
+
+    * [pastry-plugin-storage 地址][net_storage]
+
+[net_storage]: https://github.com/pastryTeam/pastry-plugin-storage
+
+----
 ## 密码键盘插件
 
 * 功能
@@ -106,6 +119,19 @@
     * [pastry-plugin-keyboard 地址][net_keyboard]
 
 [net_keyboard]: https://github.com/pastryTeam/pastry-plugin-keyboard
+
+----
+## pastry平台原生状态插件
+
+* 功能
+
+    * 提供H5获取pastry平台原生端网络状态、会话状态等信息。
+
+* 使用方法
+
+    * [pastry-plugin-pastryState 地址][net_pastryState]
+
+[net_pastryState]: https://github.com/pastryTeam/pastry-plugin-pastryState
 
 ## --------模版插件--------
 
