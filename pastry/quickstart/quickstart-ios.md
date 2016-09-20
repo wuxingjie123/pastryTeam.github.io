@@ -15,3 +15,10 @@
 * 配置引导页组件
 
 * 配置工程主样式组件
+
+----
+## 原生本地调试Html（FO-NodeJS）
+
+* `将 项目目录/www/mockdata 的模拟数据 复制到 项目目录/pastry-fo-nodejs/wwwroot/mockdata 目录。`
+	
+	* 要求JS端设置 `data-debug="@mockdata"`
