@@ -22,11 +22,50 @@
           ┃  ┣ debug                        **功能 : 框架为项目配置的debug选项集合**
           ┃  ┣ lib                          **功能 : 框架使用的第三方库**
           ┃  ┣ main.js                      **功能 : 框架入口**
-          ┃  ┗ plugins                      **功能 : 框架组件依赖的第三方UI组件库**
-
+          ┗  ┗ plugins                      **功能 : 框架组件依赖的第三方UI组件库**
 
 ----
-## 模版管理
+## --------------------------
+## 框架UI组件总览
+| 组件名称 | 父类 | 功能 | 示例代码 | |
+|-----|-----|-----|-----|-----|
+| 基础组件 |-----|-----|-----|-----|
+| Backbone.View || 组件基类 ||
+| 框架基础组件 |-----|-----|-----|
+| Base | Backbone.View |||
+| Container | Base | 容器组件基类 ||
+| Input | Base | 输入框组件 ||
+| ICheck | Base | 单多选按钮组件基类 | `待定` |
+| 框架扩展组件 |-----|-----|-----|
+| Label | Base | 标签组件 ||
+| Select | Base | `列表组件` | examples/base_amount.html ||
+| CheckImage | Base | 验证码组件 | `待定` ||
+| CodeMirror | Base | ？？？？？ | `待定` |
+| Datepicker | Base | 日历组件 | examples/data_dispatcher.html ||
+| PopupSelect | Base | `弹出框组件` | examples/ex_popupselect.html ||
+| StepGroup | Base | 步骤组组件 | `待定` ||
+| Switch | Base | 开关按钮组件 | examples/ex_switch.html ||
+| Tree | Base | 树形组件 | examples/ex_tree.html ||
+| Amount | Input | 金额框组件 | examples/base_amount.html ||
+| Password | Input | 密码框组件 | examples/base_password.html ||
+| Textarea | Input | 文本域组件 | `待定` ||
+| Button | Container | 按钮组件 | examples/base_button.html |
+| List | Container | 列表组件 | examples/base_list.html ||
+| ScrollView | Container | 滚动区域组件 | examples/ex_scrollview.html ||
+| SelectList | Container | 选择列表组件 | examples/ex_selectlist.html ||
+| Tab | Container | 选项卡组件 | examples/ex_tab.html ||
+| Form | Container | 表单组件 | examples/base_form.html |
+| Page | Form | 页签组件 | examples/base_page.html ||
+| BrowserHeader | Form | 浏览器顶部栏组件(弃用) | `待定` ||
+| BrowserFooter | Form | 浏览器底部栏组件(弃用) | examples/base_header_footer.html ||
+| PopupWindow | Form | `弹出框组件` | examples/ex_popupwindow.html ||
+| CheckBox | ICheck | 多选按钮组件 | examples/ex_checkbox.html ||
+| Radio | ICheck | 单选按钮组件 | examples/ex_radio.html ||
+| PopupMenu | PopupWindow | 弹出菜单组件 | examples/ex_popupmenu.html ||
+| CountdownBtn | Button | 倒计时按钮组件 | examples/ex_countdownbtn.html |
+
+----
+## --------------------------
 
 ----
 ## 通讯组件
@@ -35,84 +74,5 @@
 ## 密码键盘
 * 功能描述：
 
-
 ----
-## 数据存储
-
-----
-## 开发模式配置
-
-调试模式包含一种：`mockdata`
-
-在HTML模板页面中开启调试模式，需要在头部的依赖配置中加入data-debug选项，例如:
-
-    <script type="text/javascript"
-          data-main="pastry/main.js"
-          data-debug="@mockdata"
-    ……></script>
-
-当需要引入多个调试模块时，用逗号隔开如上所示，目前框架提供的调试模块有：
-
-|名称	|功能|
-|-----|-----|
-|mockdata	|模拟服务端数据交互|
-
-引用模块时不同的前缀表示不同的调试条件，有以下几种也预定义的情况：
-
-|前缀符号	|含义|
-|-----|-----|
-|前缀!	|仅客户端生效|
-|前缀@	|仅网页生效|
-|前缀$	|仅网页且地址以file://开头生效|
-|前缀#	|客户端、网页均不生效|
-|无前缀	|客户端、网页均生效|
-
-----
-#### **mockdata**
-
-模拟服务端返回数据，调试业务逻辑的重要手段。
-
-1. 模拟数据对客户端请求无效。
-
-2. 默认读取路径为 `mockdata/server/` 请求的URL对应的文件，例如：
-
-   模型请求的地址为“url: 'helloworld.do?act=getAllData'”，则模拟数据为 `mockdata/server/helloworld.do.js` 的文件中 `act=getAllData` 对应的对象。
-
-   `mockdata/server/*.js 与 pastry-test-server/wwwroot/mockdata/*.js 等同`
-
-   `将 mockdata/server/*.js 直接拷贝到 pastry-test-server/wwwroot/mockdata/*.js ，可以用于 nodejs 服务器的测试数据`
-
-3. 模拟数据内容如下：
-
-    define({
-        "act=getAllData": [
-            {
-                delay: 1000,
-          param: {
-            key:"1"
-              },
-                data: {
-                    labelData: 'Label',
-                    selectData: {
-                        value: 0,
-                        select: [
-                            {option: '1|500'},
-                            {option: '2|600'}
-                        ]
-                    },
-                    listData: {
-                        list: [
-                            {id: '1', title: 500},
-                            {id: '2', title: 600}
-                        ]
-                    }
-                }
-            }
-        ]
-    });
-
-|字段	|含义|
-|-----|-----|
-|delay	|模拟的延迟，为number型|
-|param	|模拟上送服务端的参数（测试时参数顺序与请求一致，否则可能不识别）|
-|data	|客户端返回的业务数据(为接近真实效果，所有字段请置为字符型)|
+## --------------------------
