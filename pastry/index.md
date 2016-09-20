@@ -82,9 +82,9 @@
 
       * 配置环境变量
 
-        为解压后的`pastry`路径创建到 `usr/local/bin` 的软连接
+        为解压后的`pastry目录\bin\pastry`命令行 创建到 `usr/local/bin` 的软连接
 
-        启动命令行窗口,cd至`pastry`目录,执行
+        启动命令行窗口,cd至`pastry目录`,执行
 
               ln -s `pwd`/bin/pastry /usr/local/bin
       
