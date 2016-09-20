@@ -29,6 +29,8 @@
 |[pastry-plugin-unzip][net_unzip] |Y|Y|Complete|-|Y /Complete|Y /   Await|
 |[pastry-plugin-guide][net_guide] |Y|-|Loading|N|Y /Complete|Y /   Await|
 |[pastry-plugin-login][net_login] |Y|-|Loading|N|Y /Complete|Y /   Await|
+|[pastry-plugin-QRcode][net_QRcode] |Y|-|Loading|Y|Y /Complete|Y /   Await|
+|[pastry-plugin-OCR][net_OCR] |Y|-|Loading|Y|Y /Complete|Y /   Await|
 |[pastry-plugin-share][net_share] |Y|-|   Await|N|Y /Complete|Y /   Await|
 |[pastry-plugin-DB][net_DB] |Y|-|   Await|N|Y /Complete|Y /   Await|
 
@@ -202,6 +204,32 @@
     * [pastry-plugin-guide 地址][net_guide]
 
 [net_guide]: https://github.com/pastryTeam/pastry-plugin-guide
+
+----
+## 二维码组件
+
+* 功能
+
+    * 提供二维码扫描功能
+
+* 使用方法
+
+    * [pastry-plugin-QRcode 地址][net_QRcode]
+
+[net_QRcode]: https://github.com/pastryTeam/pastry-plugin-QRcode
+
+----
+## 身份证验证组件
+
+* 功能
+
+    * 提供身份证验证功能
+
+* 使用方法
+
+    * [pastry-plugin-OCR 地址][net_OCR]
+
+[net_OCR]: https://github.com/pastryTeam/pastry-plugin-OCR
 
 
 ----
