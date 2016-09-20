@@ -26,6 +26,10 @@
 
 ----
 ## -------------总览-------------
+## Component类图
+
+![JS Component 类图](../../pastry/images/tutorials/jsComponent.png)
+
 ## 框架UI组件总览
 | 组件名称 | 父类 | 功能 | 示例代码 | |
 |-----|-----|-----|-----|-----|
@@ -63,6 +67,10 @@
 | Radio | ICheck | 单选按钮组件 | examples/ex_radio.html ||
 | PopupMenu | PopupWindow | 弹出菜单组件 | examples/ex_popupmenu.html ||
 | CountdownBtn | Button | 倒计时按钮组件 | examples/ex_countdownbtn.html |
+
+## 数据模型类图
+
+![JS Model 类图](../../pastry/images/tutorials/jsModel.png)
 
 ## 框架数据模型总览
 
