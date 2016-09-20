@@ -26,19 +26,19 @@
 
 对于属性的定义，确保全部使用双引号，绝不要使用单引号。
 
-不要在自闭合（self-closing）元素的尾部添加斜线 – HTML5 规范中明确说明这是可选的。
+必须在自闭合（self-closing）元素的尾部添加斜线 – HTML5 规范中明确说明这是可选的。
 
 不要省略可选的结束标签（closing tag）（例如，</li> 或 </body>）。
 
     <!DOCTYPE html>
     <html>
-    <head>
-        <title>Page title</title>
-    </head>
-    <body>
-        <img src="images/company-logo.png" alt="Company">
-        <h1 class="hello-world">Hello, world!</h1>
-    </body>
+        <head>
+            <title>Page title</title>
+        </head>
+        <body>
+            <img src="images/company-logo.png" alt="Company" />
+            <h1 class="hello-world">Hello, world!</h1>
+        </body>
     </html>
 
 #### HTML5 doctype
@@ -53,14 +53,14 @@
 
 IE 支持通过特定的 <meta> 标签来确定绘制当前页面所应该采用的 IE 版本。除非有强烈的特殊需求，否则最好是设置为 edge mode，从而通知 IE 采用其所支持的最新的模式。
 
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 
 #### 字符编码
 
 通过明确声明字符编码，能够确保浏览器快速并容易的判断页面内容的渲染方式。这样做的好处是，可以避免在 HTML 中使用字符实体标记（character entity），从而全部与文档编码一致（一般采用 UTF-8 编码）。
 
     <head>
-    <meta charset="UTF-8">
+        <meta charset="UTF-8" />
     </head>
 
 #### 注重实用
@@ -88,12 +88,12 @@ data-*
 class 用于标识高度可复用组件，因此应该排在首位。id 用于标识具体组件，应当谨慎使用（例如，页面内的书签），因此排在第二位。
 
     <a class="..." id="..." data-modal="toggle" href="#">
-    Example link
+        Example link
     </a>
     
-    <input class="form-control" type="text">
+    <input class="form-control" type="text" />
     
-    <img src="..." alt="...">
+    <img src="..." alt="..." />
 
 #### 布尔（boolean）型属性
 
@@ -103,12 +103,12 @@ class 用于标识高度可复用组件，因此应该排在首位。id 用于�
 
 简单来说，就是不用赋值。
 
-    <input type="text" disabled>
+    <input type="text" disabled />
     
-    <input type="checkbox" value="1" checked>
+    <input type="checkbox" value="1" checked />
     
     <select>
-    <option value="1" selected>1</option>
+        <option value="1" selected>1</option>
     </select>
 
 #### 减少标签的数量
@@ -117,11 +117,11 @@ class 用于标识高度可复用组件，因此应该排在首位。id 用于�
 
     <!-- 冗余的结构 -->
     <span class="avatar">
-    <img src="...">
+        <img src="...">
     </span>
     
     <!-- 更好的结构 -->
-    <img class="avatar" src="...">
+    <img class="avatar" src="..." />
 
 #### style属性
 
@@ -159,20 +159,20 @@ class 用于标识高度可复用组件，因此应该排在首位。id 用于�
 
     /* 不规范的CSS */
     .selector, .selector-secondary, .selector[type=text] {
-    padding:15px;
-    margin:0px 0px 15px;
-    background-color:rgba(0, 0, 0, 0.5);
-    box-shadow:0px 1px 2px #CCC,inset 0 1px 0 #FFFFFF
+        padding:15px;
+        margin:0px 0px 15px;
+        background-color:rgba(0, 0, 0, 0.5);
+        box-shadow:0px 1px 2px #CCC,inset 0 1px 0 #FFFFFF
     }
     
     /* 规范的CSS */
     .selector,
     .selector-secondary,
     .selector[type="text"] {
-    padding: 15px;
-    margin-bottom: 15px;
-    background-color: rgba(0,0,0,.5);
-    box-shadow: 0 1px 2px #ccc, inset 0 1px 0 #fff;
+        padding: 15px;
+        margin-bottom: 15px;
+        background-color: rgba(0,0,0,.5);
+        box-shadow: 0 1px 2px #ccc, inset 0 1px 0 #fff;
     }
 
 #### 声明顺序
@@ -192,33 +192,33 @@ Visual
 其他属性只是影响组件的内部（inside）或者是不影响前两组属性，因此排在后面。
 
     .declaration-order {
-    /* Positioning */
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 100;
-    
-    /* Box-model */
-    display: block;
-    float: right;
-    width: 100px;
-    height: 100px;
-    
-    /* Typography */
-    font: normal 13px "Helvetica Neue", sans-serif;
-    line-height: 1.5;
-    color: #333;
-    text-align: center;
-    
-    /* Visual */
-    background-color: #f5f5f5;
-    border: 1px solid #e5e5e5;
-    border-radius: 3px;
-    
-    /* Misc */
-    opacity: 1;
+        /* Positioning */
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        
+        /* Box-model */
+        display: block;
+        float: right;
+        width: 100px;
+        height: 100px;
+        
+        /* Typography */
+        font: normal 13px "Helvetica Neue", sans-serif;
+        line-height: 1.5;
+        color: #333;
+        text-align: center;
+        
+        /* Visual */
+        background-color: #f5f5f5;
+        border: 1px solid #e5e5e5;
+        border-radius: 3px;
+        
+        /* Misc */
+        opacity: 1;
     }
 
 #### 不要使用 @import
@@ -238,9 +238,9 @@ Visual
     .element-selected { ... }
     
     @media (min-width: 480px) {
-    .element { ...}
-    .element-avatar { ... }
-    .element-selected { ... }
+        .element { ...}
+        .element-avatar { ... }
+        .element-selected { ... }
     }
 
 #### 带前缀的属性
@@ -250,8 +250,8 @@ Visual
 
     /* Prefixed properties */
     .selector {
-    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-            box-shadow: 0 1px 2px rgba(0,0,0,.15);
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+                box-shadow: 0 1px 2px rgba(0,0,0,.15);
     }
 
 #### 单行规则声明
@@ -267,10 +267,10 @@ Visual
     
     /* Multiple declarations, one per line */
     .sprite {
-    display: inline-block;
-    width: 16px;
-    height: 15px;
-    background-image: url(../img/sprite.png);
+        display: inline-block;
+        width: 16px;
+        height: 15px;
+        background-image: url(../img/sprite.png);
     }
     .icon           { background-position: 0 0; }
     .icon-home      { background-position: 0 -20px; }
@@ -300,19 +300,19 @@ border-radius
 
     /* Bad example */
     .element {
-    margin: 0 0 10px;
-    background: red;
-    background: url("image.jpg");
-    border-radius: 3px 3px 0 0;
+        margin: 0 0 10px;
+        background: red;
+        background: url("image.jpg");
+        border-radius: 3px 3px 0 0;
     }
     
     /* Good example */
     .element {
-    margin-bottom: 10px;
-    background-color: red;
-    background-image: url("image.jpg");
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+        margin-bottom: 10px;
+        background-color: red;
+        background-image: url("image.jpg");
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
     }
 
 #### Less 和 Sass 中的嵌套
@@ -342,13 +342,13 @@ border-radius
     /* 不良的例子 */
     /* Modal header */
     .modal-header {
-    ...
+        ...
     }
     
     /* 好的例子 */
     /* Wrapping element for .modal-title and .modal-close */
     .modal-header {
-    ...
+        ...
     }
 
 #### class 命名
@@ -668,7 +668,7 @@ var语句
 if语句应如以下格式:
 
     if (condition){
-        statements; }
+        statements; 
         if (condition) { 
             statements;
         } else { 
