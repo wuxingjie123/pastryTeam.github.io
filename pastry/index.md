@@ -5,17 +5,26 @@
 
 * [Cordova 文档地址][cordova_doc]
 
-* Cordova 功能对比
+* Cordova优质博客列表
     
-    * Cordova CLI + JS端打包功能 = pastry CLI
+    * [传智播客][net_cordovablog]
+
+    * [极客学院][net_cordovablog1]
+
+[net_cordovablog]: http://www.itcast.cn/news/20151228/14522674095.shtml
+[net_cordovablog1]: http://wiki.jikexueyuan.com/project/apache-cordova-tutorial/
+
+* `Cordova 功能对比`
     
-    * Cordova 项目目录结构 ＋  pastry-fo-java + pastry-fo-nodejs = pastry 项目目录结构
+    * `Cordova CLI + JS端打包功能 = pastry CLI`
+    
+    * `Cordova 项目目录结构 ＋  pastry-fo-java + pastry-fo-nodejs = pastry 项目目录结构`
 
-    * Cordova 项目ios模版 + pastry ios框架 = pastry ios 模版
+    * `Cordova 项目ios模版 + pastry ios框架 = pastry ios 模版`
 
-    * Cordova 项目android模版 + pastry android框架 = pastry android 模版
+    * `Cordova 项目android模版 + pastry android框架 = pastry android 模版`
 
-    * Cordova 项目www模版 + pastry js框架 = pastry js 模版
+    * `Cordova 项目www模版 + pastry js框架 = pastry js 模版`
 
 [cordova_doc]: http://cordova.apache.org/docs/en/latest/plugin_ref/spec.html
 
@@ -36,9 +45,9 @@
         node -v
 
 
-2、 pastry脚手架
+2、 pastry CLI
 
-  * 下载 [pastry脚手架][md_download] 到任意目录并解压缩
+  * 下载 [pastry CLI][md_download] 到任意目录并解压缩
 
       目录结构
     
