@@ -77,6 +77,8 @@
         重新启动命令行窗口，执行 pastry，配置成功将显示以下信息
 
             usage: pastry {bake,emulator,taste,ide} ...
+        
+      * `提示 不要将pastry命令行解压到包含空格的目录中，否则：报错 Error: Unexpected toke F`
 
     * MacOSX
 
