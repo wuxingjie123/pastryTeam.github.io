@@ -73,27 +73,26 @@
 
         <!DOCTYPE html>
         <html>
-            <head>
-                <title>Hello World</title>
-                <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-                <meta http-equiv="Pragma" content="no-cache" />
-                <!-- 移动APP优化配置 -->
-                <meta name="apple-mobile-web-app-capable" content="yes"/>
-                <meta name="format-detection" content="telephone=no" />
-                <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,target-densitydpi=medium-dpi"/>
-                <!--引入框架-->
-                <!--注意data-debug推荐使用 @mockdata 属性-->
-                <script type="text/javascript" src="../../pastry/main.js"
+        <head>
+            <title>Hello World</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=Utf-8"/>
+            <meta http-equiv="Pragma" content="no-cache"/>
+            <meta name="format-detection" content="telephone=no"/>
+            <meta name="apple-mobile-web-app-capable" content="yes"/>
+            <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,target-densitydpi=medium-dpi"/>
+            <!--引入框架-->
+            <!--注意data-debug推荐使用 @mockdata 属性-->
+            <script type="text/javascript" src="../../pastry/main.js"
                             data-debug="@mockdata">
-                </script>
-            </head>
+            </script>
+        </head>
 
-            <body>
-                <!--设置加载页-->
-                <div data-page-loading>
-                    Loading...
-                </div>
-            </body>
+        <body>
+            <!--设置加载页-->
+            <div data-page-loading>
+                Loading...
+            </div>
+        </body>
         </html>
 
         <script type="text/template" id="tp_HomePage" data-title="Hello World ~">
@@ -289,149 +288,149 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
 
     <!DOCTYPE html>
     <html>
-        <head>
-            <title>Hello World</title>
-            <!-- 移动APP优化配置 -->
-            <meta name="apple-mobile-web-app-capable" content="yes"/> 
-            <meta name="viewport"
-                content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi"/>
-            <meta content="telephone=no" name="format-detection"/>
-            <!-- 页面编码配置 -->
-            <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-            <!-- js、css引用及调试配置 -->
-            <script type="text/javascript" src="../pastry/main.js"
-                    data-debug="@mockdata"
-                    data-css="E:project,E:style"
-                    data-lib="C:base64,C:md5,E:custom,E:public"
-                    data-components="C:switch,C:tab,E:menu">
-        </head>
+    <head>
+        <title>Hello World</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=Utf-8"/>
+        <meta http-equiv="Pragma" content="no-cache"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,target-densitydpi=medium-dpi"/>    
+        <!-- js、css引用及调试配置 -->
+        <script type="text/javascript" src="../pastry/main.js"
+                data-debug="@mockdata"
+                data-css="E:project,E:style"
+                data-lib="C:base64,C:md5,E:custom,E:public"
+                data-components="C:switch,C:tab,E:menu">
+    </head>
 
-        <body>
-            <!-- 加载页 -->
-            <div data-page-loading>page loading...</div>
-        </body>
+    <body>
+        <!-- 加载页 -->
+        <div data-page-loading>
+            page loading...
+        </div>
+    </body>
 
-        <!-- 模板定义 -->
-        <script type="text/template" id="homePage" data-component="HomePage" data-title="首页">
-            <div style="color:#111111">
-                Hello World!
-                <br/>
-                模板数据:<%=data.TEXT%>
-                <br/>
-                标签组件:<span data-component="Label" data-name="TEXT"></span>
-                <br/>
-                用户名:<input data-component="Input" id="userName" data-name="USERNAME">
-                <br/>
-                密码:<input data-component="Password" id="password" data-name="PASSWORD">
-                <br/>
-                <input type="button" data-submit-button="next" value="下一步"/>
-            </div>
-        </script>
+    <!-- 模板定义 -->
+    <script type="text/template" id="homePage" data-component="HomePage" data-title="首页">
+        <div style="color:#111111">
+            Hello World!
+            <br/>
+            模板数据:<%=data.TEXT%>
+            <br/>
+            标签组件:<span data-component="Label" data-name="TEXT"></span>
+            <br/>
+            用户名:<input data-component="Input" id="userName" data-name="USERNAME">
+            <br/>
+            密码:<input data-component="Password" id="password" data-name="PASSWORD">
+            <br/>
+            <input type="button" data-submit-button="next" value="下一步"/>
+        </div>
+    </script>
 
-        <!-- 模板定义 -->
-        <script type="text/template" id="secondPage" data-component="SecondPage" data-title="第二页">
-            <div style="color:#111111">
-                Second Page!
-                <br/>
-                模板数据:<%=data.TEXT1%>,<%=data.TEXT2%>
-                <br/>
-                标签组件:<span data-component="Label" data-name="TEXT1"></span>
-                <br/>
-                标签组件:<span data-component="Label" data-name="TEXT2"></span>
-                <br/>
-                数据分发测试:<input data-component="Input" style="width:100%" id="test1"/>
-                <br/>
-                数据分发测试:<input data-component="Input" style="width:100%" id="test2"/>
-            </div>
-        </script>
+    <!-- 模板定义 -->
+    <script type="text/template" id="secondPage" data-component="SecondPage" data-title="第二页">
+        <div style="color:#111111">
+            Second Page!
+            <br/>
+            模板数据:<%=data.TEXT1%>,<%=data.TEXT2%>
+            <br/>
+            标签组件:<span data-component="Label" data-name="TEXT1"></span>
+            <br/>
+            标签组件:<span data-component="Label" data-name="TEXT2"></span>
+            <br/>
+            数据分发测试:<input data-component="Input" style="width:100%" id="test1"/>
+            <br/>
+            数据分发测试:<input data-component="Input" style="width:100%" id="test2"/>
+        </div>
+    </script>
 
-        <!--入口-->
-        <script type="text/javascript">
-            $(function (param) {
-                var Component = this.Component;
-                var Model = this.Model;
-                var Browser = this.Browser;
-                var Fn = this.Fn;
-                var $ = Fn.$;//解决$冲突问题
-                //定制数据模型
-                Fn.setModels({
-                    "homePage": new Model.PTJSON(null,
-                    {
-                        url: "helloworld.do?act=getText",
-                        filter: function (data) {
-                            data.TEXT = data.TEXT + "[add by filter]";
-                            return data;
-                        }
-                    }),
-                    "secondPage": new Model.PTJSON(null,
-                    {
-                        url: "helloworld.do?act=getSecondText",
-                        dispatcher: function (data) {
-                        this.dispatch({
-                            test1: {value: "by dispatcher:" + data.TEXT1},
-                            test2: {value: "by dispatcher:" + data.TEXT2}
-                        });
-                    },
+    <!--入口-->
+    <script type="text/javascript">
+        $(function (param) {
+            var Component = this.Component;
+            var Model = this.Model;
+            var Browser = this.Browser;
+            var Fn = this.Fn;
+            var $ = Fn.$;//解决$冲突问题
+            //定制数据模型
+            Fn.setModels({
+                "homePage": new Model.PTJSON(null,
+                {
+                    url: "helloworld.do?act=getText",
                     filter: function (data) {
-                        data.TEXT1 += "[add by filter]";
-                        data.TEXT2 += "[add by filter]";
+                        data.TEXT = data.TEXT + "[add by filter]";
                         return data;
                     }
-                });
-
-                //定制组件
-                Component.HomePage = Component.Page.extend({
-                    onSubmit: function (data, submitId) {
-                        alert(_.template("提交按钮ID:<%=id%>\n提交数据:<%=data%>", {id:submitId, data: JSON.stringify(data)}));
-
-                        var option;
-                        var sendData = {
-                            USERNAME: data.USERNAME,
-                            PASSWORD: data.PASSWORD
-                        };
-
-                        var initVal = {
-                            TEXT1: "Loading A...",
-                            TEXT2: "Loading B..."
-                        };
-
-                        option = {
-                            refresh: {
-                                initVal: initVal,
-                                param: sendData
-                            }
-                        };
-
-                        Browser.history_goto("secondPage", option);
-                    }
-                });
-
-                //定制组件
-                Component.SecondPage = Component.Page.extend({
-
-                    onError:function(state,response){
-                        alert('请求数据出错,state='+state+'\nresponse'+JSON.stringify(response));
-                    }
-                });
-
-                //配置首页
-                var option;
-                var sendData = {
-                    TYPE: "A"
-                };
-                var initVal = {
-                    TEXT: "Loading..."
-                };
-                option = {
-                    refresh: {
-                        initVal: initVal,
-                        param: sendData
-                    }
-                };
-
-                Browser.history_goto("homePage", option);
+                }),
+                "secondPage": new Model.PTJSON(null,
+                {
+                    url: "helloworld.do?act=getSecondText",
+                    dispatcher: function (data) {
+                    this.dispatch({
+                        test1: {value: "by dispatcher:" + data.TEXT1},
+                        test2: {value: "by dispatcher:" + data.TEXT2}
+                    });
+                },
+                filter: function (data) {
+                    data.TEXT1 += "[add by filter]";
+                    data.TEXT2 += "[add by filter]";
+                    return data;
+                }
             });
-        </script>
+
+            //定制组件
+            Component.HomePage = Component.Page.extend({
+                onSubmit: function (data, submitId) {
+                    alert(_.template("提交按钮ID:<%=id%>\n提交数据:<%=data%>", {id:submitId, data: JSON.stringify(data)}));
+
+                    var option;
+                    var sendData = {
+                        USERNAME: data.USERNAME,
+                        PASSWORD: data.PASSWORD
+                    };
+
+                    var initVal = {
+                        TEXT1: "Loading A...",
+                        TEXT2: "Loading B..."
+                    };
+
+                    option = {
+                        refresh: {
+                            initVal: initVal,
+                            param: sendData
+                        }
+                    };
+
+                    Browser.history_goto("secondPage", option);
+                }
+            });
+
+            //定制组件
+            Component.SecondPage = Component.Page.extend({
+
+                onError:function(state,response){
+                    alert('请求数据出错,state='+state+'\nresponse'+JSON.stringify(response));
+                }
+            });
+
+            //配置首页
+            var option;
+            var sendData = {
+                TYPE: "A"
+            };
+            var initVal = {
+                TEXT: "Loading..."
+            };
+            option = {
+                refresh: {
+                    initVal: initVal,
+                    param: sendData
+                }
+            };
+
+            Browser.history_goto("homePage", option);
+        });
+    </script>
     </html>
 
 ## 模块依赖配置`待定`
