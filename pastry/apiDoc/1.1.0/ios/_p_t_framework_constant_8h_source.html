@@ -1,0 +1,550 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>中信网络科技移动基础框架-iOS Lib: PT/main/PTFrameworkConstant.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">中信网络科技移动基础框架-iOS Lib
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_p_t_framework_constant_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">PTFrameworkConstant.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  PTFrameworkConstant.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  PT</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by gengych on 16/3/14.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright © 2016年 中信网络科技. All rights reserved.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef PTFrameworkConstant_h</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define PTFrameworkConstant_h</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> @addtogroup frameModuleEnum</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> @{</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *  @ingroup resourceFileModuleEnum</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *  各种资源检查的状态 xml json js css文件的检查结果枚举   &lt;br/&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> *  &lt;table&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> *         &lt;td&gt;PTEventStateSuccess&lt;/td&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> *         &lt;td&gt;无网状态&lt;/td&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> *         &lt;td&gt;PTEventStatusFailed&lt;/td&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> *         &lt;td&gt;wifi网络&lt;/td&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> *         &lt;td&gt;PTEventStatusDoing&lt;/td&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> *         &lt;td&gt;3G网络&lt;/td&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"> *  &lt;/table&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="group__resource_file_module_enum.html#gaaa112930bd78670b11023fbfdad44e18">   35</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> : NSUInteger{</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="group__resource_file_module_enum.html#ggaaa112930bd78670b11023fbfdad44e18a1afc7418fdfb3990cff2b19fb7ddfd40">   36</a></span>&#160;    <a class="code" href="group__resource_file_module_enum.html#ggaaa112930bd78670b11023fbfdad44e18a1afc7418fdfb3990cff2b19fb7ddfd40">PTEventStateSuccess</a>     = 0,    <span class="comment">//!&lt; 检查成功.</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="group__resource_file_module_enum.html#ggaaa112930bd78670b11023fbfdad44e18a1e82b5c031c6997b76dd2b4cbf0d443b">   37</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__resource_file_module_enum.html#ggaaa112930bd78670b11023fbfdad44e18a1e82b5c031c6997b76dd2b4cbf0d443b">PTEventStatusFailed</a>     = 1,    <span class="comment">//!&lt; 检查失败.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="group__resource_file_module_enum.html#ggaaa112930bd78670b11023fbfdad44e18a7bbbbf7e6e82123e59fcf230bfe6e27e">   38</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__resource_file_module_enum.html#ggaaa112930bd78670b11023fbfdad44e18a7bbbbf7e6e82123e59fcf230bfe6e27e">PTEventStatusDoing</a>      = 2     <span class="comment">//!&lt; 检查进行中.</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"></span>} <a class="code" href="group__resource_file_module_enum.html#gaaa112930bd78670b11023fbfdad44e18">PTEventState</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">/*! @} */</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#pragma mark - data.zip解压状态标识枚举</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"> *  @ingroup resourceFileModuleEnum</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"> *  data.zip是否需要解压的状态枚举   &lt;br/&gt;</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"> *  &lt;table&gt;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> *         &lt;td&gt;PTDataZip_NewLoad&lt;/td&gt;</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"> *         &lt;td&gt;需要解压data.zip：用户首次进行程序&lt;/td&gt;</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"> *         &lt;td&gt;PTDataZip_OldToNewLoad&lt;/td&gt;</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"> *         &lt;td&gt;需要解压data.zip：老用户升级新程序&lt;/td&gt;</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"> *         &lt;td&gt;PTDataZip_BeforeLoadFail&lt;/td&gt;</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"> *         &lt;td&gt;需要解压data.zip：上次解压data.zip失败&lt;/td&gt;</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"> *         &lt;td&gt;PTDataZip_NoLoad&lt;/td&gt;</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"> *         &lt;td&gt;不需要解压data.zip：资源最新&lt;/td&gt;</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"> *  &lt;/table&gt;</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="group__resource_file_module_enum.html#gac4f3cbfd3d8e5e878f124f86a225fe70">   66</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> : NSUInteger {</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="group__resource_file_module_enum.html#ggac4f3cbfd3d8e5e878f124f86a225fe70a499554edcadfd93c4ca126cc54c2e40c">   67</a></span>&#160;    <a class="code" href="group__resource_file_module_enum.html#ggac4f3cbfd3d8e5e878f124f86a225fe70a499554edcadfd93c4ca126cc54c2e40c">PTDataZip_NewLoad</a>                   = 0,    <span class="comment">//!&lt; 需要解压data.zip：用户首次进行程序.</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="group__resource_file_module_enum.html#ggac4f3cbfd3d8e5e878f124f86a225fe70a51c8a90d8eed92d907a4f540d08b90ed">   68</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__resource_file_module_enum.html#ggac4f3cbfd3d8e5e878f124f86a225fe70a51c8a90d8eed92d907a4f540d08b90ed">PTDataZip_OldToNewLoad</a>              = 1,    <span class="comment">//!&lt; 需要解压data.zip：老用户升级新程序.</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="group__resource_file_module_enum.html#ggac4f3cbfd3d8e5e878f124f86a225fe70a5668aed427a8bed850516e32bc4a74c3">   69</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__resource_file_module_enum.html#ggac4f3cbfd3d8e5e878f124f86a225fe70a5668aed427a8bed850516e32bc4a74c3">PTDataZip_BeforeLoadFail</a>            = 2,    <span class="comment">//!&lt; 需要解压data.zip：上次解压data.zip失败.</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="group__resource_file_module_enum.html#ggac4f3cbfd3d8e5e878f124f86a225fe70a70712ae8af847b5412e3f281bab11fc8">   70</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__resource_file_module_enum.html#ggac4f3cbfd3d8e5e878f124f86a225fe70a70712ae8af847b5412e3f281bab11fc8">PTDataZip_NoLoad</a>                    = 3,    <span class="comment">//!&lt; 不需要解压data.zip：资源最新.</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"></span>} <a class="code" href="group__resource_file_module_enum.html#gac4f3cbfd3d8e5e878f124f86a225fe70">PTDataZipState</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#pragma mark - 网络状态标识枚举</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"> *  @ingroup resourceConfigModuleEnum</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"> *  网络状态标识枚举   &lt;br/&gt;</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment"> *  用于 PTNetStateManager 类</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"> *  &lt;table&gt;</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"> *         &lt;td&gt;NetworkStateNotReachable&lt;/td&gt;</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"> *         &lt;td&gt;无网状态&lt;/td&gt;</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment"> *         &lt;td&gt;NetworkStateWifiReachable&lt;/td&gt;</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment"> *         &lt;td&gt;wifi网络&lt;/td&gt;</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"> *         &lt;td&gt;NetworkState3GReachable&lt;/td&gt;</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment"> *         &lt;td&gt;3G网络&lt;/td&gt;</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"> *         &lt;td&gt;NetworkStateLocalTest&lt;/td&gt;</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment"> *         &lt;td&gt;本地测试状态&lt;/td&gt;</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"> *  &lt;/table&gt;</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="group__resource_config_module_enum.html#gafc8c24a6164365743dfe490b4f72b7fd">   98</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> : NSUInteger{</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="group__resource_config_module_enum.html#ggafc8c24a6164365743dfe490b4f72b7fdaf9b3759ed6f71748e54984fa835045c7">   99</a></span>&#160;    <a class="code" href="group__resource_config_module_enum.html#ggafc8c24a6164365743dfe490b4f72b7fdaf9b3759ed6f71748e54984fa835045c7">NetworkStateNotReachable</a>    = 0,    <span class="comment">//!&lt; 无网状态</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="group__resource_config_module_enum.html#ggafc8c24a6164365743dfe490b4f72b7fdabc3a1a23b680ccdc05edf5cd124cbd79">  100</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__resource_config_module_enum.html#ggafc8c24a6164365743dfe490b4f72b7fdabc3a1a23b680ccdc05edf5cd124cbd79">NetworkStateWifiReachable</a>   = 1,    <span class="comment">//!&lt; wifi网络</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="group__resource_config_module_enum.html#ggafc8c24a6164365743dfe490b4f72b7fdabfef94a9f1c02e5e4819fd8d24e59330">  101</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__resource_config_module_enum.html#ggafc8c24a6164365743dfe490b4f72b7fdabfef94a9f1c02e5e4819fd8d24e59330">NetworkState3GReachable</a>     = 2,    <span class="comment">//!&lt; 3G网络</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="group__resource_config_module_enum.html#ggafc8c24a6164365743dfe490b4f72b7fda4e97198db6bd7958bc505e4cc67a5b3e">  102</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__resource_config_module_enum.html#ggafc8c24a6164365743dfe490b4f72b7fda4e97198db6bd7958bc505e4cc67a5b3e">NetworkStateLocalTest</a>       = 3     <span class="comment">//!&lt; 本地测试状态</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment"></span>} <a class="code" href="group__resource_config_module_enum.html#gafc8c24a6164365743dfe490b4f72b7fd">PTNetworkState</a>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#pragma mark - 状态管理模块 session network resource 的State</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment"> *  @ingroup httpAssistModuleEnum</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment"> *  会话状态标识枚举   &lt;br/&gt;</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment"> *  &lt;table&gt;</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment"> *         &lt;td&gt;STATE_NULLSESSION&lt;/td&gt;</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment"> *         &lt;td&gt;未建立会话&lt;/td&gt;</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment"> *         &lt;td&gt;STATE_HANDSHAKEING&lt;/td&gt;</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment"> *         &lt;td&gt;正在握手&lt;/td&gt;</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment"> *         &lt;td&gt;STATE_HANDSHAKEFAILED&lt;/td&gt;</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment"> *         &lt;td&gt;握手失败&lt;/td&gt;</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment"> *         &lt;td&gt;STATE_SESSIONTIMEOUT&lt;/td&gt;</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment"> *         &lt;td&gt;会话超时，需要重新握手&lt;/td&gt;</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment"> *         &lt;td&gt;STATE_UNLOGIN&lt;/td&gt;</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment"> *         &lt;td&gt;已建立回话，握手成功，正在登陆&lt;/td&gt;</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment"> *         &lt;td&gt;STATE_LOGING&lt;/td&gt;</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment"> *         &lt;td&gt;沙箱目录下的 data.zip 文件路径&lt;/td&gt;</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="comment"> *         &lt;td&gt;STATE_LOGIN&lt;/td&gt;</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="comment"> *         &lt;td&gt;已建立会话，握手成功，登陆成功&lt;/td&gt;</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="comment"> *         &lt;td&gt;STATE_LOGOUTING&lt;/td&gt;</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="comment"> *         &lt;td&gt;正在登出&lt;/td&gt;</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="comment"> *  &lt;/table&gt;</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="comment"> *  @see 此枚举用于 PTSessionManager 类</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="group__http_assist_module_enum.html#ga73bf820501aed4e59ad4bdd2c495683b">  145</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> : NSUInteger{</div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="group__http_assist_module_enum.html#gga73bf820501aed4e59ad4bdd2c495683ba8a7c02ea8fc0b32682e1efca6f37b360">  146</a></span>&#160;    <a class="code" href="group__http_assist_module_enum.html#gga73bf820501aed4e59ad4bdd2c495683ba8a7c02ea8fc0b32682e1efca6f37b360">STATE_NULLSESSION</a>       = 0,    <span class="comment">//!&lt; 未建立会话</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="group__http_assist_module_enum.html#gga73bf820501aed4e59ad4bdd2c495683ba81b656ad9cd9661d925f883976fc6944">  147</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__http_assist_module_enum.html#gga73bf820501aed4e59ad4bdd2c495683ba81b656ad9cd9661d925f883976fc6944">STATE_HANDSHAKEING</a>      = 1,    <span class="comment">//!&lt; 正在握手</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="group__http_assist_module_enum.html#gga73bf820501aed4e59ad4bdd2c495683ba46c19eaf820b4e6c11f4318b3b25a66e">  148</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__http_assist_module_enum.html#gga73bf820501aed4e59ad4bdd2c495683ba46c19eaf820b4e6c11f4318b3b25a66e">STATE_HANDSHAKEFAILED</a>   = 2,    <span class="comment">//!&lt; 握手失败</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="group__http_assist_module_enum.html#gga73bf820501aed4e59ad4bdd2c495683ba78ad9e751b69516a21af6762ec96dcf9">  149</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__http_assist_module_enum.html#gga73bf820501aed4e59ad4bdd2c495683ba78ad9e751b69516a21af6762ec96dcf9">STATE_SESSIONTIMEOUT</a>    = 3,    <span class="comment">//!&lt; 会话超时，需要重新握手              : 服务器 状态</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="group__http_assist_module_enum.html#gga73bf820501aed4e59ad4bdd2c495683ba42fe50f9748a909edcd2803ad455122a">  150</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__http_assist_module_enum.html#gga73bf820501aed4e59ad4bdd2c495683ba42fe50f9748a909edcd2803ad455122a">STATE_UNLOGIN</a>           = 4,    <span class="comment">//!&lt; 已建立会话，握手成功，未登录         : 服务器 状态</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="group__http_assist_module_enum.html#gga73bf820501aed4e59ad4bdd2c495683ba48e1417d5a06574a96496bd4340c617f">  151</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__http_assist_module_enum.html#gga73bf820501aed4e59ad4bdd2c495683ba48e1417d5a06574a96496bd4340c617f">STATE_LOGING</a>            = 5,    <span class="comment">//!&lt; 已建立会话，握手成功，正在登陆        : 客户端 状态    （无）</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="group__http_assist_module_enum.html#gga73bf820501aed4e59ad4bdd2c495683baf7b73e1ff218466458d346a313585e53">  152</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__http_assist_module_enum.html#gga73bf820501aed4e59ad4bdd2c495683baf7b73e1ff218466458d346a313585e53">STATE_LOGIN</a>             = 6,    <span class="comment">//!&lt; 已建立会话，握手成功，登陆成功        : 客户端 状态</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="group__http_assist_module_enum.html#gga73bf820501aed4e59ad4bdd2c495683ba3a283de17a05f48e48d782e91eab814e">  153</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__http_assist_module_enum.html#gga73bf820501aed4e59ad4bdd2c495683ba3a283de17a05f48e48d782e91eab814e">STATE_LOGOUTING</a>         = 7     <span class="comment">//!&lt; 正在登出                          : 客户端 状态     （无）</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="comment"></span>} <a class="code" href="group__http_assist_module_enum.html#ga73bf820501aed4e59ad4bdd2c495683b">PTSessionState</a>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor">#pragma mark - 向服务器发送请求，返回请求状态枚举类型</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="comment"> *  @ingroup httpAssistModuleEnum</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="comment"> *  向服务器发送请求，返回请求状态枚举   &lt;br/&gt;</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="comment"> *  &lt;table&gt;</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment"> *         &lt;td&gt;CommunicationSuccess&lt;/td&gt;</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="comment"> *         &lt;td&gt;连接成功&lt;/td&gt;</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment"> *         &lt;td&gt;ParameterError&lt;/td&gt;</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment"> *         &lt;td&gt;参数错误&lt;br/&gt;错误的会话状态包括：&lt;br/&gt;1、STATE_NULLSESSION 未建立会话&lt;br/&gt; 2、STATE_HANDSHAKEING 正在握手&lt;br/&gt; 3、STATE_HANDSHAKEFAILED 握手失败&lt;br/&gt; 4、STATE_SESSIONTIMEOUT 会话超时，需要重新握手&lt;/td&gt;</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment"> *          &lt;td&gt;DataParseError&lt;/td&gt;</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment"> *          &lt;td&gt;通讯结果加解密解析错误&lt;/td&gt;</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="comment"> *         &lt;td&gt;NetworkUnreachableError&lt;/td&gt;</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment"> *         &lt;td&gt;网络不通&lt;/td&gt;</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment"> *         &lt;td&gt;SessionStateError&lt;/td&gt;</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment"> *         &lt;td&gt;会话状态错误&lt;/td&gt;</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment"> *         &lt;td&gt;ServerError&lt;/td&gt;</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment"> *         &lt;td&gt;服务器错误&lt;/td&gt;</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment"> *         &lt;td&gt;SessionTimeOut&lt;/td&gt;</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment"> *         &lt;td&gt;会话过期&lt;/td&gt;</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="comment"> *  &lt;/table&gt;</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="comment"> *  @note</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment"> *  只适用于 网络请求，服务器返回请求状态时；&lt;br/&gt;</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment"> *  不适用于 当前客户端所处的会话状态（客户端会话状态见 PTSessionState 枚举）；</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="comment"> *  @see 此枚举用于 PTCommunicationHelper 类</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="group__http_assist_module_enum.html#gae35f00757939b6d1efb4bc23605f249c">  195</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> : NSUInteger{</div>
+<div class="line"><a name="l00196"></a><span class="lineno"><a class="line" href="group__http_assist_module_enum.html#ggae35f00757939b6d1efb4bc23605f249ca2783ad5a9d147b0129c01bbcd2810468">  196</a></span>&#160;    <a class="code" href="group__http_assist_module_enum.html#ggae35f00757939b6d1efb4bc23605f249ca2783ad5a9d147b0129c01bbcd2810468">CommunicationSuccess</a>            = 0,        <span class="comment">//!&lt; 连接成功.</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="group__http_assist_module_enum.html#ggae35f00757939b6d1efb4bc23605f249cae7c0818c69588b6550abb13a85485b19">  197</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__http_assist_module_enum.html#ggae35f00757939b6d1efb4bc23605f249cae7c0818c69588b6550abb13a85485b19">ParameterError</a>                  = 1,        <span class="comment">//!&lt; 参数错误.</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="group__http_assist_module_enum.html#ggae35f00757939b6d1efb4bc23605f249caa7e69b2cf98807cfa022b8ae821f039f">  198</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__http_assist_module_enum.html#ggae35f00757939b6d1efb4bc23605f249caa7e69b2cf98807cfa022b8ae821f039f">NetworkUnreachableError</a>         = 2,        <span class="comment">//!&lt; 网络不通.</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno"><a class="line" href="group__http_assist_module_enum.html#ggae35f00757939b6d1efb4bc23605f249ca17570a1d40f13cfbd765973c73ee12e1">  199</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__http_assist_module_enum.html#ggae35f00757939b6d1efb4bc23605f249ca17570a1d40f13cfbd765973c73ee12e1">SessionStateError</a>               = 3,        <span class="comment">//!&lt; 会话状态错误.&lt;br/&gt;错误的会话状态包括：&lt;br/&gt;1、STATE_NULLSESSION&lt;br/&gt; 2、STATE_HANDSHAKEING&lt;br/&gt; 3、STATE_HANDSHAKEFAILED&lt;br/&gt; 4、STATE_SESSIONTIMEOUT</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="group__http_assist_module_enum.html#ggae35f00757939b6d1efb4bc23605f249ca1e2b0fc32b3c7c50831874e9f467a568">  200</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__http_assist_module_enum.html#ggae35f00757939b6d1efb4bc23605f249ca1e2b0fc32b3c7c50831874e9f467a568">ServerError</a>                     = 4,        <span class="comment">//!&lt; 服务器错误.</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="group__http_assist_module_enum.html#ggae35f00757939b6d1efb4bc23605f249ca193e9a9b006165f10d2451d88d753ef9">  201</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__http_assist_module_enum.html#ggae35f00757939b6d1efb4bc23605f249ca193e9a9b006165f10d2451d88d753ef9">DataParseError</a>                  = 5,        <span class="comment">//!&lt; 通讯结果解密解析错误.</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="comment"></span>}<a class="code" href="group__http_assist_module_enum.html#gae35f00757939b6d1efb4bc23605f249c">PTCommunicationErrorCode</a>;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="comment"> *  @ingroup httpSecurityModuleEnum</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="comment"> *  加密方式枚举   &lt;br/&gt;</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment"> *  &lt;table&gt;</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment"> *         &lt;td&gt;DATA_CRYPT_NONE&lt;/td&gt;</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="comment"> *         &lt;td&gt;不加密&lt;/td&gt;</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="comment"> *         &lt;td&gt;DATA_CRYPT_3DES&lt;/td&gt;</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="comment"> *         &lt;td&gt;采用3DES算法加密&lt;/td&gt;</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="comment"> *         &lt;td&gt;DATA_CRYPT_AES&lt;/td&gt;</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="comment"> *         &lt;td&gt;采用AES算法加密&lt;/td&gt;</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="comment"> *         &lt;td&gt;DATA_CRYPT_RC5&lt;/td&gt;</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="comment"> *         &lt;td&gt;采用RC5算法加密&lt;/td&gt;</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="comment"> *         &lt;td&gt;DATA_CRYPT_PUBKEY&lt;/td&gt;</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="comment"> *         &lt;td&gt;采用默认公钥加密&lt;/td&gt;</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment"> *  &lt;/table&gt;</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="group__http_security_module_enum.html#gafe8ed79c5d2e5091e77bf5bc764f8c29">  231</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> : NSUInteger {</div>
+<div class="line"><a name="l00232"></a><span class="lineno"><a class="line" href="group__http_security_module_enum.html#ggafe8ed79c5d2e5091e77bf5bc764f8c29a5cdc4f828de6ad90cec9c2ead1132e1d">  232</a></span>&#160;    <a class="code" href="group__http_security_module_enum.html#ggafe8ed79c5d2e5091e77bf5bc764f8c29a5cdc4f828de6ad90cec9c2ead1132e1d">DATA_CRYPT_NONE</a>             = 0,    <span class="comment">//!&lt; 不加密.</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno"><a class="line" href="group__http_security_module_enum.html#ggafe8ed79c5d2e5091e77bf5bc764f8c29ae49db60cd91c13244228a0970e7a3520">  233</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__http_security_module_enum.html#ggafe8ed79c5d2e5091e77bf5bc764f8c29ae49db60cd91c13244228a0970e7a3520">DATA_CRYPT_3DES</a>             = 1,    <span class="comment">//!&lt; 采用3DES算法加密.</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno"><a class="line" href="group__http_security_module_enum.html#ggafe8ed79c5d2e5091e77bf5bc764f8c29a1940312de2e0534d1546063537f432ef">  234</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__http_security_module_enum.html#ggafe8ed79c5d2e5091e77bf5bc764f8c29a1940312de2e0534d1546063537f432ef">DATA_CRYPT_AES</a>              = 2,    <span class="comment">//!&lt; 采用AES算法加密.</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno"><a class="line" href="group__http_security_module_enum.html#ggafe8ed79c5d2e5091e77bf5bc764f8c29a6d8d30588130455625058d76490dc04a">  235</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__http_security_module_enum.html#ggafe8ed79c5d2e5091e77bf5bc764f8c29a6d8d30588130455625058d76490dc04a">DATA_CRYPT_RC5</a>              = 3,    <span class="comment">//!&lt; 采用RC5算法加密.</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno"><a class="line" href="group__http_security_module_enum.html#ggafe8ed79c5d2e5091e77bf5bc764f8c29ab63cc4f7a399b12dfb47d0b53d586983">  236</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__http_security_module_enum.html#ggafe8ed79c5d2e5091e77bf5bc764f8c29ab63cc4f7a399b12dfb47d0b53d586983">DATA_CRYPT_PUBKEY</a>           = 4,    <span class="comment">//!&lt; 采用默认公钥加密.</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="comment"></span>}<a class="code" href="group__http_security_module_enum.html#gafe8ed79c5d2e5091e77bf5bc764f8c29">PTDataPackageCryptType</a>;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="comment"> *  @ingroup httpSecurityModuleEnum</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="comment"> *  Hash计算方式枚举   &lt;br/&gt;</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="comment"> *  &lt;table&gt;</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="comment"> *         &lt;td&gt;DATA_HASH_NONE&lt;/td&gt;</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="comment"> *         &lt;td&gt;不做Hash计算&lt;/td&gt;</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="comment"> *         &lt;td&gt;DATA_HASH_MD5&lt;/td&gt;</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="comment"> *         &lt;td&gt;采用MD5做hash计算&lt;/td&gt;</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="comment"> *         &lt;td&gt;DATA_HASH_SHA1&lt;/td&gt;</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="comment"> *         &lt;td&gt;采用SHA1做hash计算&lt;/td&gt;</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="comment"> *  &lt;/table&gt;</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno"><a class="line" href="group__http_security_module_enum.html#ga3f12ce2c8a5fd2a9a778d316a0a43c59">  257</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> : NSUInteger {</div>
+<div class="line"><a name="l00258"></a><span class="lineno"><a class="line" href="group__http_security_module_enum.html#gga3f12ce2c8a5fd2a9a778d316a0a43c59a158afe156f0509e88cbf129c78a366c8">  258</a></span>&#160;    <a class="code" href="group__http_security_module_enum.html#gga3f12ce2c8a5fd2a9a778d316a0a43c59a158afe156f0509e88cbf129c78a366c8">DATA_HASH_NONE</a>          = 0,    <span class="comment">//!&lt; 不做Hash计算.</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno"><a class="line" href="group__http_security_module_enum.html#gga3f12ce2c8a5fd2a9a778d316a0a43c59af8c43835671d55a7e8d333c8f8ae11d1">  259</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__http_security_module_enum.html#gga3f12ce2c8a5fd2a9a778d316a0a43c59af8c43835671d55a7e8d333c8f8ae11d1">DATA_HASH_MD5</a>           = 1,    <span class="comment">//!&lt; 采用MD5做hash计算.</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno"><a class="line" href="group__http_security_module_enum.html#gga3f12ce2c8a5fd2a9a778d316a0a43c59a0d117c1c40d2e33346122033d4026f97">  260</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__http_security_module_enum.html#gga3f12ce2c8a5fd2a9a778d316a0a43c59a0d117c1c40d2e33346122033d4026f97">DATA_HASH_SHA1</a>          = 2,    <span class="comment">//!&lt; 采用SHA1做hash计算.</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="comment"></span>}<a class="code" href="group__http_security_module_enum.html#ga3f12ce2c8a5fd2a9a778d316a0a43c59">PTDataPackageHashType</a>;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="comment"> * @ingroup httpSecurityModuleEnum</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="comment"> *  签名方式枚举   &lt;br/&gt;</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="comment"> *  &lt;table&gt;</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="comment"> *         &lt;td&gt;DATA_SIGNATURE_NONE&lt;/td&gt;</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="comment"> *         &lt;td&gt;不做签名计算&lt;/td&gt;</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="comment"> *         &lt;td&gt;DATA_SIGNATURE_MD5_RSA&lt;/td&gt;</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="comment"> *         &lt;td&gt;对MD5的hash值做RSA签名&lt;/td&gt;</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="comment"> *         &lt;td&gt;DATA_SIGNATURE_SHA1_RSA&lt;/td&gt;</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="comment"> *         &lt;td&gt;对SHA1的hash值做RSA签名&lt;/td&gt;</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="comment"> *  &lt;/table&gt;</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno"><a class="line" href="group__http_security_module_enum.html#ga79cc40cbc943e67c94c40b8977ae63c7">  281</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> : NSUInteger {</div>
+<div class="line"><a name="l00282"></a><span class="lineno"><a class="line" href="group__http_security_module_enum.html#gga79cc40cbc943e67c94c40b8977ae63c7afff2ed42e038c2fd4b7f78e35f7eb8bb">  282</a></span>&#160;    <a class="code" href="group__http_security_module_enum.html#gga79cc40cbc943e67c94c40b8977ae63c7afff2ed42e038c2fd4b7f78e35f7eb8bb">DATA_SIGNATURE_NONE</a>             = 0,    <span class="comment">//!&lt; 不做签名计算.</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno"><a class="line" href="group__http_security_module_enum.html#gga79cc40cbc943e67c94c40b8977ae63c7add311f0ab76122a2b90bc7e11897fda3">  283</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__http_security_module_enum.html#gga79cc40cbc943e67c94c40b8977ae63c7add311f0ab76122a2b90bc7e11897fda3">DATA_SIGNATURE_MD5_RSA</a>          = 1,    <span class="comment">//!&lt; 对MD5的hash值做RSA签名.</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno"><a class="line" href="group__http_security_module_enum.html#gga79cc40cbc943e67c94c40b8977ae63c7a7b4e721068af0f6122723204cd982138">  284</a></span>&#160;<span class="comment"></span>    <a class="code" href="group__http_security_module_enum.html#gga79cc40cbc943e67c94c40b8977ae63c7a7b4e721068af0f6122723204cd982138">DATA_SIGNATURE_SHA1_RSA</a>         = 2,    <span class="comment">//!&lt; 对SHA1的hash值做RSA签名.</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="comment"></span>}<a class="code" href="group__http_security_module_enum.html#ga79cc40cbc943e67c94c40b8977ae63c7">PTDataPackageSignatureFlag</a>;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="comment"> @ingroup httpSecurityModuleEnum</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="comment"> @brief 通讯包类型枚举</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="comment"> *  &lt;table&gt;</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="comment"> *         &lt;td&gt;PKG_FLAG_CLIENT&lt;/td&gt;</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="comment"> *         &lt;td&gt;客户端 -&gt; 服务器 的包&lt;/td&gt;</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="comment"> *     &lt;tr&gt;</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="comment"> *         &lt;td&gt;PKG_FLAG_SERVER&lt;/td&gt;</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="comment"> *         &lt;td&gt;服务器 -&gt; 客户端 的包&lt;/td&gt;</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="comment"> *     &lt;/tr&gt;</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="comment"> *  &lt;/table&gt;</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno"><a class="line" href="group__http_security_module_enum.html#ga820e1be0b283dbf90431d5cc6d9a09cb">  302</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> : NSUInteger {<span class="comment"></span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="comment">    /** 客户端 -&gt; 服务器 的包 */</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno"><a class="line" href="group__http_security_module_enum.html#gga820e1be0b283dbf90431d5cc6d9a09cbae9a6aca4bf18c04d7cfa4d66ef1763d6">  304</a></span>&#160;    <a class="code" href="group__http_security_module_enum.html#gga820e1be0b283dbf90431d5cc6d9a09cbae9a6aca4bf18c04d7cfa4d66ef1763d6">PKG_FLAG_CLIENT</a> = 0,</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="comment"></span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="comment">    /** 服务器 -&gt; 客户端 的包 */</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno"><a class="line" href="group__http_security_module_enum.html#gga820e1be0b283dbf90431d5cc6d9a09cbabebad50f5e8f5d379f8e2edd07d1deb2">  307</a></span>&#160;    <a class="code" href="group__http_security_module_enum.html#gga820e1be0b283dbf90431d5cc6d9a09cbabebad50f5e8f5d379f8e2edd07d1deb2">PKG_FLAG_SERVER</a></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;}<a class="code" href="group__http_security_module_enum.html#ga820e1be0b283dbf90431d5cc6d9a09cb">PTComPackageFlag</a>;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="comment"> @addtogroup frameModuleContant</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="comment"> @{</span></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="preprocessor">#define PTCommunicationErrorDomain @&quot;PTCommunicationErrorDomain&quot;</span></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="comment">// 备注：buiness.xml allmenu.xml 不进行检查更新；</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
+<div class="line"><a name="l00318"></a><span class="lineno"><a class="line" href="group__frame_module_contant.html#ga1f33e7070e2c743e4e72ab6fa7e4407e">  318</a></span>&#160;<span class="preprocessor">#define VERSION_CODE_LENGTH 6      </span><span class="comment">//!&lt; 模版版本号长度</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="comment"></span>#define HTTP_CONTECT_TIMEOUT 60    //http连接超时时间，以秒位单位</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="comment">// 提供的外部通知名名称</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="comment">//#define NeedLogon    2     //httpResponse header.sessionState 为该值时发送“需要登录”的通知</span></div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="comment">// 整包data.zip的下载地址目录</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="preprocessor">#define PTFRAMEWORK_RESOURCE_ACTION @&quot;ptframework/data/&quot;</span></div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="preprocessor">#define PTFRAMEWORK_HANDSHAKE_ACTION @&quot;ptframework.do?act=handshake&quot;</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="preprocessor">#define FLAG_UPDATETYPE_UPDATE          @&quot;u&quot;</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="comment">/** 更新类型标识：安装 */</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno"><a class="line" href="group__frame_module_contant.html#gadff551060b5724f601f001411f8e2aa3">  333</a></span>&#160;<span class="preprocessor">#define FLAG_UPDATETYPE_INSTALL         @&quot;i&quot;</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="comment">/** 更新状态标识：需要更新 */</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno"><a class="line" href="group__frame_module_contant.html#gab946e8934137b865194f479c06383005">  336</a></span>&#160;<span class="preprocessor">#define FLAG_UPDATESTATE_REQUIRED       @&quot;r&quot;</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="comment">/** 更新状态标识：正在更新 */</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno"><a class="line" href="group__frame_module_contant.html#ga7055f3eb1d35b30d106f59acaa26e1c7">  338</a></span>&#160;<span class="preprocessor">#define FLAG_UPDATESTATE_DOING          @&quot;i&quot;</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="comment">/** 更新状态标识：更新完成 */</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno"><a class="line" href="group__frame_module_contant.html#ga4d9b292fdc1fae7d53c68e2c8f6ef1fa">  340</a></span>&#160;<span class="preprocessor">#define FLAG_UPDATESTATE_DONE           @&quot;d&quot;</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="comment">/** 更新状态标识：更新失败 */</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno"><a class="line" href="group__frame_module_contant.html#ga78d39ebc81e10c65df76d0bfc1205866">  342</a></span>&#160;<span class="preprocessor">#define FLAG_UPDATESTATE_FAILED         @&quot;f&quot;</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="preprocessor">#define ATTR_UPDATE                     @&quot;update&quot;</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="comment">/** 菜单属性：菜单属性变化标识  */</span></div>
+<div class="line"><a name="l00346"></a><span class="lineno"><a class="line" href="group__frame_module_contant.html#ga78e46830830a8ce9fb2f4c5d36df94d8">  346</a></span>&#160;<span class="preprocessor">#define ATTR_INNER_MARK_CHANGE          @&quot;_inner_mark_change&quot;</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="comment">/** 菜单属性：菜单升级标识  */</span></div>
+<div class="line"><a name="l00348"></a><span class="lineno"><a class="line" href="group__frame_module_contant.html#ga72b22179f1d32872e845eec34894928e">  348</a></span>&#160;<span class="preprocessor">#define ATTR_INNER_MARK_UPDATE          @&quot;_inner_mark_update&quot;</span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="comment">/** 更新参数数组索引：更新类型 */</span></div>
+<div class="line"><a name="l00352"></a><span class="lineno"><a class="line" href="group__frame_module_contant.html#ga8175dcd29f083fb98a1f8883012a1fe9">  352</a></span>&#160;<span class="preprocessor">#define INDEX_UPDATE_TYPE               0</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="comment">/** 更新参数数组索引：更新状态 */</span></div>
+<div class="line"><a name="l00354"></a><span class="lineno"><a class="line" href="group__frame_module_contant.html#ga68aca74dde6f418632bcb18f74bccb5d">  354</a></span>&#160;<span class="preprocessor">#define INDEX_UPDATE_STATE              1</span></div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="comment">/** 更新参数数组索引：更新附加信息 */</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno"><a class="line" href="group__frame_module_contant.html#ga73f1c01326f994a51c99e178d64e1a77">  356</a></span>&#160;<span class="preprocessor">#define INDEX_UPDATE_MESSAGE            2</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="comment">/** 更新参数数组索引：更新进度 */</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno"><a class="line" href="group__frame_module_contant.html#ga491f4e7d81ac0fcf036f4e5d99da931a">  358</a></span>&#160;<span class="preprocessor">#define INDEX_UPDATE_PROGRESS           3</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="comment">/** 更新参数数组大小 */</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno"><a class="line" href="group__frame_module_contant.html#gaa2a7ede9dd79a0c5493d602a19ceab04">  360</a></span>&#160;<span class="preprocessor">#define INDEXCOUNT_UPDATE               3+1</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="preprocessor">#define ATTR_REF                        @&quot;ref&quot;</span></div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="comment">//typedef void(^crashCompletion)(NSDictionary *crashInfo);</span></div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="comment">/*! @} */</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="comment"> *  注释时，定义方法是否被废弃</span></div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="preprocessor">#ifdef __clang__</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="preprocessor">#define PT_DEPRECATED(version, msg) __attribute__((deprecated(&quot;该方法被废除 in PT &quot; #version &quot;.下一个版本中彻底删除该方法. &quot; msg)))</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="preprocessor">#define PT_DEPRECATED(version, msg) __attribute__((deprecated()))</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PTFrameworkConstant_h */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="group__http_security_module_enum_html_gga79cc40cbc943e67c94c40b8977ae63c7afff2ed42e038c2fd4b7f78e35f7eb8bb"><div class="ttname"><a href="group__http_security_module_enum.html#gga79cc40cbc943e67c94c40b8977ae63c7afff2ed42e038c2fd4b7f78e35f7eb8bb">DATA_SIGNATURE_NONE</a></div><div class="ttdoc">不做签名计算. </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:282</div></div>
+<div class="ttc" id="group__http_security_module_enum_html_gga820e1be0b283dbf90431d5cc6d9a09cbae9a6aca4bf18c04d7cfa4d66ef1763d6"><div class="ttname"><a href="group__http_security_module_enum.html#gga820e1be0b283dbf90431d5cc6d9a09cbae9a6aca4bf18c04d7cfa4d66ef1763d6">PKG_FLAG_CLIENT</a></div><div class="ttdoc">客户端 -> 服务器 的包 </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:304</div></div>
+<div class="ttc" id="group__resource_file_module_enum_html_ggaaa112930bd78670b11023fbfdad44e18a7bbbbf7e6e82123e59fcf230bfe6e27e"><div class="ttname"><a href="group__resource_file_module_enum.html#ggaaa112930bd78670b11023fbfdad44e18a7bbbbf7e6e82123e59fcf230bfe6e27e">PTEventStatusDoing</a></div><div class="ttdoc">检查进行中. </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:38</div></div>
+<div class="ttc" id="group__http_assist_module_enum_html_gga73bf820501aed4e59ad4bdd2c495683ba42fe50f9748a909edcd2803ad455122a"><div class="ttname"><a href="group__http_assist_module_enum.html#gga73bf820501aed4e59ad4bdd2c495683ba42fe50f9748a909edcd2803ad455122a">STATE_UNLOGIN</a></div><div class="ttdoc">已建立会话，握手成功，未登录 : 服务器 状态 </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:150</div></div>
+<div class="ttc" id="group__resource_config_module_enum_html_ggafc8c24a6164365743dfe490b4f72b7fdabc3a1a23b680ccdc05edf5cd124cbd79"><div class="ttname"><a href="group__resource_config_module_enum.html#ggafc8c24a6164365743dfe490b4f72b7fdabc3a1a23b680ccdc05edf5cd124cbd79">NetworkStateWifiReachable</a></div><div class="ttdoc">wifi网络 </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:100</div></div>
+<div class="ttc" id="group__http_assist_module_enum_html_ggae35f00757939b6d1efb4bc23605f249ca2783ad5a9d147b0129c01bbcd2810468"><div class="ttname"><a href="group__http_assist_module_enum.html#ggae35f00757939b6d1efb4bc23605f249ca2783ad5a9d147b0129c01bbcd2810468">CommunicationSuccess</a></div><div class="ttdoc">连接成功. </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:196</div></div>
+<div class="ttc" id="group__resource_config_module_enum_html_ggafc8c24a6164365743dfe490b4f72b7fda4e97198db6bd7958bc505e4cc67a5b3e"><div class="ttname"><a href="group__resource_config_module_enum.html#ggafc8c24a6164365743dfe490b4f72b7fda4e97198db6bd7958bc505e4cc67a5b3e">NetworkStateLocalTest</a></div><div class="ttdoc">本地测试状态 </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:102</div></div>
+<div class="ttc" id="group__http_assist_module_enum_html_ggae35f00757939b6d1efb4bc23605f249caa7e69b2cf98807cfa022b8ae821f039f"><div class="ttname"><a href="group__http_assist_module_enum.html#ggae35f00757939b6d1efb4bc23605f249caa7e69b2cf98807cfa022b8ae821f039f">NetworkUnreachableError</a></div><div class="ttdoc">网络不通. </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:198</div></div>
+<div class="ttc" id="group__http_assist_module_enum_html_gae35f00757939b6d1efb4bc23605f249c"><div class="ttname"><a href="group__http_assist_module_enum.html#gae35f00757939b6d1efb4bc23605f249c">PTCommunicationErrorCode</a></div><div class="ttdeci">PTCommunicationErrorCode</div><div class="ttdoc">向服务器发送请求，返回请求状态枚举   </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:195</div></div>
+<div class="ttc" id="group__http_security_module_enum_html_ggafe8ed79c5d2e5091e77bf5bc764f8c29ae49db60cd91c13244228a0970e7a3520"><div class="ttname"><a href="group__http_security_module_enum.html#ggafe8ed79c5d2e5091e77bf5bc764f8c29ae49db60cd91c13244228a0970e7a3520">DATA_CRYPT_3DES</a></div><div class="ttdoc">采用3DES算法加密. </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:233</div></div>
+<div class="ttc" id="group__resource_file_module_enum_html_ggaaa112930bd78670b11023fbfdad44e18a1e82b5c031c6997b76dd2b4cbf0d443b"><div class="ttname"><a href="group__resource_file_module_enum.html#ggaaa112930bd78670b11023fbfdad44e18a1e82b5c031c6997b76dd2b4cbf0d443b">PTEventStatusFailed</a></div><div class="ttdoc">检查失败. </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:37</div></div>
+<div class="ttc" id="group__http_security_module_enum_html_gga3f12ce2c8a5fd2a9a778d316a0a43c59af8c43835671d55a7e8d333c8f8ae11d1"><div class="ttname"><a href="group__http_security_module_enum.html#gga3f12ce2c8a5fd2a9a778d316a0a43c59af8c43835671d55a7e8d333c8f8ae11d1">DATA_HASH_MD5</a></div><div class="ttdoc">采用MD5做hash计算. </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:259</div></div>
+<div class="ttc" id="group__http_assist_module_enum_html_gga73bf820501aed4e59ad4bdd2c495683ba8a7c02ea8fc0b32682e1efca6f37b360"><div class="ttname"><a href="group__http_assist_module_enum.html#gga73bf820501aed4e59ad4bdd2c495683ba8a7c02ea8fc0b32682e1efca6f37b360">STATE_NULLSESSION</a></div><div class="ttdoc">未建立会话 </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:146</div></div>
+<div class="ttc" id="group__http_security_module_enum_html_ggafe8ed79c5d2e5091e77bf5bc764f8c29ab63cc4f7a399b12dfb47d0b53d586983"><div class="ttname"><a href="group__http_security_module_enum.html#ggafe8ed79c5d2e5091e77bf5bc764f8c29ab63cc4f7a399b12dfb47d0b53d586983">DATA_CRYPT_PUBKEY</a></div><div class="ttdoc">采用默认公钥加密. </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:236</div></div>
+<div class="ttc" id="group__http_assist_module_enum_html_gga73bf820501aed4e59ad4bdd2c495683baf7b73e1ff218466458d346a313585e53"><div class="ttname"><a href="group__http_assist_module_enum.html#gga73bf820501aed4e59ad4bdd2c495683baf7b73e1ff218466458d346a313585e53">STATE_LOGIN</a></div><div class="ttdoc">已建立会话，握手成功，登陆成功 : 客户端 状态 </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:152</div></div>
+<div class="ttc" id="group__http_security_module_enum_html_gga3f12ce2c8a5fd2a9a778d316a0a43c59a158afe156f0509e88cbf129c78a366c8"><div class="ttname"><a href="group__http_security_module_enum.html#gga3f12ce2c8a5fd2a9a778d316a0a43c59a158afe156f0509e88cbf129c78a366c8">DATA_HASH_NONE</a></div><div class="ttdoc">不做Hash计算. </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:258</div></div>
+<div class="ttc" id="group__http_security_module_enum_html_ga3f12ce2c8a5fd2a9a778d316a0a43c59"><div class="ttname"><a href="group__http_security_module_enum.html#ga3f12ce2c8a5fd2a9a778d316a0a43c59">PTDataPackageHashType</a></div><div class="ttdeci">PTDataPackageHashType</div><div class="ttdoc">Hash计算方式枚举   </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:257</div></div>
+<div class="ttc" id="group__resource_config_module_enum_html_ggafc8c24a6164365743dfe490b4f72b7fdaf9b3759ed6f71748e54984fa835045c7"><div class="ttname"><a href="group__resource_config_module_enum.html#ggafc8c24a6164365743dfe490b4f72b7fdaf9b3759ed6f71748e54984fa835045c7">NetworkStateNotReachable</a></div><div class="ttdoc">无网状态 </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:99</div></div>
+<div class="ttc" id="group__resource_file_module_enum_html_ggac4f3cbfd3d8e5e878f124f86a225fe70a51c8a90d8eed92d907a4f540d08b90ed"><div class="ttname"><a href="group__resource_file_module_enum.html#ggac4f3cbfd3d8e5e878f124f86a225fe70a51c8a90d8eed92d907a4f540d08b90ed">PTDataZip_OldToNewLoad</a></div><div class="ttdoc">需要解压data.zip：老用户升级新程序. </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:68</div></div>
+<div class="ttc" id="group__resource_file_module_enum_html_ggac4f3cbfd3d8e5e878f124f86a225fe70a499554edcadfd93c4ca126cc54c2e40c"><div class="ttname"><a href="group__resource_file_module_enum.html#ggac4f3cbfd3d8e5e878f124f86a225fe70a499554edcadfd93c4ca126cc54c2e40c">PTDataZip_NewLoad</a></div><div class="ttdoc">需要解压data.zip：用户首次进行程序. </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:67</div></div>
+<div class="ttc" id="group__http_assist_module_enum_html_ggae35f00757939b6d1efb4bc23605f249ca1e2b0fc32b3c7c50831874e9f467a568"><div class="ttname"><a href="group__http_assist_module_enum.html#ggae35f00757939b6d1efb4bc23605f249ca1e2b0fc32b3c7c50831874e9f467a568">ServerError</a></div><div class="ttdoc">服务器错误. </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:200</div></div>
+<div class="ttc" id="group__http_security_module_enum_html_gga820e1be0b283dbf90431d5cc6d9a09cbabebad50f5e8f5d379f8e2edd07d1deb2"><div class="ttname"><a href="group__http_security_module_enum.html#gga820e1be0b283dbf90431d5cc6d9a09cbabebad50f5e8f5d379f8e2edd07d1deb2">PKG_FLAG_SERVER</a></div><div class="ttdoc">服务器 -> 客户端 的包 </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:307</div></div>
+<div class="ttc" id="group__http_security_module_enum_html_ggafe8ed79c5d2e5091e77bf5bc764f8c29a5cdc4f828de6ad90cec9c2ead1132e1d"><div class="ttname"><a href="group__http_security_module_enum.html#ggafe8ed79c5d2e5091e77bf5bc764f8c29a5cdc4f828de6ad90cec9c2ead1132e1d">DATA_CRYPT_NONE</a></div><div class="ttdoc">不加密. </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:232</div></div>
+<div class="ttc" id="group__http_security_module_enum_html_ga820e1be0b283dbf90431d5cc6d9a09cb"><div class="ttname"><a href="group__http_security_module_enum.html#ga820e1be0b283dbf90431d5cc6d9a09cb">PTComPackageFlag</a></div><div class="ttdeci">PTComPackageFlag</div><div class="ttdoc">通讯包类型枚举 </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:302</div></div>
+<div class="ttc" id="group__resource_file_module_enum_html_gaaa112930bd78670b11023fbfdad44e18"><div class="ttname"><a href="group__resource_file_module_enum.html#gaaa112930bd78670b11023fbfdad44e18">PTEventState</a></div><div class="ttdeci">PTEventState</div><div class="ttdoc">各种资源检查的状态 xml json js css文件的检查结果枚举   </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:35</div></div>
+<div class="ttc" id="group__http_assist_module_enum_html_gga73bf820501aed4e59ad4bdd2c495683ba78ad9e751b69516a21af6762ec96dcf9"><div class="ttname"><a href="group__http_assist_module_enum.html#gga73bf820501aed4e59ad4bdd2c495683ba78ad9e751b69516a21af6762ec96dcf9">STATE_SESSIONTIMEOUT</a></div><div class="ttdoc">会话超时，需要重新握手 : 服务器 状态 </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:149</div></div>
+<div class="ttc" id="group__http_security_module_enum_html_ggafe8ed79c5d2e5091e77bf5bc764f8c29a6d8d30588130455625058d76490dc04a"><div class="ttname"><a href="group__http_security_module_enum.html#ggafe8ed79c5d2e5091e77bf5bc764f8c29a6d8d30588130455625058d76490dc04a">DATA_CRYPT_RC5</a></div><div class="ttdoc">采用RC5算法加密. </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:235</div></div>
+<div class="ttc" id="group__resource_file_module_enum_html_ggac4f3cbfd3d8e5e878f124f86a225fe70a5668aed427a8bed850516e32bc4a74c3"><div class="ttname"><a href="group__resource_file_module_enum.html#ggac4f3cbfd3d8e5e878f124f86a225fe70a5668aed427a8bed850516e32bc4a74c3">PTDataZip_BeforeLoadFail</a></div><div class="ttdoc">需要解压data.zip：上次解压data.zip失败. </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:69</div></div>
+<div class="ttc" id="group__http_security_module_enum_html_gga3f12ce2c8a5fd2a9a778d316a0a43c59a0d117c1c40d2e33346122033d4026f97"><div class="ttname"><a href="group__http_security_module_enum.html#gga3f12ce2c8a5fd2a9a778d316a0a43c59a0d117c1c40d2e33346122033d4026f97">DATA_HASH_SHA1</a></div><div class="ttdoc">采用SHA1做hash计算. </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:260</div></div>
+<div class="ttc" id="group__http_assist_module_enum_html_ggae35f00757939b6d1efb4bc23605f249ca193e9a9b006165f10d2451d88d753ef9"><div class="ttname"><a href="group__http_assist_module_enum.html#ggae35f00757939b6d1efb4bc23605f249ca193e9a9b006165f10d2451d88d753ef9">DataParseError</a></div><div class="ttdoc">通讯结果解密解析错误. </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:201</div></div>
+<div class="ttc" id="group__http_security_module_enum_html_gafe8ed79c5d2e5091e77bf5bc764f8c29"><div class="ttname"><a href="group__http_security_module_enum.html#gafe8ed79c5d2e5091e77bf5bc764f8c29">PTDataPackageCryptType</a></div><div class="ttdeci">PTDataPackageCryptType</div><div class="ttdoc">加密方式枚举   </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:231</div></div>
+<div class="ttc" id="group__http_assist_module_enum_html_ggae35f00757939b6d1efb4bc23605f249cae7c0818c69588b6550abb13a85485b19"><div class="ttname"><a href="group__http_assist_module_enum.html#ggae35f00757939b6d1efb4bc23605f249cae7c0818c69588b6550abb13a85485b19">ParameterError</a></div><div class="ttdoc">参数错误. </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:197</div></div>
+<div class="ttc" id="group__http_security_module_enum_html_ga79cc40cbc943e67c94c40b8977ae63c7"><div class="ttname"><a href="group__http_security_module_enum.html#ga79cc40cbc943e67c94c40b8977ae63c7">PTDataPackageSignatureFlag</a></div><div class="ttdeci">PTDataPackageSignatureFlag</div><div class="ttdoc">签名方式枚举   </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:281</div></div>
+<div class="ttc" id="group__http_assist_module_enum_html_gga73bf820501aed4e59ad4bdd2c495683ba46c19eaf820b4e6c11f4318b3b25a66e"><div class="ttname"><a href="group__http_assist_module_enum.html#gga73bf820501aed4e59ad4bdd2c495683ba46c19eaf820b4e6c11f4318b3b25a66e">STATE_HANDSHAKEFAILED</a></div><div class="ttdoc">握手失败 </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:148</div></div>
+<div class="ttc" id="group__http_assist_module_enum_html_gga73bf820501aed4e59ad4bdd2c495683ba48e1417d5a06574a96496bd4340c617f"><div class="ttname"><a href="group__http_assist_module_enum.html#gga73bf820501aed4e59ad4bdd2c495683ba48e1417d5a06574a96496bd4340c617f">STATE_LOGING</a></div><div class="ttdoc">已建立会话，握手成功，正在登陆 : 客户端 状态 （无） </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:151</div></div>
+<div class="ttc" id="group__http_security_module_enum_html_gga79cc40cbc943e67c94c40b8977ae63c7a7b4e721068af0f6122723204cd982138"><div class="ttname"><a href="group__http_security_module_enum.html#gga79cc40cbc943e67c94c40b8977ae63c7a7b4e721068af0f6122723204cd982138">DATA_SIGNATURE_SHA1_RSA</a></div><div class="ttdoc">对SHA1的hash值做RSA签名. </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:284</div></div>
+<div class="ttc" id="group__http_assist_module_enum_html_ggae35f00757939b6d1efb4bc23605f249ca17570a1d40f13cfbd765973c73ee12e1"><div class="ttname"><a href="group__http_assist_module_enum.html#ggae35f00757939b6d1efb4bc23605f249ca17570a1d40f13cfbd765973c73ee12e1">SessionStateError</a></div><div class="ttdoc">会话状态错误. 错误的会话状态包括： 1、STATE_NULLSESSION  2、STATE_HANDSHAKEING  3、STATE_HANDSHAKEFAI...</div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:199</div></div>
+<div class="ttc" id="group__resource_config_module_enum_html_ggafc8c24a6164365743dfe490b4f72b7fdabfef94a9f1c02e5e4819fd8d24e59330"><div class="ttname"><a href="group__resource_config_module_enum.html#ggafc8c24a6164365743dfe490b4f72b7fdabfef94a9f1c02e5e4819fd8d24e59330">NetworkState3GReachable</a></div><div class="ttdoc">3G网络 </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:101</div></div>
+<div class="ttc" id="group__resource_file_module_enum_html_ggaaa112930bd78670b11023fbfdad44e18a1afc7418fdfb3990cff2b19fb7ddfd40"><div class="ttname"><a href="group__resource_file_module_enum.html#ggaaa112930bd78670b11023fbfdad44e18a1afc7418fdfb3990cff2b19fb7ddfd40">PTEventStateSuccess</a></div><div class="ttdoc">检查成功. </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:36</div></div>
+<div class="ttc" id="group__http_security_module_enum_html_gga79cc40cbc943e67c94c40b8977ae63c7add311f0ab76122a2b90bc7e11897fda3"><div class="ttname"><a href="group__http_security_module_enum.html#gga79cc40cbc943e67c94c40b8977ae63c7add311f0ab76122a2b90bc7e11897fda3">DATA_SIGNATURE_MD5_RSA</a></div><div class="ttdoc">对MD5的hash值做RSA签名. </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:283</div></div>
+<div class="ttc" id="group__http_assist_module_enum_html_gga73bf820501aed4e59ad4bdd2c495683ba81b656ad9cd9661d925f883976fc6944"><div class="ttname"><a href="group__http_assist_module_enum.html#gga73bf820501aed4e59ad4bdd2c495683ba81b656ad9cd9661d925f883976fc6944">STATE_HANDSHAKEING</a></div><div class="ttdoc">正在握手 </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:147</div></div>
+<div class="ttc" id="group__http_security_module_enum_html_ggafe8ed79c5d2e5091e77bf5bc764f8c29a1940312de2e0534d1546063537f432ef"><div class="ttname"><a href="group__http_security_module_enum.html#ggafe8ed79c5d2e5091e77bf5bc764f8c29a1940312de2e0534d1546063537f432ef">DATA_CRYPT_AES</a></div><div class="ttdoc">采用AES算法加密. </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:234</div></div>
+<div class="ttc" id="group__http_assist_module_enum_html_gga73bf820501aed4e59ad4bdd2c495683ba3a283de17a05f48e48d782e91eab814e"><div class="ttname"><a href="group__http_assist_module_enum.html#gga73bf820501aed4e59ad4bdd2c495683ba3a283de17a05f48e48d782e91eab814e">STATE_LOGOUTING</a></div><div class="ttdoc">正在登出 : 客户端 状态 （无） </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:153</div></div>
+<div class="ttc" id="group__resource_config_module_enum_html_gafc8c24a6164365743dfe490b4f72b7fd"><div class="ttname"><a href="group__resource_config_module_enum.html#gafc8c24a6164365743dfe490b4f72b7fd">PTNetworkState</a></div><div class="ttdeci">PTNetworkState</div><div class="ttdoc">网络状态标识枚举   用于 PTNetStateManager 类 </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:98</div></div>
+<div class="ttc" id="group__http_assist_module_enum_html_ga73bf820501aed4e59ad4bdd2c495683b"><div class="ttname"><a href="group__http_assist_module_enum.html#ga73bf820501aed4e59ad4bdd2c495683b">PTSessionState</a></div><div class="ttdeci">PTSessionState</div><div class="ttdoc">会话状态标识枚举   </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:145</div></div>
+<div class="ttc" id="group__resource_file_module_enum_html_gac4f3cbfd3d8e5e878f124f86a225fe70"><div class="ttname"><a href="group__resource_file_module_enum.html#gac4f3cbfd3d8e5e878f124f86a225fe70">PTDataZipState</a></div><div class="ttdeci">PTDataZipState</div><div class="ttdoc">data.zip是否需要解压的状态枚举   </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:66</div></div>
+<div class="ttc" id="group__resource_file_module_enum_html_ggac4f3cbfd3d8e5e878f124f86a225fe70a70712ae8af847b5412e3f281bab11fc8"><div class="ttname"><a href="group__resource_file_module_enum.html#ggac4f3cbfd3d8e5e878f124f86a225fe70a70712ae8af847b5412e3f281bab11fc8">PTDataZip_NoLoad</a></div><div class="ttdoc">不需要解压data.zip：资源最新. </div><div class="ttdef"><b>Definition:</b> PTFrameworkConstant.h:70</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_b678e0da0dd1c076094d7b62ef5423cc.html">PT</a></li><li class="navelem"><a class="el" href="dir_a1019c1f2787f47b2242771c1d460d6d.html">main</a></li><li class="navelem"><b>PTFrameworkConstant.h</b></li>
+    <li class="footer">生成于 2016年 七月 15日 星期五 20:21:40 , 为 中信网络科技移动基础框架-iOS Lib使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>

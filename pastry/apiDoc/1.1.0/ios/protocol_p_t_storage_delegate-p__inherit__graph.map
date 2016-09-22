@@ -1,0 +1,5 @@
+<map id="&lt;PTStorageDelegate&gt;" name="&lt;PTStorageDelegate&gt;">
+<area shape="rect" id="node3" href="$interface_p_t_security_storage.html" title="该存储类只是实现数据的加密与解密，并不实现正真的存储，可以作为其他存储类的基类 " alt="" coords="77,305,209,511"/>
+<area shape="rect" id="node4" href="$interface_p_t_private_storage.html" title="{PTPrivateStorage\n||+ init\l+ getString:\l+ put:value:\l+ remove:\l+ commit\l+ getName\l}" alt="" coords="5,561,131,701"/>
+<area shape="rect" id="node5" href="$interface_p_t_system_storage.html" title="{PTSystemStorage\n||+ init\l+ getString:\l+ put:value:\l+ remove:\l+ commit\l+ getName\l}" alt="" coords="155,561,284,701"/>
+</map>

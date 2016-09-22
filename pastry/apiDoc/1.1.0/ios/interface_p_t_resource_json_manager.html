@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>中信网络科技移动基础框架-iOS Lib: PTResourceJsonManager类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">中信网络科技移动基础框架-iOS Lib
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li class="current"><a href="annotated.html"><span>结构体</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li><a href="classes.html"><span>结构体索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>成员变量</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('interface_p_t_resource_json_manager.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">构造函数</a> &#124;
+<a href="#pub-static-methods">类方法</a> &#124;
+<a href="#properties">属性</a>  </div>
+  <div class="headertitle">
+<div class="title">PTResourceJsonManager类 参考<div class="ingroups"><a class="el" href="group__resource_module.html">资源文件管理模块</a> &raquo; <a class="el" href="group__resource_file_module.html">资源文件管理模块-File</a> &raquo; <a class="el" href="group__resource_file_module_class.html">类</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>功能：<br />
+ 1、更新 resource.json 文件，保证文件和服务器一致；<br />
+ 文件更新完毕，框架发送 [<a class="el" href="interface_p_t_notification_name_manager.html">PTNotificationNameManager</a> getNotificationName:PTNotification_RESOURCEJSON_UPDATE] 通知；<br />
+ 参数 PTEventState 枚举值；<br />
+  
+ <a href="interface_p_t_resource_json_manager.html#details">更多...</a></p>
+
+<p><code>#import &lt;<a class="el" href="_p_t_resource_json_manager_8h_source.html">PTResourceJsonManager.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> 类 PTResourceJsonManager 继承关系图:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="interface_p_t_resource_json_manager__inherit__graph.png" border="0" usemap="#_p_t_resource_json_manager_inherit__map" alt="Inheritance graph"/></div>
+<map name="_p_t_resource_json_manager_inherit__map" id="_p_t_resource_json_manager_inherit__map">
+</map>
+</div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> PTResourceJsonManager 的协作图:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="interface_p_t_resource_json_manager__coll__graph.png" border="0" usemap="#_p_t_resource_json_manager_coll__map" alt="Collaboration graph"/></div>
+<map name="_p_t_resource_json_manager_coll__map" id="_p_t_resource_json_manager_coll__map">
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+构造函数</h2></td></tr>
+<tr class="memitem:a61e7b1b6864dcdd3e0f885886f5a6519"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61e7b1b6864dcdd3e0f885886f5a6519"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>initialization</b></td></tr>
+<tr class="separator:a61e7b1b6864dcdd3e0f885886f5a6519"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e4ca561592a8839cd485e45315eaaab"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_p_t_resource_json_manager.html#a0e4ca561592a8839cd485e45315eaaab">readResourceJson</a></td></tr>
+<tr class="memdesc:a0e4ca561592a8839cd485e45315eaaab"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取清单文件resource.json的内容<br />
+ 1、获取key-value键值对<br />
+ 2、获取version版本号<br />
+  <a href="#a0e4ca561592a8839cd485e45315eaaab">更多...</a><br /></td></tr>
+<tr class="separator:a0e4ca561592a8839cd485e45315eaaab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a979ba684d53bd16784271c24d786ada4"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_p_t_resource_json_manager.html#a979ba684d53bd16784271c24d786ada4">loadResourceJson</a></td></tr>
+<tr class="memdesc:a979ba684d53bd16784271c24d786ada4"><td class="mdescLeft">&#160;</td><td class="mdescRight">框架内部方法 1、更新检测清单文件resource.json，保证resource.json为与服务器相同；<br />
+ 2、加载 resource.json 内容；<br />
+  <a href="#a979ba684d53bd16784271c24d786ada4">更多...</a><br /></td></tr>
+<tr class="separator:a979ba684d53bd16784271c24d786ada4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fa5b48ea7e8c6b5d77cdbc50eef389c"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_p_t_resource_json_manager.html#a6fa5b48ea7e8c6b5d77cdbc50eef389c">checkFilelist</a></td></tr>
+<tr class="memdesc:a6fa5b48ea7e8c6b5d77cdbc50eef389c"><td class="mdescLeft">&#160;</td><td class="mdescRight">框架内部方法 根据列表文件中列明的js，css，图片等文件，逐个验证这些文件的有效性  <a href="#a6fa5b48ea7e8c6b5d77cdbc50eef389c">更多...</a><br /></td></tr>
+<tr class="separator:a6fa5b48ea7e8c6b5d77cdbc50eef389c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2a4ba89df8e483cf13d6fd10d060951"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2a4ba89df8e483cf13d6fd10d060951"></a>
+(id)&#160;</td><td class="memItemRight" valign="bottom">- <b>init</b><code> [implementation]</code></td></tr>
+<tr class="separator:ae2a4ba89df8e483cf13d6fd10d060951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70769a4b9c688dca6cebcaea6c99c903"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70769a4b9c688dca6cebcaea6c99c903"></a>
+(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <b>checkFile</b><code> [implementation]</code></td></tr>
+<tr class="separator:a70769a4b9c688dca6cebcaea6c99c903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b0cb5932a8686caef21d9759c5f819d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b0cb5932a8686caef21d9759c5f819d"></a>
+(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <b>updateResourceJson</b><code> [implementation]</code></td></tr>
+<tr class="separator:a1b0cb5932a8686caef21d9759c5f819d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaecae28d324c92a165eeb6f1a6d06ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaaecae28d324c92a165eeb6f1a6d06ae"></a>
+(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <b>checkRemarkFile:length:filepath:remarkLength:</b><code> [implementation]</code></td></tr>
+<tr class="separator:aaaecae28d324c92a165eeb6f1a6d06ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a123fab600c2933a7699462eec801d759"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a123fab600c2933a7699462eec801d759"></a>
+(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <b>downloadResourceJsonWith304File_AFN:md5:</b><code> [implementation]</code></td></tr>
+<tr class="separator:a123fab600c2933a7699462eec801d759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+类方法</h2></td></tr>
+<tr class="memitem:a5c0a3b57171e384710830aefa7102ac0"><td class="memItemLeft" align="right" valign="top">(instancetype)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_p_t_resource_json_manager.html#a5c0a3b57171e384710830aefa7102ac0">getInstance</a></td></tr>
+<tr class="memdesc:a5c0a3b57171e384710830aefa7102ac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取PTResourceJsonManager单例对象  <a href="#a5c0a3b57171e384710830aefa7102ac0">更多...</a><br /></td></tr>
+<tr class="separator:a5c0a3b57171e384710830aefa7102ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a68a5deb73761852ed3fb10c7e6588b1c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a68a5deb73761852ed3fb10c7e6588b1c"></a>
+<a class="el" href="group__resource_file_module_enum.html#gaaa112930bd78670b11023fbfdad44e18">PTEventState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_p_t_resource_json_manager.html#a68a5deb73761852ed3fb10c7e6588b1c">resourceJsonCheckState</a></td></tr>
+<tr class="memdesc:a68a5deb73761852ed3fb10c7e6588b1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据 Resource.json 的Key value键值对，对js、css、pic等文件 验签的结果标志 <br /></td></tr>
+<tr class="separator:a68a5deb73761852ed3fb10c7e6588b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f3bf59127e4d10bdb360cc5396bad2f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f3bf59127e4d10bdb360cc5396bad2f"></a>
+<a class="el" href="group__resource_file_module_enum.html#gaaa112930bd78670b11023fbfdad44e18">PTEventState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_p_t_resource_json_manager.html#a4f3bf59127e4d10bdb360cc5396bad2f">resourceJsonUpdateState</a></td></tr>
+<tr class="memdesc:a4f3bf59127e4d10bdb360cc5396bad2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resource.json 文件 更新结果标志 <br /></td></tr>
+<tr class="separator:a4f3bf59127e4d10bdb360cc5396bad2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95f7e3612a69490161ab3584255fbde1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95f7e3612a69490161ab3584255fbde1"></a>
+NSMutableDictionary *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_p_t_resource_json_manager.html#a95f7e3612a69490161ab3584255fbde1">fileDictionary</a></td></tr>
+<tr class="memdesc:a95f7e3612a69490161ab3584255fbde1"><td class="mdescLeft">&#160;</td><td class="mdescRight">文件列表字典 key -&gt; 业务编码Hash的结果 value -&gt; 文件内容Hash的结果 <br /></td></tr>
+<tr class="separator:a95f7e3612a69490161ab3584255fbde1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf4f8bcd5fb04b268b7c4d09afebfe79"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf4f8bcd5fb04b268b7c4d09afebfe79"></a>
+NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_p_t_resource_json_manager.html#acf4f8bcd5fb04b268b7c4d09afebfe79">version</a></td></tr>
+<tr class="memdesc:acf4f8bcd5fb04b268b7c4d09afebfe79"><td class="mdescLeft">&#160;</td><td class="mdescRight">版本号 <br /></td></tr>
+<tr class="separator:acf4f8bcd5fb04b268b7c4d09afebfe79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>功能：<br />
+ 1、更新 resource.json 文件，保证文件和服务器一致；<br />
+ 文件更新完毕，框架发送 [<a class="el" href="interface_p_t_notification_name_manager.html">PTNotificationNameManager</a> getNotificationName:PTNotification_RESOURCEJSON_UPDATE] 通知；<br />
+ 参数 PTEventState 枚举值；<br />
+ </p>
+<div class="fragment"><div class="line">[[NSNotificationCenter defaultCenter] addObserver:<span class="keyword">self</span></div>
+<div class="line">                                         selector:<span class="keyword">@selector</span>(receiveResourceJsonUpdateResult:)</div>
+<div class="line">                                             name:[<a class="code" href="interface_p_t_notification_name_manager.html">PTNotificationNameManager</a> getNotificationName:<a class="code" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11abed83170ad834187650329f0eddd4519">PTNotification_RESOURCEJSON_UPDATE</a>]</div>
+<div class="line">                                           <span class="keywordtype">object</span>:nil];</div>
+</div><!-- fragment --><p> <br />
+</p>
+<p>2、读取清单文件resource.json的内容<br />
+ -&mdash;2.1 获取key-value键值对<br />
+ -&mdash;2.2 获取version版本号<br />
+ <br />
+</p>
+<p>3、根据 resource.json 文件中 key value 键值对 对js，css，图片等文件，逐个验证这些文件的有效性<br />
+ 文件验证完毕，框架发送 [<a class="el" href="interface_p_t_notification_name_manager.html">PTNotificationNameManager</a> getNotificationName:PTNotification_FILELIST_CHECK_NAME] 通知；<br />
+ 参数 PTEventState 枚举值；<br />
+ </p><div class="fragment"><div class="line">[[NSNotificationCenter defaultCenter] addObserver:<span class="keyword">self</span></div>
+<div class="line">                                         selector:<span class="keyword">@selector</span>(receiveCheckFileListResult:)</div>
+<div class="line">                                             name:[<a class="code" href="interface_p_t_notification_name_manager.html">PTNotificationNameManager</a> getNotificationName:<a class="code" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11a666a923d3851b86972fbfecdadc0f74b">PTNotification_FILELIST_CHECK_NAME</a>]</div>
+<div class="line">                                           <span class="keywordtype">object</span>:nil];</div>
+</div><!-- fragment --> </div><h2 class="groupheader">函数文档</h2>
+<a class="anchor" id="a6fa5b48ea7e8c6b5d77cdbc50eef389c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) checkFilelist </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>框架内部方法 根据列表文件中列明的js，css，图片等文件，逐个验证这些文件的有效性 </p>
+<dl class="section note"><dt>注解</dt><dd>js、css、pic等文件验签完毕后，框架发送 [<a class="el" href="interface_p_t_notification_name_manager.html">PTNotificationNameManager</a> getNotificationName:PTNotification_FILELIST_CHECK_NAME] 通知； <div class="fragment"><div class="line">[[NSNotificationCenter defaultCenter] addObserver:<span class="keyword">self</span></div>
+<div class="line">                                         selector:<span class="keyword">@selector</span>(receiveCheckFileListResult:)</div>
+<div class="line">                                             name:[<a class="code" href="interface_p_t_notification_name_manager.html">PTNotificationNameManager</a> getNotificationName:<a class="code" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11a666a923d3851b86972fbfecdadc0f74b">PTNotification_FILELIST_CHECK_NAME</a>]</div>
+<div class="line">                                           <span class="keywordtype">object</span>:nil];</div>
+</div><!-- fragment --> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5c0a3b57171e384710830aefa7102ac0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) getInstance </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取PTResourceJsonManager单例对象 </p>
+<dl class="section return"><dt>返回</dt><dd>相应单例对象 </dd></dl>
+
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="interface_p_t_resource_json_manager_a5c0a3b57171e384710830aefa7102ac0_icgraph.png" border="0" usemap="#interface_p_t_resource_json_manager_a5c0a3b57171e384710830aefa7102ac0_icgraph" alt=""/></div>
+<map name="interface_p_t_resource_json_manager_a5c0a3b57171e384710830aefa7102ac0_icgraph" id="interface_p_t_resource_json_manager_a5c0a3b57171e384710830aefa7102ac0_icgraph">
+<area shape="rect" id="node2" href="interface_p_t_framework.html#a8abc5d1d44882a2cb4b42111074e716d" title="初始化系统，实现的功能有: &#160;1、定位客户终端当前位置 &#160;2、协商初始会话密钥 &#160;3、检测文件清单列表，并下载(..." alt="" coords="482,102,671,127"/>
+<area shape="rect" id="node3" href="interface_p_t_framework.html#aff631d451e6a6b82afc2f98ceba079f3" title="获取当前客户端文件清单检测状态resoure.json文件 " alt="" coords="241,36,434,75"/>
+<area shape="rect" id="node4" href="interface_p_t_framework.html#a4fcc7d007b7eef1b5e72267b88f70742" title="获取当前客户端文件清单更新状态resource.json文件 " alt="" coords="241,99,434,138"/>
+<area shape="rect" id="node5" href="interface_p_t_framework.html#a4d2a6359ce8136f3cd5348942fcd8480" title="获取当前客户端系统初始化状态 " alt="" coords="243,162,431,187"/>
+<area shape="rect" id="node6" href="interface_p_t_app_resource_manager.html#a8437a4bf0a7d7988550b80fe28fb6ee0" title="功能： &#160;1 加载menu.xml文件到树形节点 &#160;&#160;1.1 设置加载menu.xml结果状态 menuPreparedState &#160;&#160;1..." alt="" coords="248,211,427,250"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a979ba684d53bd16784271c24d786ada4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) loadResourceJson </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>框架内部方法 1、更新检测清单文件resource.json，保证resource.json为与服务器相同；<br />
+ 2、加载 resource.json 内容；<br />
+ </p>
+<dl class="section return"><dt>返回</dt><dd>YES 初始化成功<br />
+ NO 初始化失败<br />
+ </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>保证resource.json为最新后，执行 readResourceJson 方法，读取内容； <div class="fragment"><div class="line">[[NSNotificationCenter defaultCenter] addObserver:<span class="keyword">self</span></div>
+<div class="line">                                        selector:<span class="keyword">@selector</span>(receiveResourceJsonUpdateResult:)</div>
+<div class="line">                                        name:[<a class="code" href="interface_p_t_notification_name_manager.html">PTNotificationNameManager</a> getNotificationName:<a class="code" href="group__resource_config_module_enum.html#ggab1bf79f136f2330bddb98f2c1902eb11abed83170ad834187650329f0eddd4519">PTNotification_RESOURCEJSON_UPDATE</a>]</div>
+<div class="line">                                        <span class="keywordtype">object</span>:nil];</div>
+</div><!-- fragment --> </dd></dl>
+
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="interface_p_t_resource_json_manager_a979ba684d53bd16784271c24d786ada4_cgraph.png" border="0" usemap="#interface_p_t_resource_json_manager_a979ba684d53bd16784271c24d786ada4_cgraph" alt=""/></div>
+<map name="interface_p_t_resource_json_manager_a979ba684d53bd16784271c24d786ada4_cgraph" id="interface_p_t_resource_json_manager_a979ba684d53bd16784271c24d786ada4_cgraph">
+<area shape="rect" id="node2" href="interface_p_t_resource_json_manager.html#a0e4ca561592a8839cd485e45315eaaab" title="读取清单文件resource.json的内容 &#160;1、获取key&#45;value键值对 &#160;2、获取version版本号 &#160;" alt="" coords="238,24,422,63"/>
+<area shape="rect" id="node3" href="interface_p_t_sign_tool.html#a0736ec6e62660432fad4b56d1f47084d" title="以懒惰方式实现的单例模式 " alt="" coords="488,5,665,31"/>
+<area shape="rect" id="node4" href="interface_p_t_sign_tool.html#a84600f031f8ffb490ce26dbe179a70e8" title="获取Base64的长度 " alt="" coords="470,55,683,80"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0e4ca561592a8839cd485e45315eaaab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) readResourceJson </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取清单文件resource.json的内容<br />
+ 1、获取key-value键值对<br />
+ 2、获取version版本号<br />
+ </p>
+<dl class="section note"><dt>注解</dt><dd>必须在 updateResourceJson 方法后执行，保证 resource.json 为最新； </dd></dl>
+
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> 函数调用图:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="interface_p_t_resource_json_manager_a0e4ca561592a8839cd485e45315eaaab_cgraph.png" border="0" usemap="#interface_p_t_resource_json_manager_a0e4ca561592a8839cd485e45315eaaab_cgraph" alt=""/></div>
+<map name="interface_p_t_resource_json_manager_a0e4ca561592a8839cd485e45315eaaab_cgraph" id="interface_p_t_resource_json_manager_a0e4ca561592a8839cd485e45315eaaab_cgraph">
+<area shape="rect" id="node2" href="interface_p_t_sign_tool.html#a0736ec6e62660432fad4b56d1f47084d" title="以懒惰方式实现的单例模式 " alt="" coords="256,5,433,31"/>
+<area shape="rect" id="node3" href="interface_p_t_sign_tool.html#a84600f031f8ffb490ce26dbe179a70e8" title="获取Base64的长度 " alt="" coords="238,55,451,80"/>
+</map>
+</div>
+</p>
+
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> 这是这个函数的调用关系图:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="interface_p_t_resource_json_manager_a0e4ca561592a8839cd485e45315eaaab_icgraph.png" border="0" usemap="#interface_p_t_resource_json_manager_a0e4ca561592a8839cd485e45315eaaab_icgraph" alt=""/></div>
+<map name="interface_p_t_resource_json_manager_a0e4ca561592a8839cd485e45315eaaab_icgraph" id="interface_p_t_resource_json_manager_a0e4ca561592a8839cd485e45315eaaab_icgraph">
+<area shape="rect" id="node2" href="interface_p_t_resource_json_manager.html#a979ba684d53bd16784271c24d786ada4" title="框架内部方法 1、更新检测清单文件resource.json，保证resource.json为与服务器相同； &#160;2、加载 resource..." alt="" coords="238,5,422,44"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>PT/resourceManager/resourcejsonManager/<a class="el" href="_p_t_resource_json_manager_8h_source.html">PTResourceJsonManager.h</a></li>
+<li>PT/resourceManager/resourcejsonManager/PTResourceJsonManager.m</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="interface_p_t_resource_json_manager.html">PTResourceJsonManager</a></li>
+    <li class="footer">生成于 2016年 七月 15日 星期五 20:21:41 , 为 中信网络科技移动基础框架-iOS Lib使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>

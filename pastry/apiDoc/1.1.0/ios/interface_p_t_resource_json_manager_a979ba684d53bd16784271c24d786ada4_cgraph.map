@@ -1,0 +1,5 @@
+<map id="&#45;[PTResourceJsonManager loadResourceJson]" name="&#45;[PTResourceJsonManager loadResourceJson]">
+<area shape="rect" id="node2" href="$interface_p_t_resource_json_manager.html#a0e4ca561592a8839cd485e45315eaaab" title="读取清单文件resource.json的内容 &#160;1、获取key&#45;value键值对 &#160;2、获取version版本号 &#160;" alt="" coords="238,24,422,63"/>
+<area shape="rect" id="node3" href="$interface_p_t_sign_tool.html#a0736ec6e62660432fad4b56d1f47084d" title="以懒惰方式实现的单例模式 " alt="" coords="488,5,665,31"/>
+<area shape="rect" id="node4" href="$interface_p_t_sign_tool.html#a84600f031f8ffb490ce26dbe179a70e8" title="获取Base64的长度 " alt="" coords="470,55,683,80"/>
+</map>

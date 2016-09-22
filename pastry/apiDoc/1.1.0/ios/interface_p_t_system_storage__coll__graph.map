@@ -1,0 +1,4 @@
+<map id="PTSystemStorage" name="PTSystemStorage">
+<area shape="rect" id="node2" href="$interface_p_t_security_storage.html" title="该存储类只是实现数据的加密与解密，并不实现正真的存储，可以作为其他存储类的基类 " alt="" coords="47,305,179,511"/>
+<area shape="rect" id="node4" href="$protocol_p_t_storage_delegate-p.html" title="PTStorageDelegate 协议 " alt="" coords="107,129,260,255"/>
+</map>

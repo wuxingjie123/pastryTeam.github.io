@@ -1,0 +1,5 @@
+<map id="&#45;[PTBusinessManager getElementByHTMLUrl:]" name="&#45;[PTBusinessManager getElementByHTMLUrl:]">
+<area shape="rect" id="node2" href="$interface_p_t_business_manager.html#adb313b6bd5c978648bfdcf97e6a82841" title="获取处理后的Business根节点 " alt="" coords="222,27,375,65"/>
+<area shape="rect" id="node3" href="$interface_p_t_sign_tool.html#a0736ec6e62660432fad4b56d1f47084d" title="以懒惰方式实现的单例模式 " alt="" coords="430,5,608,31"/>
+<area shape="rect" id="node4" href="$interface_p_t_sign_tool.html#a8d980cbeecf3654c02b556479ead3a09" title="对 xml 文件验签 " alt="" coords="423,55,614,93"/>
+</map>

@@ -1,0 +1,26 @@
+var interface_p_t_communication_helper =
+[
+    [ "allowSendRequest:error:", "interface_p_t_communication_helper.html#abc118a262ca102ee93e6d60940fd6f87", null ],
+    [ "asynchBusinessRequest:json:", "interface_p_t_communication_helper.html#a2fec9bb839550c451083011694267333", null ],
+    [ "asynchBusinessRequest:json:", "interface_p_t_communication_helper.html#a96c49e3e7b7c3f1b9e9a1f57a33319a2", null ],
+    [ "asynchBusinessRequest:json:cryptFlag:", "interface_p_t_communication_helper.html#a00e9a9eb7d8d3ed18c63eef7a7e8e663", null ],
+    [ "asynchBusinessRequest:json:cryptFlag:", "interface_p_t_communication_helper.html#a69f791e1c6207d71ba4e892ed8c458ea", null ],
+    [ "asynchBusinessRequest:json:cryptFlag:timeOutInterval:", "interface_p_t_communication_helper.html#afd928692960c88df678f2a336d916fc0", null ],
+    [ "asynchBusinessRequest:json:cryptFlag:timeOutInterval:", "interface_p_t_communication_helper.html#ace37b14a1238cb212dfca31c229eacf5", null ],
+    [ "asynchBusinessRequest:json:timeOutInterval:", "interface_p_t_communication_helper.html#a016c50829675fcec7da192061a33ac7c", null ],
+    [ "asynchBusinessRequest:json:timeOutInterval:", "interface_p_t_communication_helper.html#ac46b7160f60528063dfd3aed89e5f797", null ],
+    [ "asynchBusinessRequest_AFN:json:cryptFlag:timeOutInterval:callblock:", "interface_p_t_communication_helper.html#a8d11ed43e3088af3b29a45b743c17021", null ],
+    [ "downloadVCodePicture:param:", "interface_p_t_communication_helper.html#a6f5e19a07b9f25fe34f04b58a6f0f0ae", null ],
+    [ "downloadVCodePicture:param:error:", "interface_p_t_communication_helper.html#adc7d9781b66118b505c70ac78ba18534", null ],
+    [ "jsonToData:cryptFlag:", "interface_p_t_communication_helper.html#ae0c9ae5522ab81c5dcaab03ee9ca929e", null ],
+    [ "responseToComPackage:", "interface_p_t_communication_helper.html#a4207facd08c53cbaa6ea3b304ba05592", null ],
+    [ "synchBusinessRequest:json:", "interface_p_t_communication_helper.html#af2cd98821eb27648e6a0132b6dd2a5ac", null ],
+    [ "synchBusinessRequest:json:", "interface_p_t_communication_helper.html#a97756f824c7b82a528726240c6189ce8", null ],
+    [ "synchBusinessRequest:json:cryptFlag:", "interface_p_t_communication_helper.html#a8ee46bee437d8851ed10f6e03f5ddd4c", null ],
+    [ "synchBusinessRequest:json:cryptFlag:", "interface_p_t_communication_helper.html#a3bbc2b9aa3b69c523fd3e2821bb96948", null ],
+    [ "synchBusinessRequest:json:cryptFlag:timeOutInterval:", "interface_p_t_communication_helper.html#af6ef5a955ba4ff20ba72f853f4780599", null ],
+    [ "synchBusinessRequest:json:cryptFlag:timeOutInterval:", "interface_p_t_communication_helper.html#a444e47d73ed14c233cef031b7b684371", null ],
+    [ "synchBusinessRequest:json:timeOutInterval:", "interface_p_t_communication_helper.html#a536a0f9c8ecd4c8e31d51d7df4aad003", null ],
+    [ "synchBusinessRequest:json:timeOutInterval:", "interface_p_t_communication_helper.html#a7addfa7958f2386ae11a5ee00d01c238", null ],
+    [ "synchBusinessRequest_AFN:json:cryptFlag:timeOutInterval:", "interface_p_t_communication_helper.html#af9af988b3637f7c6cc8752fd8bac9705", null ]
+];

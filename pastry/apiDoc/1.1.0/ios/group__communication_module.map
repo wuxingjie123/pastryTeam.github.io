@@ -1,0 +1,5 @@
+<map id="通讯模块" name="通讯模块">
+<area shape="rect" id="node2" href="$group__http_assist_module.html" title=" 主要功能：处理发送同步/异步请求业务，并对客户端←→服务器间的数据打包。接口返回服务器响应包。 &#160;&#160;属性..." alt="" coords="128,4,256,30"/>
+<area shape="rect" id="node3" href="$group__http_security_module.html" title=" 该对象用于定义用来封装业务数据对象的结构。其中主要包括业务数据的压缩算法、加密算法、散列算法、数据散..." alt="" coords="128,54,256,80"/>
+<area shape="rect" id="node4" href="$group__http_request_module.html" title=" 封装单个HTTP 请求，并实现了数据同步请求、文件同步下载请求等常用网络请求功能。 &#160;&#160;属性 内容 &#160;功能描述 ..." alt="" coords="128,103,256,129"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="PTKeyboardKey" name="PTKeyboardKey">
+<area shape="rect" id="node3" href="$interface_p_t_keyboard_hybridkey.html" title="按键类 " alt="" coords="5,465,160,538"/>
+<area shape="rect" id="node4" href="$interface_p_t_keyboard_publickey.html" title="按键类 " alt="" coords="184,465,336,538"/>
+<area shape="rect" id="node5" href="$interface_p_t_keyboard_hybrid_shift_key.html" title="shift 按键类 " alt="" coords="168,587,351,661"/>
+</map>

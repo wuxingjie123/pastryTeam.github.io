@@ -1,0 +1,11 @@
+<map id="+[PTBusinessManager getInstance]" name="+[PTBusinessManager getInstance]">
+<area shape="rect" id="node2" href="$interface_p_t_framework.html#a8abc5d1d44882a2cb4b42111074e716d" title="初始化系统，实现的功能有: &#160;1、定位客户终端当前位置 &#160;2、协商初始会话密钥 &#160;3、检测文件清单列表，并下载(..." alt="" coords="527,323,716,348"/>
+<area shape="rect" id="node3" href="$interface_p_t_framework.html#aaea5bfc261bd0b3773c7b365bf2f0716" title="获取business.xml文件的rootElement " alt="" coords="241,68,430,107"/>
+<area shape="rect" id="node4" href="$interface_p_t_framework.html#ac5af76f662dfa84ccca970670398bca4" title="将内存中的rootElement保存到沙盒，覆盖原文件 目标文件： 1、Documents/release/business.xml 2、Documents/release/business.xml.bak " alt="" coords="236,131,435,169"/>
+<area shape="rect" id="node5" href="$interface_p_t_menus_manager.html#ab072ad8dcadc1b3447c09a51ebe55dae" title="添加菜单 " alt="" coords="210,5,461,44"/>
+<area shape="rect" id="node7" href="$interface_p_t_menus_manager.html#ad0d0f9ec445cec4854d0da431c459656" title="设置刷新菜单标识为True，会在refreshMenus:andBlock:方法里统一发送刷新通知 对应PTFrameworkDelegate中的h..." alt="" coords="243,256,428,295"/>
+<area shape="rect" id="node8" href="$interface_p_t_menus_manager.html#aca74c57ac3c9f45d557e1b98ae993be4" title="更新模板文件操作 " alt="" coords="210,319,461,357"/>
+<area shape="rect" id="node9" href="$interface_p_t_menus_manager.html#ac62460a6fc486cb583f4a3c87b582932" title="根据模版名称，获取对应的版本号 " alt="" coords="228,381,443,420"/>
+<area shape="rect" id="node10" href="$interface_p_t_app_resource_manager.html#a8437a4bf0a7d7988550b80fe28fb6ee0" title="功能： &#160;1 加载menu.xml文件到树形节点 &#160;&#160;1.1 设置加载menu.xml结果状态 menuPreparedState &#160;&#160;1..." alt="" coords="246,193,425,232"/>
+<area shape="rect" id="node6" href="$interface_p_t_menus_manager.html#a75b1fd597194ce67f3d810e57cf702b8" title="添加菜单，默认添加到根节点 " alt="" coords="509,5,734,44"/>
+</map>

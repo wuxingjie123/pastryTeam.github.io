@@ -1,0 +1,15 @@
+asp.citic.ptframework
+asp.citic.ptframework.common
+asp.citic.ptframework.common.exception
+asp.citic.ptframework.common.logger
+asp.citic.ptframework.common.menu
+asp.citic.ptframework.common.security
+asp.citic.ptframework.common.util
+asp.citic.ptframework.communication
+asp.citic.ptframework.menu
+asp.citic.ptframework.messagecenter
+asp.citic.ptframework.security
+asp.citic.ptframework.securitykeyboard
+asp.citic.ptframework.securitykeyboard.impl
+asp.citic.ptframework.taskexecutor
+asp.citic.ptframework.templatemanager

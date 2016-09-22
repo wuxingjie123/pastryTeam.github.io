@@ -1,0 +1,6 @@
+<map id="&#45;[PTFramework getInitState]" name="&#45;[PTFramework getInitState]">
+<area shape="rect" id="node2" href="$interface_p_t_net_state_manager.html#acdc7116f75d3c9a41ec63390119b886d" title="以懒惰方式实现的单例模式 " alt="" coords="275,5,429,43"/>
+<area shape="rect" id="node3" href="$interface_p_t_session_manager.html#a79a56384286dc7f5ae0b0732a975401e" title="以懒惰方式实现的单例模式 " alt="" coords="277,67,427,106"/>
+<area shape="rect" id="node4" href="$interface_p_t_menus_manager.html#aedcd5568ff7e2b1e1c30012115ed1634" title="以懒惰方式实现的单例模式 " alt="" coords="243,130,461,155"/>
+<area shape="rect" id="node5" href="$interface_p_t_resource_json_manager.html#a5c0a3b57171e384710830aefa7102ac0" title="获取PTResourceJsonManager单例对象 " alt="" coords="258,179,446,218"/>
+</map>

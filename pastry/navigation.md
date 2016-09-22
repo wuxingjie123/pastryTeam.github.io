@@ -4,10 +4,10 @@
 
   * [快速开始](index.md)
   - - - -
-  * [JS指南](quickstart/quickstart-js.md)
-  * [iOS指南](quickstart/quickstart-ios.md)
-  * [android指南](quickstart/quickstart-android.md)
-  * [前置指南](quickstart/quickstart-fo.md)
+  * [JS使用指南](quickstart/quickstart-js.md)
+  * [iOS使用指南](quickstart/quickstart-ios.md)
+  * [android指使用南](quickstart/quickstart-android.md)
+  * [前置使用指南](quickstart/quickstart-fo.md)
   - - - -
   * [使用IDE`不支持`](ide.md)
 
@@ -54,18 +54,23 @@
   * [iOS 代码规范](codingSpecification/specification-ios.md)
   * [android 代码规范](codingSpecification/specification-android.md)
 
-<!--
 [API 文档]()
 
-  * [Pastry JS (pc)](apiDoc/1.0.0/pc/index.html)
-  * [Pastry JS (mobile)](apiDoc/1.0.0/mobile/index.html)
-  * [Pastry JS (wx)](apiDoc/1.0.0/wx/index.html)
+  * [Pastry JS (mobile)](apiDoc/1.1.0/mobile/index.html)
   - - - -
-  * [Pastry iOS](apiDoc/1.0.0/ios/index.html)
+  * [Pastry iOS](apiDoc/1.1.0/ios/index.html)
   - - - -
-  * [Pastry Android](apiDoc/1.0.0/android/index.html)
--->
+  * [Pastry Android](apiDoc/1.1.0/android/index.html)
+  - - - -
+  * [Pastry 前置](apiDoc/1.1.0/fo/index.html)
 
+
+  <!--
+  * [Pastry JS (pc)](apiDoc/1.1.0/pc/index.html)
+  * [Pastry JS (mobile)](apiDoc/1.1.0/mobile/index.html)
+  * [Pastry JS (wx)](apiDoc/1.1.0/wx/index.html)
+  -->
+  
 [常见问题](faq.md)
 
 [联系方式](contact.md)

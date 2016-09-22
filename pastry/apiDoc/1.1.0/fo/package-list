@@ -1,0 +1,12 @@
+com.ct.ptframework
+com.ct.ptframework.common
+com.ct.ptframework.common.exception
+com.ct.ptframework.common.menu
+com.ct.ptframework.common.security
+com.ct.ptframework.common.util
+com.ct.ptframework.log
+com.ct.ptframework.log.appender
+com.ct.ptframework.log.config
+com.ct.ptframework.resourcecompiler
+com.ct.ptframework.security
+com.ct.ptframework.usercontext

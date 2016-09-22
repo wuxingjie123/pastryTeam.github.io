@@ -1,0 +1,4 @@
+<map id="PTHttpRequest" name="PTHttpRequest">
+<area shape="rect" id="node3" href="$interface_p_t_http_request_a_f_n.html" title="{PTHttpRequestAFN\n|+ setUrlAction\l+ setUrl\l+ setData\l+ setParams\l+ setHttpMethod\l+ addRequestHeader\l+ useSessions\l+ useCookies\l+ allowCompressedResponses\l+ timeouts\l|+ getResponse\l+ asynchronousRequest:\l+ asynchFileRequest:progress\lBlock:completeBlock:\l+ synchDataRequest\l+ synchFileRequest:progress\lBlock:completeBlock:\l+ customSecurityPolicy:\l+ allowSendRequest:error:\l+ asynchDataRequestComplete:\l+ allocURLRequest\l+ makeRequest:\l}" alt="" coords="5,467,219,807"/>
+<area shape="rect" id="node4" href="$interface_p_t_http_request_imp.html" title="http请求子类 " alt="" coords="243,504,464,769"/>
+</map>

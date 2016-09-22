@@ -1,0 +1,4 @@
+<map id="+[PTNetStateManager getInstance]" name="+[PTNetStateManager getInstance]">
+<area shape="rect" id="node2" href="$interface_p_t_framework.html#ae394d05f6e7731a213078f8908991cdf" title="获取当前的网络状态是否可用 " alt="" coords="212,5,392,44"/>
+<area shape="rect" id="node3" href="$interface_p_t_framework.html#a4d2a6359ce8136f3cd5348942fcd8480" title="获取当前客户端系统初始化状态 " alt="" coords="208,68,396,93"/>
+</map>

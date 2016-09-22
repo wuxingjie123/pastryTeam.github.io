@@ -1,0 +1,6 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="node2" href="$interface_p_t_keyboard_key.html" title="按键基类 " alt="" coords="127,31,245,56"/>
+<area shape="rect" id="node3" href="$interface_p_t_keyboard_hybridkey.html" title="按键类 " alt="" coords="293,5,448,31"/>
+<area shape="rect" id="node4" href="$interface_p_t_keyboard_publickey.html" title="按键类 " alt="" coords="294,55,447,80"/>
+<area shape="rect" id="node5" href="$interface_p_t_keyboard_hybrid_shift_key.html" title="shift 按键类 " alt="" coords="496,55,679,80"/>
+</map>

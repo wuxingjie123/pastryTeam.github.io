@@ -1,0 +1,5 @@
+<map id="+[PTStorageManager getInstance]" name="+[PTStorageManager getInstance]">
+<area shape="rect" id="node2" href="$interface_p_t_framework.html#a90e8b2747625f8c6f14f49760a51dfe2" title="重启其他模块 重启以下模块 &#160;1、服务器配置信息模块 PTConfigurationManager &#160;2、加密存储管理模块 PTStorag..." alt="" coords="203,31,403,56"/>
+<area shape="rect" id="node3" href="$interface_p_t_framework.html#aea3dfa11ff3776a209fe4d5c054fb345" title="客户端根据需要对框架进行重启操作 &#160;重启以下模块 &#160;1、服务器配置信息模块 PTConfigurationManager &#160;2、加密..." alt="" coords="471,5,621,31"/>
+<area shape="rect" id="node4" href="$interface_p_t_framework.html#a8abc5d1d44882a2cb4b42111074e716d" title="初始化系统，实现的功能有: &#160;1、定位客户终端当前位置 &#160;2、协商初始会话密钥 &#160;3、检测文件清单列表，并下载(..." alt="" coords="451,55,641,80"/>
+</map>
