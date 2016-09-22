@@ -1,6 +1,6 @@
 # Pastry Wiki
 
-[指南]()
+[使用指南]()
 
   * [快速开始](index.md)
   - - - -
@@ -13,7 +13,7 @@
 
 [命令行工具]()
 
-  * # pastry
+  * `pastry`
   * [bake](pastry-cli/bake.md)
  <!-- * [emulator`不支持`](pastry-cli/emulator.md)-->
  <!-- * [emulator-server`不支持`](pastry-cli/emulator-server.md)-->
@@ -21,32 +21,21 @@
  <!-- * [taste`不支持`](pastry-cli/taste.md)-->
  <!-- * [taste-server`不支持`](pastry-cli/taste-server.md)-->
 
-[框架组件库]()
+[组件库]()
 
-  * [JS](tutorials/pastry-js.md)
+  * [组件分类 组件管理工具 说明](plugins/plugins.md)
   - - - -
-  * [iOS](tutorials/pastry-ios.md)
+  * `框架组件库`
   - - - -
-  * [Android](tutorials/pastry-android.md)
+  * [框架 JS](tutorials/pastry-js.md)
+  * [框架 iOS](tutorials/pastry-ios.md)
+  * [框架 Android](tutorials/pastry-android.md)
+  * [框架 前置](tutorials/pastry-fo.md)
   - - - -
-  * [前置](tutorials/pastry-fo.md)
-
-[业务组件库]()
-
-  * [业务 JS 组件](plugins/plugins-js.md)
+  * `业务组件库`
   - - - -
-  * [Cordova 业务组件(JS || iOS || Android)](plugins/plugins-cordova.md)
-
-[平台简介]()
-
-  * [简介](abstract/abstract.md)
-  - - - -
-  * [JS简介](abstract/abstract-js.md)
-  * [iOS简介`待定`](abstract/abstract-ios.md)
-  * [android简介`待定`](abstract/abstract-android.md)
-
-[平台下载](download.md)
-
+  * [业务 JS](plugins/plugins-js.md) 
+  * [业务 Cordova (JS | iOS | Android)](plugins/plugins-cordova.md)
 
 [代码规范]()
 
@@ -70,6 +59,16 @@
   * [Pastry JS (mobile)](apiDoc/1.1.0/mobile/index.html)
   * [Pastry JS (wx)](apiDoc/1.1.0/wx/index.html)
   -->
+
+[平台简介]()
+
+  * [简介](abstract/abstract.md)
+  - - - -
+  * [JS简介](abstract/abstract-js.md)
+  * [iOS简介`待定`](abstract/abstract-ios.md)
+  * [android简介`待定`](abstract/abstract-android.md)
+
+[平台下载](download.md)
   
 [常见问题](faq.md)
 
