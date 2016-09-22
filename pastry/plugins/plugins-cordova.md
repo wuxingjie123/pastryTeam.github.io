@@ -24,13 +24,13 @@
 |[pastry-plugin-request][net_request] |Y|Y|Complete|Y|Y /Complete|Y /   Await|
 |[pastry-plugin-browser][net_browser] |Y|-|Complete|N|Y /Complete|Y /Complete|
 |[pastry-plugin-storage][net_storage] |Y|Y|Loading|Y|Y /Complete|Y /   Await|
-|[pastry-plugin-pastryState][net_pastryState]|Y|Y|   Await|Y|Y /   Await|Y /   Await|
+|[pastry-plugin-pastryState][net_pastryState]|Y|Y|   Await|Y|Y /Complete|Y /   Await|
 |UI级别插件|||||||
-|[pastry-plugin-unzip][net_unzip] |Y|Y|Complete|-|Y /Complete|Y /   Await|
-|[pastry-plugin-guide][net_guide] |Y|-|Loading|N|Y /Complete|Y /   Await|
-|[pastry-plugin-login][net_login] |Y|-|Loading|N|Y /Complete|Y /   Await|
-|[pastry-plugin-QRcode][net_QRcode] |Y|-|Loading|Y|Y /Complete|Y /   Await|
-|[pastry-plugin-OCR][net_OCR] |Y|-|Loading|Y|Y /Complete|Y /   Await|
+|[pastry-plugin-unzip][net_unzip] |Y|Y| Loading |-|Y /Complete|Y /   Await|
+|[pastry-plugin-guide][net_guide] |Y|-| Loading |-|Y /Complete|Y /   Await|
+|[pastry-plugin-login][net_login] |Y|-| Loading |-|Y /Complete|Y /   Await|
+|[pastry-plugin-QRcode][net_QRcode] |Y|-| Loading |Y|Y /Complete|Y /   Await|
+|[pastry-plugin-OCR][net_OCR] |Y|-| Loading |Y|Y /Complete|Y /   Await|
 |[pastry-plugin-share][net_share] |Y|-|   Await|N|Y /Complete|Y /   Await|
 |[pastry-plugin-DB][net_DB] |Y|-|   Await|N|Y /Complete|Y /   Await|
 
@@ -206,20 +206,20 @@
 [net_guide]: https://github.com/pastryTeam/pastry-plugin-guide
 
 ----
-## 二维码组件
+## 登录组件
 
 * 功能
 
-    * 提供二维码扫描功能
+    * 提供登陆功能
 
 * 使用方法
 
-    * [pastry-plugin-QRcode 地址][net_QRcode]
+    * [pastry-plugin-login 地址][net_login]
 
-[net_QRcode]: https://github.com/pastryTeam/pastry-plugin-QRcode
+[net_login]: https://github.com/pastryTeam/pastry-plugin-login
 
 ----
-## 身份证验证组件
+## OCR身份证验证组件
 
 * 功能
 
@@ -230,6 +230,19 @@
     * [pastry-plugin-OCR 地址][net_OCR]
 
 [net_OCR]: https://github.com/pastryTeam/pastry-plugin-OCR
+
+----
+## 二维码组件
+
+* 功能
+
+    * 提供二维码功能
+
+* 使用方法
+
+    * [pastry-plugin-QRcode 地址][net_QRcode]
+
+[net_QRcode]: https://github.com/pastryTeam/pastry-plugin-QRcode
 
 
 ----
