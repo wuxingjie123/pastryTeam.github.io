@@ -1,9 +1,7 @@
 # 快速开始
 
 ## 预备知识
-### `Cordova 开发流程`
-
-* [Cordova 文档地址][cordova_doc]
+### `Cordova 平台`
 
 * Cordova优质博客列表
     
@@ -11,20 +9,22 @@
 
     * [极客学院][net_cordovablog1]
 
+* [Cordova 文档地址][cordova_doc]
+
 [net_cordovablog]: http://www.itcast.cn/news/20151228/14522674095.shtml
 [net_cordovablog1]: http://wiki.jikexueyuan.com/project/apache-cordova-tutorial/
 
-* `Cordova 功能对比`
+* `Pastry 与 Cordova 功能对比`
     
     * `Cordova CLI + JS端打包功能 = pastry CLI`
     
     * `Cordova 项目目录结构 ＋  pastry-fo-java + pastry-fo-nodejs = pastry 项目目录结构`
 
-    * `Cordova 项目ios模版 + pastry ios框架 = pastry ios 模版`
+    * `Cordova ios基础模版 + pastry ios框架 = pastry ios 基础模版`
 
-    * `Cordova 项目android模版 + pastry android框架 = pastry android 模版`
+    * `Cordova android基础模版 + pastry android框架 = pastry android 基础模版`
 
-    * `Cordova 项目www模版 + pastry js框架 = pastry js 模版`
+    * `Cordova www基础模版 + pastry js框架 = pastry js 基础模版`
 
 [cordova_doc]: http://cordova.apache.org/docs/en/latest/plugin_ref/spec.html
 
@@ -38,7 +38,7 @@
 
   * MacOSX
   
-    打开 [NodeJS官网][net_nodejs官网] ,点击硕大的绿色Download按钮，它会根据系统信息选择对应版本（.msi文件|.pkg文件）。然后像安装QQ一样安装它就可以了（安装路径随意）。
+    打开 [NodeJS官网][net_nodejs官网] ,点击绿色Download按钮，它会根据系统信息选择对应版本（.msi文件|.pkg文件）。（安装路径随意）。
     
     安装完成在终端输入 `node -v` 正确显示 node 版本号，即安装成功
     
@@ -77,8 +77,6 @@
         重新启动命令行窗口，执行 pastry，配置成功将显示以下信息
 
             usage: pastry {bake,emulator,taste,ide} ...
-        
-      * `提示 不要将pastry命令行解压到包含空格的目录中，否则：报错 Error: Unexpected toke F`
 
     * MacOSX
 
@@ -95,6 +93,8 @@
         重新启动命令行窗口，执行 pastry，配置成功将显示以下信息
 
             usage: pastry {bake,emulator,taste,ide} ...
+        
+    * **`提示 不要将pastry命令行解压到包含空格的目录中，否则：报错 Error: Unexpected toke F`**
 
 #### Html5 开发配置
 
@@ -266,11 +266,11 @@
 
 ### 开发模式配置
 
-* iOS 开发模式配置 详见 [iOS功能 - 开发模式配置][md_pastry-ios]
+* iOS 开发模式配置 详见 [使用指南 -> iOS -> 调试支持][md_tutorials-ios]
 
-* android 开发模式配置 详见 `待定`
+* android 开发模式配置 详见 [使用指南 -> android -> 调试支持][md_quickstart-android]
 
-* h5 开发模式配置 详见 `待定`
+* h5 开发模式配置 详见 [使用指南 -> JS -> 调试支持][md_quickstart-js]
 
 ### h5调试流程
 
@@ -290,7 +290,7 @@
 
           pastry bake build ios -m debug -si 'iPhone Developer: Min Tan (RWTVR85F43)'
 
-    * 测试人员通过修改 app 的 Setting 设置来连接不同的服务器；详见 [iOS功能 - 开发模式配置][md_pastry-ios]
+    * 测试人员通过修改 app 的 Setting 设置来连接不同的服务器；详见 [iOS功能 - 开发模式配置][md_tutorials-ios]
 
   * android
 
@@ -350,7 +350,6 @@
 [net_pastry-plugin-sideMain]: https://github.com/pastryTeam/pastry-plugin-sideMain
 
 [md_download]: ./download.md
-[md_pastry-ios]: ./tutorials/pastry-ios.md
 [md_moreCli]: ./pastry-cli/bake.md
 
 [md_tutorials-js]: ./tutorials/pastry-js.md
@@ -358,6 +357,6 @@
 [md_tutorials-android]: ./tutorials/pastry-android.md
 [md_tutorials-fo]: ./tutorials/pastry-fo.md
 
-[md_quickstart-android]: quickstart-android.md
-[md_quickstart-ios]: quickstart-ios.md
-[md_quickstart-js]: quickstart-js.md
+[md_quickstart-android]: quickstart/quickstart-android.md
+[md_quickstart-ios]: quickstart/quickstart-ios.md
+[md_quickstart-js]: quickstart/quickstart-js.md
