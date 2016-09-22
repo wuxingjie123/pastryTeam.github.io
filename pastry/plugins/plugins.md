@@ -32,20 +32,20 @@
 
 | `管理工具` \ `平台` | ios | android | js | cordova组件 |
 |----|----|----|----|----|
-| CocoaPod      | `√` |  ×  |  ×  |  ×  |
+| CocoaPods      | `√` |  ×  |  ×  |  ×  |
 | Maven(Gradle) |  ×  | `√` |  ×  |  ×  |
 | bower         |  ×  |  ×  | `√` |  ×  |
 | Cordova       | `√` | `√` | `√` | `√` |
 
 **2. 选型说明**
 
-* 假设 CocoaPod管理iOS、Maven管理android、bower管理js、cordova管理组件
+* 假设 CocoaPods管理iOS、Maven管理android、bower管理js、cordova管理cordova组件
 
     * 现象：同一个项目里需要四种管理工具，且每种管理工具都需要专门的人掌握。
 
     * 结论：弃用 --> 这种方式增加项目管理的复杂程度。
 
-* 假设 CocoaPod管理iOS、Cordova管理android、js、cordova组件
+* 假设 CocoaPods管理iOS、Cordova管理android、js、cordova组件
     
     * 现象：iOS单独管理，其它平台使用cordova管理。
     
