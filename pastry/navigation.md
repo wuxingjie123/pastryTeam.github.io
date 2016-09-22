@@ -4,10 +4,10 @@
 
   * [快速开始](index.md)
   - - - -
-  * [JS使用指南](quickstart/quickstart-js.md)
-  * [iOS使用指南](quickstart/quickstart-ios.md)
-  * [android指使用南](quickstart/quickstart-android.md)
-  * [前置使用指南](quickstart/quickstart-fo.md)
+  * [JS](quickstart/quickstart-js.md)
+  * [iOS](quickstart/quickstart-ios.md)
+  * [android](quickstart/quickstart-android.md)
+  * [前置](quickstart/quickstart-fo.md)
   - - - -
   * [使用IDE`不支持`](ide.md)
 
@@ -27,31 +27,31 @@
   - - - -
   * `框架组件库`
   - - - -
-  * [框架 JS](tutorials/pastry-js.md)
-  * [框架 iOS](tutorials/pastry-ios.md)
-  * [框架 Android](tutorials/pastry-android.md)
-  * [框架 前置](tutorials/pastry-fo.md)
+  * [JS](tutorials/pastry-js.md)
+  * [iOS](tutorials/pastry-ios.md)
+  * [Android](tutorials/pastry-android.md)
+  * [前置](tutorials/pastry-fo.md)
   - - - -
   * `业务组件库`
   - - - -
-  * [业务 JS](plugins/plugins-js.md) 
-  * [业务 Cordova (JS | iOS | Android)](plugins/plugins-cordova.md)
+  * [JS](plugins/plugins-js.md) 
+  * [Cordova (JS | iOS | Android)](plugins/plugins-cordova.md)
 
 [代码规范]()
 
-  * [JS 代码规范](codingSpecification/specification-js.md)
-  * [iOS 代码规范](codingSpecification/specification-ios.md)
-  * [android 代码规范](codingSpecification/specification-android.md)
+  * [JS](codingSpecification/specification-js.md)
+  * [iOS](codingSpecification/specification-ios.md)
+  * [android](codingSpecification/specification-android.md)
 
 [API 文档]()
 
-  * [Pastry JS (mobile)](apiDoc/1.1.0/mobile/index.html)
+  * [JS (mobile)](apiDoc/1.1.0/mobile/index.html)
   - - - -
-  * [Pastry iOS](apiDoc/1.1.0/ios/index.html)
+  * [iOS](apiDoc/1.1.0/ios/index.html)
   - - - -
-  * [Pastry Android](apiDoc/1.1.0/android/index.html)
+  * [Android](apiDoc/1.1.0/android/index.html)
   - - - -
-  * [Pastry 前置](apiDoc/1.1.0/fo/index.html)
+  * [前置](apiDoc/1.1.0/fo/index.html)
 
 
   <!--
@@ -64,9 +64,9 @@
 
   * [简介](abstract/abstract.md)
   - - - -
-  * [JS简介](abstract/abstract-js.md)
-  * [iOS简介`待定`](abstract/abstract-ios.md)
-  * [android简介`待定`](abstract/abstract-android.md)
+  * [JS](abstract/abstract-js.md)
+  * [iOS`待定`](abstract/abstract-ios.md)
+  * [android`待定`](abstract/abstract-android.md)
 
 [平台下载](download.md)
   
