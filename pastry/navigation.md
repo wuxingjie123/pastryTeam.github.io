@@ -40,7 +40,9 @@
 [代码规范]()
 
   * [JS](codingSpecification/specification-js.md)
+  - - - -
   * [iOS](codingSpecification/specification-ios.md)
+  - - - -
   * [android](codingSpecification/specification-android.md)
 
 [API 文档]()

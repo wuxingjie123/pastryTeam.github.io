@@ -191,7 +191,7 @@
 
 * [更多命令][md_moreCli]
 
-## 工程结构
+## 工程目录结构
 
         ProjectName
          ┣ merges             **针对ios、android平台的html文件**

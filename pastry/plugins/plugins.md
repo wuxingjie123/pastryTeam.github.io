@@ -75,10 +75,13 @@
 
     * 适用于 `框架功能组件 iOS`、`框架功能组件 android`、`框架功能组件 js`
 
-* bower (pastry bake bower)
+* bower ([pastry bake bower][md_moreCli])
     
     * 适用于 `业务UI组件 js`
     
-* cordova (pastry bake plugin)
+* cordova ([pastry bake plugin][md_moreCli])
 
     * 适用于 `业务UI组件 iOS`、`业务UI组件 android`、`cordova组件`
+
+
+[md_moreCli]: ../pastry-cli/bake.md
