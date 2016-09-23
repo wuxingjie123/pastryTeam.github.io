@@ -34,11 +34,9 @@
 
 1、 NodeJS
 
-  * Windows
-
-  * MacOSX
+  * Windows / MacOSX
   
-    打开 [NodeJS官网][net_nodejs官网] ,点击绿色Download按钮，它会根据系统信息选择对应版本（.msi文件|.pkg文件）。（安装路径随意）。
+    打开 [NodeJS官网][net_nodejs官网] ,点击Download按钮，它会根据系统信息选择对应版本(.msi文件|.pkg文件)。
     
     安装完成在终端输入 `node -v` 正确显示 node 版本号，即安装成功
     
@@ -57,7 +55,7 @@
          ┣ node_modules           **公共文件**
          ┣ package.json           **公共文件**
          ┣ tools
-         ┃  ┣ common_data         **功能 : 存放h5、iOS、android项目模版数据 及 前置服务器** 
+         ┃  ┣ common_data         **功能 : 存放H5、iOS、android项目模版数据 及 前置服务器** 
          ┃  ┣ pastry-bake         **功能 : 项目创建、编译、打包等命令**
          ┃  ┣ pastry-emulator     `不支持`
          ┃  ┣ pastry-ide          **功能 : 支持部分功能**
@@ -131,9 +129,13 @@
 
 ## 创建项目
 
-  * 创建客户端项目 `HelloWorld`，包含 h5、iOS、android;
+  * 创建客户端项目 `HelloWorld`，包含 H5、iOS、android;
 
-  `依赖的插件(以下插件默认添加到新工程里)`
+        cd 指定项目目录
+      
+        pastry bake create HelloWorld com.test.helloworld
+
+  * `新建工程里自动添加以下插件`
 
     * [cordova-plugin-console][net_cordova-plugin-console]
 
@@ -153,13 +155,8 @@
 
     * [pastry-plugin-sideMain][net_pastry-plugin-sideMain]
 
-
-        cd 指定项目目录
-      
-        pastry bake create HelloWorld com.test.helloworld
-
   
-  [bake create 命令详细介绍][md_moreCli]
+  * [bake create 命令详细介绍][md_moreCli]
 
 ## 保存代码到代码仓库
 
@@ -169,15 +166,19 @@
 
 ## 编译项目
 
-    cd HelloWorld
-    
-    pastry bake build android -m debug
-    
-    pastry bake build ios -m debug -si 描述文件名称
+*  编译项目
 
-  [bake build 命令详细介绍][md_moreCli]
+        cd HelloWorld
+        
+        // 编译 android
+        pastry bake build android -m debug
+        
+        // 编译 ios
+        pastry bake build ios -m debug -si 描述文件名称
 
-  * 备注
+* [bake build 命令详细介绍][md_moreCli]
+
+* 备注
 
     * `编译失败原因 : 证书id 是否与本机证书保持一致；`
 

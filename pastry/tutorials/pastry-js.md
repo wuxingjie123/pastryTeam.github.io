@@ -45,7 +45,7 @@
 | Select | Base | `列表组件` | examples/base_amount.html ||
 | CheckImage | Base | 验证码组件 | `待定` ||
 | CodeMirror | Base | ？？？？？ | `待定` |
-| Datepicker | Base | 日历组件 | examples/data_dispatcher.html ||
+| Datepicker | Base | 日历组件 | `待定` ||
 | PopupSelect | Base | `弹出框组件` | examples/ex_popupselect.html ||
 | StepGroup | Base | 步骤组组件 | `待定` ||
 | Switch | Base | 开关按钮组件 | examples/ex_switch.html ||
