@@ -5,6 +5,19 @@
 
 ## ->静态网页
 ----
+* 问题
+> 内容分享
+
+* 技术
+    * Html
+      * 年 : 1995
+    
+    * CSS
+      * 年 : 1996
+
+    * Javascript
+      * 年 : 1996
+      * 问题 : 客户端脚本语言
 
 ## ->动态网页
 ----
@@ -12,22 +25,23 @@
 > 动态网页问题
 
 * 技术
-  * CGI
+  * CGI（共用网关接口）
+  
   * [Perl](http://baike.baidu.com/view/46614.htm)
     * 年 : 1987
     * 问题 : 服务器端动态网页
+  
   * [PHP](http://baike.baidu.com/subview/99/5828265.htm)
     * 年 : 1995
     * 问题 : 服务器端动态网页
+  
   * [JSP](http://baike.baidu.com/subview/3387/16963334.htm)
     * 年 : 1996
     * 问题 : 服务器端动态网页
+  
   * [ASP](http://baike.baidu.com/subview/2616/14622918.htm)
     * 年 : 1996
     * 问题 : 服务器端动态网页
-  * Javascript
-    * 年 : 1996
-    * 问题 : 客户端脚本语言
 
 ## ->客户端异步交互
 ----
@@ -47,45 +61,59 @@
   * jQuery
     * 年 : 2006
     * 问题 : JS库、浏览器的兼容性、简化dom操作，加快开发效率
+  
   * YUI
     * 2006
     * 问题 :
+  
   * Ruby on Rails
     * 年 : 2007
     * 问题 : 开发模式->MVC
+  
   * NodeJS
     * 年 : 2009
     * 问题 : 待定
+  
   * Prototypejs
     * 年 : 2009
     * 问题 : 待定
+  
   * UnderScore
     * 年 : 2009
     * 问题 : 待定
+  
   * AngularJS
     * 年 : 2009
     * 问题 : 谷歌 JS 前端框架
+  
   * CoffeeScript
     * 年 : 2009-2010
     * 问题 : 作为JavaScript的转译语言
+  
   * Backbone
     * 年 : 2010
     * 问题 : JS 前端框架
+  
   * Web2.0 Html5
     * 年 : 2010
     * 问题 : 待定
+  
   * EmberJS
     * 年 : 2011
     * 问题 : 待定
+  
   * Bootstrap
     * 年 : 2011
     * 问题 : 待定
+  
   * TypeScript
     * 年 : 2012
     * 问题 : 待定
+  
   * React
     * 年 : 2013
     * 问题 : 构建随着时间数据不断变化的大规模应用程序
+  
   * Vue
     * 年 : 2013
     * 问题 : 待定
