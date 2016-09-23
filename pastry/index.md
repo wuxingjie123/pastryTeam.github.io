@@ -264,6 +264,10 @@
 
 ## 调试发布
 
+### 调试支持概览
+
+  ![pastry调试支持](/pastry/images/test/pastry_test.png)
+
 ### 开发模式配置
 
 * iOS 开发模式配置 详见 [使用指南 -> iOS -> 调试支持][md_tutorials-ios]

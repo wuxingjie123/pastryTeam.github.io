@@ -8,12 +8,13 @@
   * [iOS](quickstart/quickstart-ios.md)
   * [android](quickstart/quickstart-android.md)
   * [前置](quickstart/quickstart-fo.md)
-  - - - -
-  * [使用IDE`不支持`](ide.md)
+  
+  <!--* [使用IDE`不支持`](ide.md)-->
 
 [命令行工具]()
 
   * `pastry`
+  - - - -
   * [bake](pastry-cli/bake.md)
  <!-- * [emulator`不支持`](pastry-cli/emulator.md)-->
  <!-- * [emulator-server`不支持`](pastry-cli/emulator-server.md)-->
@@ -62,13 +63,13 @@
   * [Pastry JS (wx)](apiDoc/1.1.0/wx/index.html)
   -->
 
-[平台简介]()
+[平台简介](abstract/abstract.md)
 
-  * [简介](abstract/abstract.md)
+<!--  * [简介](abstract/abstract.md)
   - - - -
   * [JS](abstract/abstract-js.md)
   * [iOS`待定`](abstract/abstract-ios.md)
-  * [android`待定`](abstract/abstract-android.md)
+  * [android`待定`](abstract/abstract-android.md)-->
 
 [平台下载](download.md)
   
