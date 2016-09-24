@@ -1,5 +1,69 @@
 # Hybrid App 发展史
 
+> 
+回顾历史，展望未来。认真分析 Hybrid 的诞生原因、发展经历、才能更好的预测 Hybrid 开发的未来前景。
+>
+问题 产生 技术，无法解决问题的技术是不存在的。
+>
+提到 Hybrid 开发，必然要提到 Web，首先让我们看一看Web发展史。
+    
+* 静态网页:展示内容。
+    
+* 动态网页:支持页面与服务器交互，构建了现在蓬勃发展的互联网的基础。
+    
+* 客户端异步交互:解决了整个页面刷新的问题，优化了用户体验。
+    
+* 开发效率提速阶段:各种功能丰富的第三方JS库迅速崛起，提高工作效率。
+    
+* 移动平台:智能手机飞速发展，需要快速构建App，满足市场需求，Hybrid作为一种解决方案应运而生。
+    * Hybrid分类
+            Hybrid时间点从2012年开始，陆续出现了三种Hybrid模式 : 多View混合型、单View混合型、Web主体性；按照另一种分类方式分为 : 重架构混合模式、轻架构混合模式。
+            其中，多View混合型、单View混合型属于重架构混合模式，Web主体性属于轻架构混合模式。
+            当前，最流行的是Web主体性。
+
+    * Hybrid优势
+            
+        * 跨平台、快速发布、高效开发。
+             
+    * Hybrid劣势
+            
+        * 达不到原生平台的流畅体验。
+        
+    * Cordova 平台
+            当前所有的Hybrid框架都是基于Cordova平台进行JS跟原生通讯。
+            因此Cordova平台支持的调试方式也是通用的。 
+
+        * Cordova优质博客列表
+            
+            * [传智播客][net_cordovablog]
+        
+            * [极客学院][net_cordovablog1]
+        
+        * [Cordova 官网地址][cordova_doc]
+        
+        * Cordova平台构成
+            
+            * Cordova CLI(Command Line Interface)
+            
+            * Cordova 项目结构
+
+                    ProjectName
+                     ┣ config.xml         **Cordova项目配置文件**
+                     ┣ merges             **针对ios、android等平台的html文件**
+                     ┣ hooks              **Cordova CLI使用的项目自定义脚本**
+                     ┣ platforms
+                     ┃  ┣ android         **android开发人员工作目录**
+                     ┃  ┗ ios             **iOS开发人员工作目录**
+                     ┣ plugins            **插件源码目录**
+                     ┗ www                **H5开发人员工作目录**
+
+[net_cordovablog]: http://www.itcast.cn/news/20151228/14522674095.shtml
+[net_cordovablog1]: http://wiki.jikexueyuan.com/project/apache-cordova-tutorial/
+[cordova_doc]: http://cordova.apache.org
+
+* `React Native、Weex : 即保留了Hybrid应用的优势，力图解决 Hybrid 劣势`
+
+
 ## Web 发展史
 ----
 
@@ -118,31 +182,6 @@
     * 年 : 2013
     * 问题 : 待定
 
-## ->H5移动App开发框架
-* 问题
-> Html5移动App开发框架
-
-* 技术
-  * JQuery Mobile
-    * 轻量级框架
-    * 缺点
-      * 没有 MVC 多人协作 开发的概念
-      * 项目比较大后 代码不易维护
-    * 适用范围
-      * 中小项目 1-2 个人开发很适用
-
-  * SenchaTouch
-    * 重量级的框架(需要 extjs 基础 代码复杂需要较强的程序基础)
-    * 优点
-      * 兼容性好,基于 MVC 世界上第一个 html5 移动开发框架
-      * 可视化开发工具 sencha architect
-
-  * Angularjs
-    * 轻量级框架
-    * 优点
-      * 支持 MVC
-      * 支持 数据双向绑定
-      * 通过 SASS 构建应用程序,它提供了很多 UI 组件来帮助开发者开发强大的应用
 
 ## ->移动平台
 ----
@@ -152,11 +191,37 @@
 * 技术
   * Web App
     * 年 : 待定
+    * 问题 : Html5移动App开发框架
+    * 技术
+      * JQuery Mobile
+        * 轻量级框架
+        * 缺点
+          * 没有 MVC 多人协作 开发的概念
+          * 项目比较大后 代码不易维护
+        * 适用范围
+          * 中小项目 1-2 个人开发很适用
+    
+      * SenchaTouch
+        * 重量级的框架(需要 extjs 基础 代码复杂需要较强的程序基础)
+        * 优点
+          * 兼容性好,基于 MVC 世界上第一个 html5 移动开发框架
+          * 可视化开发工具 sencha architect
+
+      * Angularjs
+        * 轻量级框架
+        * 优点
+          * 支持 MVC
+          * 支持 数据双向绑定
+          * 通过 SASS 构建应用程序,它提供了很多 UI 组件来帮助开发者开发强大的应用
+  
   * Hybrid App
     * 年 : 2008-2011
+    * 问题 : 解决 html 无法访问设备的问题
+  
   * React Native
     * 年 : 2015
     * 问题 : 既拥有Native的用户体验、又保留React的开发效率
+  
   * Weex
     * 年 : 2016
 
