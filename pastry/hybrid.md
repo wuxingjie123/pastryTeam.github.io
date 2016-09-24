@@ -1,5 +1,7 @@
 # Hybrid App 发展史
 
+## 概述
+
 > 
 回顾历史，展望未来。认真分析 Hybrid 的诞生原因、发展经历、才能更好的预测 Hybrid 开发的未来前景。
 >
@@ -29,46 +31,102 @@
             
         * 达不到原生平台的流畅体验。
         
-    * Cordova 平台
-            当前所有的Hybrid框架都是基于Cordova平台进行JS跟原生通讯。
-            因此Cordova平台支持的调试方式也是通用的。 
+----
+## Cordova 平台
+> 
+当前所有的Hybrid框架都是基于Cordova平台进行JS跟原生通讯。
+因此Cordova平台支持的调试方式也是通用的。 
 
-        * Cordova优质博客列表
+* Cordova优质博客列表
             
-            * [传智播客][net_cordovablog]
+    * [传智播客][net_cordovablog]
         
-            * [极客学院][net_cordovablog1]
-        
-        * [Cordova 官网地址][cordova_doc]
-        
-        * Cordova平台构成
-            
-            * Cordova CLI(Command Line Interface)
-            
-            * Cordova 项目结构
+    * [极客学院][net_cordovablog1]
 
-                    ProjectName
-                     ┣ config.xml         **Cordova项目配置文件**
-                     ┣ merges             **针对ios、android等平台的html文件**
-                     ┣ hooks              **Cordova CLI使用的项目自定义脚本**
-                     ┣ platforms
-                     ┃  ┣ android         **android开发人员工作目录**
-                     ┃  ┗ ios             **iOS开发人员工作目录**
-                     ┣ plugins            **插件源码目录**
-                     ┗ www                **H5开发人员工作目录**
+    * Cordova教程博客
+
+        * [Cordova 概述][cordova1]
+
+        * [Cordova开发前的准备工作][cordova2]
+        
+        * [使用Cordova命令行界面(CLI)][cordova3]
+        
+        * [Cordova应用解析][cordova4]
+        
+        * [Cordova开发技巧][cordova5]
+        
+        * [开发Android平台的Cordova应用][cordova6]
+        
+        * [使用PhoneGap Build][cordova7]
+        
+        * [使用Cordova API开发(上)][cordova8]
+        
+        * [使用Cordova API开发(下)][cordova9]
+        
+        * [创建Cordova插件][cordova10]
+        
+        * [构建一个完整的Cordova应用][cordova11]
+    
+        * [使用Android Studio构建Cordova项目][cordova12]
+        
+* [Cordova 官网地址][cordova_doc]
+        
+* Cordova平台构成
+            
+    * Cordova CLI(Command Line Interface)
+            
+    * Cordova 项目结构
+
+            ProjectName
+             ┣ config.xml         **Cordova项目配置文件**
+             ┣ merges             **针对ios、android等平台的html文件**
+             ┣ hooks              **Cordova CLI使用的项目自定义脚本**
+             ┣ platforms
+             ┃  ┣ android         **android开发人员工作目录**
+             ┃  ┗ ios             **iOS开发人员工作目录**
+             ┣ plugins            **插件源码目录**
+             ┗ www                **H5开发人员工作目录**
+
+        
+[cordova1]: https://segmentfault.com/a/1190000002903546
+        
+[cordova2]: https://segmentfault.com/a/1190000002911058
+        
+[cordova3]: https://segmentfault.com/a/1190000002915917
+        
+[cordova4]: https://segmentfault.com/a/1190000002927103
+        
+[cordova5]: https://segmentfault.com/a/1190000002933971
+        
+[cordova6]: https://segmentfault.com/a/1190000002938482
+        
+[cordova7]: https://segmentfault.com/a/1190000002942222
+        
+[cordova8]: https://segmentfault.com/a/1190000002964603
+        
+[cordova9]: https://segmentfault.com/a/1190000003013808
+        
+[cordova10]: https://segmentfault.com/a/1190000003022593
+        
+[cordova11]: https://segmentfault.com/a/1190000004188031
+        
+[cordova12]: https://segmentfault.com/a/1190000004276191
 
 [net_cordovablog]: http://www.itcast.cn/news/20151228/14522674095.shtml
+
 [net_cordovablog1]: http://wiki.jikexueyuan.com/project/apache-cordova-tutorial/
+
 [cordova_doc]: http://cordova.apache.org
 
 * `React Native、Weex : 即保留了Hybrid应用的优势，力图解决 Hybrid 劣势`
 
 
+----
 ## Web 发展史
-----
 
-## ->静态网页
 ----
+### ->静态网页
+
 * 问题
 > 内容分享
 
@@ -83,8 +141,8 @@
       * 年 : 1996
       * 问题 : 客户端脚本语言
 
-## ->动态网页
 ----
+### ->动态网页
 * 问题
 > 动态网页问题
 
@@ -107,8 +165,9 @@
     * 年 : 1996
     * 问题 : 服务器端动态网页
 
-## ->客户端异步交互
 ----
+### ->客户端异步交互
+
 * 问题
 > 客户端交互->异步、局部页面交互
 
@@ -116,8 +175,9 @@
   * [Ajax](http://baike.baidu.com/subview/1641/5762264.htm)
   * 年 : 1998—2005
 
-## ->开发效率提速阶段
 ----
+### ->开发效率提速阶段
+
 * 问题
 > 加快开发效率
 
@@ -182,9 +242,9 @@
     * 年 : 2013
     * 问题 : 待定
 
-
-## ->移动平台
 ----
+### ->移动平台
+
 * 问题
 > 移动平台
 
@@ -225,10 +285,11 @@
   * Weex
     * 年 : 2016
 
+----
 ## Hybrid App 分类一
 ----
-## ->多View混合型
-----
+### ->多View混合型
+
 * 描述
 > 2012年常见的Hybrid App是Native View与WebView交替的场景出现。这种应用混合逻辑相对简单。
 即在需要的时候，将WebView当成一个独立的View（Activity）运行起来，在WebView内完成相关的展示操作。开发难度和Native App基本相当。
@@ -240,8 +301,9 @@
 * 开发难度
 > 开发难度与native app相当
 
-## ->单View混合型
 ----
+### ->单View混合型
+
 * 描述
 > 这种Hybrid App的开发成本较高，开发难度较大，但是体验较好。
 如百度搜索为代表的单View混合型移动应用，既可以实现充分的灵活性，又能实现较好的用户体验。
@@ -252,8 +314,9 @@
 * 开发难度
 > 开发成本较高，难度较大，但是体验较好。
 
-## ->Web主体型
 ----
+### ->Web主体型
+
 * 描述
 > 这种类型开发的移动应用体验相对而言存在缺陷，但整体开发难度大幅降低，并且基本可以实现跨平台。Web主体型的移动应用用户体验的好坏，主要取决于底层中间件的交互与跨平台的能力。
 从分析可见，Hybrid App中的Web主体型只要能够解决用户体验差的问题，就可以变成最佳Hybrid App解决方案类型。
@@ -270,27 +333,31 @@
   * WeX5 : WeX5则在揉合PhoneGap和Bootstrap等主流技术的基础上，对性能进一步做了深度优化，不但完全具备Native App对本地资源的调用能力，性能体验也不输原生；WeX5所开发出来的app具备完全的跨端运行能力，可以无需任何修改直接运行在各种前端环境上。
   * AppCan : 除了插件机制，还提供了大量的单View混合型的接口来完善和弥补Web主体型Hybrid App体验差的问题，接近Native App的体验。
 
-## ->多主体共存型（灵活型）
 ----
+### ->多主体共存型（灵活型）
+
 * 描述
 > 这是一种新型的开发模式，即支持Web主体型的应用，又支持以Native主体的应用，也支持两者混合的开发模式。
 
 * 平台
   * kerkee : 它具有跨平台、用户体验好、性能高、扩展性好、灵活性强、易维护、规范化、具有Debug环境、彻底解决跨域问题等特点。用户体验与Native App媲美。功能方面，开发者可随意扩展接口。
 
+----
 ## Hybrid App 分类二
 ----
-## ->重架构混合模式
-----
+### ->重架构混合模式
+
 * 原因
 > “重混”架构这种依赖Native UI的混合框架，本着“Web不够，就Native来凑”的核心思路，的确提升了交互体验，但同时也带来了无法回避的显著缺点：Web和Native技术的交叉混杂让开发者的编程和调试都很不方便；尤其是无法直接运行在微信这类超级App平台之上，更是“重混”App的致命硬伤。
 
-## ->轻架构混合模式
+----
+### ->轻架构混合模式
 * 原因
 > Hybrid APP就必须坚持几个原则：UI部分必须用纯Web技术，完全采用H5技术；在底层的设备接口上，确实是JS无法完成的原生部分，需要Native技术来弥补的，也必须坚持Native技术不去侵入UI。这样一个框架就是“轻混”Hybrid APP框架。“轻混”框架才是真正的HTML5 APP框架，在技术上更轻量，成本更低、也更容易推广，能真正做到只需一次开发就能跨Android、iOS和微信等各种端发布。“轻混”才是Hybrid APP技术发展的必然方向。
 
-## Hybrid 优势
 ----
+### Hybrid 优势
+
 * 跨平台<br/>
   Web内容可以做到开发一次，所有平台生效，诸多产品需要这种能力。
 
@@ -305,14 +372,15 @@
 * 丰富的Device API<br/>
   Web（HTML5）强调通用性，受限于标准和浏览器实现，许多有用的系统功能未能得到支持（或部分支持）。而Native最大的优势在于设备API的调用能力，只要桥接Native和Web，Web也就能够拥有这种能力。
 
-## Hybrid 劣势
 ----
+### Hybrid 劣势
+
 * CPU/GPU密集类应用目前看更适合Native，例如极品飞车这样的游戏。这种劣势是在不断弱化的，正如 “CSS Transform 3D”引入GPU大大缓解了Web动画不流畅的问题。
 
 * 静态资源从服务器端加载导致的UI展示延迟问题。这个问题可以通过Native拦截WebView通信加载已打包的公共库来缓解。
 
-## Hybrid 平台调查
 ----
+## Hybrid 平台调查
 
 |平台         |时间|Native端|JS端|特点|归属|优点|iOS版本|android版本||
 |----|----|----|----|----|----|----|----|----|----|
@@ -339,11 +407,11 @@
 |React Native |2015||||国外|||||
 |Weex         |2016||||国内||||-|
 
+----
 ## Hybrid App 调试方法
-----
 
-## ->调试方法汇总
 ----
+## ->调试方法汇总
 
 |开发阶段|调试方法|应用场景|设备依赖|设备支持|无线支持|JS调试|编译打包|加密网络请求|优点|缺点|
 |----|----|----|----|----|----|----|----|----|----|----|
@@ -362,8 +430,9 @@
 
 [更多介绍参考 Debugging Cordova apps](http://cordova.apache.org/docs/en/latest/guide/next/index.html#debugging-cordova-apps)
 
-##  ->推荐工作流程 & 调试方法
 ----
+##  ->推荐工作流程 & 调试方法
+
 * **推荐工作流程**
 
   * 完成UI界面开发 -> 完成原生联调
