@@ -22,7 +22,7 @@
  <!-- * [taste`不支持`](pastry-cli/taste.md)-->
  <!-- * [taste-server`不支持`](pastry-cli/taste-server.md)-->
 
-[组件库]()
+[Pastry组件]()
 
   * [组件分类 组件管理工具 说明](plugins/plugins.md)
   - - - -
