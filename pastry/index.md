@@ -9,7 +9,7 @@
 
     * [极客学院][net_cordovablog1]
 
-* [Cordova 文档地址][cordova_doc]
+* [Cordova 官网地址][cordova_doc]
 
 [net_cordovablog]: http://www.itcast.cn/news/20151228/14522674095.shtml
 [net_cordovablog1]: http://wiki.jikexueyuan.com/project/apache-cordova-tutorial/
@@ -26,7 +26,7 @@
 
     * `Cordova www基础模版 + pastry js框架 = pastry js 基础模版`
 
-[cordova_doc]: http://cordova.apache.org/docs/en/latest/plugin_ref/spec.html
+[cordova_doc]: http://cordova.apache.org
 
 ## 配置环境
 
@@ -60,7 +60,7 @@
          ┃  ┣ pastry-emulator     `不支持`
          ┃  ┣ pastry-ide          **功能 : 支持部分功能**
          ┃  ┣ pastry-taste        `不支持`
-         ┃  ┗ pastry-xtools       **功能 : 对html、js、css等文件进行签名、加密**
+         ┗  ┗ pastry-xtools       **功能 : 对html、js、css等文件进行签名、加密**
 
   * 配置环境变量
 
@@ -195,14 +195,14 @@
 ## 工程目录结构
 
         ProjectName
+         ┣ config.xml         **Cordova项目配置文件**
          ┣ merges             **针对ios、android平台的html文件**
-         ┣ hooks              **开发人员不需要关注**
+         ┣ hooks              **Cordova CLI使用的项目自定义脚本**
          ┣ platforms
          ┃  ┣ android         **android开发人员工作目录**
          ┃  ┗ ios             **iOS开发人员工作目录**
          ┣ plugins            **插件源码目录，开发人员不需要关注**
          ┣ www                **H5开发人员工作目录**
-         ┣ config.xml         **开发人员不需要关注**
          ┣ pastry-fo-java     **前置Java开发人员工作目录**
          ┗ pastry-fo-nodejs   **前置 NodeJS开发人员工作目录**
 
