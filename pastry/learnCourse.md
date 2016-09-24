@@ -3,37 +3,13 @@
 ## 培训课程目录
 ----
 
-* [1。Hybrid发展史及Cordova平台][md_hybrid]
+* [1。Hybrid发展史及Cordova平台][md_hybrid] `课程要求 : 业务开发工程师/了解 核心开发工程师/熟悉掌握`
 
-    * 课程要求
+* [2。pastry平台目标、架构、功能、问题、展望][md_abstract] `课程要求 : 业务开发工程师/了解 核心开发工程师/熟悉掌握`
 
-        * 业务开发工程师 : 了解
+* [3。pastry平台快速开始][md_quickstart] `课程要求 : 业务开发工程师/熟悉掌握 核心开发工程师/熟悉掌握`
 
-        * 核心开发工程师 : 熟悉掌握
-
-* [2。pastry平台目标、架构、功能、问题、展望][md_abstract]
-
-    * 课程要求
-
-        * 业务开发工程师 : 了解
-
-        * 核心开发工程师 : 熟悉掌握
-
-* [3。pastry平台快速开始][md_quickstart]
-
-    * 课程要求
-
-        * 业务开发工程师 : 熟悉掌握
-
-        * 核心开发工程师 : 熟悉掌握
-
-* [4。pastry CLI][md_pastry-cli]
-
-    * 课程要求
-
-        * 业务开发工程师 : 熟悉掌握
-
-        * 核心开发工程师 : 熟悉掌握
+* [4。pastry CLI][md_pastry-cli] `课程要求 : 业务开发工程师/熟悉掌握 核心开发工程师/熟悉掌握`
 
     * [4.1。bake create 创建项目][md_pastry-cli]
 
@@ -45,19 +21,13 @@
 
     * [4.5。bake build 编译项目][md_pastry-cli]
 
-* [4。Pastry组件][md_plugin]
+* [4。Pastry组件][md_plugin] `课程要求 : 业务开发工程师/了解 核心开发工程师/熟悉掌握`
 
-    * 课程要求
+    * [4.1。Pastry组件分类介绍][md_plugin]
 
-        * 业务开发工程师 : 了解
+    * [4.2。Pastry组件管理工具][md_plugin]
 
-        * 核心开发工程师 : 熟悉掌握
-
-    * [4.1。组件分类介绍][md_plugin]
-
-    * [4.2。组件管理工具][md_plugin]
-
-* 6。pastry JS 业务层 开发
+* 5。pastry JS 业务层 开发
 
     * 普通组件的业务场景
 
