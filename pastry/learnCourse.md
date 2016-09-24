@@ -1,4 +1,7 @@
-# 培训课程
+# Pastry培训
+
+## 培训课程目录
+----
 
 * [1。Hybrid发展史及Cordova平台][md_hybrid]
 
@@ -155,29 +158,39 @@
 
     * 13.2。调试方法简介
 
+----
+## Pastry标准概念
 
 | **通用概念** |**Pastry扩展工具**|**Pastry扩展功能**| **通用概念+Pastry扩展工具+Pastry扩展功能<br/>=<br/>Pastry专属概念** |
 |-----|-----|-----|-----|
 | Hybrid(混合开发) | - | - | √ |
 | CLI(Command Line Interface:命令行工具) | - | - | √ |
 | Codova(JS桥) | - | - | √ |
-| Cordova CLI(Cordova 命令行工具) | `xTools`<br/>`bower` | <br/>`xTools : 对html、js等Web前端进行加密打包`<br/>`bower : JS平台业务组件 管理功能` | Pastry CLI(Pastry 命令行工具) |
-| Cordova Plugin(Cordova 插件) | - | `框架组件(JS\iOS\android)`<br/>`业务组件(JS\iOS\android)`<br/> | Pastry 组件 |
-| [Cordova JS基础模版 GitHub][net_cordova-js] | JS平台框架组件 | `1 UI基础组件`<br/>`2 页面管理器`<br/>`3 模版管理模块`<br/>`4 数据模型`<br/>`5 实用函数` | [Pastry JS基础模版 GitHub][net_pastry-js] |
-| [Cordova iOS基础模版 GitHub][net_cordova-ios] | iOS平台框架组件 | `1 升级管理组件`<br/>`2 安全组件`<br/>`3 资源文件安全组件`<br/>`4 安全存储组件`<br/>`5 安全网络通讯组件`<br/>`6 日志组件`<br/>`7 密码键盘组件(可选组件)` | [Pastry iOS基础模版 GitHub][net_pastry-ios] |
-| [Cordova android基础模版 GitHub][net_cordova-android] | android平台框架组件 | `1 升级管理组件`<br/>`2 安全组件`<br/>`3 资源文件安全组件`<br/>`4 安全存储组件`<br/>`5 安全网络通讯组件`<br/>`6 日志组件`<br/>`7 密码键盘组件(可选组件)` | [Pastry android基础模版 GitHub][net_pastry-android] |
-| Cordova标准目录结构 | 添加服务器目录、bower配置文件 | `目录 pastry-fo-java`<br/>`目录 pastry-fo-nodejs`<br/>`隐藏文件 .browercc` | Pastry 标准目录结构 |
+| Cordova CLI(Cordova 命令行工具) | `xTools`<br/>`bower` | <br/>`xTools : 对html、js等Web前端进行加密打包`<br/>`bower : JS平台业务组件 管理功能` | [Pastry CLI(Pastry 命令行工具)][md_pastry-cli] |
+| Cordova Plugin(Cordova 插件) | - | **框架组件**<br/>`JS平台框架组件`<br/>`iOS平台框架组件`<br/>`android平台框架组件`<br/>`前置框架组件`<br/>**业务组件**<br/>`JS平台业务组件`<br/>`iOS平台业务组件`<br/>`android平台业务组件`<br/>`前置业务组件` | [Pastry 组件][md_plugin] |
+| [Cordova JS基础模版 GitHub][net_cordova-js] | `JS平台框架组件` | `1 UI基础组件`<br/>`2 页面管理器`<br/>`3 模版管理模块`<br/>`4 数据模型`<br/>`5 实用函数` | [Pastry JS基础模版 GitHub][net_pastry-js] |
+| [Cordova iOS基础模版 GitHub][net_cordova-ios] | `iOS平台框架组件` | `1 升级管理组件`<br/>`2 安全组件`<br/>`3 资源文件安全组件`<br/>`4 安全存储组件`<br/>`5 安全网络通讯组件`<br/>`6 日志组件`<br/>`7 密码键盘组件(可选组件)` | [Pastry iOS基础模版 GitHub][net_pastry-ios] |
+| [Cordova android基础模版 GitHub][net_cordova-android] | `android平台框架组件` | `1 升级管理组件`<br/>`2 安全组件`<br/>`3 资源文件安全组件`<br/>`4 安全存储组件`<br/>`5 安全网络通讯组件`<br/>`6 日志组件`<br/>`7 密码键盘组件(可选组件)` | [Pastry android基础模版 GitHub][net_pastry-android] |
+| Cordova标准目录结构 | 添加服务器目录、bower配置文件 | `目录 pastry-fo-java`<br/>`目录 pastry-fo-nodejs`<br/>`隐藏文件 .browercc` | [Pastry 标准目录结构][md_fqa] |
 | [调试方法 文档][net_cordova-test] | 浏览器模式数据调试 | JS 本地浏览器调试<br/>`html标志 data-debug='@mockdata'` | [Pastry 调试方法 文档][net_pastry-test] | 
 | - | Pastry JS 框架层 | 提供 JS平台框架组件 功能 | Pastry JS 框架层 |
 | - | Pastry 原生 框架层 | 提供 iOS/android平台框架组件 功能 | Pastry 原生 框架层 |
 | - | iOS | - | iOS |
 | - | android | - | android |
-| - | Pastry 前置 框架层 | - | Pastry 前置 框架层 |
+| - | Pastry 前置 框架层 | 提供 前置组件功能 | Pastry 前置 框架层 |
 | - | Pastry JS 业务层 | 提供 JS平台业务组件 功能 | Pastry JS 业务层 |
 | - | Pastry 原生 业务层 | 提供 iOS/android平台业务组件 功能 | Pastry 原生 业务层 |
 | - | iOS | - | iOS |
 | - | android | - | android |
 | - | Pastry 前置 业务层 | - | Pastry 前置 业务层 |
+
+
+----
+## 答疑解惑
+
+  * ### [更多问题进入PastryTeam GitHub issues][net_issues]
+
+[net_issues]: https://github.com/pastryTeam/pastryTeam.github.io/issues
 
 [net_cordova-js]: https://github.com/apache/cordova-js
 [net_cordova-ios]: https://github.com/apache/cordova-ios
@@ -197,6 +210,8 @@
 
 [md_quickstart]: ./index.md
 
+[md_fqa]: ./faq.md
+
 [md_pastry-cli]:./pastry-cli/bake.md
 
-[md_plugin]: ../plugins/plugins.md
+[md_plugin]: ./plugins/plugins.md
