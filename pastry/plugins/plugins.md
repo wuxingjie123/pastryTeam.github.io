@@ -3,23 +3,27 @@
 ----
 ## 组件分类
 
-**1. 组件分类包括三个大类：框架功能组件、业务UI组件、cordova插件**
+**1. 组件分类包括三个大类：框架组件、业务组件、cordova插件**
 
-* 框架功能组件
+* 框架组件
 
-    * `iOS平台 框架功能组件`：包含 网络通讯、安全模块、本地存储、日志模块等
+    * `iOS平台 框架组件`：包含 网络通讯、安全模块、本地存储、日志模块等
 
-    * `android平台 框架功能组件`：包含 网络通讯、安全模块、本地存储、日志模块等
+    * `android平台 框架组件`：包含 网络通讯、安全模块、本地存储、日志模块等
 
-    * `JS平台 框架功能组件`：包含 JS基础控件、网络通讯等
+    * `JS平台 框架组件`：包含 JS基础控件、网络通讯等
 
-* 业务UI组件
+    * `前置 框架组件`：包括 协商密钥、通讯安全等
 
-    * `iOS平台 业务UI组件`：包含 解压缩组件、登录组件、二维码组件等
+* 业务组件
 
-    * `android平台 业务UI组件`：包含 登陆组件、二维码组件等
+    * `iOS平台 业务组件`：包含 解压缩组件、登录组件、二维码组件等
 
-    * `JS平台 业务UI组件`：包含 注册组件、信用卡申请组件等
+    * `android平台 业务组件`：包含 登陆组件、二维码组件等
+
+    * `JS平台 业务组件`：包含 注册组件、信用卡申请组件等
+
+    * `前置 业务组件`：无
 
 * cordova组件
 
@@ -30,12 +34,12 @@
 
 **1. 管理工具选型说明**
 
-| `管理工具` \ `平台` | ios | android | JS | cordova组件 |
-|----|----|----|----|----|
-| CocoaPods      | `√` |  ×  |  ×  |  ×  |
-| Maven/Gradle |  ×  | `√` |  ×  |  ×  |
-| Pastry(bower) |  ×  |  ×  | `√` |  ×  |
-| Pastry(Cordova) | `√` | `√` | `√` | `√` |
+| `管理工具` \ `平台` | ios | android | JS | cordova组件 | 前置 |
+|-----|-----|-----|-----|-----|-----|
+| CocoaPods      | `√` |  ×  |  ×  |  ×  |  ×  |
+| Maven/Gradle |  ×  | `√` |  ×  |  ×  |  ×  |
+| Pastry(bower) |  ×  |  ×  | `√` |  ×  |  ×  |
+| Pastry(Cordova) | `√` | `√` | `√` | `√` |  ×  |
 
 **2. 选型说明**
 
@@ -75,14 +79,16 @@
 
     | 组件分类 | 组件管理工具 |
     |-----|-----|
-    | **框架功能组件** | - |
-    | `JS平台 框架功能组件` | 集成到 Pastry JS基础模版 |
-    | `iOS平台 框架功能组件` | 集成到 Pastry iOS基础模版 |
-    | `android平台 框架功能组件` | 集成到 Pastry android基础模版 |
-    | **业务UI组件** | - |
-    | `JS平台 业务UI组件` | Pastry(bower) : [pastry bake bower][md_moreCli] |
-    | `iOS平台 业务UI组件` | Pastry(Cordova) : [pastry bake plugin][md_moreCli] |
-    | `android平台 业务UI组件` | Pastry(Cordova) : [pastry bake plugin][md_moreCli] |
+    | **框架组件** | - |
+    | `JS平台 框架组件` | 集成到 Pastry JS基础模版 |
+    | `iOS平台 框架组件` | 集成到 Pastry iOS基础模版 |
+    | `android平台 框架组件` | 集成到 Pastry android基础模版 |
+    | `前置 框架组件` | 集成到 Pastry 前置基础模版 |
+    | **业务组件** | - |
+    | `JS平台 业务组件` | Pastry(bower) : [pastry bake bower][md_moreCli] |
+    | `iOS平台 业务组件` | Pastry(Cordova) : [pastry bake plugin][md_moreCli] |
+    | `android平台 业务组件` | Pastry(Cordova) : [pastry bake plugin][md_moreCli] |
+    | `前置 业务组件` | - |
     | **cordova组件** | - |
     | `cordova组件` | Pastry(Cordova) : [pastry bake plugin][md_moreCli] |
 
