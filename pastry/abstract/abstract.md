@@ -58,15 +58,15 @@ Pastry平台是一套跨屏幕、跨平台的前端解决方案.支持主流的�
 
 CLI：Command Line Interface（命令行工具）
 
-[net_cordova-js]: #
-[net_cordova-ios]: #
-[net_cordova-android]: #
-[net_cordova-test]: #
+[net_cordova-js]: https://github.com/apache/cordova-js
+[net_cordova-ios]: https://github.com/apache/cordova-ios
+[net_cordova-android]: https://github.com/apache/cordova-android
+[net_cordova-test]: http://cordova.apache.org/docs/en/latest/guide/next/index.html#testing-cordova-apps
 
 [net_pastry-js]: #
-[net_pastry-ios]: #
-[net_pastry-android]: #
-[net_pastry-test]: #
+[net_pastry-ios]: https://github.com/pastryTeam/ios-template
+[net_pastry-android]: https://github.com/pastryTeam/android-template
+[net_pastry-test]: ../index.md
 
 
 ----

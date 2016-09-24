@@ -33,9 +33,9 @@
 | `管理工具` \ `平台` | ios | android | js | cordova组件 |
 |----|----|----|----|----|
 | CocoaPods      | `√` |  ×  |  ×  |  ×  |
-| Maven(Gradle) |  ×  | `√` |  ×  |  ×  |
-| bower         |  ×  |  ×  | `√` |  ×  |
-| Cordova       | `√` | `√` | `√` | `√` |
+| Maven/Gradle |  ×  | `√` |  ×  |  ×  |
+| Pastry(bower) |  ×  |  ×  | `√` |  ×  |
+| Pastry(Cordova) | `√` | `√` | `√` | `√` |
 
 **2. 选型说明**
 
@@ -71,17 +71,19 @@
 
 **3. 组件管理工具**
 
-* 自动集成
+* 组件分类与组件管理工具对照表    
 
-    * 适用于 `框架功能组件 iOS`、`框架功能组件 android`、`框架功能组件 js`
-
-* bower ([pastry bake bower][md_moreCli])
-    
-    * 适用于 `业务UI组件 js`
-    
-* cordova ([pastry bake plugin][md_moreCli])
-
-    * 适用于 `业务UI组件 iOS`、`业务UI组件 android`、`cordova组件`
-
+    | 组件分类 | 组件管理工具 |
+    |-----|-----|
+    | **框架功能组件** | - |
+    | `框架功能组件 JS` | 集成 JS模版工程 |
+    | `框架功能组件 iOS` | 集成 iOS模版工程 |
+    | `框架功能组件 android` | 集成 android模版工程 |
+    | **业务UI组件** | - |
+    | `业务UI组件 JS` | Pastry(bower) : [pastry bake bower][md_moreCli] |
+    | `业务UI组件 iOS` | Pastry(Cordova) : [pastry bake plugin][md_moreCli] |
+    | `业务UI组件 android` | Pastry(Cordova) : [pastry bake plugin][md_moreCli] |
+    | **cordova组件** | - |
+    | `cordova组件` | Pastry(Cordova) : [pastry bake plugin][md_moreCli] |
 
 [md_moreCli]: ../pastry-cli/bake.md
