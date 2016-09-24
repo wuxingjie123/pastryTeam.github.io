@@ -158,6 +158,33 @@
 [net_pastry_Cordova_plugins]: https://github.com/search?utf8=%E2%9C%93&q=user%3ApastryTeam+pastry-plugin&type=Repositories&ref=searchresults
 
 ----
+## bower
+
+给JS添加业务组件
+
+使用：
+
+    pastry bake bower 子命令 
+    
+    选项：
+      install 组件名称
+      uninstall 组件名称         
+
+样例：
+
+    # 安装指定JS业务组件 component-js-register
+    pastry bake bower install component-js-register
+
+    # 卸载指定JS业务组件 component-js-register
+    pastry bake bower uninstall component-js-register
+
+更多组件:
+
+[pastry JS组件库地址][net_pastry_js_plugins]
+
+[net_pastry_js_plugins]: https://github.com/search?utf8=%E2%9C%93&q=user%3ApastryTeam+component-js&type=Repositories&ref=searchresults
+
+----
 ## build
 
 对工程进行打包操作
@@ -185,32 +212,26 @@
     pastry bake build ios -m release -si 描述文件名称
 
 ----
-## bower
+## cordova
 
-给JS添加业务组件
+使用 Pastry CLI内部集成的 cordova 命令行工具
 
 使用：
 
-    pastry bake bower 子命令 
+    pastry bake cordova 子命令 
     
-    选项：
-      install 组件名称
-      uninstall 组件名称         
+    常用选项：
+      prepare 平台名称        
 
 样例：
 
-    # 安装指定JS业务组件 component-js-register
-    pastry bake bower install component-js-register
+    # 将 根目录/www 目录的文件 合并到 android平台的 www 目录
+    pastry bake cordova prepare android
 
-    # 卸载指定JS业务组件 component-js-register
-    pastry bake bower uninstall component-js-register
+    # 将 根目录/www 目录的文件 合并到 android平台的 www 目录
+    pastry bake cordova prepare ios
 
-更多组件:
+* **`为什么不使用 pastry bake prepare 命令呢？`**
 
-[pastry JS组件库地址][net_pastry_js_plugins]
-
-[net_pastry_js_plugins]: https://github.com/search?utf8=%E2%9C%93&q=user%3ApastryTeam+component-js&type=Repositories&ref=searchresults
-
-# License
-
-Copyright &copy; asp.citic.com 2016 
+    pastry bake cordova prepare 只是简单的将 根目录/www + 平台内的platform_www 的文件合并到平台内部的www目录，`应用场景：快速测试 明文html和原生的联调。`
+    pastry bake prepare 则先执行Pastry CLI内部的cordova prepare，然后再通过 xTools 将html加密打包，`应用场景：测试 加密html和原生的联调`
