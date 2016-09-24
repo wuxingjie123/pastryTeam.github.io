@@ -24,16 +24,16 @@
 
 [Pastry组件]()
 
-  * [组件分类 组件管理工具 说明](plugins/plugins.md)
+  * [Pastry组件 简介](plugins/plugins.md)
   - - - -
-  * `框架组件库`
+  * `框架组件`
   - - - -
   * [JS](tutorials/pastry-js.md)
   * [iOS](tutorials/pastry-ios.md)
   * [Android](tutorials/pastry-android.md)
   * [前置](tutorials/pastry-fo.md)
   - - - -
-  * `业务组件库`
+  * `业务组件`
   - - - -
   * [JS](plugins/plugins-js.md) 
   * [Cordova (JS | iOS | Android)](plugins/plugins-cordova.md)
