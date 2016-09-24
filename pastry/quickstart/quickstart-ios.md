@@ -1,7 +1,10 @@
 # iOS使用指南
 
 ----
-## 替换 icon splash 图片
+## 配置 icon splash
+* 要求
+    
+    *  
 
 * icon 目录 : `HelloWorld/platforms/ios/HelloWorld/Resources/Images.xcassets/AppIcon.appiconset`
 
