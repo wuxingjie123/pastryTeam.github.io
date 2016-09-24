@@ -51,7 +51,10 @@
   * ### Q6: pastry平台和其他平台相比，为什么显得不灵活?
       * pastry平台是灵活性与约束力的平衡的结果，平台灵活性越高，对使用者的约束性越少，能力好的开发者可以使用多种方式实现同一功能，对开发者的能力要求较高。pastry平台致力于快速开发金融相关的产品，所以在某些程度上降低平台的灵活性，提升平台的约束性，以求达到普通的开发者能够开发出高质量的代码。
 
-[issues]: #
+- - - - - - - - -
+  * ### [更多问题进入PastryTeam GitHub issues][net_issues]
+
+[net_issues]: https://github.com/pastryTeam/pastryTeam.github.io/issues
 
       
 [net_cordovablog]: http://www.itcast.cn/news/20151228/14522674095.shtml

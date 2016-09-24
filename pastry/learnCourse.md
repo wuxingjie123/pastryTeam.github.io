@@ -3,6 +3,20 @@
 在哪里管理问题列表？？
 GitHub 的 issues 里。
 
+Cordova博客
+
+* [Cordova 概述][cordova1]
+
+[cordova1]: https://segmentfault.com/a/1190000002903546
+
+* [Cordova开发前的准备工作][cordova2]
+
+[cordova2]: https://segmentfault.com/a/1190000002911058
+
+* [使用Cordova命令行界面(CLI)][cordova3]
+
+[cordova3]: https://segmentfault.com/a/1190000002915917
+
 概念：
 
 * 通用概念
@@ -11,10 +25,16 @@ GitHub 的 issues 里。
     * Codova(JS桥)
     * Cordova CLI(Cordova 命令行工具)
     * Cordova Plugin(Cordova 插件)
+    * Cordova JS基础模版
+    * Cordova iOS基础模版
+    * Cordova android基础模版
 * Pastry 平台专属概念
     * xTools(对html、js等Web前端进行加密打包)
     * Pastry CLI(Pastry 命令行工具)
     * Pastry 组件
+    * Pastry JS基础模版
+    * Pastry iOS基础模版
+    * Pastry android基础模版
     
     * Pastry JS 框架层
     * Pastry 原生 框架层
