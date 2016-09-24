@@ -67,7 +67,7 @@
     
     * 现象：所有平台使用cordova管理。
     
-    * **`结论：备用 --> pastry js本身对js端的目录指定规则，可以使用cordova满足目录规则，待确认。`**
+    * 结论：弃用 --> pastry js本身对js端的目录指定规则，使用cordova安装，JS文件会以cordova 插件的形式安装到 各个平台的plugin目录，而非 根目录/www 目录下，无法满足pastry js制定的要求。
 
 **3. 组件管理工具**
 
