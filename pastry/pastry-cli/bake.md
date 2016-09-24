@@ -4,7 +4,7 @@
 
     Cordova应用本质上是web应用，每个移动平台使用不同的IDE和项目结构。Cordova以前的版本，开发者创建为每个移动平台创建一个项目，再把web应用内容在项目间来回复制。在3.0以后还把Cordova API都迁移到了插件中。管理Cordova项目、Web内容和安装的插件都很困难。从3.0开始(在2.7发布过预览版)，项目添加了CLI，它提供一套命令给开发者使用.
     
-    Pastry延用、扩展了Cordova CLI，制作了 Pastry CLI，用于管理项目的创建、编译、发布等。
+    Pastry延用、扩展了Cordova CLI，制作了 Pastry CLI，用于管理项目的创建、编译、打包发布等。
 
 [Cordova CLI 简介][cordova3]
 
