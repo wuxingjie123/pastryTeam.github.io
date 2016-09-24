@@ -173,15 +173,17 @@
 | [Cordova android基础模版 GitHub][net_cordova-android] | `android平台框架组件` | `1 升级管理组件`<br/>`2 安全组件`<br/>`3 资源文件安全组件`<br/>`4 安全存储组件`<br/>`5 安全网络通讯组件`<br/>`6 日志组件`<br/>`7 密码键盘组件(可选组件)` | [Pastry android基础模版 GitHub][net_pastry-android] |
 | Cordova标准目录结构 | 添加服务器目录、bower配置文件 | `目录 pastry-fo-java`<br/>`目录 pastry-fo-nodejs`<br/>`隐藏文件 .browercc` | [Pastry 标准目录结构][md_fqa] |
 | [调试方法 文档][net_cordova-test] | 浏览器模式数据调试 | JS 本地浏览器调试<br/>`html标志 data-debug='@mockdata'` | [Pastry 调试方法 文档][net_pastry-test] | 
+| - | **框架层** | - | - |
 | - | Pastry JS 框架层 | 提供 JS平台框架组件 功能 | Pastry JS 框架层 |
-| - | Pastry 原生 框架层 | 提供 iOS/android平台框架组件 功能 | Pastry 原生 框架层 |
-| - | iOS | - | iOS |
-| - | android | - | android |
+| - | Pastry 原生 框架层 | - | Pastry 原生 框架层 |
+| - | Pastry iOS 框架层 | 提供 iOS平台框架组件 功能 | Pastry iOS 框架层 |
+| - | Pastry android 框架层 | 提供 android平台框架组件 功能 | Pastry android 框架层 |
 | - | Pastry 前置 框架层 | 提供 前置组件功能 | Pastry 前置 框架层 |
+| - | **业务层** | - | - |
 | - | Pastry JS 业务层 | 提供 JS平台业务组件 功能 | Pastry JS 业务层 |
-| - | Pastry 原生 业务层 | 提供 iOS/android平台业务组件 功能 | Pastry 原生 业务层 |
-| - | iOS | - | iOS |
-| - | android | - | android |
+| - | Pastry 原生 业务层 | - | Pastry 原生 业务层 |
+| - | Pastry iOS 业务层 | 提供 iOS平台业务组件 功能 | Pastry iOS 业务层 |
+| - | Pastry android 业务层 | 提供 android平台业务组件 功能 | Pastry android 业务层 |
 | - | Pastry 前置 业务层 | - | Pastry 前置 业务层 |
 
 
