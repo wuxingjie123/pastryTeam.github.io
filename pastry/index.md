@@ -1,33 +1,5 @@
 # 快速开始
 
-## 预备知识
-### `Cordova 平台`
-
-* Cordova优质博客列表
-    
-    * [传智播客][net_cordovablog]
-
-    * [极客学院][net_cordovablog1]
-
-* [Cordova 官网地址][cordova_doc]
-
-[net_cordovablog]: http://www.itcast.cn/news/20151228/14522674095.shtml
-[net_cordovablog1]: http://wiki.jikexueyuan.com/project/apache-cordova-tutorial/
-
-* `Pastry 与 Cordova 功能对比`
-    
-    * `Cordova CLI + JS端打包功能 = pastry CLI`
-    
-    * `Cordova 项目目录结构 ＋  pastry-fo-java + pastry-fo-nodejs = pastry 项目目录结构`
-
-    * `Cordova ios基础模版 + pastry ios框架 = pastry ios 基础模版`
-
-    * `Cordova android基础模版 + pastry android框架 = pastry android 基础模版`
-
-    * `Cordova www基础模版 + pastry js框架 = pastry js 基础模版`
-
-[cordova_doc]: http://cordova.apache.org
-
 ## 配置环境
 
 ### 基础环境

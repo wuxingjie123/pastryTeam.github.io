@@ -28,6 +28,8 @@
     * [4.2。Pastry组件管理工具][md_plugin]
 
 * 5。pastry JS 业务层 开发
+    
+    * [JS平台框架组件概览][md_pastry-js]
 
     * 普通组件的业务场景
 
@@ -82,6 +84,12 @@
     * 语言国际化
 
 * 7。pastry 原生 业务层 开发
+    
+    * [本地加解密存储][net_storage]
+    
+    * [密码键盘][net_keyboard]
+
+    * [网络通讯][net_request]
 
 * 8。pastry 前置 业务层 开发
 
@@ -187,3 +195,10 @@
 [md_pastry-cli]:./pastry-cli/bake.md
 
 [md_plugin]: ./plugins/plugins.md
+
+[md_pastry-js]: ./tutorials/pastry-js.md
+
+
+[net_storage]: https://github.com/pastryTeam/pastry-plugin-storage
+[net_keyboard]: https://github.com/pastryTeam/pastry-plugin-keyboard
+[net_request]: https://github.com/pastryTeam/pastry-plugin-request
