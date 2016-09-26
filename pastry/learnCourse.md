@@ -84,6 +84,8 @@
     * 语言国际化
 
 * 7。pastry 原生 业务层 开发
+
+    * [预备知识 密码学][md_cryptology] 
     
     * [本地加解密存储][net_storage]
     
@@ -128,13 +130,13 @@
 
 * 12。html打包工具
 
-    * Xtools
+    * [XTools][md_xtools]
 
 * 13。调试发布
 
-    * 13.1。Cordova调试方法简介
+    * 13.1。[Cordova调试方法简介][net_cordova-test]
 
-    * 13.2。调试方法简介
+    * 13.2。[调试方法简介][net_pastry-test]
 
 ----
 ## Pastry标准概念
@@ -184,7 +186,9 @@
 
 
 
-[md_hybrid]: ./hybrid.md
+[md_hybrid]: ./ready/hybrid.md
+
+[md_cryptology]: ./ready/cryptology.md
 
 [md_abstract]: ./abstract/abstract.md
 
@@ -198,6 +202,7 @@
 
 [md_pastry-js]: ./tutorials/pastry-js.md
 
+[md_xtools]: ./pastry-cli/XTools.md
 
 [net_storage]: https://github.com/pastryTeam/pastry-plugin-storage
 [net_keyboard]: https://github.com/pastryTeam/pastry-plugin-keyboard

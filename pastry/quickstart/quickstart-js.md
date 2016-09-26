@@ -884,4 +884,4 @@ option中配置返回的选项参数
 
 [md_specification-js]: ../codingSpecification/specification-js.md
 [md_pastry-js]: ../tutorials/pastry-js.md
-[md_hybrid]:../hybrid.md
+[md_hybrid]:../ready/hybrid.md

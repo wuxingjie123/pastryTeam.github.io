@@ -16,6 +16,7 @@
   * `pastry`
   - - - -
   * [bake](pastry-cli/bake.md)
+  * [XTools](pastry-cli/XTools.md)
  <!-- * [emulator`不支持`](pastry-cli/emulator.md)-->
  <!-- * [emulator-server`不支持`](pastry-cli/emulator-server.md)-->
  <!-- * [ide`支持部分功能`](pastry-cli/ide.md)-->
@@ -77,7 +78,11 @@
 
 [联系方式](contact.md)
 
-[Hybrid发展史](hybrid.md)
+[预备知识]()
+
+  * [Hybrid发展史](ready/hybrid.md)
+  - - - -
+  * [密码学](ready/cryptology.md)
 
 [培训课程 new](learnCourse.md)
 
