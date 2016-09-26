@@ -8,11 +8,11 @@
 
     * [1.2。密码学][md_cryptology]
 
-* [2。pastry平台目标、架构、功能、问题、展望][md_abstract] `课程要求 : 业务开发工程师/了解 核心开发工程师/熟悉掌握`
+* [2。Pastry平台目标、架构、功能、问题、展望][md_abstract] `课程要求 : 业务开发工程师/了解 核心开发工程师/熟悉掌握`
 
-* [3。pastry平台快速开始][md_quickstart] `课程要求 : 业务开发工程师/熟悉掌握 核心开发工程师/熟悉掌握`
+* [3。Pastry平台快速开始][md_quickstart] `课程要求 : 业务开发工程师/熟悉掌握 核心开发工程师/熟悉掌握`
 
-* [4。pastry CLI][md_pastry-cli] `课程要求 : 业务开发工程师/熟悉掌握 核心开发工程师/熟悉掌握`
+* [4。Pastry CLI][md_pastry-cli] `课程要求 : 业务开发工程师/熟悉掌握 核心开发工程师/熟悉掌握`
 
     * [4.1。bake create 创建项目][md_pastry-cli]
 
@@ -30,7 +30,7 @@
 
     * [4.2。Pastry组件管理工具][md_plugin]
 
-* 5。pastry JS 业务层 开发
+* 5。Pastry JS 业务层 开发 `课程要求 : 业务开发工程师/熟悉掌握 核心开发工程师/熟悉掌握`
     
     * [JS平台框架组件概览][md_pastry-js]
 
