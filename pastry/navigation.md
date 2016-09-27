@@ -23,16 +23,7 @@
  <!-- * [taste`不支持`](pastry-cli/taste.md)-->
  <!-- * [taste-server`不支持`](pastry-cli/taste-server.md)-->
 
-[Pastry组件]()
-
-  * [Pastry组件 简介](plugins/plugins.md)
-  - - - -
-  * `框架组件`
-  - - - -
-  * [JS](tutorials/pastry-js.md)
-  * [iOS](tutorials/pastry-ios.md)
-  * [Android](tutorials/pastry-android.md)
-  * [前置](tutorials/pastry-fo.md)
+[Pastry组件](plugins/plugins.md)
 
 [代码规范]()
 

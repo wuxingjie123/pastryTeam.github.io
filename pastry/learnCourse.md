@@ -30,9 +30,9 @@
 
     * [4.2。Pastry组件管理工具][md_plugin]
 
+    * [4.3。Pastry组件整体概览][md_plugin]
+
 * 5。Pastry JS 业务层 开发 `课程要求 : 业务开发工程师/熟悉掌握 核心开发工程师/熟悉掌握`
-    
-    * [JS平台框架组件概览][md_pastry-js]
 
     * 普通组件的业务场景
 
@@ -87,9 +87,31 @@
     * 语言国际化
 
 * 7。pastry 原生 业务层 开发
+
+    * iOS/android 业务组件
+        
+        * 必选组件
+            
+            * 项目模版组件
+                
+                * [空白模版组件][net_blank]
+                
+                * [侧边框模版组件][net_side]
+                
+                * [选项卡模版组件][net_tab]
+            
+            * [解压缩页面组件][net_unzip]
+            
+            * [引导页面组件][net_guide]
+            
+            * [登录页面组件][net_login]
+        
+        * 可选组件
+            
+            * 无
     
     * Cordova组件
-        * 必须组件
+        * 必选组件
         
             * [浏览器组件][net_browser] 
     
@@ -103,29 +125,9 @@
     
         * 可选组件
         
-            * []
-
-    * iOS/android 业务组件
-        
-        * 必须组件
+            * [OCR身份验证组件][net_OCR]
             
-            * 模版组件
-                
-                * [空白模版组件][net_blank]
-                
-                * [侧边框模版组件][net_side]
-                
-                * [选项卡模版组件][net_tab]
-            
-            * [Html包解压缩显示进度组件][net_unzip]
-            
-            * [引导页面组件][net_guide]
-            
-            * [登录页面组件][net_login]
-        
-        * 可选组件
-            
-            * []
+            * [二维码组件][net_QRcode]
 
 * 8。pastry 前置 业务层 开发
 
@@ -171,6 +173,9 @@
     * 13.1。[Cordova调试方法简介][net_cordova-test]
 
     * 13.2。[调试方法简介][net_pastry-test]
+
+    
+* 14。制作Pastry组件
 
 ----
 ## Pastry标准概念
@@ -234,10 +239,15 @@
 
 [md_plugin]: ./plugins/plugins.md
 
-[md_pastry-js]: ./tutorials/pastry-js.md
+[md_pastry-js]: ./quickstart/pastry-js.md
 
 [md_xtools]: ./pastry-cli/XTools.md
 
 [net_storage]: https://github.com/pastryTeam/pastry-plugin-storage
 [net_keyboard]: https://github.com/pastryTeam/pastry-plugin-keyboard
 [net_request]: https://github.com/pastryTeam/pastry-plugin-request
+[net_QRcode]: https://github.com/pastryTeam/pastry-plugin-QRcode
+[net_OCR]: https://github.com/pastryTeam/pastry-plugin-OCR
+[net_pastryState]: https://github.com/pastryTeam/pastry-plugin-pastryState
+[net_browser]: https://github.com/pastryTeam/pastry-plugin-browser
+

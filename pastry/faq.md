@@ -19,19 +19,19 @@
       
       * 目录结构 JS
       
-        * 见 [组件库 -> 框架组件库 -> JS -> 目录结构][md_tutorials_js]
+        * 见 [使用指南 JS篇 -> 目录结构][md_quickstart-js]
       
       * 目录结构 iOS
       
-        * 见 [组件库 -> 框架组件库 -> iOS -> 目录结构][md_tutorials_ios]
+        * 见 [使用指南 iOS篇 -> 目录结构][md_quickstart-ios]
       
       * 目录结构 android
       
-        * 见 [组件库 -> 框架组件库 -> android -> 目录结构][md_tutorials_android]
+        * 见 [使用指南 android篇 -> 目录结构][md_quickstart-android]
       
       * 目录结构 前置
       
-        * 见 [组件库 -> 框架组件库 -> 前置 -> 目录结构][md_tutorials_fo]
+        * 见 [使用指南 前置篇 -> 目录结构][md_quickstart-fo]
         
 - - - - - - - - -
   * ### Q3: 平台开发者的角色、职责、分工是如何划分的?
@@ -41,7 +41,7 @@
 
 - - - - - - - - -
   * ### Q4: 平台内的组件是如何分类、如何管理的?
-      * 参见 [组件库 -> 组件分类 组件管理工具 说明][md_plugin]
+      * 参见 [Pastry组件][md_plugin]
 
 - - - - - - - - -
   * ### Q5: 我们如何将项目组中的组件集成到平台?
@@ -62,9 +62,9 @@
 [cordova_doc]: http://cordova.apache.org/docs/en/latest/
 
 [md_index]: index.md
-[md_tutorials_js]: tutorials/pastry-js.md
-[md_tutorials_ios]: tutorials/pastry-js.md
-[md_tutorials_android]: tutorials/pastry-js.md
-[md_tutorials_fo]: tutorials/pastry-js.md
+[md_quickstart-js]: quickstart/pastry-js.md
+[md_quickstart-ios]: quickstart/pastry-ios.md
+[md_quickstart-android]: quickstart/pastry-android.md
+[md_quickstart-fo]: quickstart/pastry-fo.md
 
 [md_plugin]: plugins/plugins.md

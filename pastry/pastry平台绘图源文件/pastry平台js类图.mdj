@@ -25718,5 +25718,5 @@
 			"visibility": "public"
 		}
 	],
-	"documentation": "js端类图\nComponent 输出到  images/tutorials/jsComponent.png\n"
+	"documentation": "js端类图\nComponent 输出到  images/quickstart/jsComponent.png\n"
 }

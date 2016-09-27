@@ -3,8 +3,26 @@
 ----
 ## 工程目录结构
 
-详见 [JS目录结构][md_pastry-js]
+  * 目录结构
 
+         HelloWorld/www
+          ┣ .bowerrc **功能 : bower配置文件**            
+          ┣ bowerScript **功能 : bower的Hook脚本文件**            
+          ┣ app                      
+          ┃  ┗ index.html                   **功能 : Web端 入口**
+          ┣ components                      **功能 : h5客户端 组件目录**
+          ┣ css                             **功能 : h5客户端 css目录**
+          ┣ lib                             **功能 : h5客户端 第三库引用目录**
+          ┣ examples                        **功能 : 示例 Demo，集合所有h5框架封装组件的用法**
+          ┣ mockdata                        **功能 : html开发人员 模拟数据请求 目录**
+          ┣ make.xml                        **功能 : 对JS、CSS等文件签名、加解密的配置文件**
+          ┣ pastry
+          ┃  ┣ components                   **功能 : 框架自定义的组件**
+          ┃  ┣ core                         **功能 : 框架核心代码**
+          ┃  ┣ debug                        **功能 : 框架为项目配置的debug选项集合**
+          ┃  ┣ lib                          **功能 : 框架使用的第三方库**
+          ┃  ┣ main.js                      **功能 : 框架入口**
+          ┗  ┗ plugins                      **功能 : 框架组件依赖的第三方UI组件库**
 
 ----
 ## 准备知识
@@ -454,8 +472,6 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
 |data-components|项目引用 组件|引入框架/项目中定义的公共组件 <br/>说明：<br/>C:框架级  对应js文件保存路径为 根/pastry/components/ <br/>E:项目级  对应js文件保存路径为 根/components <br/>B:业务级 对应js文件保存路径为 当前路经/components/|
 |data-css|项目引用 CSS|引入框架/项目中定义的CSS <br/>说明：<br/>C:框架级  对应css文件保存路径为 根/pastry/css <br/>E:项目级  对应css文件保存路径为 根/css <br/>B:业务级 对应css文件保存路径为 当前路径/css/|
 
-`调试选项 更多信息参考` [JS 开发模式配置][md_pastry-js]
-
 ----
 ## 模版配置
 
@@ -883,5 +899,4 @@ option中配置返回的选项参数
    更多调试方法详见 [Hybrid调试方法][md_hybrid]
 
 [md_specification-js]: ../codingSpecification/specification-js.md
-[md_pastry-js]: ../tutorials/pastry-js.md
 [md_hybrid]:../ready/hybrid.md

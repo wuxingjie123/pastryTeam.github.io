@@ -178,13 +178,13 @@
          ┣ pastry-fo-java     **前置Java开发人员工作目录**
          ┗ pastry-fo-nodejs   **前置 NodeJS开发人员工作目录**
 
-* `JS工程详细目录结构介绍` 见 [框架组件库 JS篇][md_tutorials-js]
+* `JS工程详细目录结构介绍` 见 [使用指南 JS篇][md_quickstart-js]
 
-* `iOS工程详细目录结构介绍` 见 [框架组件库 iOS篇][md_tutorials-ios]
+* `iOS工程详细目录结构介绍` 见 [使用指南 iOS篇][md_quickstart-ios]
 
-* `Android工程详细目录结构介绍` 见 [框架组件库 Android篇][md_tutorials-android]
+* `Android工程详细目录结构介绍` 见 [使用指南 Android篇][md_quickstart-android]
 
-* `前置工程详细目录结构介绍` 见 [框架组件库 前置篇][md_tutorials-fo]
+* `前置工程详细目录结构介绍` 见 [使用指南 前置篇][md_quickstart-fo]
 
 ## 演示示例
 
@@ -196,7 +196,7 @@
 
 ## 开发流程/人员职责
 
-* ios 开发人员 (开发流程见 [iOS指南-快速开始][md_quickstart-ios])
+* ios 开发人员 (开发流程见 [使用指南 iOS篇][md_quickstart-ios])
 
   * 职责
 
@@ -204,7 +204,7 @@
 
     * 基于 cordova 插件原生开发
 
-* android 开发人员 (开发流程见 [android指南-快速开始][md_quickstart-android])
+* android 开发人员 (开发流程见 [使用指南 android篇][md_quickstart-android])
 
   * 职责
 
@@ -212,7 +212,7 @@
 
     * 基于 cordova 插件原生开发
 
-* H5 开发人员 (开发流程见 [JS指南-快速开始][md_quickstart-js])
+* H5 开发人员 (开发流程见 [使用指南 JS篇][md_quickstart-js])
 
   * 职责
 
@@ -243,11 +243,11 @@
 
 ### 开发模式配置
 
-* iOS 开发模式配置 详见 [使用指南 -> iOS -> 调试支持][md_tutorials-ios]
+* iOS 开发模式配置 详见 [使用指南 iOS篇 -> 调试支持][md_quickstart-ios]
 
-* android 开发模式配置 详见 [使用指南 -> android -> 调试支持][md_quickstart-android]
+* android 开发模式配置 详见 [使用指南 android篇 -> 调试支持][md_quickstart-android]
 
-* h5 开发模式配置 详见 [使用指南 -> JS -> 调试支持][md_quickstart-js]
+* h5 开发模式配置 详见 [使用指南 JS篇 -> 调试支持][md_quickstart-js]
 
 ### h5调试流程
 
@@ -267,7 +267,7 @@
 
           pastry bake build ios -m debug -si 'iPhone Developer: Min Tan (RWTVR85F43)'
 
-    * 测试人员通过修改 app 的 Setting 设置来连接不同的服务器；详见 [iOS功能 - 开发模式配置][md_tutorials-ios]
+    * 测试人员通过修改 app 的 Setting 设置来连接不同的服务器；详见 [使用指南 iOS篇 - 开发模式配置][md_quickstart-ios]
 
   * android
 
@@ -329,11 +329,7 @@
 [md_download]: ./download.md
 [md_moreCli]: ./pastry-cli/bake.md
 
-[md_tutorials-js]: ./tutorials/pastry-js.md
-[md_tutorials-ios]: ./tutorials/pastry-ios.md
-[md_tutorials-android]: ./tutorials/pastry-android.md
-[md_tutorials-fo]: ./tutorials/pastry-fo.md
-
 [md_quickstart-android]: quickstart/quickstart-android.md
 [md_quickstart-ios]: quickstart/quickstart-ios.md
 [md_quickstart-js]: quickstart/quickstart-js.md
+[md_quickstart-fo]: quickstart/quickstart-fo.md
