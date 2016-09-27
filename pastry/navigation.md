@@ -33,11 +33,6 @@
   * [iOS](tutorials/pastry-ios.md)
   * [Android](tutorials/pastry-android.md)
   * [前置](tutorials/pastry-fo.md)
-  - - - -
-  * `业务组件`
-  - - - -
-  * [JS](plugins/plugins-js.md) 
-  * [Cordova (JS | iOS | Android)](plugins/plugins-cordova.md)
 
 [代码规范]()
 

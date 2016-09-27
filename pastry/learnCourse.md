@@ -88,11 +88,44 @@
 
 * 7。pastry 原生 业务层 开发
     
-    * [本地加解密存储][net_storage]
+    * Cordova组件
+        * 必须组件
+        
+            * [浏览器组件][net_browser] 
     
-    * [密码键盘][net_keyboard]
+            * [网络通讯][net_request]
+    
+            * [密码键盘][net_keyboard]
+         
+            * [本地加解密存储][net_storage]
+            
+            * [获取原生会话状态][net_pastryState]
+    
+        * 可选组件
+        
+            * []
 
-    * [网络通讯][net_request]
+    * iOS/android 业务组件
+        
+        * 必须组件
+            
+            * 模版组件
+                
+                * [空白模版组件][net_blank]
+                
+                * [侧边框模版组件][net_side]
+                
+                * [选项卡模版组件][net_tab]
+            
+            * [Html包解压缩显示进度组件][net_unzip]
+            
+            * [引导页面组件][net_guide]
+            
+            * [登录页面组件][net_login]
+        
+        * 可选组件
+            
+            * []
 
 * 8。pastry 前置 业务层 开发
 
@@ -183,7 +216,7 @@
 [net_pastry-js]: #
 [net_pastry-ios]: https://github.com/pastryTeam/ios-template
 [net_pastry-android]: https://github.com/pastryTeam/android-template
-[net_pastry-test]: ../index.md
+[net_pastry-test]: ./index.md
 
 
 
