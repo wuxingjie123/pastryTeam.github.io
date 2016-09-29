@@ -93,11 +93,13 @@
         <html>
         <head>
             <title>Hello World</title>
-            <meta http-equiv="Content-Type" content="text/html; charset=Utf-8"/>
-            <meta http-equiv="Pragma" content="no-cache"/>
-            <meta name="format-detection" content="telephone=no"/>
-            <meta name="apple-mobile-web-app-capable" content="yes"/>
-            <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,target-densitydpi=medium-dpi"/>
+            
+            <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+            <meta name="viewport" content="width=device-width, user-scalable=0">
+            <meta name="apple-mobile-web-app-capable" content="yes" />
+            <meta content="telephone=no" name="format-detection" />
+            <meta http-equiv="Pragma" content="no-cache">
+            
             <!--引入框架-->
             <!--注意data-debug推荐使用 @mockdata 属性-->
             <script type="text/javascript" src="../../pastry/main.js"
@@ -113,7 +115,7 @@
         </body>
         </html>
 
-        <script type="text/template" id="tp_HomePage" data-title="Hello World ~">
+        <script type="text/template" id="tp_HomePage" data-title="Hello World">
             Hello World!
         </script>
 
@@ -171,7 +173,7 @@
 
 |对象           |作用         |说明         |
 |-----         |-----       |-----        |
-|this.Fn       |框架工具函数  |提供基础的工具函数  |
+|this.api       |框架工具函数  |提供基础的工具函数  |
 |this.Bridge    |JS桥        |负责和原生环境交互  |
 |this.Template  |模板         |定制组件模板     |
 |this.Browser   |浏览器        |负责页面跳转     |
@@ -186,7 +188,7 @@
   ![对象关系图](/pastry/images/codingSpecification/specifition_js.png)
 
 ----
-### 常用属性
+### 元素扩展属性
 * 通用属性
 
 |属性|说明|适用标签|
@@ -253,15 +255,33 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
 
 例如:
 
-    <input id="input" data-component="Input" data-name="INPUT">
+    <input id="inputId" data-component="Input" data-name="inputText">
 
-* 当组件中的数据为100时,从表单提交得到的数据为,{INPUT:100}
+* 当组件中的数据为100时,从表单提交得到的数据为,{inputText:100}
 
-* Fn.getComponent('input').getValue()和Fn.getComponent('input').model.get('INPUT')是等价的。
+* 获取 Model 的 inputText 值(以下方法等价，推荐第一种方法)
+    
+    * **`var value = api.getModel('inputId').getValue();`**
+    
+    * var value = api.getModel('inputId').get('inputText');
+    
+    * var value = api.getComponent('inputId').getValue();
+    
+    * var value = api.getComponent('inputId').model.getValue();
+    
+    * var value = api.getComponent('inputId').model.get('inputText');
 
-* Fn.getComponent('input').setValue(100)和Fn.getComponent('input').model.set('INPUT',100)是等价的。
-
-`注:上面的Fn.getComponent('input').model用法只是为了说明data-name的作用,项目中应避免这 种使用方式。`
+* 设置 Model 的 inputText 值(以下方法等价，推荐第一种方法)
+    
+    * **`api.getModel('inputId').setValue(200);`**
+    
+    * api.getModel('inputId').set('inputText', 200);
+    
+    * api.getComponent('inputId').setValue(200);
+    
+    * api.getComponent('inputId').model.setValue(200);
+    
+    * api.getComponent('inputId').model.set('inputText',200);
 
 ----
 ### data-component
@@ -270,18 +290,18 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
 
 例如:
 
-    <input id="input" data-component="Input" data-name="INPUT">
+    <input id="inputId" data-component="Input" data-name="inputText">
 
-页面渲染后将生成一个Input组件,组件id为input。
+页面渲染后将生成一个Input组件,组件id为inputId。
 
 框架内部将执行类似如下的代码:
 
     var input = new this.Component.Input();
-    input.id = 'input';
-    var model = models['input'];
+    input.id = 'inputId';
+    var model = models['inputId'];
     if(!model){
         model = new this.Model.Simple();
-        models['input'] = model;
+        models['inputId'] = model;
     }
     input.model = model;
 
@@ -308,11 +328,13 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
     <html>
     <head>
         <title>Hello World</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=Utf-8"/>
-        <meta http-equiv="Pragma" content="no-cache"/>
-        <meta name="format-detection" content="telephone=no"/>
-        <meta name="apple-mobile-web-app-capable" content="yes"/>
-        <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,target-densitydpi=medium-dpi"/>    
+        
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=0">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta content="telephone=no" name="format-detection" />
+        <meta http-equiv="Pragma" content="no-cache">
+        
         <!-- js、css引用及调试配置 -->
         <script type="text/javascript" src="../pastry/main.js"
                 data-debug="@mockdata"
@@ -329,7 +351,7 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
     </body>
 
     <!-- 模板定义 -->
-    <script type="text/template" id="homePage" data-component="HomePage" data-title="首页">
+    <script type="text/template" id="homePage" data-component="tp_HomePage" data-title="首页">
         <div style="color:#111111">
             Hello World!
             <br/>
@@ -368,35 +390,49 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
             var Component = this.Component;
             var Model = this.Model;
             var Browser = this.Browser;
-            var Fn = this.Fn;
-            var $ = Fn.$;//解决$冲突问题
-            //定制数据模型
-            Fn.setModels({
+            var api = this.api;
+            var $ = api.$;//解决$冲突问题
+            
+            // 1 定制 windowModel 数据模型 
+            var windowModel = {
+                // 2 填充 Page(模版)Model、组件Model
+                //   'PageID(TemplateID)': 模版Model
+                //   '组件ID': 组件Model
                 "homePage": new Model.PTJSON(null,
-                {
-                    url: "helloworld.do?act=getText",
+                    {
+                        // 3 设置组件绑定的属性值
+                        // {
+                        //    Name: ''''
+                        // }
+                        // 3 请求选项
+                        url: "helloworld.do?act=getText",
+                        filter: function (data) {
+                            data.TEXT = data.TEXT + "[add by filter]";
+                            return data;
+                        }
+                    }
+                ),
+                "secondPage": new Model.PTJSON(null,
+                    {
+                        url: "helloworld.do?act=getSecondText",
+                        dispatcher: function (data) {
+                        this.dispatch({
+                            test1: {value: "by dispatcher:" + data.TEXT1},
+                            test2: {value: "by dispatcher:" + data.TEXT2}
+                        });
+                    },
                     filter: function (data) {
-                        data.TEXT = data.TEXT + "[add by filter]";
+                        data.TEXT1 += "[add by filter]";
+                        data.TEXT2 += "[add by filter]";
                         return data;
                     }
-                }),
-                "secondPage": new Model.PTJSON(null,
-                {
-                    url: "helloworld.do?act=getSecondText",
-                    dispatcher: function (data) {
-                    this.dispatch({
-                        test1: {value: "by dispatcher:" + data.TEXT1},
-                        test2: {value: "by dispatcher:" + data.TEXT2}
-                    });
-                },
-                filter: function (data) {
-                    data.TEXT1 += "[add by filter]";
-                    data.TEXT2 += "[add by filter]";
-                    return data;
-                }
-            });
+                )
+            };
+            
+            // 4 设置 windowModel 
+            api.setModels(windowModel);
 
-            //定制组件
+            // 5 定制组件
             Component.HomePage = Component.Page.extend({
                 onSubmit: function (data, submitId) {
                     alert(_.template("提交按钮ID:<%=id%>\n提交数据:<%=data%>", {id:submitId, data: JSON.stringify(data)}));
@@ -423,7 +459,7 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
                 }
             });
 
-            //定制组件
+            // 5 定制组件
             Component.SecondPage = Component.Page.extend({
 
                 onError:function(state,response){
@@ -573,11 +609,11 @@ PT JS的入口函数framework_ready简化成大家熟悉的jquery选择器形式
     };
 
 |属性	|数据类型	|默认值	|功能	|说明|
-   |-----|-----|-----|-----|-----|
-   |id	|string	|pageId	|组件id|  |
-   |keepOldVal	|boolean	|false	|初始化时是否保留旧数据|	|
-   |removeVal	|string	|undefined	|移除的数据key，以逗号分割|    |
-   |initVal	|object	|undefined	|初始化数据| |
+|-----|-----|-----|-----|-----|
+|id	|string	|pageId	|组件id|  |
+|keepOldVal	|boolean	|false	|初始化时是否保留旧数据|	|
+|removeVal	|string	|undefined	|移除的数据key，以逗号分割|    |
+|initVal	|object	|undefined	|初始化数据| |
 
 ----
 #### `返回`
@@ -604,9 +640,10 @@ option中配置返回的选项参数
 
 数据模型配置语法:
 
-    var Fn = this.Fn;
+    var api = this.api;
     var Model = this.Model;
-    Fn.setModels({
+    
+    var windowModel = {
         componentId01:new Model.PTJSON(
             {
                 //默认数据
@@ -630,7 +667,9 @@ option中配置返回的选项参数
             }
         ),
         ...
-    });
+    };
+    
+    api.setModels(windowModel);
 
 可配置的请求选项:
 
