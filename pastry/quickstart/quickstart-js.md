@@ -174,14 +174,14 @@
 |对象           |作用         |说明         |
 |-----         |-----       |-----        |
 |this.api       |框架工具函数  |提供基础的工具函数  |
-|this.Bridge    |JS桥        |负责和原生环境交互  |
+|this.Model     |数据模型命名空间   |数据模型负责定义请求地址,数据校验  |
+|this.Component |组件命名空间   |组件负责管理UI显示和用户事件处理    |
 |this.Template  |模板         |定制组件模板     |
 |this.Browser   |浏览器        |负责页面跳转     |
-|this.Component |组件命名空间   |组件负责管理UI显示和用户事件处理    |
-|this.Model     |数据模型命名空间   |数据模型负责定义请求地址,数据校验  |
+|this.Bridge    |JS桥        |负责和原生环境交互  |
+|window.cordova|Cordova对象|负责和原生通讯|
 |this.Component.Base    |组件基类   |所有的组件的基类   |
 |this.Model.Base        |数据模型基类 |所有的数据模型的基类|
-|window.cordova|Cordova对象|负责和原生通讯|
 
   * 各个对象间的关系如下图:
 
@@ -328,30 +328,31 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
     <html>
     <head>
         <title>Hello World</title>
-        
+            
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, user-scalable=0">
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta content="telephone=no" name="format-detection" />
         <meta http-equiv="Pragma" content="no-cache">
-        
+            
         <!-- js、css引用及调试配置 -->
         <script type="text/javascript" src="../pastry/main.js"
                 data-debug="@mockdata"
-                data-css="E:project,E:style"
-                data-lib="C:base64,C:md5,E:custom,E:public"
-                data-components="C:switch,C:tab,E:menu">
+                data-css="E:style"
+                data-lib="C:base64,C:md5"
+                data-components="C:switch,C:tab">
+        </script>
     </head>
-
+    
     <body>
         <!--设置加载页-->
         <div data-page-loading>
             page loading...
         </div>
     </body>
-
+    
     <!-- 模板定义 -->
-    <script type="text/template" id="homePage" data-component="tp_HomePage" data-title="首页">
+    <script type="text/template" id="tp_HomePage" data-component="HomePage" data-title="首页">
         <div style="color:#111111">
             Hello World!
             <br/>
@@ -359,16 +360,16 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
             <br/>
             标签组件:<span data-component="Label" data-name="TEXT"></span>
             <br/>
-            用户名:<input data-component="Input" id="userName" data-name="USERNAME">
+            用户名:<input data-component="Input" id="userName" data-name="USERNAME" />
             <br/>
-            密码:<input data-component="Password" id="password" data-name="PASSWORD">
+            密码:<input data-component="Password" id="password" data-name="PASSWORD" />
             <br/>
-            <input type="button" data-submit-button="next" value="下一步"/>
+            <input type="button" data-submit-button="next" value="下一步" />
         </div>
     </script>
-
+    
     <!-- 模板定义 -->
-    <script type="text/template" id="secondPage" data-component="SecondPage" data-title="第二页">
+    <script type="text/template" id="tp_SecondPage" data-component="SecondPage" data-title="第二页">
         <div style="color:#111111">
             Second Page!
             <br/>
@@ -383,7 +384,7 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
             数据分发测试:<input data-component="Input" style="width:100%" id="test2"/>
         </div>
     </script>
-
+    
     <!--入口-->
     <script type="text/javascript">
         $(function (param) {
@@ -392,13 +393,13 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
             var Browser = this.Browser;
             var api = this.api;
             var $ = api.$;//解决$冲突问题
-            
+                
             // 1 定制 windowModel 数据模型 
             var windowModel = {
                 // 2 填充 Page(模版)Model、组件Model
                 //   'PageID(TemplateID)': 模版Model
                 //   '组件ID': 组件Model
-                "homePage": new Model.PTJSON(null,
+                "homePage": new Model.Request(
                     {
                         // 3 设置组件绑定的属性值
                         // {
@@ -412,89 +413,93 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
                         }
                     }
                 ),
-                "secondPage": new Model.PTJSON(null,
+                "secondPage": new Model.Request(
                     {
                         url: "helloworld.do?act=getSecondText",
                         dispatcher: function (data) {
-                        this.dispatch({
-                            test1: {value: "by dispatcher:" + data.TEXT1},
-                            test2: {value: "by dispatcher:" + data.TEXT2}
-                        });
-                    },
-                    filter: function (data) {
-                        data.TEXT1 += "[add by filter]";
-                        data.TEXT2 += "[add by filter]";
-                        return data;
+                            this.dispatch({
+                                test1: {value: "by dispatcher:" + data.TEXT1},
+                                test2: {value: "by dispatcher:" + data.TEXT2}
+                            });
+                        },
+                        filter: function (data) {
+                            data.TEXT1 += "[add by filter]";
+                            data.TEXT2 += "[add by filter]";
+                            return data;
+                        }
                     }
                 )
             };
-            
+                
             // 4 设置 windowModel 
             api.setModels(windowModel);
-
+    
             // 5 定制组件
             Component.HomePage = Component.Page.extend({
                 onSubmit: function (data, submitId) {
                     alert(_.template("提交按钮ID:<%=id%>\n提交数据:<%=data%>", {id:submitId, data: JSON.stringify(data)}));
-
+    
                     var option;
                     var sendData = {
                         USERNAME: data.USERNAME,
                         PASSWORD: data.PASSWORD
                     };
-
+    
                     var initVal = {
                         TEXT1: "Loading A...",
                         TEXT2: "Loading B..."
                     };
-
+    
                     option = {
                         refresh: {
                             initVal: initVal,
                             param: sendData
                         }
                     };
-
-                    Browser.history_goto("secondPage", option);
+                    
+                    Browser.history_goto("tp_SecondPage", option);
                 }
             });
-
+    
             // 5 定制组件
             Component.SecondPage = Component.Page.extend({
-
                 onError:function(state,response){
                     alert('请求数据出错,state='+state+'\nresponse'+JSON.stringify(response));
                 }
             });
-
+    
             //配置首页
             var option;
+            
             var sendData = {
                 TYPE: "A"
             };
+            
             var initVal = {
                 TEXT: "Loading..."
             };
+    
             option = {
                 refresh: {
                     initVal: initVal,
                     param: sendData
                 }
             };
-
-            Browser.history_goto("homePage", option);
+    
+            Browser.history_goto("tp_HomePage");
         });
+        
     </script>
     </html>
 
 ## 模块依赖配置`待定`
 
     <!-- js、css引用及调试配置 -->
-    <script type="text/javascript"
-            data-main="../pastry/main.js"
+    <script type="text/javascript" 
+            src="../pastry/main.js"
             data-debug="@mockdata"
+            data-css="E:style"
             data-lib="C:base64,C:md5"
-            data-css="E:project,E:style"
             data-components="C:switch,C:tab">
     </script>
 
