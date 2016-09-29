@@ -24,6 +24,8 @@
 
     * [4.5。bake build 编译项目][md_pastry-cli]
 
+    * [4.6。html打包工具 XTools][md_xtools]
+
 * [4。Pastry组件][md_plugin] `课程要求 : 业务开发工程师/了解 核心开发工程师/熟悉掌握`
 
     * [4.1。Pastry组件分类介绍][md_plugin]
@@ -164,11 +166,7 @@
 
     * 11.2。通讯安全
 
-* 12。html打包工具
-
-    * [XTools][md_xtools]
-
-* 13。调试发布
+* 12。调试发布
 
     * 13.1。[Cordova调试方法简介][net_cordova-test]
 

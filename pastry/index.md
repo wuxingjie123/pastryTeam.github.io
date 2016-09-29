@@ -68,6 +68,8 @@
 
 #### Html5 开发配置
 
+* [JDK 6 (用于使用 XTools 工具)][net_JDK]
+
 * Chrome浏览器
 
 * WebStrom
@@ -93,11 +95,15 @@
 
 #### iOS 开发配置
 
+* [JDK 6 (用于使用 XTools 工具)][net_JDK]
+
 * 安装 XCode 7.0 以上
 
 * 安装 XCode插件管理工具 [Alcatraz][net_Alcatraz]
 
 * 在 Alcatraz 工具中搜索 XcodeColors 插件并安装 [XcodeColors][net_XcodeColors]
+
+[net_JDK]: http://www.oracle.com/technetwork/java/javase/downloads/index.html
 
 ## 创建项目
 

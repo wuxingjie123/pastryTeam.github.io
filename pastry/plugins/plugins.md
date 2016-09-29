@@ -5,7 +5,7 @@
 
 **Pastry组件分类包括三个大类：框架组件、业务组件、cordova组件**
 
-  * 框架组件
+  * 框架组件:`PT.framework ptframework.jar pastry JS 的组件`
     
     * `iOS平台 框架组件`：包含 网络通讯、安全模块、本地存储、日志模块等
     
@@ -15,7 +15,7 @@
     
     * `前置 框架组件`：包括 协商密钥、通讯安全等
     
-  * 业务组件
+  * 业务组件:`原生平台不依赖JS实现的组件 或 JS平台不依赖原生实现的组件`
     
     * `iOS平台 业务组件`：包含 解压缩组件、登录组件、二维码组件等
     
@@ -25,7 +25,7 @@
     
     * `前置 业务组件`：无
     
-  * cordova组件
+  * cordova组件:`原生平台、JS平台相互依赖实现的组件`
     
     * `cordova组件`：包含 请求组件、密码键盘组件、摄像头组件等
 
@@ -115,10 +115,10 @@
 | `框架基础组件 Component` |-----|-----|-----|
 | Base | Backbone.View |||
 | Container | Base | 容器组件基类 ||
-| Input | Base | 输入框组件 ||
+| Input | Base | 输入框组件 | [www/examples/base_input.html][base_input] |
 | ICheck | Base | 单多选按钮组件基类 | `待定` |
 | `框架扩展组件` |-----|-----|-----|
-| Label | Base | 标签组件 ||
+| Label | Base | 标签组件 | [www/examples/base_label.html][base_label] |
 | Select | Base | `列表组件` | [www/examples/base_amount.html][base_amount] ||
 | CheckImage | Base | 验证码组件 | `待定` ||
 | CodeMirror | Base | ？？？？？ | `待定` |
@@ -145,6 +145,8 @@
 | PopupMenu | PopupWindow | 弹出菜单组件 | [www/examples/ex_popupmenu.html][ex_popupmenu] ||
 | CountdownBtn | Button | 倒计时按钮组件 | [www/examples/ex_countdownbtn.html][ex_countdownbtn] |
 
+[base_input]: ../www/examples/base_input.html
+[base_label]: ../www/examples/base_label.html
 [base_amount]: ../www/examples/base_amount.html
 [ex_popupselect]: ../www/examples/ex_popupselect.html
 [ex_switch]: ../www/examples/ex_switch.html
