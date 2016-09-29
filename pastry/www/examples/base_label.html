@@ -6,18 +6,19 @@ desc:标签
 -->
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Label</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=0">
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta content="telephone=no" name="format-detection"/>
-    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="Pragma" content="no-cache">
 
     <!--引入框架-->
     <script type="text/javascript" src="../pastry/main.js"
-            data-debug="@mockdata"
-            ></script>
+        data-components="C:Textarea"
+        data-debug="@mockdata"></script>
 </head>
 
 <body>
@@ -26,13 +27,19 @@ desc:标签
         Loading...
     </div>
 </body>
+
 </html>
 
 <!-- 模板定义 -->
 <script type="text/template" id="tp_HomePage" data-title="Label">
-    <span type="text" data-component="Label" data-name="TEXT"></span>
+    <span type="text">姓名 : </span><span type="text" data-component="Label" data-name="Name" id="nameLabel"></span>
     <br/>
-    <span type="text" data-component="Label" data-name="TEXT2" id="label"></span>
+    <span type="text">号码 : </span><span type="text" data-component="Label" data-name="PhoneNo" id="phoneLabel"></span>
+    <br/>
+    <span type="text">住址 : </span>
+    <span type="text" data-component="Label" data-name="Address" id="addressLabel"></span>
+    
+    <input id="logTextArea" data-component="Textarea" data-name="LogText">
 </script>
 
 <script type="text/javascript">
@@ -41,33 +48,92 @@ desc:标签
         var Model = this.Model;
         var api = this.api;
 
-        api.setModels({
-            'homePage': new Model.Request(
-                    {
-                        TEXT: 'Hello World! default'
-                    },
-                    {
-                        url: 'helloworld.do?act=getText'
-                    }
-            )});
-        var option = {
-            refresh: [
+        // 1 定制 windowModel 数据模型 
+        var windowModel = {
+            // 2 填充 Page(模版)Model、组件Model
+            //   'PageID(TemplateID)': 模版Model
+            //   '组件ID': 组件Model
+            'nameLabel': new Model.Request(
                 {
-                    id: 'homePage'
+                    // 3 设置组件绑定的属性值
+                    // 默认数据
+                    Name: ''
                 },
                 {
-                    id: 'label',
-                    initVal: {
-                        TEXT2: 100
-                    }
+                    // 3 请求选项
+                    url: 'helloworld.do?act=getText'
                 }
-            ]
+            ),
+            'phoneLabel': new Model.Request(
+                {
+                    // 默认数据
+                    PhoneNo: ''
+                },
+                {
+                    // 请求选项
+                    url: 'helloworld.do?act=getText'
+                }
+            ),
+            'addressLabel': new Model.Request(
+                {
+                    // 默认数据
+                    Address: '默认地区'
+                }
+                // ,
+                // {
+                //     // 请求选项
+                //     initVal: '1212',
+                //     url: '',
+                //     param: '',
+                //     wait: '',
+                //     autoFetch: '',
+                //     timeout: '',
+                //     mapping: '',
+                    
+                // }
+            ),
+            'logTextArea': new Model.Request(
+                {
+                    // 默认数据
+                    LogText: 'ss'
+                }
+            )
         };
-        Browser.history_goto("homePage", option);
+
+        // 4 设置 windowModel
+        api.setModels(windowModel);
+
+        // 浏览器显示页面
+        Browser.history_goto("homePage");
+
+        // 5 更新指定组件
+        api.refreshComponentById('nameLabel');
+        api.refreshComponentById('phoneLabel');
+        api.refreshComponentById('addressLabel');
+        api.refreshComponentById('logTextArea');
 
         setTimeout(function () {
-            api.getComponent('label').setValue(200);
-            alert(JSON.stringify(api.getComponent('label').model.toJSON()));
+    
+            // 6 获取 Model
+            var value1 = api.getModel('addressLabel').getValue();
+            console.log('api.getModel(addressLabel).getValue() = ' + value1);
+            // 可选方法，不推荐
+            // var value2 = api.getModel('addressLabel').get('Address');
+            // console.log('api.getModel(addressLabel).get(Address) = ' + value2);
+            // var value3 = api.getComponent('addressLabel').getValue();
+            // console.log('api.getComponent(addressLabel).getValue() = ' + value3);
+            // var value4 = api.getComponent('addressLabel').model.getValue();
+            // console.log('api.getComponent(addressLabel).model.getValue() = ' + value4);
+            // var value5 = api.getComponent('addressLabel').model.get('Address');
+            // console.log('api.getComponent(addressLabel).model.get(Address) = ' + value5);
+
+            // 7 设置 Model
+            api.getModel('addressLabel').setValue(200);
+            // 可选方法，不推荐
+            // api.getModel('addressLabel').set('Address', 210);
+            // api.getComponent('addressLabel').setValue(220);
+            // api.getComponent('addressLabel').model.setValue(230);
+            // api.getComponent('addressLabel').model.set('Address',240);
 
         }, 2000);
     });
