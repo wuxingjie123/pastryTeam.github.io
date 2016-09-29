@@ -243,7 +243,7 @@
 
 ## 调试发布
 
-### 调试支持概览
+### 调试发布概览
 
   ![pastry调试支持](/pastry/images/test/pastry_test.png)
 
