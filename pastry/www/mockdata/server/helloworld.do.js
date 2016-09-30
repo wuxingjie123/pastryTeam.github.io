@@ -50,7 +50,9 @@ define({
         {
             delay: 1000,
             data: {
-                TEXT: "Hello World !"
+                TEXT: 'hello world',
+                Name: "Pastry Team",
+                PhoneNo: '17892237893'
             }
         }
     ],
@@ -115,14 +117,6 @@ define({
         }
     ],
     "act=getSecondText": [
-        {
-            isDefault: false,
-            delay: 1000,
-            data: {
-                TEXT1: "Hello Second World A!",
-                TEXT2: "Hello Second World B!"
-            }
-        },
         {
             delay: 2000,
             result: 0,

@@ -310,7 +310,7 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
 
 页面分为以下几部分:
 
-*定义js及css依赖,借助require完成
+* 定义js及css依赖,借助require完成
 
 * 配置组件模板
 
@@ -323,6 +323,12 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
     * 配置首页
 
 页面代码样例:
+代码示例地址：[www/examples/base_mvc.html][net_base_mvc]
+模拟数据地址：[www/mockdata/server/base_mvc.do.js][net_base_mvc_js]
+
+[net_base_mvc]: ../www/examples/base_mvc.html
+[net_base_mvc_js]: ../www/mockdata/server/base_mvc.do.js
+    
 
     <!DOCTYPE html>
     <html>
@@ -399,29 +405,27 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
                 // 2 填充 Page(模版)Model、组件Model
                 //   'PageID(TemplateID)': 模版Model
                 //   '组件ID': 组件Model
-                "homePage": new Model.Request(
+                "tp_HomePage": new Model.Request(
+                    null,
                     {
                         // 3 设置组件绑定的属性值
                         // {
                         //    Name: ''''
                         // }
                         // 3 请求选项
-                        url: "helloworld.do?act=getText",
+                        url: "base_mvc.do?act=getText",
                         filter: function (data) {
+                            console.log('aaaaaaaaa');
                             data.TEXT = data.TEXT + "[add by filter]";
+                            console.log('data.TEXT = ' + data.TEXT);
                             return data;
                         }
                     }
                 ),
-                "secondPage": new Model.Request(
+                "tp_SecondPage": new Model.Request(
+                    null,
                     {
-                        url: "helloworld.do?act=getSecondText",
-                        dispatcher: function (data) {
-                            this.dispatch({
-                                test1: {value: "by dispatcher:" + data.TEXT1},
-                                test2: {value: "by dispatcher:" + data.TEXT2}
-                            });
-                        },
+                        url: "base_mvc.do?act=getSecondText",
                         filter: function (data) {
                             data.TEXT1 += "[add by filter]";
                             data.TEXT2 += "[add by filter]";
@@ -437,7 +441,9 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
             // 5 定制组件
             Component.HomePage = Component.Page.extend({
                 onSubmit: function (data, submitId) {
-                    alert(_.template("提交按钮ID:<%=id%>\n提交数据:<%=data%>", {id:submitId, data: JSON.stringify(data)}));
+                    console.log('submitId = ' + submitId);
+                    console.log('data = ' + data);
+                    alert(_.template("提交按钮ID:<%=id%>\n提交数据:<%=data%>", {id:submitId, data: data}));
     
                     var option;
                     var sendData = {
@@ -486,7 +492,7 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
                 }
             };
     
-            Browser.history_goto("tp_HomePage");
+            Browser.history_goto("tp_HomePage", option);
         });
         
     </script>
