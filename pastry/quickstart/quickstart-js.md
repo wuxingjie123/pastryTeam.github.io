@@ -415,9 +415,7 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
                         // 3 请求选项
                         url: "base_mvc.do?act=getText",
                         filter: function (data) {
-                            console.log('aaaaaaaaa');
                             data.TEXT = data.TEXT + "[add by filter]";
-                            console.log('data.TEXT = ' + data.TEXT);
                             return data;
                         }
                     }
@@ -441,8 +439,6 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
             // 5 定制组件
             Component.HomePage = Component.Page.extend({
                 onSubmit: function (data, submitId) {
-                    console.log('submitId = ' + submitId);
-                    console.log('data = ' + data);
                     alert(_.template("提交按钮ID:<%=id%>\n提交数据:<%=data%>", {id:submitId, data: data}));
     
                     var option;
