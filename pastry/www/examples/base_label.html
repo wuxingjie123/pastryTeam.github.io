@@ -41,7 +41,6 @@ desc:标签
     <span type="text">住址 : </span>
     <span type="text" data-component="Label" data-name="Address" id="addressLabel"></span>
     <br/>
-    <input id="logTextArea" data-component="Textarea" data-name="LogText">
 </script>
 
 <script type="text/javascript">
@@ -50,39 +49,47 @@ desc:标签
         var Model = this.Model;
         var api = this.api;
 
-        // 1 定制 windowModel 数据模型 
+        // 步骤一 
+        // 定制 windowModel 数据模型 
         var windowModel = {
-            // 2 填充 Page(模版)Model、组件Model
-            //   'PageID(TemplateID)': 模版Model
-            //   '组件ID': 组件Model
+            // 步骤二
+            // 填充 Page(模版)Model、组件Model
+            // 'PageID(TemplateID)': 模版Model
+            // '组件ID': 组件Model
             'nameLabel': new Model.Request(
                 {
-                    // 3 设置组件绑定的属性值
+                    // 步骤三
+                    // 设置组件绑定的属性值
                     // 默认数据
-                    Name: ''
+                    Name: '某某某'
                 },
                 {
-                    // 3 请求选项
-                    url: 'helloworld.do?act=getText'
+                    // 步骤三
+                    // 请求选项
+                    url: 'base_label.do?act=getText'
                 }
             ),
             'phoneLabel': new Model.Request(
                 {
+                    // 步骤三
                     // 默认数据
-                    PhoneNo: ''
+                    PhoneNo: '默认号码'
                 },
                 {
+                    // 步骤三
                     // 请求选项
-                    url: 'helloworld.do?act=getText'
+                    url: 'base_label.do?act=getText'
                 }
             ),
             'addressLabel': new Model.Request(
                 {
+                    // 步骤三
                     // 默认数据
                     Address: '默认地区'
                 }
                 // ,
                 // {
+                //     // 步骤三
                 //     // 请求选项
                 //     initVal: '1212',
                 //     url: '',
@@ -90,52 +97,55 @@ desc:标签
                 //     wait: '',
                 //     autoFetch: '',
                 //     timeout: '',
-                //     mapping: '',
-                    
+                //     mapping: '' 
                 // }
-            ),
-            'logTextArea': new Model.Request(
-                {
-                    // 默认数据
-                    LogText: 'ss'
-                }
             )
         };
 
-        // 4 设置 windowModel
+        // 步骤四 设置 windowModel
         api.setModels(windowModel);
 
-        // 浏览器显示页面
-        Browser.history_goto("homePage");
+        // 步骤五 更新组件的方式
+        var type = 1;
+        if (type == 1) {
+            // 步骤五
+            // 第一种更新组件的方式
+            var option = {
+                refresh: [
+                    {
+                        id: 'nameLabel'
+                    },
+                    {
+                        id: 'phoneLabel'
+                    },
+                    {
+                        id: 'addressLabel'
+                    }
+                ]
+            }
+            // 浏览器显示页面
+            Browser.history_goto("homePage", option);
+        } else {
 
-        // 5 更新指定组件
-        api.refreshComponentById('nameLabel');
-        api.refreshComponentById('phoneLabel');
-        api.refreshComponentById('addressLabel');
-        api.refreshComponentById('logTextArea');
+            // 步骤五
+            // 第二种更新组件的方式
+            // 浏览器显示页面
+            Browser.history_goto("homePage");
+            api.refreshComponentById('nameLabel');
+            api.refreshComponentById('phoneLabel');
+            api.refreshComponentById('addressLabel');
+        }
 
         setTimeout(function () {
     
-            // 6 获取 Model
+            // 步骤六 
+            // 获取 Model
             var value1 = api.getModel('addressLabel').getValue();
             console.log('api.getModel(addressLabel).getValue() = ' + value1);
-            // 可选方法，不推荐
-            // var value2 = api.getModel('addressLabel').get('Address');
-            // console.log('api.getModel(addressLabel).get(Address) = ' + value2);
-            // var value3 = api.getComponent('addressLabel').getValue();
-            // console.log('api.getComponent(addressLabel).getValue() = ' + value3);
-            // var value4 = api.getComponent('addressLabel').model.getValue();
-            // console.log('api.getComponent(addressLabel).model.getValue() = ' + value4);
-            // var value5 = api.getComponent('addressLabel').model.get('Address');
-            // console.log('api.getComponent(addressLabel).model.get(Address) = ' + value5);
 
-            // 7 设置 Model
-            api.getModel('addressLabel').setValue(200);
-            // 可选方法，不推荐
-            // api.getModel('addressLabel').set('Address', 210);
-            // api.getComponent('addressLabel').setValue(220);
-            // api.getComponent('addressLabel').model.setValue(230);
-            // api.getComponent('addressLabel').model.set('Address',240);
+            // 步骤七
+            // 设置 Model
+            api.getModel('addressLabel').setValue('北京市');
 
         }, 2000);
     });
