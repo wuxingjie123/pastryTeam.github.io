@@ -358,7 +358,7 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
     </body>
     
     <!-- 模板定义 -->
-    <script type="text/template" id="tp_HomePage" data-component="HomePage" data-title="首页">
+    <script type="text/template" id="tp_HomePageID" data-component="HomePage" data-title="首页">
         <div style="color:#111111">
             Hello World!
             <br/>
@@ -375,7 +375,7 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
     </script>
     
     <!-- 模板定义 -->
-    <script type="text/template" id="tp_SecondPage" data-component="SecondPage" data-title="第二页">
+    <script type="text/template" id="tp_SecondPageID" data-component="SecondPage" data-title="第二页">
         <div style="color:#111111">
             Second Page!
             <br/>
@@ -405,7 +405,7 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
                 // 2 填充 Page(模版)Model、组件Model
                 //   'PageID(TemplateID)': 模版Model
                 //   '组件ID': 组件Model
-                "tp_HomePage": new Model.Request(
+                "tp_HomePageID": new Model.Request(
                     null,
                     {
                         // 3 设置组件绑定的属性值
@@ -420,7 +420,7 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
                         }
                     }
                 ),
-                "tp_SecondPage": new Model.Request(
+                "tp_SecondPageID": new Model.Request(
                     null,
                     {
                         url: "base_mvc.do?act=getSecondText",
@@ -459,7 +459,7 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
                         }
                     };
                     
-                    Browser.history_goto("tp_SecondPage", option);
+                    Browser.history_goto("tp_SecondPageID", option);
                 }
             });
     
@@ -488,7 +488,7 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
                 }
             };
     
-            Browser.history_goto("tp_HomePage", option);
+            Browser.history_goto("tp_HomePageID", option);
         });
         
     </script>

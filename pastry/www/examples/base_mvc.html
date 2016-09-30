@@ -26,7 +26,7 @@
 </body>
 
 <!-- 模板定义 -->
-<script type="text/template" id="tp_HomePage" data-component="HomePage" data-title="首页">
+<script type="text/template" id="tp_HomePageID" data-component="HomePage" data-title="首页">
     <div style="color:#111111">
         Hello World!
         <br/>
@@ -43,7 +43,7 @@
 </script>
 
 <!-- 模板定义 -->
-<script type="text/template" id="tp_SecondPage" data-component="SecondPage" data-title="第二页">
+<script type="text/template" id="tp_SecondPageID" data-component="SecondPage" data-title="第二页">
     <div style="color:#111111">
         Second Page!
         <br/>
@@ -73,7 +73,7 @@
             // 2 填充 Page(模版)Model、组件Model
             //   'PageID(TemplateID)': 模版Model
             //   '组件ID': 组件Model
-            "tp_HomePage": new Model.Request(
+            "tp_HomePageID": new Model.Request(
                 null,
                 {
                     // 3 设置组件绑定的属性值
@@ -88,7 +88,7 @@
                     }
                 }
             ),
-            "tp_SecondPage": new Model.Request(
+            "tp_SecondPageID": new Model.Request(
                 null,
                 {
                     url: "base_mvc.do?act=getSecondText",
@@ -127,7 +127,7 @@
                     }
                 };
                 
-                Browser.history_goto("tp_SecondPage", option);
+                Browser.history_goto("tp_SecondPageID", option);
             }
         });
 
@@ -156,7 +156,7 @@
             }
         };
 
-        Browser.history_goto("tp_HomePage", option);
+        Browser.history_goto("tp_HomePageID", option);
     });
     
 </script>
