@@ -606,7 +606,10 @@ PT JS的入口函数framework_ready简化成大家熟悉的jquery选择器形式
 
     var option={
         refresh:{
-            id:'id1'
+            id: 'id1',
+            initVal: {
+                TextName: '默认值'
+            }
         }
     };
 
@@ -615,10 +618,14 @@ PT JS的入口函数framework_ready简化成大家熟悉的jquery选择器形式
     var option={
         refresh:[
             {
-            id:'id1'
+                id: 'id1',
+                initVal: {
+                    TextName: '默认值'
+                }
             },
             {
-            id:'id2'
+                id:'id2',
+                removeVal: 'TextName1'
             }
         ]
     };
@@ -627,7 +634,7 @@ PT JS的入口函数framework_ready简化成大家熟悉的jquery选择器形式
 |-----|-----|-----|-----|-----|
 |id	|string	|pageId	|组件id|  |
 |keepOldVal	|boolean	|false	|初始化时是否保留旧数据|	|
-|removeVal	|string	|undefined	|移除的数据key，以逗号分割|    |
+|removeVal	|string	|undefined	|移除的数据key，以逗号分割|只能清空Model里设置的默认值，<br/>不能清空refresh里的initVal的默认值。    |
 |initVal	|object	|undefined	|初始化数据| |
 
 ----

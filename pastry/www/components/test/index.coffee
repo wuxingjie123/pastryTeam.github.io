@@ -1,1 +1,0 @@
-console.log 'print by project component test.'
