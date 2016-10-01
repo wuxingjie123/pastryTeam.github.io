@@ -28,6 +28,15 @@ desc:按钮
 
 <!-- 业务模板定义 -->
 <script type="text/template" id="tp_HomePageID" data-title="Button">
+    <div data-component="NormalButton">
+        <span type="text">普通按钮</span>
+    </div>
+    <div data-component="DisableButton">
+        <span type="text">禁用按钮</span>
+    </div>
+    <div data-component="ImageButton">
+        <span type="text">图片按钮</span>
+    </div>
     <div data-component="TestButton">
         <div data-component="Label" data-name="TEXT"></div>
     </div>
@@ -51,11 +60,32 @@ desc:按钮
             )};
 
         api.setModels(windowModel);
+        
+        Component.NormalButton = Component.Button.extend({
+            //点击事件的回调，参数event为点击时产生的事件对象
+            onClick: function (event) {
+                alert("点击 普通按钮");
+            }
+        });
+        
+        Component.DisableButton = Component.Button.extend({
+            //点击事件的回调，参数event为点击时产生的事件对象
+            onClick: function (event) {
+                alert("点击 禁用按钮");
+            }
+        });
+
+        Component.ImageButton = Component.Button.extend({
+            //点击事件的回调，参数event为点击时产生的事件对象
+            onClick: function (event) {
+                alert("点击 图片按钮");
+            }
+        });
 
         Component.TestButton = Component.Button.extend({
             //点击事件的回调，参数event为点击时产生的事件对象
             onClick: function (event) {
-                alert("click button");
+                alert("点击 按钮");
             }
         });
 
