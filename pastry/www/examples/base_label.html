@@ -30,8 +30,8 @@ desc:标签
 
 </html>
 
-<!-- 模板定义 -->
-<script type="text/template" id="tp_HomePage" data-title="Label">
+<!-- 业务模板定义 -->
+<script type="text/template" id="tp_HomePageID" data-title="Label">
     <span type="text">姓名 : </span>
     <span type="text" data-component="Label" data-name="Name" id="nameLabel"></span>
     <br/>
@@ -124,13 +124,13 @@ desc:标签
                 ]
             }
             // 浏览器显示页面
-            Browser.history_goto("homePage", option);
+            Browser.history_goto("tp_HomePageID", option);
         } else {
 
             // 步骤五
             // 第二种更新组件的方式
             // 浏览器显示页面
-            Browser.history_goto("homePage");
+            Browser.history_goto("tp_HomePageID");
             api.refreshComponentById('nameLabel');
             api.refreshComponentById('phoneLabel');
             api.refreshComponentById('addressLabel');

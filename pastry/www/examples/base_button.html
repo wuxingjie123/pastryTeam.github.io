@@ -10,28 +10,25 @@ desc:按钮
     <title>Button</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=0">
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta content="telephone=no" name="format-detection"/>
-    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="Pragma" content="no-cache">
 
     <!--引入框架-->
     <script type="text/javascript" src="../pastry/main.js"
-            data-debug="mockdata"
-            ></script>
+            data-debug="@mockdata"></script>
 </head>
 <body>
-<!--设置加载页-->
-<div data-page-loading>
-    Loading...
-</div>
+    <!--设置加载页-->
+    <div data-page-loading>
+        Loading...
+    </div>
 </body>
 </html>
 
-<script type="text/template" id="tp_HomePage" data-title="Button">
-    <!--<input class="btn" type="button" data-component="MyButton" value="Button">-->
-
-    <div data-component="MyButton">
-        <div data-component="Label" data-name="TEXT"></div>
+<!-- 业务模板定义 -->
+<script type="text/template" id="tp_HomePageID" data-title="Button">
+    <div data-component="TestButton">
         <div data-component="Label" data-name="TEXT"></div>
     </div>
 </script>
@@ -43,37 +40,36 @@ desc:按钮
         var Browser = this.Browser;
         var api = this.api;
 
-        api.setModels({
-            'homePage': new Model.Request(
+        var windowModel = {
+            'homePageID': new Model.Request(
                     {
                         TEXT: 'Hello World! default'
                     },
                     {
-                        url: 'helloworld.do?act=getText'
+                        url: 'base_button.do?act=getText'
                     }
-            )});
+            )};
 
-        Component.MyButton = Component.Button.extend({
+        api.setModels(windowModel);
+
+        Component.TestButton = Component.Button.extend({
             //点击事件的回调，参数event为点击时产生的事件对象
             onClick: function (event) {
-                alert('click');
+                alert("click button");
             }
         });
 
         var option = {
             refresh: [
                 {
-                    id: 'homePage',
-                    removeVal: 'TEXT'
-                },
-                {
-                    id: 'label',
+                    id: 'homePageID',
                     initVal: {
-                        //TEXT2: 100
+                        TEXT: 'Hello World!'
                     }
                 }
             ]
         };
-        Browser.history_goto("homePage", option);
+
+        Browser.history_goto("tp_HomePageID", option);
     });
 </script>
