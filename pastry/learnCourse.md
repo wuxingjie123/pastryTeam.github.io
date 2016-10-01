@@ -1,5 +1,11 @@
 # Pastry培训
 
+## 前言
+----
+
+> 培训的目的不仅仅是指导大家使用平台进行工作，更多的是旨在与大家铺设一条技术成长的道路，以便我们在技术上走的更快更远。
+> 授之以鱼，授之以渔。
+
 ## 培训课程目录
 ----
 * 1。预备知识 `课程要求 : 业务开发工程师/了解 核心开发工程师/熟悉掌握`
@@ -36,6 +42,39 @@
 
 * 5。Pastry JS 业务层 开发 `课程要求 : 业务开发工程师/熟悉掌握 核心开发工程师/熟悉掌握`
 
+    * [完整JS页面结构及开发流程预览][md_quickstart-js]
+        * 定义html基本结构
+            * 定义meta属性
+            * JS框架添加引用main.js、lib、css、data-debug等属性
+            * 定义 body
+        * 定义业务模版
+            * 定制业务模版A、B、C等
+        * 定义页面入口函数 
+            * 接收 其它window的传参  
+            * 定制 windowModel 数据模型
+                * 在windowModel中填充 pageModel、componentModel
+                    * 设置 pageModel、componentModel默认值
+                    * 设置 pageModel、componentModel数据请求 
+            * 设置 window（html文件）的 Model 为 windowModel:(api.setModels(windowModel))
+            * 自定义组件
+                * 使用 CSS 定义组件样式（按钮点击效果用 bootstrap 实现）
+                * 使用 template 定义组件内部模版 
+            * 浏览器显示window
+            * 组件更新
+                * 依赖 Browser.histroy_goto 方法更新组件
+                * 使用 api.refreshComponentById 方法更新指定组件
+                * 待定：组件更新也可以用代理(data-name)或数据分发(dispatcher)的方式，获取父组件的数据
+            * 获取指定组件的Model
+            * 更新指定组件的Model，UI上显示更新后的数据
+            * 用户进行业务操作，修改对应的数据
+                * Button Click实现（推荐）
+                    * 开发者手动获取指定Component的Model里的值
+            * 提交表单数据进行验证  
+                * onSubmit 方法（推荐）
+                    * 框架以data-name的方式搜集页面中所有的 数据:(搜集页面中所有数据时必须保证组件既有id，又有data-name属性)
+                    * 开发者手动获取指定Component的Model里的值
+            * 对其他window进行传参
+        
     * 普通组件的业务场景
 
     * 复杂组件的业务场景
@@ -230,6 +269,8 @@
 [md_abstract]: ./abstract/abstract.md
 
 [md_quickstart]: ./index.md
+
+[md_quickstart-js]: ./quickstart/quickstart-js.md
 
 [md_fqa]: ./faq.md
 

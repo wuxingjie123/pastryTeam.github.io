@@ -69,7 +69,7 @@
   详见 [PT JS框架开发代码规范][md_specification-js]
 
 ----
-## 页面结构
+## 完整JS页面结构及开发流程
 
 * [完整JS页面结构及开发流程在线图][net_page_js]
 
