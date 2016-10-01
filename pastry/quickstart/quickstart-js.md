@@ -1,4 +1,4 @@
-# JS使用指南
+# Pastry JS使用指南
 
 ----
 ## 工程目录结构
@@ -23,114 +23,65 @@
           ┃  ┣ lib                          **功能 : 框架使用的第三方库**
           ┃  ┣ main.js                      **功能 : 框架入口**
           ┗  ┗ plugins                      **功能 : 框架组件依赖的第三方UI组件库**
+  
+----
+## JS标准概念
 
 ----
-## 准备知识
-* 术语解释
+##### 1、概念解释
 
-|术语     |作用     |
-|-----    |-----    |
-|UMP        |统一移动应用开发平台 |
-|PT JS      |统一移动应用开发平台的JS框架 |
-|业务模板       |用于组织页面的控制逻辑的Html文件 |
-|组件         |通过和标签绑定,管理和控制标签的行为 |
-|数据模型       |用于配置请求的地址      |
-|组件模板       |用于定义组件外观的模板    |
-|JS桥            |用户和原生交互的对象     |
+|术语     |框架对象           |作用     |说明         |
+|-----    |-----    |-----    |-----    |
+|Pastry浏览器  |this.Browser   |浏览器        |负责页面跳转     |
+|业务         |-       |用于组织页面的控制逻辑的Html文件|        |
+|页面类      | this.Component.Page         |用于实现业务的基本步骤单元 |        |
+|组件类         |this.Component   |组件命名空间 |组件负责管理UI显示和用户事件处理<br/>通过和标签绑定,管理和控制标签的行为    |
+|组件模板      |this.Template     |模板    |定制组件模板<br/>用于定义组件外观的模板     |
+|数据模型     |this.Model      |数据模型命名空间      |数据模型负责定义请求地址,数据校验  |
+|工具类        |this.api   |框架工具函数       |提供基础的工具函数  |
+|JS桥         |this.Bridge   |JS桥           |负责和原生环境交互    |
+|window.cordova |Cordova对象  |JS桥        |负责和原生环境交互  |
 
-* 必要知识
+* 各个对象间的关系如下图:
 
-  * Html基础
+  ![对象关系图](/pastry/images/codingSpecification/specifition_js.png)
 
-  * Css基础
+----
+##### 2、涉及知识
 
-  * Javascript基础
+|`必要知识`|
+|-----|
+|Html基础 |
+|Css基础  |
+|Javascript基础   |
+|jQuery基础   |
+|`扩展知识`   |
+|underscore |
+|Backbone   |
+|bootstrap  |
+|事件驱动   |
+|面向对象   |
+|MVC思想  |
 
-  * jQuery基础
-
-* 扩展知识
-
-  * underscore
-
-  * Backbone
-
-  * bootstrap
-
-  * 事件驱动
-
-  * 面向对象
-
-  * MVC思想
-
-* 代码规范
+----
+##### 3、代码规范
 
   详见 [PT JS框架开发代码规范][md_specification-js]
 
 ----
-## 快速开始
+## 页面结构
 
-* 在 `HelloWorld/www/` 目录下,新建一个文本文件,命名为 HelloWorld.html
+* [完整JS页面结构及开发流程在线图][net_page_js]
 
-         HelloWorld/www
-          ┣ app                             **H5入口 **
-          ┃  ┗ HelloWorld.html              **功能 : 开发者新增示例文件**
-          ┣ components                      **功能 : h5客户端 组件目录**
-          ┣ css                             **功能 : h5客户端 css目录**
-          ┣ examples                        **功能 : 示例 Demo，集合所有h5框架封装组件的用法**
-          ┣ mockdata                        **功能 : pastry测试服务器示例 Demo**
-          ┣ make.xml                        **功能 : 对JS、CSS等文件签名、加解密的配置文件**
-          ┣ pastry
-          ┃  ┣ components                   **功能 : 框架组件**
-          ┃  ┣ core                         **功能 : 框架核心代码**
-          ┃  ┣ debug                        **功能 : debug相关**
-          ┃  ┣ lib                          **功能 : 框架依赖的第三方**
-          ┃  ┣ main.js                      **功能 : 框架入口**
-          ┗  ┗ plugins                      **功能 : 框架插件**
+    * 代码示例地址：[www/examples/base_mvc.html][net_base_mvc]
+    
+    * 模拟数据地址：[www/mockdata/server/base_mvc.do.js][net_base_mvc_js]
 
-  并键入以下内容:
+[net_base_mvc]: ../www/examples/base_mvc.html
+[net_base_mvc_js]: ../www/mockdata/server/base_mvc.do.js
+[net_page_js]: https://www.processon.com/view/link/57ef3cf0e4b009c4af24ad7d
 
-        <!DOCTYPE html>
-        <html>
-        <head>
-            <title>Hello World</title>
-            
-            <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-            <meta name="viewport" content="width=device-width, user-scalable=0">
-            <meta name="apple-mobile-web-app-capable" content="yes" />
-            <meta content="telephone=no" name="format-detection" />
-            <meta http-equiv="Pragma" content="no-cache">
-            
-            <!--引入框架-->
-            <!--注意data-debug推荐使用 @mockdata 属性-->
-            <script type="text/javascript" src="../../pastry/main.js"
-                            data-debug="@mockdata">
-            </script>
-        </head>
-
-        <body>
-            <!--设置加载页-->
-            <div data-page-loading>
-                Loading...
-            </div>
-        </body>
-        </html>
-
-        <script type="text/template" id="tp_HomePage" data-title="Hello World">
-            Hello World!
-        </script>
-
-        <script type="text/javascript">
-            $(function (param) {
-                var Browser = this.Browser;
-                Browser.history_goto("tp_HomePage");    
-            });
-        </script>
-
-* 运行页面
-
-  在浏览器中打开 app/HelloWorld.html,将会显示Hello World!
-
-
+![对象关系图](/pastry/images/quickstart/struct_js.png)
 
 ----
 ## 命名规范
@@ -147,54 +98,62 @@
 
 |类型         |命名约定       |样例         |
 |-----       |-----         |-----       |
-|页面ID       |驼峰命名,首字母小写,名词+Page |homePage,detailPage    |
-|组件ID       |驼峰命名,首字母小写,名词      |productList,userName   |
-|模板ID       |驼峰命名,使用tp_前缀,首字母大写 |tp_HomePage,tp_DetailPage  |
+|页面ID(id)       |驼峰命名,使用tp_前缀,首字母大写<br/>或<br/>驼峰命名,首字母小写,名词+Page |tp_HomePage,tp_DetailPage<br/>或<br/>homePage,detailPage  |
+|组件ID(id)       |驼峰命名,首字母小写,名词      |productList,userName   |
 
 * 组件类命名
 
 |类型         |命名约定       |样例        |
 |-----       |-----         |-----      |
-|组件类       |驼峰命名,首字母大写,名词+组件基类名 |HomePage,DetailPage    |
+|组件类(data-component)       |驼峰命名,首字母大写,名词+组件基类名 |HomePage,CustomInput    |
 
 * 元素扩展属性命名
 
 |类型         |命名约定       |样例         |
 |-----       |-----         |-----       |
-|元素扩展属性   |全部小写,以data-开头,多个单次使用连字符链接    |data-component,data-title  |
+|元素扩展属性(data-...)   |全部小写,以data-开头,多个单次使用连字符链接    |data-component,data-title  |
 
 ----
-## 基础知识
+## 模块依赖配置
+
+    <!-- js、css引用及调试配置 -->
+    <script type="text/javascript" 
+            src="../pastry/main.js"
+            data-debug="@mockdata"
+            data-css="E:style"
+            data-lib="C:base64,C:md5"
+            data-components="C:switch,C:tab">
+    </script>
+
+其中:
+
+|属性|作用|说明|
+|-----|-----|----|
+|data-main|项目配置依赖文件require|固定为pastry/main.js|
+|data-debug|项目调试选项|`强烈推荐使用 data-debug="@mockdata" `<br/>框架调试模块,发布时会去掉该属性 <br/>对应js文件保存路径为 根/pastry/debug 说明:<br/>前缀 ! :仅客户端生效 <br/>前缀 @ :仅网页生效 <br/>前缀 $ :仅网页且地址以file://开头生效 <br/>前缀 # :客户端、网页均不生效 <br/>无前缀:客户端、网页均生效|
+|data-lib|项目引用 库|引入框架/项目中定义的第三方库 <br/>说明：<br/>C:框架级  对应js文件保存路径为 根/pastry/lib/ <br/>E:项目级  对应js文件保存路径为 根/lib/ <br/>B:业务级  对应js文件保存路径为 当前路经/lib/ <br/>查找规则：components/组件名称/index.js |
+|data-components|项目引用 组件|引入框架/项目中定义的公共组件 <br/>说明：<br/>C:框架级  对应js文件保存路径为 根/pastry/components/ <br/>E:项目级  对应js文件保存路径为 根/components <br/>B:业务级 对应js文件保存路径为 当前路经/components/|
+|data-css|项目引用 CSS|引入框架/项目中定义的CSS <br/>说明：<br/>C:框架级  对应css文件保存路径为 根/pastry/css <br/>E:项目级  对应css文件保存路径为 根/css <br/>B:业务级 对应css文件保存路径为 当前路径/css/|
 
 ----
-### 重要对象
+## 元素扩展属性
+* 浏览器Title
 
-  * 框架中主要涉及以下重要对象:
+|属性|说明|适用标签|
+|-----|-----|-----|
+|data-title|原生端显示的Title|`<script type="text/template" data-title="Scrollview">`<br/>区别于<br/>`<head><title>Scrollview</title></head>` |
+|data-page-loading|`待定 功能是什么`|待定|
+|data-browser-?|`待定 功能是什么`|待定|
+|data-dependency|依赖的组件或模型的id，可依赖多个使用“,”分隔||
+|data-model|组件对应模型(当对应的ID没有模型时有效)|??|
 
-|对象           |作用         |说明         |
-|-----         |-----       |-----        |
-|this.api       |框架工具函数  |提供基础的工具函数  |
-|this.Model     |数据模型命名空间   |数据模型负责定义请求地址,数据校验  |
-|this.Component |组件命名空间   |组件负责管理UI显示和用户事件处理    |
-|this.Template  |模板         |定制组件模板     |
-|this.Browser   |浏览器        |负责页面跳转     |
-|this.Bridge    |JS桥        |负责和原生环境交互  |
-|window.cordova|Cordova对象|负责和原生通讯|
-|this.Component.Base    |组件基类   |所有的组件的基类   |
-|this.Model.Base        |数据模型基类 |所有的数据模型的基类|
-
-  * 各个对象间的关系如下图:
-
-  ![对象关系图](/pastry/images/codingSpecification/specifition_js.png)
-
-----
-### 元素扩展属性
 * 通用属性
 
 |属性|说明|适用标签|
 |-----|-----|-----|
 |id|组件id,在业面中要保持唯一|所有组件|
-|data-component|为标签指定组件对象|所有组件|
+|data-component|为标签指定组件对象|所有组件| 
+|`template 相关`|-----|-----|
 |data-template|组件在数据准备完好时的模板|所有组件|
 |data-loading-template|组件在数据加载时的模板|所有组件|
 |data-empty-template|组件在数据为空时的模板|所有组件|
@@ -247,41 +206,54 @@ id是标识一个对象的唯一标识,在页面模板中不应出现重复的id
 ----
 ### data-name
 
-data-name指的是数据名称,和Html中Form元素的name属性类似,在框架提交表单时,
+data-name指的是数据名称,和Html中Form元素的name属性类似,`用于框架提交表单时(onSubmit方法),`
 
-会以组件的 data-name为key值,组件的getValue()得到值为value值进行数据收集。
+`会以组件的 data-name 为 key 值,组件的 getValue() 得到值为 value 值进行数据收集。`
 
-另外在简单组件中,setValue和getValue设置和读取的数据key值都为data-name所对应的值。
+* 简单组件中,setValue和getValue设置和读取的数据key值都为data-name所对应的值。
 
-例如:
+    例如:
 
-    <input id="inputId" data-component="Input" data-name="inputText">
+        <input id="inputId" data-component="Input" data-name="inputText">
+        
+        // 表单提交方法
+        onSubmit: function (event) {
+            var data = event.data;
+            var submitId = event.id;
+            // data.inputText 就是搜集的 inputId 值;
+            alert(JSON.stringify(data, null, '  '));
+        }
 
-* 当组件中的数据为100时,从表单提交得到的数据为,{inputText:100}
 
-* 获取 Model 的 inputText 值(以下方法等价，推荐第一种方法)
+  * 当组件中的数据为100时,从表单提交得到的数据为,{inputText:100}
     
+  * 获取 Model 的 inputText 值(以下方法等价，推荐第一种方法)
+        
     * **`var value = api.getModel('inputId').getValue();`**
-    
+        
     * var value = api.getModel('inputId').get('inputText');
-    
+        
     * var value = api.getComponent('inputId').getValue();
-    
+        
     * var value = api.getComponent('inputId').model.getValue();
-    
+        
     * var value = api.getComponent('inputId').model.get('inputText');
-
-* 设置 Model 的 inputText 值(以下方法等价，推荐第一种方法)
     
+  * 设置 Model 的 inputText 值(以下方法等价，推荐第一种方法)
+        
     * **`api.getModel('inputId').setValue(200);`**
-    
+        
     * api.getModel('inputId').set('inputText', 200);
-    
+        
     * api.getComponent('inputId').setValue(200);
-    
+        
     * api.getComponent('inputId').model.setValue(200);
-    
+        
     * api.getComponent('inputId').model.set('inputText',200);
+
+* 复杂组件中？？？
+
+
 
 ----
 ### data-component
@@ -306,217 +278,13 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
     input.model = model;
 
 ----
-## 页面结构
-
-页面分为以下几部分:
-
-* 定义js及css依赖,借助require完成
-
-* 配置组件模板
-
-* 配置业务入口
-
-    * 配置数据模型
-
-    * 扩展组件,主要配置数据收集和页面跳转
-
-    * 配置首页
-
-页面代码样例:
-代码示例地址：[www/examples/base_mvc.html][net_base_mvc]
-模拟数据地址：[www/mockdata/server/base_mvc.do.js][net_base_mvc_js]
-
-[net_base_mvc]: ../www/examples/base_mvc.html
-[net_base_mvc_js]: ../www/mockdata/server/base_mvc.do.js
-    
-
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>Hello World</title>
-            
-        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-        <meta name="viewport" content="width=device-width, user-scalable=0">
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta content="telephone=no" name="format-detection" />
-        <meta http-equiv="Pragma" content="no-cache">
-            
-        <!-- js、css引用及调试配置 -->
-        <script type="text/javascript" src="../pastry/main.js"
-                data-debug="@mockdata"
-                data-css="E:style"
-                data-lib="C:base64,C:md5"
-                data-components="C:switch,C:tab">
-        </script>
-    </head>
-    
-    <body>
-        <!--设置加载页-->
-        <div data-page-loading>
-            page loading...
-        </div>
-    </body>
-    
-    <!-- 模板定义 -->
-    <script type="text/template" id="tp_HomePageID" data-component="HomePage" data-title="首页">
-        <div style="color:#111111">
-            Hello World!
-            <br/>
-            模板数据:<%=data.TEXT%>
-            <br/>
-            标签组件:<span data-component="Label" data-name="TEXT"></span>
-            <br/>
-            用户名:<input data-component="Input" id="userName" data-name="USERNAME" />
-            <br/>
-            密码:<input data-component="Password" id="password" data-name="PASSWORD" />
-            <br/>
-            <input type="button" data-submit-button="next" value="下一步" />
-        </div>
-    </script>
-    
-    <!-- 模板定义 -->
-    <script type="text/template" id="tp_SecondPageID" data-component="SecondPage" data-title="第二页">
-        <div style="color:#111111">
-            Second Page!
-            <br/>
-            模板数据:<%=data.TEXT1%>,<%=data.TEXT2%>
-            <br/>
-            标签组件:<span data-component="Label" data-name="TEXT1"></span>
-            <br/>
-            标签组件:<span data-component="Label" data-name="TEXT2"></span>
-            <br/>
-            数据分发测试:<input data-component="Input" style="width:100%" id="test1"/>
-            <br/>
-            数据分发测试:<input data-component="Input" style="width:100%" id="test2"/>
-        </div>
-    </script>
-    
-    <!--入口-->
-    <script type="text/javascript">
-        $(function (param) {
-            var Component = this.Component;
-            var Model = this.Model;
-            var Browser = this.Browser;
-            var api = this.api;
-            var $ = api.$;//解决$冲突问题
-                
-            // 1 定制 windowModel 数据模型 
-            var windowModel = {
-                // 2 填充 Page(模版)Model、组件Model
-                //   'PageID(TemplateID)': 模版Model
-                //   '组件ID': 组件Model
-                "tp_HomePageID": new Model.Request(
-                    null,
-                    {
-                        // 3 设置组件绑定的属性值
-                        // {
-                        //    Name: ''''
-                        // }
-                        // 3 请求选项
-                        url: "base_mvc.do?act=getText",
-                        filter: function (data) {
-                            data.TEXT = data.TEXT + "[add by filter]";
-                            return data;
-                        }
-                    }
-                ),
-                "tp_SecondPageID": new Model.Request(
-                    null,
-                    {
-                        url: "base_mvc.do?act=getSecondText",
-                        filter: function (data) {
-                            data.TEXT1 += "[add by filter]";
-                            data.TEXT2 += "[add by filter]";
-                            return data;
-                        }
-                    }
-                )
-            };
-                
-            // 4 设置 windowModel 
-            api.setModels(windowModel);
-    
-            // 5 定制组件
-            Component.HomePage = Component.Page.extend({
-                onSubmit: function (data, submitId) {
-                    alert(_.template("提交按钮ID:<%=id%>\n提交数据:<%=data%>", {id:submitId, data: data}));
-    
-                    var option;
-                    var sendData = {
-                        USERNAME: data.USERNAME,
-                        PASSWORD: data.PASSWORD
-                    };
-    
-                    var initVal = {
-                        TEXT1: "Loading A...",
-                        TEXT2: "Loading B..."
-                    };
-    
-                    option = {
-                        refresh: {
-                            initVal: initVal,
-                            param: sendData
-                        }
-                    };
-                    
-                    Browser.history_goto("tp_SecondPageID", option);
-                }
-            });
-    
-            // 5 定制组件
-            Component.SecondPage = Component.Page.extend({
-                onError:function(state,response){
-                    alert('请求数据出错,state='+state+'\nresponse'+JSON.stringify(response));
-                }
-            });
-    
-            //配置首页
-            var option;
-            
-            var sendData = {
-                TYPE: "A"
-            };
-            
-            var initVal = {
-                TEXT: "Loading..."
-            };
-    
-            option = {
-                refresh: {
-                    initVal: initVal,
-                    param: sendData
-                }
-            };
-    
-            Browser.history_goto("tp_HomePageID", option);
-        });
-        
-    </script>
-    </html>
-
-## 模块依赖配置`待定`
-
-    <!-- js、css引用及调试配置 -->
-    <script type="text/javascript" 
-            src="../pastry/main.js"
-            data-debug="@mockdata"
-            data-css="E:style"
-            data-lib="C:base64,C:md5"
-            data-components="C:switch,C:tab">
-    </script>
-
-其中:
-
-|属性|作用|说明|
-|-----|-----|----|
-|data-main|项目配置依赖文件require|固定为pastry/main.js|
-|data-debug|项目调试选项|`强烈推荐使用 data-debug="@mockdata" `<br/>框架调试模块,发布时会去掉该属性 <br/>对应js文件保存路径为 根/pastry/debug 说明:<br/>前缀 ! :仅客户端生效 <br/>前缀 @ :仅网页生效 <br/>前缀 $ :仅网页且地址以file://开头生效 <br/>前缀 # :客户端、网页均不生效 <br/>无前缀:客户端、网页均生效|
-|data-lib|项目引用 库|引入框架/项目中定义的第三方库 <br/>说明：<br/>C:框架级  对应js文件保存路径为 根/pastry/lib/ <br/>E:项目级  对应js文件保存路径为 根/lib/ <br/>B:业务级  对应js文件保存路径为 当前路经/lib/ <br/>查找规则：components/组件名称/index.js |
-|data-components|项目引用 组件|引入框架/项目中定义的公共组件 <br/>说明：<br/>C:框架级  对应js文件保存路径为 根/pastry/components/ <br/>E:项目级  对应js文件保存路径为 根/components <br/>B:业务级 对应js文件保存路径为 当前路经/components/|
-|data-css|项目引用 CSS|引入框架/项目中定义的CSS <br/>说明：<br/>C:框架级  对应css文件保存路径为 根/pastry/css <br/>E:项目级  对应css文件保存路径为 根/css <br/>B:业务级 对应css文件保存路径为 当前路径/css/|
+### 更多扩展属性介绍....
 
 ----
-## 模版配置
+## 页面组件配置
+
+----
+## 模版(Template)配置
 
 框架中使用underscore库中内置的模板引擎。
 
@@ -553,91 +321,7 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,在框架
         {%-data.test%}
 
 ----
-## 程序入口
-
-PT JS的入口函数framework_ready简化成大家熟悉的jquery选择器形式。
-
-    <script type="text/javascript">
-        $(function (param) {
-            //...your code
-        });
-    </script>
-
-  `其中param参数为json对象，是从原生应用中传来的配置参数，具体数据格式根据项目需要自行定义。`
-
-----
-## 页面跳转
-
-页面的跳转借助框架的Browser对象调用PT JS的历史堆栈完成，`支持页面 跳转、返回`
-
-语法格式如下
-
-----
-#### `跳转`
-
-	    Browser.history_goto(pageId,option);
-
-  pageId对应定义的页面模板Id
-
-  option中配置页面跳转的选项参数
-
-**option参数**
-
-|属性	|数据类型	|默认值	|功能	|说明 |
-|-----|-----|-----|-----|-----|
-|history	|boolean	|true	|跳转后是否保存当前页到历史栈	|  |
-|clearHistory	|boolean/string/number |		|跳转后是否清空历史栈	<br/>boolean：是否清空所有页面堆栈 <br/>string：指定清除到具体页的id(例如：{clearHistory:​ '​tp1'​}清除到id为tp1的page) <br/>number：清除的页面数，支持逆向选择(例如：{clearHistory:​ 2}清除两页,{clearHistory:​ -2}清除到倒数第二页)|
-|resetInput	|boolean/string	|false	|跳转后是否清空模型数据|	   |
-|refresh	|object/array|	{}	|跳转后是否刷新模型数据|   |
-
-**refresh参数**
-
-  refresh参数支持两种格式：
-
-  单组件刷新
-
-    var option={
-        refresh:{
-            id:'id1'
-        }
-    };
-
-  多组件刷新：
-
-    var option={
-        refresh:[
-            {
-            id:'id1'
-            },
-            {
-            id:'id2'
-            }
-        ]
-    };
-
-|属性	|数据类型	|默认值	|功能	|说明|
-|-----|-----|-----|-----|-----|
-|id	|string	|pageId	|组件id|  |
-|keepOldVal	|boolean	|false	|初始化时是否保留旧数据|	|
-|removeVal	|string	|undefined	|移除的数据key，以逗号分割|    |
-|initVal	|object	|undefined	|初始化数据| |
-
-----
-#### `返回`
-
-    Browser.history_back(option);
-
-option中配置返回的选项参数
-
-**option参数**
-
-|属性	|数据类型	|默认值	|功能	|说明|
-|-----|-----|-----|-----|-----|
-|id	|string/number|无		|后退页数	|string：指定到具体页的id(同跳转clearHistory) <br/>number：后退的页面数，支持逆向选择(同跳转)|
-|trans	|boolean	|true	|返回动作是否执行动画	|无  |
-
-----
-## 模型配置
+## 模型(Model)配置
 
 框架提供两种基本的数据模型:
 
@@ -875,6 +559,99 @@ option中配置返回的选项参数
   **适用场景**
 
   请求数据返回后还有后续请求。
+
+----
+## 程序入口
+
+PT JS的入口函数framework_ready简化成大家熟悉的jquery选择器形式。
+
+    <script type="text/javascript">
+        $(function (param) {
+            //...your code
+        });
+    </script>
+
+  `其中param参数为json对象，是从原生应用中传来的配置参数，具体数据格式根据项目需要自行定义。`
+
+----
+## 页面跳转
+
+页面的跳转借助框架的Browser对象调用PT JS的历史堆栈完成，`支持页面 跳转、返回`
+
+语法格式如下
+
+----
+#### `跳转`
+
+	    Browser.history_goto(pageId,option);
+
+  pageId对应定义的页面模板Id
+
+  option中配置页面跳转的选项参数
+
+**option参数**
+
+|属性	|数据类型	|默认值	|功能	|说明 |
+|-----|-----|-----|-----|-----|
+|history	|boolean	|true	|跳转后是否保存当前页到历史栈	|  |
+|clearHistory	|boolean/string/number |		|跳转后是否清空历史栈	<br/>boolean：是否清空所有页面堆栈 <br/>string：指定清除到具体页的id(例如：{clearHistory:​ '​tp1'​}清除到id为tp1的page) <br/>number：清除的页面数，支持逆向选择(例如：{clearHistory:​ 2}清除两页,{clearHistory:​ -2}清除到倒数第二页)|
+|resetInput	|boolean/string	|false	|跳转后是否清空模型数据|	   |
+|refresh	|object/array|	{}	|跳转后是否刷新模型数据|   |
+
+**refresh参数**
+
+  refresh参数支持两种格式：
+
+  单组件刷新
+
+    var option={
+        refresh:{
+            id:'id1'
+        }
+    };
+
+  多组件刷新：
+
+    var option={
+        refresh:[
+            {
+            id:'id1'
+            },
+            {
+            id:'id2'
+            }
+        ]
+    };
+
+|属性	|数据类型	|默认值	|功能	|说明|
+|-----|-----|-----|-----|-----|
+|id	|string	|pageId	|组件id|  |
+|keepOldVal	|boolean	|false	|初始化时是否保留旧数据|	|
+|removeVal	|string	|undefined	|移除的数据key，以逗号分割|    |
+|initVal	|object	|undefined	|初始化数据| |
+
+----
+#### `返回`
+
+    Browser.history_back(option);
+
+option中配置返回的选项参数
+
+**option参数**
+
+|属性	|数据类型	|默认值	|功能	|说明|
+|-----|-----|-----|-----|-----|
+|id	|string/number|无		|后退页数	|string：指定到具体页的id(同跳转clearHistory) <br/>number：后退的页面数，支持逆向选择(同跳转)|
+|trans	|boolean	|true	|返回动作是否执行动画	|无  |
+
+----
+## 组件更新
+
+----
+## 表单提交
+
+----
+## window参数传递
 
 ----
 ## 调试支持 `待定`
