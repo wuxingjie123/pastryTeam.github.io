@@ -74,7 +74,10 @@
                     * 框架以data-name的方式搜集页面中所有的 数据:(搜集页面中所有数据时必须保证组件既有id，又有data-name属性)
                     * 开发者手动获取指定Component的Model里的值
             * 对其他window进行传参
-        
+    
+    * Label示例
+    * Button示例 `三态按钮制作中`
+    * Switch示例
     * 普通组件的业务场景
 
     * 复杂组件的业务场景

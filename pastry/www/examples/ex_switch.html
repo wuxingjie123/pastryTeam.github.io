@@ -10,9 +10,9 @@ desc:开关按钮
     <title>Switch</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=0">
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta content="telephone=no" name="format-detection"/>
-    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="Pragma" content="no-cache">
 
     <!--引入框架-->
     <script type="text/javascript" src="../pastry/main.js"
@@ -20,21 +20,20 @@ desc:开关按钮
             ></script>
 </head>
 <body>
-<!--设置加载页-->
-<div data-page-loading>
-    Loading...
-</div>
+    <!--设置加载页-->
+    <div data-page-loading>
+        Loading...
+    </div>
 </body>
 </html>
 
-<script type="text/template" id="tp_HomePage" data-component="HomePage" data-title="Switch">
-    <input type="button" class="btn" value="提交" data-submit-button />
-</script>
+<script type="text/template" id="tp_HomePageID" data-component="HomePage" data-title="Switch">
 
-<script type="text/template" id="tp_SecondPage" data-component="SecondPage" data-title="Switch">
     <input type="checkbox" data-name="SWITCH" data-component="Switch" id="switch" />
-
-    <input type="button" class="btn" value="提交" data-submit-button />
+    <br/>
+    <input type="button" class="btn" value="显示SWITCH值" data-submit-button="displaySwitch" />
+    <br/>
+    <input type="button" class="btn" value="切换SWITCH值" data-submit-button="switchValue" />
 </script>
 
 <script type="text/javascript">
@@ -45,27 +44,37 @@ desc:开关按钮
 
         Component.HomePage = Component.Page.extend({
             onSubmit: function (event) {
-                var data = event.data,submitId = event.id;
-                var option = {
-                    refresh:{
-                        id:'switch',
-                        initVal:{
-                            SWITCH:true
-                        }
-                    }
-                };
-                Browser.history_goto('secondPage',option);
+                var data = event.data;
+                var submitId = event.id;
+
+                if (submitId == 'displaySwitch') {
+                    
+                    // 显示 SWITCH 的值
+                    alert('onSubmitId:'+submitId+'\n'+JSON.stringify(data));
+
+                } else if (submitId == 'switchValue') {
+
+                    // 切换 SWITCH 的值
+                    // 推荐用法
+                    var currentState = api.getModel('switch').getValue();
+                    api.getModel('switch').setValue(!currentState);
+                    
+                    // 可选用法
+                    // var currentState = api.getComponent('switch').getValue();
+                    // api.getComponent('switch').setValue(!currentState);
+                }
             }
         });
 
-        Component.SecondPage = Component.Page.extend({
-            onSubmit: function (event) {
-                var data = event.data,submitId = event.id;
-                alert('onSubmitId:'+submitId+'\n'+JSON.stringify(data));
-                //api.getComponent('switch').setValue(true);
+        var option = {
+            refresh:{
+                id:'switch',
+                initVal:{
+                    SWITCH:true
+                }
             }
-        });
+        };
 
-        Browser.history_goto("tp_HomePage");
+        Browser.history_goto('tp_HomePageID',option);
     });
 </script>
