@@ -10,9 +10,9 @@ desc:单选窗口
     <title>Radio</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=0">
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta content="telephone=no" name="format-detection"/>
-    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="Pragma" content="no-cache">
 
     <!--引入框架-->
     <script type="text/javascript" src="../pastry/main.js"
@@ -20,17 +20,19 @@ desc:单选窗口
             ></script>
 </head>
 <body>
-<!--设置加载页-->
-<div data-page-loading>
-    Loading...
-</div>
+    <!--设置加载页-->
+    <div data-page-loading>
+        Loading...
+    </div>
 </body>
 </html>
 
-<script type="text/template" id="tp_HomePage" data-component="HomePage" data-title="Radio">
-    <input data-component="Radio" data-text-template="#tp_radio" data-name="data_radio1" type="radio" data-dependency="input2" data-skin="square-blue"  value="1" id="radio1" /><br>
-    <input data-component="Radio" data-text-template="#tp_radio" data-name="data_radio1" type="radio" data-dependency="input2" value="2" id="radio2" /><br>
-    <input data-component="Radio" data-text-template="#tp_radio" data-name="data_radio1" type="radio" data-dependency="input2" value="3" id="radio3" /><br>
+<script type="text/template" id="tp_HomePageID" data-component="HomePage" data-title="Radio">
+    <br/>
+    <input type="radio" data-component="Radio" data-text-template="#tp_radio" data-name="data_radio1" data-skin="square-blue" value="1" id="radio1" /><br>
+    <input type="radio" data-component="Radio" data-text-template="#tp_radio" data-name="data_radio1" value="2" id="radio2" /><br>
+    <input type="radio" data-component="Radio" data-text-template="#tp_radio" data-name="data_radio1" value="3" id="radio3" /><br>
+    <br/>
     <input type="button" class="btn" value="提交" data-submit-button />
 </script>
 
@@ -58,6 +60,7 @@ desc:单选窗口
                 }
             }
         };
-        Browser.history_goto("tp_HomePage",option);
+
+        Browser.history_goto("tp_HomePageID",option);
     });
 </script>
