@@ -75,7 +75,7 @@ desc:滚动视图
                             api.getComponent('scrollview').iScroll.refresh()
                         },200);*/
                     }
-                    return data
+                    return data;
                 }
             })
         };
@@ -88,7 +88,7 @@ desc:滚动视图
                     param:{
                         page:2
                     }
-                }
+                };
                 this.refresh(option);
             }
         })
@@ -100,7 +100,8 @@ desc:滚动视图
                     page:1
                 }
             }
-        }
+        };
+        
         Browser.history_goto("tp_HomePageID",option);
     });
 </script>
