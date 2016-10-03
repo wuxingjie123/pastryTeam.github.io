@@ -29,8 +29,8 @@ desc:滚动视图
 </html>
 
 <script type="text/template" id="tp_HomePageID" data-component="HomePage" data-title="Scrollview">
-    <div data-component="ScrollView" id="ScrollView" data-height="200" data-fix-height="60">
-        <div data-component="MyList" id="mylist" data-template="#tp_List"></div>
+    <div data-component="ScrollView" id="scrollViewId" data-height="200" data-fix-height="60">
+        <div data-component="MyList" id="mylistId" data-template="#tp_List"></div>
     </div>
 </script>
 
@@ -57,7 +57,7 @@ desc:滚动视图
         var Model = this.Model;
 
         var windowModel = {
-            "mylist": new Model.Request({
+            "mylistId": new Model.Request({
 
             },{
                 url:'ex_scrollview.do?act=getList',
@@ -66,7 +66,7 @@ desc:滚动视图
                     data.list = _.isUndefined(oldVal) ? data.list : oldVal.concat(data.list);
                     if(data.list.length < data.SUMCOUNT){
                         data.hasMoreData = true
-                    }else{
+                    } else {
                         data.hasMoreData = false
                         //data.timestamp = new Date().getTime()
                         /*var self = this
@@ -82,6 +82,13 @@ desc:滚动视图
 
         api.setModels(windowModel);
 
+        Component.HomePage = Component.Page.extend({
+            onSubmit: function (event) {
+                var data = event.data,submitId = event.id;
+                alert('onSubmitId:' + submitId + '\n' + JSON.stringify(data));
+            }
+        });
+
         Component.MyList = Component.List.extend({
             onDragRefresh:function(direction){
                 var option={
@@ -95,13 +102,13 @@ desc:滚动视图
 
         var option={
             refresh:{
-                id:"mylist",
+                id:"mylistId",
                 param:{
                     page:1
                 }
             }
         };
-        
-        Browser.history_goto("tp_HomePageID",option);
+
+        Browser.history_goto("tp_HomePageID", option);
     });
 </script>
