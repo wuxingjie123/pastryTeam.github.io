@@ -635,7 +635,7 @@ PT JS的入口函数framework_ready简化成大家熟悉的jquery选择器形式
 |id	|string	|pageId	|组件id|  |
 |keepOldVal	|boolean	|false	|初始化时是否保留旧数据|	|
 |removeVal	|string	|undefined	|移除的数据key，以逗号分割|只能清空Model里设置的默认值，<br/>不能清空refresh里的initVal的默认值。    |
-|initVal	|object	|undefined	|初始化数据| |
+|initVal	|object	|undefined	|初始化数据 |`该属性会覆盖Model里的默认值；只要设置了initVal属性，所有Model的默认设置都不生效` |
 
 ----
 #### `返回`
