@@ -10,27 +10,29 @@ desc:选择列表
     <title>SelectList</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=0">
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta content="telephone=no" name="format-detection"/>
-    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="Pragma" content="no-cache">
 
     <!--引入框架-->
     <script type="text/javascript" src="../pastry/main.js"
-            data-debug="mockdata"
+            data-debug="@mockdata"
             data-components="C:selectlist"
             ></script>
 </head>
 <body>
-<!--设置加载页-->
-<div data-page-loading>
-    Loading...
-</div>
+    <!--设置加载页-->
+    <div data-page-loading>
+        Loading...
+    </div>
 </body>
 </html>
 
-<script type="text/template" id="tp_HomePage" data-component="home" data-title="SelectList">
-    <div id="test"></div>
-    <div data-component="MyList" id="list" data-name="listValue" data-item-template="#tp_ListItem"></div>
+<script type="text/template" id="tp_HomePageID" data-component="home" data-title="SelectList">
+    <br/>
+    <br/>
+    <div data-component="MyList" id="listId" data-name="listValue" data-item-template="#tp_ListItem"></div>
+    <br/>
     <input class="btn" type="button" data-submit-button value="Submit">
 </script>
 
@@ -47,37 +49,41 @@ desc:选择列表
         var api = this.api;
         var Browser = this.Browser;
 
-        api.setModels({
-            list:new Model.Request({
+        var windowModel = {
+            "listId":new Model.Request({
                 list:[
                     {id:'1',title:'itemA'},
                     {id:'2',title:'itemB'}
                 ],
                 value:0
             })
-        });
+        };
+
+        api.setModels(windowModel);
 
         Component.MyList = Component.SelectList.extend({
             onListItemClick:function(event){
-                var data = event.data;
-                alert(JSON.stringify(data,null,'  '));
+                var data = event;
+                alert(JSON.stringify(data, null, '  '));
             }
         });
+
         Component.home = Component.Page.extend({
             onSubmit: function (event) {
-                var data = event.data,submitId = event.id;
-                alert(JSON.stringify(api.getComponent('list').getValue()));
-                alert(JSON.stringify(data));
+                var data = event.data.listValue;
+                var submitId = event.id;
+                // alert(JSON.stringify(api.getComponent('listId').getValue()) + JSON.stringify(data));
+                alert('onSubmitId:' + submitId + '\n' + JSON.stringify(data, null, '  '));
             }
         });
 
         var option={
             refresh:{
-                id:'list'
+                id:'listId'
             }
         };
 
-        Browser.history_goto("tp_HomePage",option);
+        Browser.history_goto("tp_HomePageID",option);
 
     });
 </script>
