@@ -10,25 +10,30 @@ desc:滚动视图
     <title>Scrollview</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=0">
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta content="telephone=no" name="format-detection"/>
-    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="Pragma" content="no-cache">
 
     <!--引入框架-->
     <script type="text/javascript" src="../pastry/main.js"
-            data-debug="mockdata"
+            data-debug="@mockdata"
             data-components="C:scrollview"
             ></script>
 </head>
 <body>
+    <!--设置加载页-->
+    <div data-page-loading>
+        Loading...
+    </div>
 </body>
 </html>
 
-<script type="text/template" id="tp_HomePage" data-component="HomePage" data-title="Scrollview">
+<script type="text/template" id="tp_HomePageID" data-component="HomePage" data-title="Scrollview">
     <div data-component="ScrollView" id="ScrollView" data-height="200" data-fix-height="60">
         <div data-component="MyList" id="mylist" data-template="#tp_List"></div>
     </div>
 </script>
+
 <script type="text/template" id="tp_List">
     <% for(var i=0,len=data.list.length;i < len;i++){ %>
     <%var item=data.list[i];%>
@@ -50,13 +55,12 @@ desc:滚动视图
         var Browser = this.Browser;
         var api = this.api;
         var Model = this.Model;
-       var  i=1;
 
-        api.setModels({
-            mylist:new Model.Request({
+        var windowModel = {
+            "mylist": new Model.Request({
 
             },{
-                url:'helloworld.do?act=getList',
+                url:'ex_scrollview.do?act=getList',
                 filter:function(data){
                     var oldVal = this.getData();
                     data.list = _.isUndefined(oldVal) ? data.list : oldVal.concat(data.list);
@@ -74,14 +78,9 @@ desc:滚动视图
                     return data
                 }
             })
-        });
+        };
 
-        Component.HomePage = Component.Page.extend({
-            onSubmit: function (event) {
-                var data = event.data,submitId = event.id;
-                alert('onSubmitId:' + submitId + '\n' + JSON.stringify(data));
-            }
-        });
+        api.setModels(windowModel);
 
         Component.MyList = Component.List.extend({
             onDragRefresh:function(direction){
@@ -102,6 +101,6 @@ desc:滚动视图
                 }
             }
         }
-        Browser.history_goto("tp_HomePage",option);
+        Browser.history_goto("tp_HomePageID",option);
     });
 </script>
