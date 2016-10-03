@@ -8,9 +8,11 @@ desc:选项卡
 <html>
 <head>
     <title>Tab</title>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="Pragma" content="no-cache">
 
     <!--引入框架-->
     <script type="text/javascript" src="../pastry/main.js"
@@ -18,14 +20,14 @@ desc:选项卡
             ></script>
 </head>
 <body>
-<!--设置加载页-->
-<div data-page-loading>
-    Loading...
-</div>
+    <!--设置加载页-->
+    <div data-page-loading>
+        Loading...
+    </div>
 </body>
 </html>
 
-<script type="text/template" id="homePage" data-component="HomePage" data-title="Tab">
+<script type="text/template" id="tp_HomePage" data-component="HomePage" data-title="Tab">
     <div id="Tab" data-component="MyTab">
         <div data-title="登录" data-tab-item="logintabitem" data-active>
 			<font color=red>1113</font>
@@ -58,9 +60,11 @@ desc:选项卡
 			alert(JSON.stringify(item)+"----->"+index)
 		}
 	});
+    
     var option = {
 
     };
-    Browser.history_goto("homePage", option);
+
+    Browser.history_goto("tp_HomePage", option);
 });
 </script>
