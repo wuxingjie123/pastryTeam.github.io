@@ -10,26 +10,26 @@ desc:输入框
     <title>Input</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=0">
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta content="telephone=no" name="format-detection"/>
-    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="Pragma" content="no-cache">
 
     <!--引入框架-->
     <script type="text/javascript" src="../pastry/main.js"
-            data-debug
+            data-debug="@mockdata"
             data-css="E:input"
             ></script>
 </head>
 <body>
-<!--设置加载页-->
-<div data-page-loading>
-    Loading...
-</div>
+    <!--设置加载页-->
+    <div data-page-loading>
+        Loading...
+    </div>
 </body>
 </html>
 
 <script type="text/template" id="tp_HomePage" data-component="HomePage" data-title="Input">
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br>
     <h2>默认键盘：</h2>
     <br>
     number类型：
@@ -38,7 +38,7 @@ desc:输入框
     <input type="tel" data-component="MyInput" data-name="_INPUT2" /><br>
     text类型：
     <input type="text" data-component="MyInput" data-name="_INPUT3" data-v-required="true"  />
-    <br>
+    <br><br><br><br><br><br><br><br><br><br>
     <h2>模拟键盘：</h2>
     <br>
     <div id="logtest"></div>
