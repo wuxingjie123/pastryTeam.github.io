@@ -327,7 +327,7 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,`用于�
 
 * this.Model.Simple 仅用于存储数据,不支持发送去请求
 
-* this.Model.PTJSON 支持发送去请求,并可以存储数据 数据模型配置语法:
+* this.Model.Request 支持发送去请求,并可以存储数据 数据模型配置语法:
 
 数据模型配置语法:
 
@@ -335,7 +335,7 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,`用于�
     var Model = this.Model;
     
     var windowModel = {
-        componentId01:new Model.PTJSON(
+        componentId01:new Model.Request(
             {
                 //默认数据
             },
@@ -349,7 +349,7 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,`用于�
             }
         ),
 
-        componentId02:new Model.PTJSON(
+        componentId02:new Model.Request(
             {
                 //默认数据
             },
@@ -395,7 +395,7 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,`用于�
 
 示例：
 
-        componentId:new Model.PTJSON(
+        componentId:new Model.Request(
             {
                 //默认值
             },
@@ -427,7 +427,7 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,`用于�
 
   mapping指通过属性映射的方式来解决数据适配问题的方案。
 
-        new Model.PTJSON(null,
+        new Model.Request(null,
             {
                 url:'helloWorld.do?act=getMyList',
                 mapping:{
@@ -451,7 +451,7 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,`用于�
 
   filter是指通过数据过滤的方式解决数据适配问题的方案。
 
-        new Model.PTJSON(null,
+        new Model.Request(null,
             {
                 url : 'helloWorld.do?act=getMyList',
                 filter : function (data, type){
@@ -484,7 +484,7 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,`用于�
 
   dispatcher是指通过数据分发的方式解决数据适配问题的方案。
 
-        new Model.PTJSON(null,
+        new Model.Request(null,
             {
                 url : 'helloWorld.do?act=getAllData',
                 dispatcher : function(data, type) {
@@ -523,7 +523,7 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,`用于�
 
   forwarder是用来完成连续数据请求的解决方案。
 
-        new Model.PTJSON(null,
+        new Model.Request(null,
             {
                 url : 'helloWorld.do?act=getAllData',
                 forwarder : function(data, type) {
