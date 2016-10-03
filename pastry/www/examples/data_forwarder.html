@@ -10,29 +10,34 @@ desc:转发
     <title>Forwarder</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=0">
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta content="telephone=no" name="format-detection"/>
-    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="Pragma" content="no-cache">
 
     <!--引入框架-->
     <script type="text/javascript" src="../pastry/main.js"
-            data-debug="mockdata"
+            data-debug="@mockdata"
             data-components="C:popupselect"
             ></script>
 </head>
 <body>
-<!--设置加载页-->
-<div data-page-loading>
-    Loading...
-</div>
+    <!--设置加载页-->
+    <div data-page-loading>
+        Loading...
+    </div>
 </body>
 </html>
 
-<script type="text/template" id="tp_HomePage" data-component="HomePage" data-title="Forwarder">
-    <span data-component="Label" data-name="LABEL"></span>
-    <div data-component="List" id='list' data-item-template="[%=item.id%]:[%=item.title%]<br/>" data-name="LIST"></div>
-    <select data-component="Select" id='select' data-name="SELECT"></select>
-    <div data-component="Label" id="text" data-name="TEXT"></div>
+<script type="text/template" id="tp_HomePageID" data-component="HomePage" data-title="Forwarder">
+    <br/>
+    <span data-component="Label" id="labelId" data-name="LABEL"></span>
+    <br/><br/>
+    <div data-component="List" id="listId" data-item-template="[%=item.id%]:[%=item.title%]<br/>" data-name="LIST"></div>
+    <br/>
+    <select data-component="Select" id="selectId" data-name="SELECT"></select>
+    <br/><br/>
+    <div data-component="Label" id="textId" data-name="TEXT"></div>
+    <br/>
     <input type="button" class="btn" value="提交" data-submit-button/>
 </script>
 
@@ -47,21 +52,21 @@ desc:转发
         var Component = this.Component;
         var api = this.api;
 
-        api.setModels({
-            'text': new Model.Request(null, {
-                url:'helloworld.do?act=getText'
+        var windowModel = {
+            'textId': new Model.Request(null, {
+                url:'data_forwarder.do?act=getText'
             }),
-            'homePage': new Model.Request(null, {
-                url: 'helloworld.do?act=getAllData',
+            'tp_HomePageID': new Model.Request(null, {
+                url: 'data_forwarder.do?act=getAllData',
                 dispatcher: function (data) {
                     this.dispatch({
-                        /*label: {
+                        "labelId": {
                             LABEL: data.labelData
-                        },*/
-                        list: {
+                        },
+                        "listId": {
                             list:data.listData.list
                         },
-                        select:{
+                        "selectId":{
                             select:data.selectData.select
                         }
                     });
@@ -71,25 +76,27 @@ desc:转发
                 },
                 forwarder:function(){
                     this.forward({
-                        text:{}
+                        "textId":{}
                     });
                 }
             })
-        });
+        };
+
+        api.setModels(windowModel);
 
         Component.HomePage = Component.Page.extend({
             onSubmit: function (event) {
                 var data = event.data,submitId = event.id;
-                alert('onSubmitId:' + submitId + '\n' + JSON.stringify(data));
+                alert('onSubmitId:' + submitId + '\n' + JSON.stringify(data, null, '   '));
             }
         });
 
         var option = {
             refresh: {
-                id:'homePage'
+                id:'tp_HomePageID'
             }
         };
 
-        Browser.history_goto("tp_HomePage", option);
+        Browser.history_goto("tp_HomePageID", option);
     });
 </script>
