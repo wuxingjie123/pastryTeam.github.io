@@ -72,8 +72,8 @@ desc:选择列表
             onSubmit: function (event) {
                 var data = event.data.listValue;
                 var submitId = event.id;
-                // alert(JSON.stringify(api.getComponent('listId').getValue()) + JSON.stringify(data));
                 alert('onSubmitId:' + submitId + '\n' + JSON.stringify(data, null, '  '));
+                // alert(JSON.stringify(api.getComponent('listId').getValue()));
             }
         });
 
