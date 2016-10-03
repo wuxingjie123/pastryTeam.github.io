@@ -10,9 +10,9 @@ desc:复选框
     <title>CountdownBtn</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=0">
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta content="telephone=no" name="format-detection"/>
-    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="Pragma" content="no-cache">
 
     <!--引入框架-->
     <script type="text/javascript" src="../pastry/main.js"
@@ -20,10 +20,10 @@ desc:复选框
             ></script>
 </head>
 <body>
-<!--设置加载页-->
-<div data-page-loading>
-    Loading...
-</div>
+    <!--设置加载页-->
+    <div data-page-loading>
+        Loading...
+    </div>
 </body>
 </html>
 
@@ -46,7 +46,7 @@ desc:复选框
         Component.HomePage = Component.Page.extend({
             onSubmit: function (event) {
                 var data = event.data,submitId = event.id;
-                Browser.history_goto('secondPage');
+                Browser.history_goto('tp_SecondPage');
             }
         });
 
