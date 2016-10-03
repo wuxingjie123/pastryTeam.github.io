@@ -10,24 +10,24 @@ desc:下拉列表
     <title>Select</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=0">
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta content="telephone=no" name="format-detection"/>
-    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="Pragma" content="no-cache">
 
     <!--引入框架-->
     <script type="text/javascript" src="../pastry/main.js"
-            data-debug="mockdata,@simbridge"
+            data-debug="@mockdata"
             ></script>
 </head>
 <body>
-<!--设置加载页-->
-<div data-page-loading>
-    Loading...
-</div>
+    <!--设置加载页-->
+    <div data-page-loading>
+        Loading...
+    </div>
 </body>
 </html>
 
-<script type="text/template" id="tp_HomePage" data-component="HomePage" data-title="Select">
+<script type="text/template" id="tp_HomePageID" data-component="HomePage" data-title="Select">
     <select data-component="MySelect" id="select" data-name="SELECT"></select>
     <input type="button" class="btn" value="提交" data-submit-button/>
 </script>
@@ -39,7 +39,7 @@ desc:下拉列表
         var Browser = this.Browser;
         var api = this.api;
 
-        api.setModels({
+        var windowModel = {
             select:new Model.Request({
                 selected:0,
                 select:[
@@ -49,13 +49,14 @@ desc:下拉列表
             },{
                 url:'helloworld.do?act=getSelect'
             })
-        });
+        };
+
+        api.setModels(windowModel);
 
         Component.MySelect = Component.Select.extend({
             onSelectChange:function(event){
-                //alert(event.target);
-                alert(JSON.stringify(event));
-                //alert(this.getValue());
+                // alert(JSON.stringify(event));
+                console.log(JSON.stringify(event));
             }
         });
 
@@ -73,7 +74,7 @@ desc:下拉列表
             }
         };
 
-        Browser.history_goto("tp_HomePage",option);
+        Browser.history_goto("tp_HomePageID",option);
 
         setTimeout(function(){
             //api.getComponent('select').setValue(1);
