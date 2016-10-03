@@ -10,42 +10,51 @@ desc:依赖校验
     <title>Dependency</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=0">
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta content="telephone=no" name="format-detection"/>
-    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
-
-    <link rel="stylesheet" type="text/css" href="../cbjs/css/cb.css" title="default"/>
-    <link rel="stylesheet" type="text/css" href="../css/style.css" title="default"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="Pragma" content="no-cache">
 
     <script type="text/javascript" src="../pastry/main.js"
-            data-debug="@titlebar,mockdata,@simbridge,@depinfo"
+            data-debug="@mockdata"
+            data-css="@E:style"
             data-components="C:radio,checkbox">
-            </script>
+    </script>
 </head>
 <body>
-<div data-page-content></div>
+    <div data-page-content>
+
+    </div>
 </body>
-<script type="text/template" data-component="HomePage" id="HomePage" data-title="input组件">
-    依赖校验：<br>
-    输入框1：<input data-component="Input" data-name="input1" data-tooltip-text="1asdf"
-               data-tooltip-placement="bottom"  data-v-required="true" id="input1" data-v-min-len="5"/><br>
-    输入框2：<input data-component="Input" data-name="input2"  data-v-required="true" data-dependency="input1" id="input2"/><br>
-    单选：<br>
-            <div>
-    <input data-component="Radio" data-text-template="#tp_radio" data-name="data_radio1" type="radio" data-dependency="input2" data-skin="square-blue"  value="1" id="radio1" /><br>
-    <input data-component="Radio" data-text-template="#tp_radio" data-name="data_radio1" type="radio" data-dependency="input2" value="2" id="radio2" /><br>
-    <input data-component="Radio" data-text-template="#tp_radio" data-name="data_radio1" type="radio" data-dependency="input2" value="3" id="radio3" /><br>
-            </div>
-                多选：<br>
-    <input data-component="CheckBox" data-text-template="#tp_textarea" data-v-required="true" data-name="data_checkbox" data-dependency="input2" type="checkbox" value="1" id="checkbox1"/><br>
-    <input data-component="CheckBox" data-text-template="#tp_textarea" data-v-required="true" data-name="data_checkbox" type="checkbox" value="2" id="checkbox2"/><br>
-    <input data-component="CheckBox" data-text-template="#tp_textarea" data-v-required="true" data-name="data_checkbox" type="checkbox" value="3" id="checkbox3"/><br>
-    <input data-component="Input" data-name="input2"  data-v-required="true" data-dependency="checkbox1" id="input3"/><br>
-    <input data-component="Radio" data-text-template="#tp_radio" data-name="data_radio2" type="radio" value="1" id="radio4"/><br>
-    <input data-component="Radio" data-text-template="#tp_radio" data-v-required="true" data-name="data_radio2" type="radio" value="2" id="radio5"/><br>
-    <input data-component="Radio" data-text-template="#tp_radio" data-name="data_radio2" type="radio" value="3" id="radio6"/><br>
-    <input data-component="Input" data-name="input2"  data-v-required="true" data-dependency="radio5" id="input4"/><br>
-    <input type="button" data-component="Button" class="btn" data-submit-button="subID" value="submit" id="asdfasdf" data-tooltip-text="点我">
+</html>
+
+<script type="text/template" id="tp_HomePageID" data-component="HomePage" data-title="input组件">
+    如果被依赖的组件不满足条件，则依赖的组件不能使用。<br/>
+    依赖校验：-> 输入框2依赖输入框1(首次进行页面，不点击输入框1，直接点击输入框2，输入框2可以输入内容，不满足要求)<br>
+    输入框1：<input data-component="Input" id="input1" data-name="input1" data-tooltip-text="输入数据应大于等于5!"
+               data-tooltip-placement="bottom"  data-v-required="true" data-v-min-len="5"/><br>
+    输入框2：<input data-component="Input" id="input2" data-name="input2"  data-v-required="true" data-dependency="input1"/><br>
+    单选：-> 以下三个单选依赖输入框2<br>
+    <div>
+        <input type="radio" id="radio1" data-component="Radio" data-text-template="#tp_radio" data-name="data_radio1" data-dependency="input2" value="1"/><br>
+        <input type="radio" id="radio2" data-component="Radio" data-text-template="#tp_radio" data-name="data_radio1" data-dependency="input2" value="2"/><br>
+        <input type="radio" id="radio3" data-component="Radio" data-text-template="#tp_radio" data-name="data_radio1" data-dependency="input2" value="3"/><br>
+    </div>
+    多选：-> 以下三个多选依赖输入框2<br>
+    <input type="checkbox" data-component="CheckBox" id="checkbox1" data-text-template="#tp_textarea" data-v-required="true" data-name="data_checkbox" data-dependency="input2" value="1"/><br>
+    <input type="checkbox" data-component="CheckBox" id="checkbox2" data-text-template="#tp_textarea" data-v-required="true" data-name="data_checkbox" data-dependency="input2" value="2"/><br>
+    <input type="checkbox" data-component="CheckBox" id="checkbox3" data-text-template="#tp_textarea" data-v-required="true" data-name="data_checkbox" data-dependency="input2" value="3"/><br>
+    其他1：-> 以下输入框依赖checkbox1<br/>
+    <input data-component="Input" id="input3" data-name="input2"  data-v-required="true" data-dependency="checkbox1"/><br>
+    其他2：-> 以下单选不依赖任何组件<br/>
+    <div>
+        <input data-component="Radio" type="radio" id="radio4" data-text-template="#tp_radio" data-name="data_radio2" value="1"/><br>
+        <input data-component="Radio" type="radio" id="radio5" data-text-template="#tp_radio" data-v-required="true" data-name="data_radio2" value="2"/><br>
+        <input data-component="Radio" type="radio" id="radio6" data-text-template="#tp_radio" data-name="data_radio2" value="3"/><br>
+    </div>
+    其他3：->以下输入框依赖radio5(不起作用)<br/>
+    <input data-component="Input" id="input4" data-name="input2"  data-v-required="true" data-dependency="radio5"/><br>
+
+    <input type="button" data-component="Button" class="btn" data-submit-button="subID" value="submit" data-tooltip-text="点我">
 
 </script>
 
@@ -68,7 +77,6 @@ desc:依赖校验
             }
         });
 
-        Browser.history_goto("HomePage")
+        Browser.history_goto("tp_HomePageID")
     });
 </script>
-</html>
