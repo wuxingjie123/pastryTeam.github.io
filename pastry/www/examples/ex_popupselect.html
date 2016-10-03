@@ -10,30 +10,33 @@ desc:弹出选择
     <title>PopupSelect</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=0">
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta content="telephone=no" name="format-detection"/>
-    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="Pragma" content="no-cache">
 
     <!--引入框架-->
     <script type="text/javascript" src="../pastry/main.js"
-            data-debug="mockdata"
+            data-debug="@mockdata"
             data-components="C:popupselect"
             ></script>
 </head>
 <body>
-<!--设置加载页-->
-<div data-page-loading>
-    Loading...
-</div>
+    <!--设置加载页-->
+    <div data-page-loading>
+        Loading...
+    </div>
 </body>
 </html>
 
-<script type="text/template" id="tp_HomePage" data-component="HomePage" data-title="PopupSelect">
+<script type="text/template" id="tp_HomePageID" data-component="HomePage" data-title="PopupSelect">
+    <br/>
     <div id="popupSelect" data-component="MyPopupSelect" data-name="POPUPSELECT" data-template="#tp_ps"
          data-text="选择..."
          data-show-cancel="true"
-         data-cancel-text="取消"></div>
+         data-cancel-text="取消">
+    </div>
 
+    <br/>
     <input type="button" class="btn" value="提交" data-submit-button/>
 </script>
 
@@ -62,17 +65,19 @@ desc:弹出选择
         var Model = this.Model;
         var Component = this.Component;
         var api = this.api;
-
-        api.setModels({
+    
+        var windowModel = {
             'popupSelect': new Model.Request({
                 items: [
                     {id: '1', title: 'itemX'},
                     {id: '2', title: 'itemY'}
                 ]
             }, {
-                url: 'helloworld.do?act=getPopupSelect'
+                url: 'ex_popupselect.do?act=getPopupSelect'
             })
-        });
+        };
+
+        api.setModels(windowModel);
 
         Component.MyPopupSelect = Component.PopupSelect.extend({
             onSelectChange: function (event) {
@@ -108,6 +113,6 @@ desc:弹出选择
             }
         };
 
-        Browser.history_goto("tp_HomePage", option);
+        Browser.history_goto("tp_HomePageID", option);
     });
 </script>

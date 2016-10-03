@@ -10,23 +10,23 @@ desc:弹出窗口
     <title>PopupWindow</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=0">
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta content="telephone=no" name="format-detection"/>
-    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="Pragma" content="no-cache">
 
     <!--引入框架-->
     <script type="text/javascript" src="../pastry/main.js"
-            data-debug="mockdata"
+            data-debug="@mockdata"
             data-components="C:popupwindow"
             ></script>
 </head>
 <body>
-<!--设置加载页-->
-<div data-page-loading>
-    Loading...
-</div>
+    <!--设置加载页-->
+    <div data-page-loading>
+        Loading...
+    </div>
 </body>
-<script type="text/template" id="HomePage" data-component="HomePage" data-title="popupwindow">
+<script type="text/template" id="tp_HomePageID" data-component="HomePage" data-title="popupwindow">
     <input type="button" class="btn" value="显示弹出层" data-submit-button />
 </script>
 
@@ -46,13 +46,15 @@ desc:弹出窗口
         var api = this.api;
         var Model = this.Model;
 
-        api.setModels({
+        var windowModel = {
             "myPopup":new Model.Request(
                     null,{
-                        url:"MBMultidemo.do?act=MULTIDEMO_3"
+                        url:"ex_popupwindow.do?act=MULTIDEMO_3"
                     }
             )
-        });
+        };
+
+        api.setModels(windowModel);
 
         Component.HomePage = Component.Page.extend({
             onSubmit: function (obj) {
@@ -81,7 +83,8 @@ desc:弹出窗口
                 }
             ]
         };
-        Browser.history_goto("HomePage",option);
+
+        Browser.history_goto("tp_HomePageID",option);
     });
 </script>
 </html>
