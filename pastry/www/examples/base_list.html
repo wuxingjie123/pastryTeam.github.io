@@ -10,26 +10,27 @@ desc:列表
     <title>List</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=0">
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta content="telephone=no" name="format-detection"/>
-    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="Pragma" content="no-cache">
 
     <!--引入框架-->
     <script type="text/javascript" src="../pastry/main.js"
-            data-debug="mockdata,@simbridge"
+            data-debug="@mockdata"
             ></script>
 </head>
 <body>
-<!--设置加载页-->
-<div data-page-loading>
-    Loading...
-</div>
+    <!--设置加载页-->
+    <div data-page-loading>
+        Loading...
+    </div>
 </body>
 </html>
 
-<script type="text/template" id="tp_HomePage" data-title="List">
-    <div id="test"></div>
-    <div data-component="MyList" id="list" data-item-template="#tp_ListItem" >
+<script type="text/template" id="tp_HomePageID" data-title="List">
+    <br/>
+    <br/>
+    <div data-component="MyList" id="listId" data-item-template="#tp_ListItem" >
         <div class="fw-loading-template" data-render-target>[%= new Date()%]<BR>...List Loading...</div>
     </div>
 </script>
@@ -50,16 +51,18 @@ desc:列表
         var Browser = this.Browser;
         var api = this.api;
 
-        api.setModels({
-            list:new Model.Request({
+        var windowModel = {
+            "listId": new Model.Request({
                 list:[
                     {id:'1',title:'itemA'},
                     {id:'2',title:'itemB'}
                 ]
             },{
-                url:'helloworld.do?act=getList'
+                url:'base_list.do?act=getList'
             })
-        });
+        };
+
+        api.setModels(windowModel);
 
         Component.MyList = Component.List.extend({
             onListItemClick:function(event){
@@ -70,7 +73,7 @@ desc:列表
 
         var option={
             refresh:{
-                id:'list',
+                id:'listId',
                 removeVal:'list',
                 param:{
                     page:2
@@ -78,7 +81,7 @@ desc:列表
             }
         };
 
-        Browser.history_goto("tp_HomePage",option);
+        Browser.history_goto("tp_HomePageID",option);
 
     });
 </script>

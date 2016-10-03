@@ -28,7 +28,10 @@ desc:下拉列表
 </html>
 
 <script type="text/template" id="tp_HomePageID" data-component="HomePage" data-title="Select">
-    <select data-component="MySelect" id="select" data-name="SELECT"></select>
+    <br/>
+    <select data-component="MySelect" id="selectId"></select>
+    <br/>
+    <br/>
     <input type="button" class="btn" value="提交" data-submit-button/>
 </script>
 
@@ -40,14 +43,14 @@ desc:下拉列表
         var api = this.api;
 
         var windowModel = {
-            select:new Model.Request({
+            "selectId":new Model.Request({
                 selected:0,
                 select:[
                     {option:'1|100'},
                     {option:'2|200'}
                 ]
             },{
-                url:'helloworld.do?act=getSelect'
+                url:'base_select.do?act=getSelect'
             })
         };
 
@@ -69,7 +72,7 @@ desc:下拉列表
 
         var option={
             refresh:{
-                id:'select',
+                id:'selectId',
                 removeVal:'select'
             }
         };
@@ -77,6 +80,7 @@ desc:下拉列表
         Browser.history_goto("tp_HomePageID",option);
 
         setTimeout(function(){
+            api.getModel('selectId').setValue(1);
             //api.getComponent('select').setValue(1);
         },2000);
     });
