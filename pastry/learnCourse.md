@@ -117,10 +117,6 @@
         * [页面初始化参数-程序入口 章节][md_quickstart-js]
         
         * [Window跳转参数传递-window参数传递 章节 : 基于 Browser 的 openUrl/onResult 方法][md_quickstart-js] [(在线示例)][base_window]
-
-    * 语言国际化
-    
-    * 图片适配
     
     * 组合组件示例
         
@@ -129,7 +125,13 @@
         * list + list : [(在线示例)][rel_list+select_list+list]
 
         * list item 左滑、右滑示例 待定 : 
-    
+        
+    * 其他方面
+
+        * 语言国际化
+        
+        * 图片适配
+        
     * [注意事项][net_JS_tip]
 
 * 7。pastry 原生 业务层 开发 [iOS教程][md_quickstart-ios] [android教程][md_quickstart-android]
