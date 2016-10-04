@@ -281,13 +281,67 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,`用于�
 ### 更多扩展属性介绍....
 
 ----
-## 页面组件配置
+## 组件(Component)配置
 
 `1 Component思维导图`
 
 ![Component关系图](/pastry/images/processon/component_js.png)
 
-`2 待定`
+`2 配置组件`
+
+* 配置 页面组件(页面组件继承Form组件)
+    [在线示例][base_form]
+    
+        Component.HomePage = Component.Page.extend({
+            //数据提交预处理
+            onSubmit: function (event) {
+                var data = event.data,submitId = event.id;
+                alert('onSubmitId:'+submitId+'\n'+JSON.stringify(data, null, '   '));
+
+                if(submitId==='submit'){
+                    data.msg='这是预处理添加的数据。';
+                    return data;
+                }else{
+
+                }
+                return undefined;
+            },
+            //数据提交处理
+            doSubmit: function (data) {
+                alert('doSubmitData:'+JSON.stringify(data, null, '   '));
+            }
+        });
+
+[base_form]: ../www/examples/base_form.html
+
+* 配置 普通组件
+    [在线示例][base_Button]
+    
+        Component.NormalButton = Component.Button.extend({
+            //点击事件的回调，参数event为点击时产生的事件对象
+            onClick: function (event) {
+                alert("点击 普通按钮");
+            }
+        });
+
+[base_Button]: ../www/examples/base_button.html
+
+* 配置 复杂组件
+    [在线示例][base_list]
+    
+        Component.CustomList = Component.List.extend({
+            onListItemClick:function(event){
+                var data = event.data;
+                alert(JSON.stringify(data,null,'  '));
+            }
+        });
+
+[base_list]: ../www/examples/base_list.html
+
+* 更多组件配置
+    [在线示例索引页][index]
+    
+[index]: ../www/examples/index.html
 
 ----
 ## 模版(Template)配置
@@ -783,7 +837,7 @@ option中配置返回的选项参数
         api.getModel('componentId').setValue(200);
 
 ----
-## 表单提交
+## 表单提交(基于Form)
 表单提交功能，自动收集页面组件 data-name 的值。
 表单基类Form，Page继承于Form。
 

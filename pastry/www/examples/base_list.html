@@ -30,7 +30,7 @@ desc:列表
 <script type="text/template" id="tp_HomePageID" data-title="List">
     <br/>
     <br/>
-    <div data-component="MyList" id="listId" data-item-template="#tp_ListItem" >
+    <div data-component="CustomList" id="listId" data-item-template="#tp_ListItem" >
         <div class="fw-loading-template" data-render-target>[%= new Date()%]<BR>...List Loading...</div>
     </div>
 </script>
@@ -64,7 +64,7 @@ desc:列表
 
         api.setModels(windowModel);
 
-        Component.MyList = Component.List.extend({
+        Component.CustomList = Component.List.extend({
             onListItemClick:function(event){
                 var data = event.data;
                 alert(JSON.stringify(data,null,'  '));
