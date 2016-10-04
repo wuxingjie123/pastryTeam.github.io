@@ -158,7 +158,7 @@
     
     * [注意事项][net_JS_tip]
 
-* 7。pastry 原生 业务层 开发
+* 7。pastry 原生 业务层 开发 [iOS教程][md_quickstart-ios] [android教程][md_quickstart-android]
 
     * iOS/android 业务组件
         
@@ -201,7 +201,7 @@
             
             * [二维码组件][net_QRcode]
 
-* 8。pastry 前置 业务层 开发
+* 8。[pastry 前置 业务层 开发][md_quickstart-fo]
 
     * 8.1。与第三方服务器交互方式（http｜socket）
 
@@ -219,7 +219,28 @@
 
     
 * 10。制作Pastry组件
-
+    
+    * 框架组件
+        
+        * iOS平台框架组件
+        
+        * android平台框架组件
+        
+        * JS平台框架组件
+        
+        * 前置框架组件
+    
+    * 业务组件
+       
+        * iOS平台业务组件
+       
+        * android平台业务组件
+       
+        * JS平台业务组件
+       
+        * 前置业务组件
+    
+    * cordova组件
 
 * 11。pastry JS 框架层
 
@@ -338,6 +359,9 @@
 [md_quickstart]: ./index.md
 
 [md_quickstart-js]: ./quickstart/quickstart-js.md
+[md_quickstart-ios]: ./quickstart/quickstart-ios.md
+[md_quickstart-android]: ./quickstart/quickstart-android.md
+[md_quickstart-fo]: ./quickstart/quickstart-fo.md
 
 [md_fqa]: ./faq.md
 
