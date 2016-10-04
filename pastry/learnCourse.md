@@ -134,7 +134,7 @@
         
     * [5.13。注意事项][net_JS_tip]
 
-* 6。pastry 原生 业务层 开发 [iOS教程][md_quickstart-ios] [android教程][md_quickstart-android]
+* 6。pastry 原生 业务层 开发 [iOS教程][md_quickstart-ios] [android教程][md_quickstart-android] `课程要求 : 业务开发工程师/熟悉掌握 核心开发工程师/熟悉掌握`
 
     * 6.1。iOS/android 业务组件
         
@@ -177,7 +177,7 @@
             
             * [6.2.2.2。二维码组件][net_QRcode]
 
-* [7。pastry 前置 业务层 开发][md_quickstart-fo]
+* [7。pastry 前置 业务层 开发][md_quickstart-fo] `课程要求 : 业务开发工程师/熟悉掌握 核心开发工程师/熟悉掌握`
 
     * 7.1。与第三方服务器交互方式（http｜socket）
 
@@ -187,14 +187,14 @@
 
     * 7.3。简单的逻辑转发
 
-* 8。调试发布
+* 8。调试发布 `课程要求 : 业务开发工程师/熟悉掌握 核心开发工程师/熟悉掌握`
 
     * [8.1。Cordova调试方法简介][net_cordova-test]
 
     * [8.2。调试方法简介][net_pastry-test]
 
     
-* 9。Pastry组件制作方式
+* 9。Pastry组件制作方式 `课程要求 : 业务开发工程师/了解 核心开发工程师/熟悉掌握`
     
     * 9.1。框架组件 : `框架人员修改，禁止项目组人员修改`
         
@@ -220,7 +220,7 @@
         
         * [9.3.1。cordova组件 : 基于Cordova方式 组件开发指南][md_plugin-develop]
 
-* 10。pastry JS 框架层
+* 10。pastry JS 框架层 `课程要求 : 业务开发工程师/了解 核心开发工程师/熟悉掌握`
 
     * [10.1。api深度解析 思维导图][processon_api]
 
@@ -236,7 +236,7 @@
 
     * [10.7。request深度解析 思维导图][processon_request]
 
-* 11。pastry 原生 框架层
+* 11。pastry 原生 框架层 `课程要求 : 业务开发工程师/了解 核心开发工程师/熟悉掌握`
 
     * 11.1。pastry iOS  
 
@@ -250,7 +250,7 @@
 
         * 11.2.2。pastry android 功能示例
 
-* 12。pastry 前置 框架层
+* 12。pastry 前置 框架层 `课程要求 : 业务开发工程师/了解 核心开发工程师/熟悉掌握`
 
     * 12.1。会话管理
 
