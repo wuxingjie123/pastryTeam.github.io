@@ -1,7 +1,7 @@
 # 组件开发指南
 
 ----
-## 框架组件开发指南
+## 基于框架源码方式 组件开发指南
 #### `适用范围`
 
 * `iOS平台框架组件`
@@ -15,7 +15,7 @@
 #### `框架功能如需修改，请联系PastryTeam团队人员，禁止项目组人员进行修改。`
 
 ----
-## 业务组件开发指南
+## 基于Bower方式 组件开发指南
 #### `适用范围`
 
 * `JS平台业务组件`
@@ -152,7 +152,7 @@ hook函数里的如下代码也有说明：
       var cmdString  = mout.string.replace(config.scripts[action], placeholder, orderedPackages.join(' '));
 
 ----
-## cordova组件开发指南
+## 基于cordova方式 组件开发指南
 #### `适用范围`
 
 * `iOS平台业务组件`

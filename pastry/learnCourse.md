@@ -218,29 +218,31 @@
     * 9.2。[调试方法简介][net_pastry-test]
 
     
-* 10。制作Pastry组件
+* 10。Pastry组件制作方式
     
-    * [框架组件-框架组件开发指南][md_plugin-develop]
+    * 框架组件 : `框架人员修改，禁止项目组人员修改`
         
-        * iOS平台框架组件
+        * [JS平台框架组件 : 基于框架源码方式 组件开发指南][md_plugin-develop]
         
-        * android平台框架组件
+        * [iOS平台框架组件 : 基于框架源码方式 组件开发指南][md_plugin-develop]
         
-        * JS平台框架组件
+        * [android平台框架组件 : 基于框架源码方式 组件开发指南][md_plugin-develop]
         
-        * 前置框架组件
+        * [前置框架组件 : 基于框架源码方式 组件开发指南][md_plugin-develop]
     
-    * [业务组件-业务组件开发指南][md_plugin-develop]
+    * 业务组件
        
-        * iOS平台业务组件
+        * [JS平台业务组件 : 基于Bower方式 组件开发指南][md_plugin-develop]
        
-        * android平台业务组件
+        * [iOS平台业务组件 : 基于Cordova方式 组件开发指南][md_plugin-develop]
        
-        * JS平台业务组件
+        * [android平台业务组件 : 基于Cordova方式 组件开发指南][md_plugin-develop]
        
-        * 前置业务组件
+        * [前置业务组件 : 基于Cordova方式 组件开发指南][md_plugin-develop]
     
-    * [cordova组件-cordova组件开发指南][md_plugin-develop]
+    * cordova组件
+        
+        * [cordova组件 : 基于Cordova方式 组件开发指南][md_plugin-develop]
 
 * 11。pastry JS 框架层
 
