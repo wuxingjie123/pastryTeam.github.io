@@ -10,28 +10,29 @@ desc:表单
     <title>Form</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=0">
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta content="telephone=no" name="format-detection"/>
-    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="Pragma" content="no-cache">
 
     <!--引入框架-->
     <script type="text/javascript" src="../pastry/main.js"
-            data-debug="@simbridge"
+            data-debug="@mockdata"
             ></script>
 </head>
 <body>
-<!--设置加载页-->
-<div data-page-loading>
-    Loading...
-</div>
+    <!--设置加载页-->
+    <div data-page-loading>
+        Loading...
+    </div>
 </body>
 </html>
 
-<script type="text/template" id="tp_HomePage" data-component="HomePage" data-title="Form">
-    <input id="33" type="text" data-component="Input" data-name="INPUT" value="test">
-    <input type="text" data-component="Input" data-name="INPUT2" value="test">
-    <input class="btn" type="button" data-submit-button="submit" value="Submit">
-    <input id="11" class="btn" type="button" data-submit-button="cancel" value="Cancel">
+<script type="text/template" id="tp_HomePageID" data-component="HomePage" data-title="Form">
+    <input type="text" id="inputId1" data-component="Input" data-name="INPUT" value="test" ／>
+    <input type="text" id="inputId2" data-component="Input" data-name="INPUT2" value="test" ／>
+    <br/><br/>
+    <input type="button" id="submitId1" class="btn" data-submit-button="submit" value="Submit" ／>
+    <input type="button" id="submitId2" class="btn" data-submit-button="cancel" value="Cancel" ／>
 </script>
 
 <script type="text/javascript">
@@ -43,7 +44,7 @@ desc:表单
             //数据提交预处理
             onSubmit: function (event) {
                 var data = event.data,submitId = event.id;
-                alert('onSubmitId:'+submitId+'\n'+JSON.stringify(data));
+                alert('onSubmitId:'+submitId+'\n'+JSON.stringify(data, null, '   '));
 
                 if(submitId==='submit'){
                     data.msg='这是预处理添加的数据。';
@@ -55,9 +56,10 @@ desc:表单
             },
             //数据提交处理
             doSubmit: function (data) {
-                alert('doSubmitData:'+JSON.stringify(data));
+                alert('doSubmitData:'+JSON.stringify(data, null, '   '));
             }
         });
-        Browser.history_goto("tp_HomePage");
+
+        Browser.history_goto("tp_HomePageID");
     });
 </script>

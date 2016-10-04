@@ -656,6 +656,50 @@ option中配置返回的选项参数
 
 ----
 ## 表单提交
+表单提交功能，自动收集页面组件 data-name 的值。
+表单基类Form，Page继承于Form。
+
+要求：
+
+* `要求页面组件元素实现 data-submit-button 属性`
+
+* `要求Page实现 onSubmit doSubmit(可选) 方法`
+    
+语法格式如下
+
+        // 1 要求页面组件元素实现 data-submit-button 属性
+        <input type="button" id="submitId1" class="btn" data-submit-button="submit" value="Submit" ／>
+        
+        // 2 要求Page实现 onSubmit doSubmit(可选) 方法
+        Component.HomePage = Component.Page.extend({
+            //数据提交预处理
+            onSubmit: function (event) {
+                var data = event.data,submitId = event.id;
+                alert('onSubmitId:'+submitId+'\n'+JSON.stringify(data, null, '   '));
+
+                if(submitId==='submit'){
+                    data.msg='这是预处理添加的数据。';
+                    return data;
+                }else{
+
+                }
+                return undefined;
+            },
+            //数据提交处理
+            doSubmit: function (data) {
+                alert('doSubmitData:'+JSON.stringify(data, null, '   '));
+            }
+        });
+
+* onSubmit:function (event) {} `预处理表单提交数据`
+    
+    * event.data    `提交的数据`
+    
+    * event.submitID    `点击的提交按钮的data-submit-button值`
+
+* doSubmit:function (data) {} `提交数据，执行顺序在onSubmit之后`
+
+    * event.data    `提交的数据`
 
 ----
 ## window参数传递
