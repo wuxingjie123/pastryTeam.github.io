@@ -37,12 +37,16 @@
 
 * 使用 pastry 命令 `pastry bake create HelloWorld ` 创建一个工程
 
-        pastry bake create HelloWorld com.test.helloworld --add-platforms android,ios --add-plugins pastry-plugin-request,pastry-plugin-keyboard,pastry-plugin-browser
+        pastry bake create HelloWorld com.test.helloworld
 
 #### 1.准备工作
 
 * pastryTeam 在 GitHub 创建 `component-js-功能名称` 代码仓库
 
+* 从 pastryTeam clone 组件模版功能 `https://github.com/pastryTeam/component-js-template` ，修改 `template` 关键词。
+
+    * 修改所有的关键词 template 为 功能名称。
+    
 * `执行 pastry bake bower init 生成 bower.json 文件，作为组件的描述文件`
 
 * 生成最终的组件工程代码，然后上传到 pastryTeam 的 GitHub
