@@ -1,147 +1,150 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-         -->
-        <title>test1</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=Utf-8"/>
-        <meta http-equiv="Pragma" content="no-cache" />
-		<meta name="format-detection" content="telephone=no" />
-        <meta name="msapplication-tap-highlight" content="no" />
-		<meta name="apple-mobile-web-app-capable" content="yes"/>
-        <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,target-densitydpi=medium-dpi"/>
-        
-        <!-- js引用及调试配置 -->
-        <script type="text/javascript" src="../pastry/main.js" data-debug></script>
-    </head>
-    <body>
-    </body>
-</html>
-<script type="text/template" id="tp_HomePage" data-component="tp_HomePage" data-title="业务A">
-    <div class="app">
-        <h1>A 步骤一</h1>
-        <div id="deviceready" class="blink">
-            <p class="event listening">内容一</p>
-            <table>
-                <tr>
-                    <td>
-                        <input type="button" data-submit-button="next" value="进入业务A 步骤二"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="button" data-submit-button="pastryDemo" value="框架示例"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="button" data-submit-button="login" value="进入登录业务"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="button" data-submit-button="baidu" value="进入百度页面"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="button" data-submit-button="keyboard" value="进入键盘测试页面"/>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </div>
-</script>
+<head>
+    <title>Examples</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="Pragma" content="no-cache" />
 
-<script type="text/template" id="tp_SecondPage" data-component="tp_SecondPage" data-title="业务A">
-    <div class="app">
-        <h1>A 步骤二</h1>
-        <div id="deviceready" class="blink">
-            <p class="event listening">内容一</p>
-            <input type="button" data-submit-button="next" value="进入业务B"/>
-            <input type="button" data-submit-button="account" value="进入账号业务"/>
-        </div>
+    <!--引入框架-->
+    <script type="text/javascript" src="../pastry/main.js"
+            data-debug="@mockdata">
+    </script>
+</head>
+<body>
+    <!--设置加载页-->
+    <div data-page-loading>
+        Loading...
     </div>
+</body>
+</html>
+
+<script type="text/template" id="tp_HomePageID" data-title="Examples">
+    <h1>Examples:</h1>
+
+    <h2>开始：</h2>
+    <ul>
+        <li>
+            <a data-href="base_helloworld.html">Hello world!</a>
+        </li>
+    </ul>
+    <h2>基础UI组件：</h2>
+    <ul>
+        <li>
+            <a data-href="base_page.html">页面(Page)</a>
+        </li>
+        <li>
+            <a data-href="base_header_footer.html">顶部栏&底部栏(PageHeader&PageFooter)</a>
+        </li>
+        <li>
+            <a data-href="base_form.html">表单(Form)</a>
+        </li>
+        <li>
+            <a data-href="base_button.html">按钮(Button)</a>
+        </li>
+        <li>
+            <a data-href="base_label.html">标签(Label)</a>
+        </li>
+        <li>
+            <a data-href="base_input.html">文本框(Input)</a>
+        </li>
+        <li>
+            <a data-href="base_password.html">密码框(Password)</a>
+        </li>
+        <li>
+            <a data-href="base_amount.html">金额框(Amount)</a>
+        </li>
+        <li>
+            <a data-href="base_select.html">下拉列表(Select)</a>
+        </li>
+        <li>
+            <a data-href="base_list.html">列表(List)</a>
+        </li>
+    </ul>
+    <h2>扩展UI组件</h2>
+    <ul>
+        <li>
+            <a data-href="ex_radio.html">单选框(Radio)</a>
+        </li>
+        <li>
+            <a data-href="ex_checkbox.html">多选框(CheckBox)</a>
+        </li>
+        <li>
+            <a data-href="ex_switch.html">开关按钮(Switch)</a>
+        </li>
+        <li>
+            <a data-href="ex_popupwindow.html">弹出层(PopupWindow)</a>
+        </li>
+        <li>
+            <a data-href="ex_popupselect.html">弹出选择框(PopupSelect)</a>
+        </li>
+        <li>
+            <a data-href="ex_popupmenu.html">弹出菜单(PopupMenu)</a>
+        </li>
+        <li>
+            <a data-href="ex_countdownbtn.html">倒计时按钮(CountdownBtn)</a>
+        </li>
+        <li>
+            <a data-href="ex_scrollview.html">滚动视图(ScrollView)</a>
+        </li>
+        <li>
+            <a data-href="ex_selectlist.html">选择列表(SelectList)</a>
+        </li>
+        <li>
+            <a data-href="ex_tab.html">选项卡(Tab)</a>
+        </li>
+        <li>
+            <a data-href="ex_tree.html">树状图(Tree)</a>
+        </li>
+        <li>
+            展开()
+        </li>
+        <li>
+            轮番()
+        </li>
+    </ul>
+    <h2>数据处理</h2>
+    <ul>
+        <li>
+            <a data-href="data_mapping.html">属性映射(mapping)</a>
+        </li>
+        <li>
+            <a data-href="data_filter.html">数据过滤(filter)</a>
+        </li>
+        <li>
+            <a data-href="data_dispatcher.html">数据分发(dispatcher)</a>
+        </li>
+        <li>
+            <a data-href="data_forwarder.html">连续交易(forwarder)</a>
+        </li>
+    </ul>
+    <h2>高级</h2>
+    <ul>
+        <li>
+            <a data-href="adv_proxy_model.html">模型代理</a>
+        </li>
+		<li>
+            <a data-href="JSBridge.html">JS桥</a>
+        </li>
+    </ul>
 </script>
 
 <script type="text/javascript">
-    $(function(param){
-        console.log('js ___ = ' + JSON.stringify(param));
+    $(function (param) {
+
         var Browser = this.Browser;
-        var Component = this.Component;
+        var api = this.api;
+        var $ = api.$;
 
-
-        Component.tp_HomePage = Component.Page.extend({
-            onSubmit: function (data) {
-				var submitId = data.id;
-                console.log('Home Next1111');
-                if (submitId == 'login') {
-                    console.log('1111111111');
-                    Browser.openUrl("../examples/login/login.html",{param1:"testparams"},function(data){
-                        console.log('ddddddddddddddd');
-                        console.log(data);
-                        alert('返回结果：' + data);
-                    });   
-                }
-                else if (submitId == 'baidu'){
-                    Browser.openUrl("https://www.baidu.com",{param1:"testparams"},function(data){
-                        console.log('ddddddddddddddd');
-                        console.log(data);
-                        alert('返回结果：' + data);
-                    });
-                }
-                else if (submitId == 'keyboard'){
-                    Browser.openUrl("../examples/demo/keyboard.html",{param1:"testparams"},function(data){
-                        console.log('ddddddddddddddd');
-                        console.log(data);
-                        // alert('返回结果：' + data);
-                    });
-                }
-                else if (submitId == 'pastryDemo'){
-                    Browser.openUrl("../examples/index.html",{param1:"testparams"},function(data){
-                        console.log(data);
-                        // alert('返回结果：' + data);
-                    });
-                }
-                else
-                {
-                    console.log('222222 = ' + data);
-                    Browser.history_goto("tp_SecondPage");
-                };
-            }
+        Browser.history_goto("tp_HomePageID");
+        //$('a').attr('target', '_blank');
+        $('a').on('click',function(e){
+            Browser.openUrl($(e.currentTarget).data('href'));
         });
-
-        Component.tp_SecondPage = Component.Page.extend({
-            onSubmit: function (data) {
-				var submitId = data.id;
-                console.log('Second Next');
-                if (submitId == "account") {
-
-                    Browser.openUrl("../examples/demo/account/account.html",{param1:"账号业务返回结果。"},function(data){
-                        console.log('ddddddddddddddd');
-                        console.log(data);
-                        alert('账号业务 返回结果：' + JSON.stringify(data));
-                    });
-
-                }else{
-
-                    Browser.openUrl("../examples/demo/test2.html",{param1:"testparams"},function(data){
-                        console.log('ddddddddddddddd');
-                        console.log(data);
-                        alert('业务B 返回结果：' + JSON.stringify(data));
-                    });
-                };
-            }
+        $('a').hover(function(){
+            $('a').css('cursor', 'pointer');
         });
-
-        Browser.history_goto("tp_HomePage");
-        
     });
 </script>

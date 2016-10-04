@@ -2,25 +2,26 @@
 <html>
 <head>
     <title>Examples</title>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=0">
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta content="telephone=no" name="format-detection"/>
-    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="Pragma" content="no-cache" />
 
     <!--引入框架-->
     <script type="text/javascript" src="../pastry/main.js"
-            data-debug="@simbridge"></script>
+            data-debug="@mockdata">
+    </script>
 </head>
 <body>
-<!--设置加载页-->
-<div data-page-loading>
-    Loading...
-</div>
+    <!--设置加载页-->
+    <div data-page-loading>
+        Loading...
+    </div>
 </body>
 </html>
 
-<script type="text/template" id="tp_HomePage" data-title="Examples">
+<script type="text/template" id="tp_HomePageID" data-title="Examples">
     <h1>Examples:</h1>
 
     <h2>开始：</h2>
@@ -137,7 +138,7 @@
         var api = this.api;
         var $ = api.$;
 
-        Browser.history_goto("tp_HomePage");
+        Browser.history_goto("tp_HomePageID");
         //$('a').attr('target', '_blank');
         $('a').on('click',function(e){
             Browser.openUrl($(e.currentTarget).data('href'));
