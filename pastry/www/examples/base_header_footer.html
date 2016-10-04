@@ -8,22 +8,22 @@ desc:页头与页脚
 <html>
 <head>
     <title>Header&Footer</title>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=0">
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta content="telephone=no" name="format-detection"/>
-    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="Pragma" content="no-cache" />
 
     <!--引入框架-->
     <script type="text/javascript" src="../pastry/main.js"
-            data-debug="titlebar" data-keep-script
-            ></script>
+            data-debug="@mockdata" data-keep-script>
+    </script>
 </head>
 <body>
-<!--设置加载页-->
-<div data-page-loading>
-    Loading...
-</div>
+    <!--设置加载页-->
+    <div data-page-loading>
+        Loading...
+    </div>
 </body>
 </html>
 
@@ -88,6 +88,7 @@ desc:页头与页脚
         Component.ThirdPage = Component.Page.extend({
 
         });
+        
         Browser.history_goto("tp_HomePage");
     });
 </script>
