@@ -156,9 +156,7 @@
 
             * 不返回按钮
     
-    * 注意事项
-     
-        * initVal属性会覆盖Model的默认值设置，只要设置了initVal属性，所有Model的默认设置都不生效。
+    * [注意事项][net_JS_tip]
 
 * 7。pastry 原生 业务层 开发
 
@@ -281,6 +279,7 @@
 
 [base_window]:www/examples/windows/base_window.html
 
+[net_JS_tip]: https://github.com/pastryTeam/pastryTeam.github.io/issues/3
 
 ----
 ## Pastry标准概念
