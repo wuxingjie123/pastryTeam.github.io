@@ -367,6 +367,13 @@
 
 [md_xtools]: ./pastry-cli/XTools.md
 
+[net_blank]: https://github.com/pastryTeam/pastry-plugin-blankMain
+[net_side]: https://github.com/pastryTeam/pastry-plugin-sideMain
+[net_tab]: https://github.com/pastryTeam/pastry-plugin-tabMain
+[net_unzip]: https://github.com/pastryTeam/pastry-plugin-unzip
+[net_guide]: https://github.com/pastryTeam/pastry-plugin-guide
+[net_login]: https://github.com/pastryTeam/pastry-plugin-login
+
 [net_storage]: https://github.com/pastryTeam/pastry-plugin-storage
 [net_keyboard]: https://github.com/pastryTeam/pastry-plugin-keyboard
 [net_request]: https://github.com/pastryTeam/pastry-plugin-request
