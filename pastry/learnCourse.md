@@ -124,9 +124,9 @@
     
     * 组合组件示例
         
-        * list + select示例 待定 : 
+        * list + select : [(在线示例)][rel_list+select_list+list]
 
-        * list + list示例 待定 :
+        * list + list : [(在线示例)][rel_list+select_list+list]
 
         * list item 左滑、右滑示例 待定 :  
     
@@ -289,6 +289,8 @@
 [base_scrollview]: www/examples/ex_scrollview.html
 [base_tree]: www/examples/ex_tree.html
 [base_tab]: www/examples/ex_tab.html
+
+[rel_list+select_list+list]: www/examples/rel_list+select_list+list.html
 
 [base_filter]: www/examples/data_filter.html
 [base_dispatcher]: www/examples/data_dispatcher.html

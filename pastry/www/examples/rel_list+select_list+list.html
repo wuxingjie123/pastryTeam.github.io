@@ -58,13 +58,16 @@
 
 <script type="text/javascript">
     $(function (param) {
+
         var Component = this.Component;
         var Browser = this.Browser;
         var api = this.api;
         var Model = this.Model;
         var _ = api._;
+
         var overall;
-        api.setModels({
+
+        var windowModel = {
             collists: new Model.Request({},
                     {
                         url: 'rel_list+select_list+list.do?act=getAllData',
@@ -89,7 +92,9 @@
                     }
             )
 
-        });
+        };
+
+        api.setModels(windowModel);
 
         Component.MyImgBackList = Component.List.extend({
             onListItemClick: function (event) {
