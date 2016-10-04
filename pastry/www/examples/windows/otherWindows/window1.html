@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>测试Browser的setBrowser方法</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="Pragma" content="no-cache" />
+
+    <!-- js引用及调试配置 -->
+    <script type="text/javascript" src="../../../pastry/main.js" 
+        data-debug="@mockdata">
+    </script>
+        
+</head>
+<body>
+    <!--设置加载页-->
+    <div data-page-loading>
+        Loading...
+    </div>
+</body>
+</html>
+
+<script type="text/template" id="tp_HomePageID" data-component="HomePage" data-title="测试setResult方法">
+    <div>
+        <h1>测试 Browser 的 setResult 方法</h1>
+        <div>
+            <p>内容一</p>
+            <input type="button" data-submit-button="next" value="关闭window，返回结果"/>
+        </div>
+    </div>
+</script>
+
+<script type="text/javascript">
+    $(function(param){
+
+        console.log('login.html来自外部的参数 = ' + JSON.stringify(param, null, '   '));
+        alert('login.html来自外部的参数 = ' + JSON.stringify(param, null, '   '));
+        
+        var Browser = this.Browser;
+        var Component = this.Component;
+
+        Component.HomePage = Component.Page.extend({
+            onSubmit: function (data) {
+                var result = {
+                    param1: "是用 Browser.setResult 方法参数"
+                };
+                Browser.setResult(result);
+                Browser.close();
+            }
+        });
+
+        Browser.history_goto("tp_HomePageID");
+        
+    });
+</script>

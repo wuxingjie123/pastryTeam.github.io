@@ -1,37 +1,34 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<!--
-		Customize this policy to fit your own app's needs. For more guidance, see:
-			https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-		Some notes:
-			* gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-			* https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-			* Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-				* Enable inline JS: add 'unsafe-inline' to default-src
-		-->
-		<title>request</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=Utf-8"/>
-		<meta http-equiv="Pragma" content="no-cache" />
-		<meta name="format-detection" content="telephone=no" />
-        <meta name="msapplication-tap-highlight" content="no" />
-		<meta name="apple-mobile-web-app-capable" content="yes"/>
-        <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,target-densitydpi=medium-dpi"/>
+<head>
+	<title>request</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="Pragma" content="no-cache" />
         
-        <!-- js引用及调试配置 -->
-        <script type="text/javascript" src="../../pastry/main.js" 
-				data-component="scrollview"
-				data-debug="@simdata,@emulator"></script>
-	</head>
+    <!-- js引用及调试配置 -->
+    <script type="text/javascript" src="../../pastry/main.js" 
+			data-components="C:Scrollview"
+			data-debug="@mockdata"></script>
+</head>
 <body>
+    <!--设置加载页-->
+    <div data-page-loading>
+        Loading...
+    </div>
 </body>
 </html>
-<script type="text/template" id="tp_HomePage" data-title="网络请求">
+
+<script type="text/template" id="tp_HomePageID" data-title="网络请求">
     <div data-component="ScrollView" id="ScrollView"  data-fix-height="55">
-        <div data-component="TrsList" class="padding_top_20 txt_c" id="TrsList" data-item-Template="#tp_ListItem" data-btnTemplate="tp_ButtonItem"
-                ></div>
+        <div data-component="TrsList" class="padding_top_20 txt_c" id="TrsList" data-item-Template="#tp_ListItem" data-btnTemplate="tp_ButtonItem">
+
+        </div>
     </div>
 </script>
+
 <script type="text/template" id="tp_ListItem" data-title="理财产品">
     <div class="item_list">
         <div class="webkitBox">
@@ -81,24 +78,30 @@
         <div class="clear"></div>
     </div>
 </script>
+
 <script type="text/javascript">
-    $(function(){
-        console.log('ready.......');
+    $(function(param){
+
+        console.log('base_request.html来自外部参数 = ' + JSON.stringify(param, null, '   '));
+        alert('base_request.html来自外部参数 = ' + JSON.stringify(param, null, '   '));
+
         var Browser = this.Browser;
         var Component = this.Component;
         var Template = this.Template;
         var Model = this.Model;
         var api = this.api;
         
-        Browser.setResult({
-                          result:"业务request请求完成"
-                          });
-                          
-        api.setModels({
+        var result = {
+            result: "业务request请求完成"
+        };
+
+        Browser.setResult(result);
+
+        var windowModel = {
             "TrsList": new Model.Request(
                     null,
                     {
-                        url: "helloworld.do?act=getAllData",
+                        url: "base_request.do?act=getAllData",
                         filter: function (data,type) {
                             console.log("recieve data :"+JSON.stringify(data));
                             if(data.RETCODE != "AAAAAAA"){
@@ -147,7 +150,10 @@
                         }
                     }
             )
-        });
+        };
+
+        api.setModels(windowModel);
+
         Template.List = {
             loading: Template.loading,
             nodata: Template.nodata,
@@ -174,6 +180,7 @@
                         null, {variable: "data"});
             }
         };
+
         Component.TrsList = Component.List.extend({
             onDragRefresh: function (direction) {
                 var list = this.model.get("list");
@@ -188,6 +195,7 @@
                 api.getModel("TrsList").refresh(option_TrsList)
             }
         });
+
         Component.camera = Component.Button.extend({
             onClick:function(){
                 navigator.camera.getPicture(function(data){
@@ -195,6 +203,7 @@
                 })
             }
         });
+
         var option = {
             refresh:{
                     id: "TrsList",
@@ -206,7 +215,8 @@
                     }
                 }
         };
-        Browser.history_goto("tp_HomePage",option);
+
+        Browser.history_goto("tp_HomePageID",option);
 
     });
 </script>

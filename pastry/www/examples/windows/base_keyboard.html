@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>keyboard</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="Pragma" content="no-cache" />
+
+    <!-- js引用及调试配置 -->
+    <script type="text/javascript" src="../../pastry/main.js" data-debug></script>
+</head>
+<body>
+    <!--设置加载页-->
+    <div data-page-loading>
+        Loading...
+    </div>
+</body>
+</html>
+
+<script type="text/template" id="tp_HomePageID" data-component="HomePage" data-title="测试键盘">
+    <div>    
+        <h1>测试键盘</h1>
+        <table>
+            <tr>
+                <td>
+                    <p>密码键盘：</p>
+                </td>
+                <td>
+                    <div id="keyboard" data-component="Password" style="border:1px solid;width:200px;height:40px;"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>普通键盘：</p>
+                </td>
+                <td>
+                    <input type="text" data-component="Input" style="border:1px solid;width:200px;height:40px;"/>
+                </td>
+            </tr>
+        </table>    
+        <div>
+            <input type="button" data-submit-button="close" value="关闭键盘测试页面"/>
+            <input type="button" data-submit-button="goto" value="JS页面切换键盘消失"/>
+        </div>
+    </div>
+</script>
+<script type="text/template" id="tp_SecondPageID" data-component="SecondPage" data-title="测试键盘">
+    <div>    
+        <h1>测试键盘是否消失</h1>
+    </div>
+</script>
+
+<script type="text/javascript">
+    $(function(param){
+
+        console.log('keyboard.html来自外部的参数 = ' + JSON.stringify(param, null, '   '));
+        alert('keyboard.html来自外部的参数 = ' + JSON.stringify(param, null, '   '));
+
+        var Browser = this.Browser;
+        var Component = this.Component;
+
+        Component.HomePage = Component.Page.extend({
+            onSubmit: function (data) {
+				var submitId = data.id;
+                if (submitId == "goto") {
+                    console.log('JS页面切换键盘消失');
+                    Browser.history_goto("tp_SecondPageID");
+                } else if (submitId == "close"){
+                    console.log('关闭键盘测试页面');
+                    Browser.close();
+                };
+            }
+        });
+
+        Component.SecondPage = Component.Page.extend({
+            onSubmit: function (data) {
+                console.log('关闭键盘测试页面');
+                Browser.history_goto();
+            }
+        });
+
+        Browser.history_goto("tp_HomePageID");
+        
+    });
+</script>
