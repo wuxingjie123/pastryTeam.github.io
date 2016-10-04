@@ -323,7 +323,11 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,`用于�
 ----
 ## 模型(Model)配置
 
-框架提供两种基本的数据模型:
+`1 Model思维导图`
+
+![模型关系图](/pastry/images/processon/model_js.png)
+
+`2 框架提供两种基本的数据模型:`
 
 * this.Model.Simple 仅用于存储数据,不支持发送去请求
 
@@ -812,6 +816,10 @@ option中配置返回的选项参数
 
 ----
 ## window参数传递
+
+`1 Browser思维导图`
+
+![Browser关系图](/pastry/images/processon/browser_js.png)
 
 * window接收外部参数
     PT JS的入口函数framework_ready简化成大家熟悉的jquery选择器形式。
