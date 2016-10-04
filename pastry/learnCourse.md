@@ -43,56 +43,41 @@
 * 5。Pastry JS 业务层 开发 `课程要求 : 业务开发工程师/熟悉掌握 核心开发工程师/熟悉掌握`
 
     * [完整JS页面结构及开发流程预览][md_quickstart-js]
-        * 定义html基本结构
-            * 定义meta属性
-            * JS框架添加引用main.js、lib、css、data-debug等属性
-            * 定义 body
-        * 定义业务模版
-            * 定制业务模版A、B、C等
-        * 定义页面入口函数 
-            * 接收 其它window的传参  
-            * 定制 windowModel 数据模型
-                * 在windowModel中填充 pageModel、componentModel
-                    * 设置 pageModel、componentModel默认值
-                    * 设置 pageModel、componentModel数据请求 
-            * 设置 window（html文件）的 Model 为 windowModel:(api.setModels(windowModel))
-            * 自定义组件
-                * 使用 CSS 定义组件样式（按钮点击效果用 bootstrap 实现）
-                * 使用 template 定义组件内部模版 
-            * 浏览器显示window
-            * 组件更新
-                * 依赖 Browser.histroy_goto 方法更新组件
-                * 使用 api.refreshComponentById 方法更新指定组件
-                * 待定：组件更新也可以用代理(data-name)或数据分发(dispatcher)的方式，获取父组件的数据
-            * 获取指定组件的Model
-            * 更新指定组件的Model，UI上显示更新后的数据
-            * 用户进行业务操作，修改对应的数据
-                * Button Click实现（推荐）
-                    * 开发者手动获取指定Component的Model里的值
-            * 提交表单数据进行验证  
-                * onSubmit 方法（推荐）
-                    * 框架以data-name的方式搜集页面中所有的 数据:(搜集页面中所有数据时必须保证组件既有id，又有data-name属性)
-                    * 开发者手动获取指定Component的Model里的值
-            * 对其他window进行传参
     
     * [框架导入-模块依赖 章节][md_quickstart-js]
+    
     * [代理模式-模块依赖 章节][md_quickstart-js]
+    
     * [组件依赖校验-元素扩展属性-校验相关属性 章节 待定][md_quickstart-js]
-    * 普通组件的业务场景
+    
+    * 普通组件示例
+    
         * Label示例 完成 : 基于 type =  text 的 span
+    
         * Button示例 `三态按钮制作中` 待定 : 基于 div
+    
         * CountdownBtn 示例 待定 : 基于 type = button 的 input
+    
         * Input示例 待定 : 基于 type = number/tel/text 的 input
+    
         * Switch示例 完成 : 基于 type = checkbox 的 input
+    
         * Checkbox示例 待定 : 基于 type = checkbox 的 input 
+    
         * 单选按钮 示例 完成 : 基于 type = radio 的 input
+    
         * 密码键盘 Input 示例 完成 : 基于 div
+    
         * Popup系列组件
+    
             * PopupMenu 示例 完成 : 基于 PopupMenu组件
+    
             * PopupSelect 示例 完成 : 基于 div
+    
             * PopupWindow 示例 完成 : 基于 PopupWindow组件
 
-    * 复杂组件的业务场景
+    * 复杂组件示例
+        
         * Select示例 完成 : 基于 select 
 
         * List示例 完成 : 基于 div
@@ -103,23 +88,37 @@
         
         * Tree示例 完成 : 基于 div
 
-        * Tab示例 完成 : 基于 div
+        * Tab示例 完成 : 基于 div 
 
+    * 数据示例
+        
+        * filter
+        
+        * dispatcher
+        
+        * forwarder
+        
+        * mapping
+        
+    * 表单提交
+        * 表单提交 示例 完成 : 基于 继承 Form 的组件（type = button 的 input）
+        
+        * Page 待定 : 基于 From 的组件
+
+    * 页面切换
+        
+        * Page切换 待定 : 基于 Browser 的 history_goto 方法
+        
+        * Window跳转参数传递 待定 : 基于 Browser 的 openUrl 方法
+        
+    * 组合组件示例
         * list + select示例 待定 : 
 
         * list + list示例 待定 :
 
-        * list item 左滑、右滑示例 待定 :   
-
-    * 数据
-        * filter
-        * dispatcher
-        * forwarder
-        * mapping
+        * list item 左滑、右滑示例 待定 :  
+    
     * 页面跳转
-        * Page跳转 待定 : 基于 Browser
-        * Window跳转参数传递 待定 : 基于 Browser
-        * 表单提交 示例 完成 : 基于 继承 Form 的组件（type = button 的 input）
         * 一级业务
 
             * 返回按钮
