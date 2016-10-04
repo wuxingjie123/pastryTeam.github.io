@@ -1,0 +1,246 @@
+/*#F5F5F5*/
+html {
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial;
+    background-color: #ff6c31;
+
+}
+
+body {
+    background-color: #ff6c31;
+}
+
+.clearfix:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*初始化结束*/
+/*媒体查询*/
+@media only screen and (max-width: 320px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 352px) {
+    html {
+        font-size: 19px;
+    }
+}
+
+@media only screen and (min-width: 352px) and (max-width: 384px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 384px) and (max-width: 416px) {
+    html {
+        font-size: 21px;
+    }
+}
+
+@media only screen and (min-width: 416px) and (max-width: 448px) {
+    html {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 448px) and (max-width: 480px) {
+    html {
+        font-size: 23px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 512px) {
+    html {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (min-width: 512px) and (max-width: 544px) {
+    html {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 544px) and (max-width: 576px) {
+    html {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 608px) {
+    html {
+        font-size: 27px;
+    }
+}
+
+@media only screen and (min-width: 608px) and (max-width: 640px) {
+    html {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    html {
+        font-size: 29px;
+    }
+}
+
+/*媒体查询结束*/
+.fw-page-content{
+    background-color: #E5E5E5;
+}
+.common-bd {
+    border-top: 1px solid #EDEDED;
+    height: 99.99%;
+}
+.imagecollection-top {
+    border-top: 1px solid #EDEDED;
+    height: 2.225rem;
+    background-color:#FFFFFF;
+    width: 100%;
+    margin-top: .5rem;
+}
+.imagecollection-top-title {
+    font-size: .85rem;
+    font-weight: 700;
+    color: #333;
+    margin-left: .75rem;
+    line-height: 2.225rem;
+    float: left;
+}
+.imagecollection-top-title:before {
+    display: block;
+    float: left;
+    content: '';
+    width:.2rem;
+    height: 1rem;
+    background: #B90F21;
+    margin-top: .6125rem;
+    margin-right: .3rem;
+}
+
+/*内容开始*/
+.imagecollection-lists {
+    width: 100%;
+    margin-top: .5rem;
+}
+
+.imagecollection-list {
+    background-color: #FFFFFF;
+    width: 100%;
+    margin-bottom: .5rem;
+}
+.imagecollection-list-top {
+    height: 2.25rem;
+    line-height: 2.25rem;
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+}
+.imagecollection-list-top span {
+    margin-left: .75rem;
+    margin-top: .3rem;
+    font-size: .85rem;
+    font-weight: 400;
+}
+
+.imagecollection-list-select {
+    direction: rtl;
+    width: 8.5rem;
+    border: none;
+    background: transparent;
+    appearance:none;
+    -webkit-appearance:none;
+    margin-right: .5rem;
+    float: right;
+}
+
+.imagecollection-list-top-btn {
+    float: right;
+    margin-top: 1.4rem;
+    margin-bottom: 2.26rem;
+    width: 2.65rem;
+    height: 2.64rem;
+    border-radius: 1.325rem;
+    text-align: center;
+    background-color: #139949;
+
+}
+.imagecollection-list-photo-all {
+    /*width: 100%;*/
+    margin-left: .75rem;
+    padding-bottom: 1rem;
+}
+.imagecollection-photo-btn {
+    margin-top: .9rem;
+    height: 3.925rem;
+    width: 3.925rem;
+    margin-right: .5rem;
+    border: .05rem solid #E5E5E5;
+    float: left;
+
+}
+.imagecollection-photo-box-img {
+    height: 3.925rem;
+    width: 3.925rem;
+    margin-top: .9rem;
+    margin-right: .5rem;
+    border: 1px solid #E5E5E5;
+    float: left;
+
+}
+.imagecollection-photo-box img {
+    height: 100%;
+    width: 100%;
+}
+.fw-loading-img {
+    display: none;
+}
+/*底部*/
+/*底部*/
+
+.imagecollection-bottom {
+    display: -webkit-flex;
+    height: 2.2rem;
+    text-align: center;
+    width: 100%;
+    -webkit-flex: 3;
+    -webkit-flex-direction: row;
+}
+.imagecollection-bottom input {
+    font-size: .85rem;
+    -webkit-flex: 1;
+    border: none;
+    background-color: #FFFFFF;
+}
+.imagecollection-bottom input:nth-child(1) {
+    border-right: 1px solid #999999;
+}
+.imagecollection-bottom input:nth-child(2) {
+    border-right: 1px solid #999999;
+    color: #BA1021;
+}
+.imagecollection-bottom input:hover {
+    background-color: #BA1021;
+    color: #FFFFFF;
+}
+
+/*按钮*/
