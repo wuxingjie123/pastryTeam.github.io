@@ -81,7 +81,7 @@
 [net_base_mvc_js]: ../www/mockdata/server/base_mvc.do.js
 [net_page_js]: https://www.processon.com/view/link/57ef3cf0e4b009c4af24ad7d
 
-![对象关系图](/pastry/images/quickstart/struct_js.png)
+![对象关系图](/pastry/images/processon/struct_js.png)
 
 ----
 ## 命名规范
