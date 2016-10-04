@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Windows</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="Pragma" content="no-cache" />
+
+    <!-- js引用及调试配置 -->
+    <script type="text/javascript" src="../pastry/main.js" 
+        data-debug="@mockdata">
+    </script>
+</head>
+<body>
+    <!--设置加载页-->
+    <div data-page-loading>
+        Loading...
+    </div>
+</body>
+</html>
+
+<script type="text/template" id="tp_HomePage" data-component="tp_HomePage" data-title="业务A">
+    <div class="app">
+        <h1>A 步骤一</h1>
+        <div id="deviceready" class="blink">
+            <p class="event listening">内容一</p>
+            <table>
+                <tr>
+                    <td>
+                        <input type="button" data-submit-button="next" value="进入业务A 步骤二"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" data-submit-button="pastryDemo" value="框架示例"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" data-submit-button="login" value="进入登录业务"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" data-submit-button="baidu" value="进入百度页面"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" data-submit-button="keyboard" value="进入键盘测试页面"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</script>
+
+<script type="text/template" id="tp_SecondPage" data-component="tp_SecondPage" data-title="业务A">
+    <div class="app">
+        <h1>A 步骤二</h1>
+        <div id="deviceready" class="blink">
+            <p class="event listening">内容一</p>
+            <input type="button" data-submit-button="next" value="进入业务B"/>
+            <input type="button" data-submit-button="account" value="进入账号业务"/>
+        </div>
+    </div>
+</script>
+
+<script type="text/javascript">
+    $(function(param){
+        console.log('js ___ = ' + JSON.stringify(param));
+        var Browser = this.Browser;
+        var Component = this.Component;
+
+
+        Component.tp_HomePage = Component.Page.extend({
+            onSubmit: function (data) {
+				var submitId = data.id;
+                console.log('Home Next1111');
+                if (submitId == 'login') {
+                    console.log('1111111111');
+                    Browser.openUrl("../examples/login/login.html",{param1:"testparams"},function(data){
+                        console.log('ddddddddddddddd');
+                        console.log(data);
+                        alert('返回结果：' + data);
+                    });   
+                }
+                else if (submitId == 'baidu'){
+                    Browser.openUrl("https://www.baidu.com",{param1:"testparams"},function(data){
+                        console.log('ddddddddddddddd');
+                        console.log(data);
+                        alert('返回结果：' + data);
+                    });
+                }
+                else if (submitId == 'keyboard'){
+                    Browser.openUrl("../examples/demo/keyboard.html",{param1:"testparams"},function(data){
+                        console.log('ddddddddddddddd');
+                        console.log(data);
+                        // alert('返回结果：' + data);
+                    });
+                }
+                else if (submitId == 'pastryDemo'){
+                    Browser.openUrl("../examples/index.html",{param1:"testparams"},function(data){
+                        console.log(data);
+                        // alert('返回结果：' + data);
+                    });
+                }
+                else
+                {
+                    console.log('222222 = ' + data);
+                    Browser.history_goto("tp_SecondPage");
+                };
+            }
+        });
+
+        Component.tp_SecondPage = Component.Page.extend({
+            onSubmit: function (data) {
+				var submitId = data.id;
+                console.log('Second Next');
+                if (submitId == "account") {
+
+                    Browser.openUrl("../examples/demo/account/account.html",{param1:"账号业务返回结果。"},function(data){
+                        console.log('ddddddddddddddd');
+                        console.log(data);
+                        alert('账号业务 返回结果：' + JSON.stringify(data));
+                    });
+
+                }else{
+
+                    Browser.openUrl("../examples/demo/test2.html",{param1:"testparams"},function(data){
+                        console.log('ddddddddddddddd');
+                        console.log(data);
+                        alert('业务B 返回结果：' + JSON.stringify(data));
+                    });
+                };
+            }
+        });
+
+        Browser.history_goto("tp_HomePage");
+        
+    });
+</script>
