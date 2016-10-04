@@ -12,55 +12,57 @@ desc:页面
     <meta name="viewport" content="width=device-width, user-scalable=0">
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta content="telephone=no" name="format-detection"/>
-    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
 
     <!--引入框架-->
     <script type="text/javascript" src="../pastry/main.js"
+            data-debug="@mockdata"
             data-components="C:checkbox"
             data-css="E:input"
-            data-debug=""
             ></script>
 </head>
 <body>
-<!--设置加载页-->
-<div data-page-loading>
-    Loading...
-</div>
+    <!--设置加载页-->
+    <div data-page-loading>
+        Loading...
+    </div>
 </body>
 </html>
 
-<script type="text/template" id="tp_HomePage" data-component="HomePage" data-title="Page">
-    首页<br/>
-    <input type="button" class="btn" value="<" data-submit-button="back">
-    <input type="button" class="btn" value=">" data-submit-button="next">
+<script type="text/template" id="tp_HomePageID" data-component="HomePage" data-title="Page">
+    <br/>首页<br/><br/>
+    <input type="button" class="btn" value="<" data-submit-button="back" />
+    <input type="button" class="btn" value=">" data-submit-button="next" />
 
+    <br/><br/>
+    <input type="checkbox" data-component="CheckBox" data-name="inHistory" data-text-template="下页入栈（设置第二页是否入栈）" id="inHistory01" value="true" checked />
     <br/>
-    <input type="checkbox" data-component="CheckBox" data-name="inHistory" data-text-template="下页入栈" id="inHistory01" value="true" checked>
-    <br/>
-    <input type="checkbox" data-component="CheckBox" data-name="trans" data-text-template="转场动画" id="trans01" value="true" checked>
+    <input type="checkbox" data-component="CheckBox" data-name="trans" data-text-template="转场动画" id="trans01" value="true" checked />
 
 </script>
 
-<script type="text/template" id="tp_SecondPage" data-component="SecondPage" data-title="SecondPage">
-    第二页<br/>
-    <input type="button" class="btn" value="<" data-submit-button="back">
-    <input type="button" class="btn" value=">" data-submit-button="next">
+<script type="text/template" id="tp_SecondPageID" data-component="SecondPage" data-title="SecondPage">
+    <br/>第二页<br/><br/>
+    <input type="button" class="btn" value="<" data-submit-button="back" />
+    <input type="button" class="btn" value=">" data-submit-button="next" />
 
+    <br/><br/>
+    <input type="checkbox" data-component="CheckBox" data-name="inHistory" data-text-template="下页入栈（设置第三页是否入栈）" id="inHistory02" value="true" checked />
     <br/>
-    <input type="checkbox" data-component="CheckBox" data-name="inHistory" data-text-template="下页入栈" id="inHistory02" value="true" checked>
-    <br/>
-    <input type="checkbox" data-component="CheckBox" data-name="trans" data-text-template="转场动画" id="trans02" value="true" checked>
+    <input type="checkbox" data-component="CheckBox" data-name="trans" data-text-template="转场动画" id="trans02" value="true" checked />
 </script>
 
-<script type="text/template" id="tp_ThirdPage" data-component="ThirdPage" data-title="ThirdPage">
-    第三页<br/>
-    <input type="button" class="btn" value="<" data-submit-button="back">
-    <input type="button" class="btn" value=">" data-submit-button="next">
+<script type="text/template" id="tp_ThirdPageID" data-component="ThirdPage" data-title="ThirdPage">
+    <br/>第三页<br/><br/>
+    <input type="button" class="btn" value="<" data-submit-button="back" />
+    <input type="button" class="btn" value=">" data-submit-button="next" />
+    <br/><br/>
+    <input type="button" class="btn" value="刷新" data-submit-button="refresh" />
 
+    <br/><br/>
+    <input type="checkbox" data-component="CheckBox" data-name="inHistory" data-text-template="下页入栈" id="inHistory03" value="true" checked />
     <br/>
-    <input type="checkbox" data-component="CheckBox" data-name="inHistory" data-text-template="下页入栈" id="inHistory03" value="true" checked>
-    <br/>
-    <input type="checkbox" data-component="CheckBox" data-name="trans" data-text-template="转场动画" id="trans03" value="true" checked>
+    <input type="checkbox" data-component="CheckBox" data-name="trans" data-text-template="转场动画" id="trans03" value="true" checked />
 </script>
 
 <script type="text/javascript">
@@ -72,23 +74,23 @@ desc:页面
             onSubmit: function (event) {
                 var data = event.data,submitId = event.id;
                 if (submitId === 'next') {
-                    //Browser.showMask('skyblue','0.7')
-                    Browser.history_goto("tp_SecondPage",{history:!!data.inHistory});
+                    // Browser.showMask('skyblue','0.7')
+                    Browser.history_goto("tp_SecondPageID", { history : !!data.inHistory });
                 } else if (submitId === 'back') {
-                    Browser.history_back({trans:!!data.trans});
+                    Browser.history_back({ trans: !!data.trans });
                 }
             },
             onOpen: function () {
-                //alert('page open');
+                console.log('second page open');
             },
             onPause: function () {
-                //alert('page pause');
+                console.log('second page pause');
             },
             onResume: function () {
-                //alert('page resume');
+                console.log('second page resume');
             },
             onClose: function () {
-                //alert('page close');
+                console.log('second page close');
             }
         });
 
@@ -98,9 +100,9 @@ desc:页面
                     var data = event.data,submitId = event.id;
                     if (submitId === 'next') {
                         //Browser.showMask('skyblue','0.7')
-                        Browser.history_goto("tp_ThirdPage",{history:!!data.inHistory});
+                        Browser.history_goto("tp_ThirdPageID", { history : !!data.inHistory });
                     } else if (submitId === 'back') {
-                        Browser.history_back({trans:!!data.trans});
+                        Browser.history_back({ trans: !!data.trans });
                     }
 				}
 			},
@@ -108,16 +110,16 @@ desc:页面
                 this.publish('testcase',obj);
             },
             onOpen: function () {
-                //alert('page open');
+                console.log('third page open');
             },
             onPause: function () {
-                //alert('page pause');
+                console.log('third page pause');
             },
             onResume: function () {
-                //alert('page resume');
+                console.log('third page resume');
             },
             onClose: function () {
-                //alert('page close');
+                console.log('third page close');
             }/*,
             afterRender:function(){
                 this._super();
@@ -129,22 +131,24 @@ desc:页面
             onSubmit: function (event) {
                 var data = event.data,submitId = event.id;
                 if (submitId === 'next') {
-                    //Browser.history_goto("tp_HomePage", {clearHistory: true});
-                    //Browser.history_goto("tp_HomePage");
-                    //Browser.history_goto("tp_HomePage", {clearHistory: 'tp_SecondPage'});
-                    //Browser.history_goto("tp_SecondPage", {clearHistory: -2});
-                    //Browser.history_goto("tp_SecondPage");
-                    //Browser.history_back({id:'HomePage'});
-                    //Browser.history_back({id:'tp_SecondPage'});
+                    //Browser.history_goto("tp_HomePageID", {clearHistory: true});
+                    //Browser.history_goto("tp_HomePageID");
+                    //Browser.history_goto("tp_HomePageID", {clearHistory: 'tp_SecondPageID'});
+                    //Browser.history_goto("tp_SecondPageID", {clearHistory: -2});
+                    //Browser.history_goto("tp_SecondPageID");
+                    //Browser.history_back({id:'tp_HomePageID'});
+                    //Browser.history_back({id:'tp_SecondPageID'});
                     //Browser.history_back({id:2});
                     //Browser.history_back({id:-2});
-                    Browser.loadUrl('base_page.html');
+                    alert('已经是最后一页，无法跳转页面');
                 } else if (submitId === 'back') {
                     Browser.history_back({trans:!!data.trans});
+                } else if (submitId === 'refresh') {
+                    Browser.loadUrl('base_page.html');
                 }
             }
         });
 
-        Browser.history_goto("tp_HomePage");
+        Browser.history_goto("tp_HomePageID");
     });
 </script>

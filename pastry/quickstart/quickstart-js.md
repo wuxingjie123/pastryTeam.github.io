@@ -576,64 +576,68 @@ PT JS的入口函数framework_ready简化成大家熟悉的jquery选择器形式
 ----
 ## 页面跳转
 
-页面的跳转借助框架的Browser对象调用PT JS的历史堆栈完成，`支持页面 跳转、返回`
-
-语法格式如下
+页面的跳转借助框架的Browser对象调用PT JS的历史堆栈完成，`支持页面 跳转、返回、刷新、新窗口打开、设置window返回参数`
 
 ----
 #### `跳转`
 
-	    Browser.history_goto(pageId,option);
+	    Browser.history_goto(pageId, option);
 
-  pageId对应定义的页面模板Id
+`pageId对应定义的页面模板Id`
 
-  option中配置页面跳转的选项参数
+`option中配置页面跳转的选项参数`
 
 **option参数**
 
 |属性	|数据类型	|默认值	|功能	|说明 |
 |-----|-----|-----|-----|-----|
-|history	|boolean	|true	|跳转后是否保存当前页到历史栈	|  |
-|clearHistory	|boolean/string/number |		|跳转后是否清空历史栈	<br/>boolean：是否清空所有页面堆栈 <br/>string：指定清除到具体页的id(例如：{clearHistory:​ '​tp1'​}清除到id为tp1的page) <br/>number：清除的页面数，支持逆向选择(例如：{clearHistory:​ 2}清除两页,{clearHistory:​ -2}清除到倒数第二页)|
-|resetInput	|boolean/string	|false	|跳转后是否清空模型数据|	   |
+|history	|boolean	|true	|跳转后是否保存当前页到历史栈 |  |
+|clearHistory	|boolean/string/number |  |跳转后是否清空历史栈	<br/>boolean：是否清空所有页面堆栈 <br/>string：指定清除到具体页的id(例如：{clearHistory:​ '​tp1'​}清除到id为tp1的page) <br/>number：清除的页面数，支持逆向选择(例如：{clearHistory:​ 2}清除两页,{clearHistory:​ -2}清除到倒数第二页)|
+|resetInput	|boolean/string	|false	|跳转后是否清空模型数据|   |
 |refresh	|object/array|	{}	|跳转后是否刷新模型数据|   |
 
-**refresh参数**
+**option.refresh参数**
 
-  refresh参数支持两种格式：
+`注意事项：`
+  
+  * 不指定refresh.id，默认使用PageID。
+  * refresh.initVal会覆盖Model里的默认值
+  * 此参数最终用于 model.js 的 refresh: function(option) 方法
+  
+`refresh参数支持两种格式：`
 
-  单组件刷新
+* 单组件刷新:
 
-    var option={
-        refresh:{
-            id: 'id1',
-            initVal: {
-                TextName: '默认值'
-            }
-        }
-    };
-
-  多组件刷新：
-
-    var option={
-        refresh:[
-            {
+        var option = {
+            refresh: {
                 id: 'id1',
                 initVal: {
                     TextName: '默认值'
                 }
-            },
-            {
-                id:'id2',
-                removeVal: 'TextName1'
             }
-        ]
-    };
+        };
+
+* 多组件刷新:
+
+        var option = {
+            refresh: [
+                {
+                    id: 'id1',
+                    initVal: {
+                        TextName: '默认值'
+                    }
+                },
+                {
+                    id:'id2',
+                    removeVal: 'TextName1'
+                }
+            ]
+        };
 
 |属性	|数据类型	|默认值	|功能	|说明|
 |-----|-----|-----|-----|-----|
-|id	|string	|pageId	|组件id|  |
-|keepOldVal	|boolean	|false	|初始化时是否保留旧数据|	|
+|id	|string	|pageId	|组件id| 不指定refresh.id，默认使用PageID。  |
+|keepOldVal	|boolean	|false	|初始化时是否保留旧数据|  |
 |removeVal	|string	|undefined	|移除的数据key，以逗号分割|只能清空Model里设置的默认值，<br/>不能清空refresh里的initVal的默认值。    |
 |initVal	|object	|undefined	|初始化数据 |`该属性会覆盖Model里的默认值；只要设置了initVal属性，所有Model的默认设置都不生效` |
 
@@ -646,10 +650,90 @@ option中配置返回的选项参数
 
 **option参数**
 
+        var option = {
+            id: 'tp_HomePageID',
+            trans: false
+        };
+
+        // 或者
+        
+        var option = {
+            id: -2,
+            trans: false
+        };
+        
+        Browser.history_back(option);
+        
 |属性	|数据类型	|默认值	|功能	|说明|
 |-----|-----|-----|-----|-----|
 |id	|string/number|无		|后退页数	|string：指定到具体页的id(同跳转clearHistory) <br/>number：后退的页面数，支持逆向选择(同跳转)|
-|trans	|boolean	|true	|返回动作是否执行动画	|无  |
+|trans	|boolean	|true	|返回动作是否执行动画 |无  |
+
+----
+#### `刷新`
+
+    Browser.loadUrl(url, param);
+    
+示例
+
+    var url = "base_page.html";
+    
+    var param = {
+            param1: "testparams",
+            param2: "testParmas2"
+        };
+        
+    Browser.loadUrl(url, param);
+        
+|属性	|数据类型	|默认值	|功能	|说明|
+|-----|-----|-----|-----|-----|
+|url	|string |无		|页面链接	|  |
+|param	|Object	|无	|页面参数 |`由 $(function(param){});里的param参数获取`  |
+
+----
+#### `新窗口打开`
+
+    Browser.openUrl(url, param, callback);
+
+示例
+
+    var url = "base_page.html";
+    
+    var param = {
+            param1: "testparams",
+            param2: "testParmas2"
+        };
+        
+    Browser.openUrl(url, param, function(data) {
+        // 打印 返回的结果
+        console.log(data);
+    });
+        
+        
+|属性	|数据类型	|默认值	|功能	|说明|
+|-----|-----|-----|-----|-----|
+|url	|string |无		|页面链接	|  |
+|param	|Object	|无	|页面参数 |`由 $(function(param){});里的param参数获取` |
+|callback	|function(data){}	|无	|回调方法 |从data中获取其他页面返回的数据  |
+
+----
+#### `设置window间返回参数`
+
+    Browser.setResult(result);
+
+示例
+    
+    var result = {
+            param1: "业务完成1",
+            param2: "业务完成2"
+        };
+        
+    Browser.setResult(result);
+        
+        
+|属性	|数据类型	|默认值	|功能	|说明|
+|-----|-----|-----|-----|-----|
+| result	|Object	|无	|返回给其他页面参数结果 |由 browser.openUrl 里的 callback 方法获取  |
 
 ----
 ## 组件更新
