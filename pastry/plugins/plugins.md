@@ -150,6 +150,10 @@
 | Page | Form | 页签组件 | [www/examples/base_page.html][base_page] ||
 | `Browser` |-----|-----|-----|
 | Browser |    | 浏览器组件 | [www/examples/windows/base_window.html][base_window] ||
+| `其他` |-----|-----|-----|
+| import |    | 设置框架导入 | [www/examples/base_import.html][base_import] ||
+| dependency |    | 组件依赖校验 | [www/examples/ex_dependency.html][base_dependency] ||
+| proxy |    | 代理模式 | [www/examples/adv_proxy_model.html][base_proxy] ||
 
 [base_input]: ../www/examples/base_input.html
 [base_label]: ../www/examples/base_label.html
@@ -173,6 +177,9 @@
 [ex_radio]: ../www/examples/ex_radio.html
 [ex_popupmenu]: ../www/examples/ex_popupmenu.html
 [ex_countdownbtn]: ../www/examples/ex_countdownbtn.html
+[base_import]: ../www/examples/base_import.html
+[base_dependency]: ../www/examples/ex_dependency.html
+[base_proxy]: ../www/examples/adv_proxy_model.html
 
 * 数据模型类图
 

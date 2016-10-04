@@ -737,6 +737,31 @@ option中配置返回的选项参数
 
 ----
 ## 组件更新
+三种方式
+
+* 初始化刷新 `Browser.history_goto(id, option);`
+示例
+        var componentId = 'componentId001';
+        var pageId = 'homePageId';
+        var option = {
+            refresh: [
+                {
+                    id: componentId
+                }
+            ]
+        };
+        
+        Browser.history_goto(pageId, option);
+
+* 初始化刷新 `api.refreshComponentById(componentId);`
+示例
+        var componentId = 'componentId001';
+        api.refreshComponentById(componentId);
+
+* 更改Model刷新
+示例
+        var componentId = 'componentId001';
+        api.getModel('componentId').setValue(200);
 
 ----
 ## 表单提交
@@ -788,8 +813,27 @@ option中配置返回的选项参数
 ----
 ## window参数传递
 
+* window接收外部参数
+    PT JS的入口函数framework_ready简化成大家熟悉的jquery选择器形式。
+
+        <script type="text/javascript">
+            $(function (param) {
+                //...your code
+            });
+        </script>
+
+  `其中param参数为json对象，是从原生应用中传来的配置参数，具体数据格式根据项目需要自行定义。`
+
+* window接收下一个window的返回结果
+
+        Browser.openUrl(url, param, callback);
+
+* window发送返回结果
+
+        Browser.setResult(result);
+
 ----
-## 调试支持 `待定`
+## 调试支持
 
 * **模拟数据**
 
