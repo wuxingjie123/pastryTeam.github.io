@@ -76,26 +76,50 @@
             * 对其他window进行传参
     
     * [框架导入-模块依赖 章节][md_quickstart-js]
-    * Label示例
-    * Button示例 `三态按钮制作中`
-    * Switch示例
-    * 
+    * [代理模式-模块依赖 章节][md_quickstart-js]
+    * [组件依赖校验-元素扩展属性-校验相关属性 章节 待定][md_quickstart-js]
     * 普通组件的业务场景
+        * Label示例 完成 : 基于 type =  text 的 span
+        * Button示例 `三态按钮制作中` 待定 : 基于 div
+        * CountdownBtn 示例 待定 : 基于 type = button 的 input
+        * Input示例 待定 : 基于 type = number/tel/text 的 input
+        * Switch示例 完成 : 基于 type = checkbox 的 input
+        * Checkbox示例 待定 : 基于 type = checkbox 的 input 
+        * 单选按钮 示例 完成 : 基于 type = radio 的 input
+        * 密码键盘 Input 示例 完成 : 基于 div
+        * Popup系列组件
+            * PopupMenu 示例 完成 : 基于 PopupMenu组件
+            * PopupSelect 示例 完成 : 基于 div
+            * PopupWindow 示例 完成 : 基于 PopupWindow组件
 
     * 复杂组件的业务场景
+        * Select示例 完成 : 基于 select 
 
-        * list组件的使用方法
+        * List示例 完成 : 基于 div
+        
+        * SelectList示例 完成 : 基于 div
 
-        * select组件使用的方法
+        * Scrollview示例 完成 : 基于 div
+        
+        * Tree示例 完成 : 基于 div
 
-        * list + select组件的使用方法
+        * Tab示例 完成 : 基于 div
 
-        * list + list组件的使用方法
+        * list + select示例 待定 : 
 
-        * list item 左滑、右滑的使用方法  
+        * list + list示例 待定 :
 
+        * list item 左滑、右滑示例 待定 :   
+
+    * 数据
+        * filter
+        * dispatcher
+        * forwarder
+        * mapping
     * 页面跳转
-
+        * Page跳转 待定 : 基于 Browser
+        * Window跳转参数传递 待定 : 基于 Browser
+        * 表单提交 示例 完成 : 基于 继承 Form 的组件（type = button 的 input）
         * 一级业务
 
             * 返回按钮
@@ -121,6 +145,8 @@
             * 不返回按钮
 
     * 语言国际化
+    * 注意事项
+        * initVal属性会覆盖Model的默认值设置，只要设置了initVal属性，所有Model的默认设置都不生效。
 
 * 7。pastry 原生 业务层 开发
 

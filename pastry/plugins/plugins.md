@@ -118,12 +118,12 @@
 | Input | Base | 输入框组件 | [www/examples/base_input.html][base_input] |
 | ICheck | Base | 单多选按钮组件基类 | `待定` |
 | `框架扩展组件` |-----|-----|-----|
+| `框架扩展基础组件` |-----|-----|-----|
 | Label | Base | 标签组件 | [www/examples/base_label.html][base_label] |
 | Select | Base | `列表组件` | [www/examples/base_amount.html][base_amount] ||
 | CheckImage | Base | 验证码组件 | `待定` ||
 | CodeMirror | Base | ？？？？？ | `待定` |
 | Datepicker | Base | 日历组件 | `待定` ||
-| PopupSelect | Base | `弹出框组件` | [www/examples/ex_popupselect.html][ex_popupselect] ||
 | StepGroup | Base | 步骤组组件 | `待定` ||
 | Switch | Base | 开关按钮组件 | [www/examples/ex_switch.html][ex_switch] ||
 | Tree | Base | 树形组件 | [www/examples/ex_tree.html][ex_tree] ||
@@ -135,15 +135,19 @@
 | ScrollView | Container | 滚动区域组件 | [www/examples/ex_scrollview.html][ex_scrollview] ||
 | SelectList | Container | 选择列表组件 | [www/examples/ex_selectlist.html][ex_selectlist] ||
 | Tab | Container | 选项卡组件 | [www/examples/ex_tab.html][ex_tab] ||
-| Form | Container | 表单组件 | [www/examples/base_form.html][base_form] |
-| Page | Form | 页签组件 | [www/examples/base_page.html][base_page] ||
 | BrowserHeader | Form | 浏览器顶部栏组件(弃用) | `待定` ||
 | BrowserFooter | Form | 浏览器底部栏组件(弃用) | [www/examples/base_header_footer.html][base_header_footer] ||
-| PopupWindow | Form | `弹出框组件` | [www/examples/ex_popupwindow.html][ex_popupwindow] ||
 | CheckBox | ICheck | 多选按钮组件 | [www/examples/ex_checkbox.html][ex_checkbox] ||
 | Radio | ICheck | 单选按钮组件 | [www/examples/ex_radio.html][ex_radio] ||
-| PopupMenu | PopupWindow | 弹出菜单组件 | [www/examples/ex_popupmenu.html][ex_popupmenu] ||
 | CountdownBtn | Button | 倒计时按钮组件 | [www/examples/ex_countdownbtn.html][ex_countdownbtn] |
+| `悬浮层组件` |-----|-----|-----|
+| PopupWindow | Form | `弹出框组件` | [www/examples/ex_popupwindow.html][ex_popupwindow] ||
+| PopupMenu | PopupWindow | 弹出菜单组件 | [www/examples/ex_popupmenu.html][ex_popupmenu] ||
+| PopupSelect | Base | `弹出框组件` | [www/examples/ex_popupselect.html][ex_popupselect] ||
+| `表单组件` |-----|-----|-----|
+| Form | Container | 表单组件 | [www/examples/base_form.html][base_form] |
+| `页面组件` |-----|-----|-----|
+| Page | Form | 页签组件 | [www/examples/base_page.html][base_page] ||
 
 [base_input]: ../www/examples/base_input.html
 [base_label]: ../www/examples/base_label.html
