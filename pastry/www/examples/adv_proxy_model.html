@@ -8,33 +8,41 @@ desc:代理模式
 <html>
 <head>
     <title>Proxy Model</title>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=0">
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta content="telephone=no" name="format-detection"/>
-    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="Pragma" content="no-cache" />
 
     <!--引入框架-->
-    <script type="text/javascript" src="../pastry/main.js"
-            data-debug="mockdata"
-            data-components="C:switch,popupselect"
-            ></script>
+    <script type="text/javascript" 
+            src="../pastry/main.js"
+            data-debug="@mockdata"
+            data-components="C:switch,popupselect">
+    </script>
 </head>
 <body>
-<!--设置加载页-->
-<div data-page-loading>
-    Loading...
-</div>
+    <!--设置加载页-->
+    <div data-page-loading>
+        Loading...
+    </div>
 </body>
 </html>
 
-<script type="text/template" id="tp_HomePage" data-component="HomePage" data-title="Proxy Model">
-    <input value="test" data-component="Input" data-name="INPUT"/> <br/>
-    <input type="checkbox" data-component="Switch" data-name="SWITCH"/> <br/>
+<!-- 业务模板定义 -->
+<script type="text/template" id="tp_HomePageID" data-component="HomePage" data-title="Proxy Model">
+    <input value="test" data-component="Input" data-name="INPUT"/>
+    <br/>
+    <input type="checkbox" data-component="Switch" data-name="SWITCH"/>
+    <br/>
     <span data-component="Label" data-name="mylabel"></span>
+    <br/>
     <div data-component="List" data-name="mylist" data-item-template="#tp_ListItem"></div>
+    <br/>
     <select data-component="Select" data-name="myselect"></select>
+    <br/>
     <div data-component="MyPopupSelect" data-name="mypopupselect"></div>
+    <br/>
     <input type="button" class="btn" value="提交" data-submit-button/>
 </script>
 
@@ -49,15 +57,17 @@ desc:代理模式
         var Component = this.Component;
         var api = this.api;
 
-        api.setModels({
-            'homePage': new Model.Request(null, {
-                url: 'helloworld.do?act=getAllData2',
+        var windowModel = {
+            'tp_HomePageID': new Model.Request(null, {
+                url: 'adv_proxy_model.do?act=getAllData2',
                 filter:function(data){
-                    data.myselect.selected=1;
+                    data.myselect.selected = 1;
                     return data;
                 }
             })
-        });
+        };
+
+        api.setModels(windowModel);
 
         Component.HomePage = Component.Page.extend({
             onSubmit: function (event) {
@@ -86,6 +96,6 @@ desc:代理模式
             }
         };
 
-        Browser.history_goto("tp_HomePage", option);
+        Browser.history_goto("tp_HomePageID", option);
     });
 </script>
