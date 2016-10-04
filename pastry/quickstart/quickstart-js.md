@@ -283,6 +283,12 @@ data-name指的是数据名称,和Html中Form元素的name属性类似,`用于�
 ----
 ## 页面组件配置
 
+`1 Component思维导图`
+
+![Component关系图](/pastry/images/processon/component_js.png)
+
+`2 待定`
+
 ----
 ## 模版(Template)配置
 
@@ -740,8 +746,13 @@ option中配置返回的选项参数
 | result	|Object	|无	|返回给其他页面参数结果 |由 browser.openUrl 里的 callback 方法获取  |
 
 ----
-## 组件更新
-三种方式
+## 组件更新(更新方式二基于api)
+
+`1 api思维导图`
+
+![api关系图](/pastry/images/processon/api_js.png)
+
+`2 三种方式`
 
 * 初始化刷新 `Browser.history_goto(id, option);`
 示例
@@ -815,7 +826,7 @@ option中配置返回的选项参数
     * event.data    `提交的数据`
 
 ----
-## window参数传递
+## window参数传递（基于Browser）
 
 `1 Browser思维导图`
 
