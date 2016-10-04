@@ -584,7 +584,11 @@ PT JS的入口函数framework_ready简化成大家熟悉的jquery选择器形式
   `其中param参数为json对象，是从原生应用中传来的配置参数，具体数据格式根据项目需要自行定义。`
 
 ----
-## 页面跳转
+## 页面跳转（基于Browser）
+
+`1 Browser思维导图`
+
+![Browser关系图](/pastry/images/processon/browser_js.png)
 
 页面的跳转借助框架的Browser对象调用PT JS的历史堆栈完成，`支持页面 跳转、返回、刷新、新窗口打开、设置window返回参数`
 
@@ -827,10 +831,6 @@ option中配置返回的选项参数
 
 ----
 ## window参数传递（基于Browser）
-
-`1 Browser思维导图`
-
-![Browser关系图](/pastry/images/processon/browser_js.png)
 
 * window接收外部参数
     PT JS的入口函数framework_ready简化成大家熟悉的jquery选择器形式。
