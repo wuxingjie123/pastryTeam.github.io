@@ -128,33 +128,7 @@
 
         * list + list : [(在线示例)][rel_list+select_list+list]
 
-        * list item 左滑、右滑示例 待定 :  
-    
-    * Browser深度解析
-        
-        * 一级业务
-
-            * 返回按钮
-
-            * 不返回按钮
-
-        * 二级业务
-
-            * 返回按钮
-
-            * 不返回按钮
-
-        * 三级业务
-
-            * 返回按钮
-
-            * 不返回按钮
-
-        * 多级业务
-
-            * 返回按钮
-
-            * 不返回按钮
+        * list item 左滑、右滑示例 待定 : 
     
     * [注意事项][net_JS_tip]
 
@@ -246,7 +220,19 @@
 
 * 11。pastry JS 框架层
 
-    * 11.1。pastry JS 的示例讲解
+    * 11.1。[api深度解析 思维导图][processon_api]
+
+    * 11.2。[Model深度解析 思维导图][processon_model]
+
+    * 11.3。[Component深度解析 思维导图][processon_component]
+
+    * 11.4。[Template深度解析 思维导图][processon_template]
+
+    * 11.5。[Browser深度解析 思维导图][processon_browser]
+
+    * 11.6。[bridge深度解析 思维导图][processon_bridge]
+
+    * 11.7。[request深度解析 思维导图][processon_request]
 
 * 12。pastry 原生 框架层
 
@@ -387,3 +373,11 @@
 [net_pastryState]: https://github.com/pastryTeam/pastry-plugin-pastryState
 [net_browser]: https://github.com/pastryTeam/pastry-plugin-browser
 
+
+[processon_api]:http://www.processon.com/view/link/57f39b9de4b009c4af304d79
+[processon_model]:http://www.processon.com/view/link/57f39bbce4b0300f4fde39f6
+[processon_component]:http://www.processon.com/view/link/57f39bb3e4b009c4af304de8
+[processon_template]: #
+[processon_browser]:http://www.processon.com/view/link/57f36656e4b0300f4fdd4c58
+[processon_bridge]: #
+[processon_request]: #
