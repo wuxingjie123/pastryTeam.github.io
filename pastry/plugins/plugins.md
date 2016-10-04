@@ -116,7 +116,7 @@
 | Base | Backbone.View |||
 | Container | Base | 容器组件基类 ||
 | Input | Base | 输入框组件 | [www/examples/base_input.html][base_input] |
-| ICheck | Base | 单多选按钮组件基类 | `待定` |
+| ICheck | Base | 单多选按钮组件基类 | [www/examples/ex_checkbox.html][ex_checkbox] |
 | `框架扩展组件` |-----|-----|-----|
 | `框架扩展基础组件` |-----|-----|-----|
 | Label | Base | 标签组件 | [www/examples/base_label.html][base_label] |
@@ -135,7 +135,7 @@
 | ScrollView | Container | 滚动区域组件 | [www/examples/ex_scrollview.html][ex_scrollview] ||
 | SelectList | Container | 选择列表组件 | [www/examples/ex_selectlist.html][ex_selectlist] ||
 | Tab | Container | 选项卡组件 | [www/examples/ex_tab.html][ex_tab] ||
-| BrowserHeader | Form | 浏览器顶部栏组件(弃用) | `待定` ||
+| BrowserHeader | Form | 浏览器顶部栏组件(弃用) | [www/examples/base_header_footer.html][base_header_footer] ||
 | BrowserFooter | Form | 浏览器底部栏组件(弃用) | [www/examples/base_header_footer.html][base_header_footer] ||
 | CheckBox | ICheck | 多选按钮组件 | [www/examples/ex_checkbox.html][ex_checkbox] ||
 | Radio | ICheck | 单选按钮组件 | [www/examples/ex_radio.html][ex_radio] ||
@@ -148,6 +148,8 @@
 | Form | Container | 表单组件 | [www/examples/base_form.html][base_form] |
 | `页面组件` |-----|-----|-----|
 | Page | Form | 页签组件 | [www/examples/base_page.html][base_page] ||
+| `Browser` |-----|-----|-----|
+| Browser |    | 浏览器组件 | [www/examples/windows/base_window.html][base_window] ||
 
 [base_input]: ../www/examples/base_input.html
 [base_label]: ../www/examples/base_label.html
@@ -159,6 +161,7 @@
 [base_password]: ../www/examples/base_password.html
 [base_button]: ../www/examples/base_button.html
 [base_list]: ../www/examples/base_list.html
+[base_window]: ../www/examples/windows/base_window.html
 [ex_scrollview]: ../www/examples/ex_scrollview.html
 [ex_selectlist]: ../www/examples/ex_selectlist.html
 [ex_tab]: ../www/examples/ex_tab.html
