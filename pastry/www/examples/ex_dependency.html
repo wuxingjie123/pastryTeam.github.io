@@ -8,15 +8,15 @@ desc:依赖校验
 <html>
 <head>
     <title>Dependency</title>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=0">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=0" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta content="telephone=no" name="format-detection" />
-    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache" />
 
     <script type="text/javascript" src="../pastry/main.js"
             data-debug="@mockdata"
-            data-css="@E:style"
+            data-css="E:style"
             data-components="C:radio,checkbox">
     </script>
 </head>
@@ -69,8 +69,12 @@ desc:依赖校验
     $(function (param) {
         var Component = this.Component;
         var Browser = this.Browser;
+        var api = this.api;
 
         Component.HomePage = Component.Page.extend({
+            finalRender:function(){
+                api.getComponent("input2").setEnable(false);
+            },
             onSubmit: function (event) {
                 var data = event.data,submitId = event.id;
                 alert('onSubmitId:' + submitId + '\n' + JSON.stringify(data));
