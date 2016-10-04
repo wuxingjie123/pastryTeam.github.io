@@ -220,7 +220,7 @@
     
 * 10。制作Pastry组件
     
-    * 框架组件
+    * [框架组件-框架组件开发指南][md_plugin-develop]
         
         * iOS平台框架组件
         
@@ -230,7 +230,7 @@
         
         * 前置框架组件
     
-    * 业务组件
+    * [业务组件-业务组件开发指南][md_plugin-develop]
        
         * iOS平台业务组件
        
@@ -240,7 +240,7 @@
        
         * 前置业务组件
     
-    * cordova组件
+    * [cordova组件-cordova组件开发指南][md_plugin-develop]
 
 * 11。pastry JS 框架层
 
@@ -370,6 +370,8 @@
 [md_pastry-cli]:./pastry-cli/bake.md
 
 [md_plugin]: ./plugins/plugins.md
+
+[md_plugin-develop]: ./plugins/plugins-develop.md
 
 [md_pastry-js]: ./quickstart/pastry-js.md
 
