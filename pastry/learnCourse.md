@@ -117,6 +117,10 @@
         * [页面初始化参数-程序入口 章节][md_quickstart-js]
         
         * [Window跳转参数传递-window参数传递 章节 : 基于 Browser 的 openUrl/onResult 方法][md_quickstart-js] [(在线示例)][base_window]
+
+    * 语言国际化
+    
+    * 图片适配
     
     * 组合组件示例
         
@@ -126,7 +130,7 @@
 
         * list item 左滑、右滑示例 待定 :  
     
-    * 页面跳转
+    * Browser深度解析
         
         * 一级业务
 
@@ -151,8 +155,6 @@
             * 返回按钮
 
             * 不返回按钮
-
-    * 语言国际化
     
     * 注意事项
      
@@ -211,39 +213,39 @@
 
     * 8.3。简单的逻辑转发
 
+* 9。调试发布
 
-* 9。pastry JS 框架层
+    * 9.1。[Cordova调试方法简介][net_cordova-test]
 
-    * 6.1。pastry JS 的示例讲解
-
-* 10。pastry 原生 框架层
-
-    * 7.1。pastry iOS  
-
-        * 7.1.1。pastry iOS功能介绍
-
-        * 7.1.2。pastry iOS功能示例
-
-    * 7.2。pastry android
-
-        * 7.2.1。pastry android功能介绍
-
-        * 7.2.2。pastry android 功能示例
-
-* 11。pastry 前置 框架层
-
-    * 11.1。会话管理
-
-    * 11.2。通讯安全
-
-* 12。调试发布
-
-    * 13.1。[Cordova调试方法简介][net_cordova-test]
-
-    * 13.2。[调试方法简介][net_pastry-test]
+    * 9.2。[调试方法简介][net_pastry-test]
 
     
-* 14。制作Pastry组件
+* 10。制作Pastry组件
+
+
+* 11。pastry JS 框架层
+
+    * 11.1。pastry JS 的示例讲解
+
+* 12。pastry 原生 框架层
+
+    * 12.1。pastry iOS  
+
+        * 12.1.1。pastry iOS功能介绍
+
+        * 12.1.2。pastry iOS功能示例
+
+    * 12.2。pastry android
+
+        * 12.2.1。pastry android功能介绍
+
+        * 12.2.2。pastry android 功能示例
+
+* 13。pastry 前置 框架层
+
+    * 13.1。会话管理
+
+    * 13.2。通讯安全
 
 
 
