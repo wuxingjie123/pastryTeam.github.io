@@ -113,8 +113,10 @@
         * Page : 基于 From 的组件 [(在线示例)][base_page]
       
     * [window参数传递-window参数传递 章节][md_quickstart-js]
+        
         * [页面初始化参数-程序入口 章节][md_quickstart-js]
-        * Window跳转参数传递 : 基于 Browser 的 openUrl 方法 [(在线示例)][base_window]
+        
+        * [Window跳转参数传递-window参数传递 章节 : 基于 Browser 的 openUrl/onResult 方法][md_quickstart-js] [(在线示例)][base_window]
     
     * 组合组件示例
         
