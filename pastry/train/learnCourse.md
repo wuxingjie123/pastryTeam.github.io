@@ -92,25 +92,29 @@
 
     * [5.7。数据模型-模型配置 章节][md_quickstart-js]
         
-        * 5.7.1。filter [(在线示例)][base_filter]
+        * 5.7.1。简单model操作 : getValue/setValue方法 [(在线示例)][base_model-simple]
         
-        * 5.7.2。dispatcher [(在线示例)][base_dispatcher]
+        * 5.7.2。复杂model操作 : getData/get/set方法 [(在线示例)][base_model-complex]
         
-        * 5.7.3。forwarder [(在线示例)][base_forwarder]
+        * 5.7.3。filter [(在线示例)][base_filter]
         
-        * 5.7.4。mapping [(在线示例)][base_mapping]
-
-    * [5.8。页面跳转-页面跳转 章节][md_quickstart-js]
+        * 5.7.4。dispatcher [(在线示例)][base_dispatcher]
         
-        * 5.8.1。Page跳转 : 基于 Browser 的 history_goto 方法 [(在线示例)][base_page]
+        * 5.7.5。forwarder [(在线示例)][base_forwarder]
         
-        * 5.8.2。Window跳转 : 基于 Browser 的 openUrl 方法 [(在线示例)][base_window]
+        * 5.7.6。mapping [(在线示例)][base_mapping]
         
-    * [5.9。表单提交-表单提交 章节][md_quickstart-js]
+    * [5.8。表单提交-表单提交 章节][md_quickstart-js]
     
-        * 5.9.1。表单提交 : 基于 继承 Form 的组件（type = button 的 input）[(在线示例)][base_form]
+        * 5.8.1。表单提交 : 基于 继承 Form 的组件（type = button 的 input）[(在线示例)][base_form]
         
-        * 5.9.2。Page : 基于 From 的组件 [(在线示例)][base_page]
+        * 5.8.2。Page : 基于 From 的组件 [(在线示例)][base_page]
+
+    * [5.9。页面跳转-页面跳转 章节][md_quickstart-js]
+        
+        * 5.9.1。Page跳转 : 基于 Browser 的 history_goto 方法 [(在线示例)][base_page]
+        
+        * 5.9.2。Window跳转 : 基于 Browser 的 openUrl 方法 [(在线示例)][base_window]
       
     * [5.10。window参数传递-window参数传递 章节][md_quickstart-js]
         
