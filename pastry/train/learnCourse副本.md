@@ -52,96 +52,85 @@
     
     * [5.5。组件依赖校验-元素扩展属性-校验相关属性 章节 待定][md_quickstart-js] [(在线示例)][base_dependency]
     
-    * 5.6。Component
-        * 5.6.1。普通组件示例
-        
-            * 5.6.1.1。Label : 基于 type =  text 的 span [(在线示例)][base_label]
-        
-            * 5.6.1.2。Button `三态按钮制作中` 待定 : 基于 div [(在线示例)][base_button]
-        
-            * 5.6.1.3。CountdownBtn : 基于 type = button 的 input [(在线示例)][base_CountdownBtn]
-        
-            * 5.6.1.4。Input : 基于 type = number/tel/text 的 input [(在线示例)][base_input]
-        
-            * 5.6.1.5。Switch : 基于 type = checkbox 的 input [(在线示例)][base_switch]
-        
-            * 5.6.1.6。Checkbox : 基于 type = checkbox 的 input [(在线示例)][base_checkbox]
-        
-            * 5.6.1.7。Radio : 基于 type = radio 的 input [(在线示例)][base_radio]
-        
-            * 5.6.1.8。密码键盘 Input : 基于 div [(在线示例)][base_keyboard]
-        
-            * 5.6.1.9。Popup系列组件
-        
-                * 5.6.1.9.1。PopupMenu : 基于 PopupMenu组件 [(在线示例)][base_popupMenu]
-        
-                * 5.6.1.9.2。PopupSelect : 基于 div [(在线示例)][base_popupSelect]
-        
-                * 5.6.1.9.3。PopupWindow : 基于 PopupWindow组件 [(在线示例)][base_popupWindow]
+    * 5.6。普通组件示例
     
-        * 5.6.2。复杂组件示例
-            
-            * 5.6.2.1。Select : 基于 select [(在线示例)][base_popupWindow]
+        * 5.6.1。Label : 基于 type =  text 的 span [(在线示例)][base_label]
     
-            * 5.6.2.2。List : 基于 div [(在线示例)][base_popupWindow]
-            
-            * 5.6.2.3。SelectList : 基于 div [(在线示例)][base_popupWindow]
+        * 5.6.2。Button `三态按钮制作中` 待定 : 基于 div [(在线示例)][base_button]
     
-            * 5.6.2.4。Scrollview : 基于 div [(在线示例)][base_popupWindow]
-            
-            * 5.6.2.5。Tree : 基于 div [(在线示例)][base_popupWindow]
+        * 5.6.3。CountdownBtn : 基于 type = button 的 input [(在线示例)][base_CountdownBtn]
     
-            * 5.6.2.6。Tab : 基于 div  [(在线示例)][base_popupWindow]
+        * 5.6.4。Input : 基于 type = number/tel/text 的 input [(在线示例)][base_input]
     
-        * 5.6.3。组合组件示例
-            
-            * 5.6.3.1。list + select : [(在线示例)][rel_list+select_list+list]
+        * 5.6.5。Switch : 基于 type = checkbox 的 input [(在线示例)][base_switch]
     
-            * 5.6.3.2。list + list : [(在线示例)][rel_list+select_list+list]
+        * 5.6.6。Checkbox : 基于 type = checkbox 的 input [(在线示例)][base_checkbox]
     
-            * 5.6.3.3。list item 左滑、右滑示例 待定 : 
-        
-        * [5.6.4。表单提交-表单提交 章节][md_quickstart-js]
-        
-            * 5.6.4.1。表单提交 : 基于 继承 Form 的组件（type = button 的 input）[(在线示例)][base_form]
-            
-            * 5.6.4.2。Page : 基于 From 的组件 [(在线示例)][base_page]
+        * 5.6.7。Radio : 基于 type = radio 的 input [(在线示例)][base_radio]
+    
+        * 5.6.8。密码键盘 Input : 基于 div [(在线示例)][base_keyboard]
+    
+        * 5.6.9。Popup系列组件
+    
+            * 5.6.9.1。PopupMenu : 基于 PopupMenu组件 [(在线示例)][base_popupMenu]
+    
+            * 5.6.9.2。PopupSelect : 基于 div [(在线示例)][base_popupSelect]
+    
+            * 5.6.9.3。PopupWindow : 基于 PopupWindow组件 [(在线示例)][base_popupWindow]
 
-    * 5.7。Model
-        * [5.7.1。数据模型-模型配置 章节][md_quickstart-js]
-            
-            * 5.7.1.1。简单model操作 : getValue/setValue方法 [(在线示例)][base_model-simple]
-            
-            * 5.7.1.2。复杂model操作 : getData/get/set方法 [(在线示例)][base_model-complex]
-            
-            * 5.7.1.3。filter [(在线示例)][base_filter]
-            
-            * 5.7.1.4。dispatcher [(在线示例)][base_dispatcher]
-            
-            * 5.7.1.5。forwarder [(在线示例)][base_forwarder]
-            
-            * 5.7.1.6。mapping [(在线示例)][base_mapping]
-
-    * 5.8。Browser
-        * [5.8.1。页面跳转-页面跳转 章节][md_quickstart-js]
-            
-            * 5.8.1.1。Page跳转 : 基于 Browser 的 history_goto 方法 [(在线示例)][base_page]
-            
-            * 5.8.1.2。Window跳转 : 基于 Browser 的 openUrl 方法 [(在线示例)][base_window]
-          
-        * [5.8.1。window参数传递-window参数传递 章节][md_quickstart-js]
-            
-            * [5.8.2.1。页面初始化参数-程序入口 章节][md_quickstart-js]
-            
-            * [5.8.2.2。Window跳转参数传递-window参数传递 章节 : 基于 Browser 的 openUrl/onResult 方法][md_quickstart-js] [(在线示例)][base_window]
+    * 5.7。复杂组件示例
         
-    * 5.9。api
-   
-    * 5.10。bridge
-   
-    * 5.11。dependency
-   
-    * 5.12。template
+        * 5.7.1。Select : 基于 select [(在线示例)][base_popupWindow]
+
+        * 5.7.2。List : 基于 div [(在线示例)][base_popupWindow]
+        
+        * 5.7.3。SelectList : 基于 div [(在线示例)][base_popupWindow]
+
+        * 5.7.4。Scrollview : 基于 div [(在线示例)][base_popupWindow]
+        
+        * 5.7.5。Tree : 基于 div [(在线示例)][base_popupWindow]
+
+        * 5.7.6。Tab : 基于 div  [(在线示例)][base_popupWindow]
+
+    * [5.8。数据模型-模型配置 章节][md_quickstart-js]
+        
+        * 5.8.1。简单model操作 : getValue/setValue方法 [(在线示例)][base_model-simple]
+        
+        * 5.8.2。复杂model操作 : getData/get/set方法 [(在线示例)][base_model-complex]
+        
+        * 5.8.3。filter [(在线示例)][base_filter]
+        
+        * 5.8.4。dispatcher [(在线示例)][base_dispatcher]
+        
+        * 5.8.5。forwarder [(在线示例)][base_forwarder]
+        
+        * 5.8.6。mapping [(在线示例)][base_mapping]
+        
+    * [5.9。表单提交-表单提交 章节][md_quickstart-js]
+    
+        * 5.9.1。表单提交 : 基于 继承 Form 的组件（type = button 的 input）[(在线示例)][base_form]
+        
+        * 5.9.2。Page : 基于 From 的组件 [(在线示例)][base_page]
+
+    * [5.10。页面跳转-页面跳转 章节][md_quickstart-js]
+        
+        * 5.10.1。Page跳转 : 基于 Browser 的 history_goto 方法 [(在线示例)][base_page]
+        
+        * 5.10.2。Window跳转 : 基于 Browser 的 openUrl 方法 [(在线示例)][base_window]
+      
+    * [5.11。window参数传递-window参数传递 章节][md_quickstart-js]
+        
+        * [5.11.1。页面初始化参数-程序入口 章节][md_quickstart-js]
+        
+        * [5.11.2。Window跳转参数传递-window参数传递 章节 : 基于 Browser 的 openUrl/onResult 方法][md_quickstart-js] [(在线示例)][base_window]
+    
+    * 5.12。组合组件示例
+        
+        * 5.12.1。list + select : [(在线示例)][rel_list+select_list+list]
+
+        * 5.12.2。list + list : [(在线示例)][rel_list+select_list+list]
+
+        * 5.12.3。list item 左滑、右滑示例 待定 : 
         
     * 5.13。其他方面
 
