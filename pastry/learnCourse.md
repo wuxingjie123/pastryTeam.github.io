@@ -192,6 +192,8 @@
     * [8.1。Cordova调试方法简介][net_cordova-test]
 
     * [8.2。调试方法简介][net_pastry-test]
+    
+    * [8.3。热更新功能简介][md_hot-update]
 
     
 * 9。Pastry组件制作方式 `课程要求 : 业务开发工程师/了解 核心开发工程师/熟悉掌握`
@@ -354,6 +356,8 @@
 [md_quickstart-ios]: ./quickstart/quickstart-ios.md
 [md_quickstart-android]: ./quickstart/quickstart-android.md
 [md_quickstart-fo]: ./quickstart/quickstart-fo.md
+
+[md_hot-update]: ./hot/hot-update.md
 
 [md_fqa]: ./faq.md
 
