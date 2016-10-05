@@ -260,39 +260,39 @@
 
 
 
-[net_import]: www/examples/base_import.html
-[base_dependency]: www/examples/ex_dependency.html
-[base_proxy]: www/examples/adv_proxy_model.html
+[net_import]: ../www/examples/base_import.html
+[base_dependency]: ../www/examples/ex_dependency.html
+[base_proxy]: ../www/examples/adv_proxy_model.html
 
-[base_label]: www/examples/base_label.html
-[base_button]: www/examples/base_button.html
-[base_CountdownBtn]: www/examples/ex_countdownbtn.html
-[base_input]: www/examples/base_input.html
-[base_switch]: www/examples/ex_switch.html
-[base_checkbox]: www/examples/ex_checkbox.html
-[base_radio]: www/examples/ex_radio.html
-[base_keyboard]: www/examples/base_password.html
-[base_popupMenu]: www/examples/ex_popupmenu.html
-[base_popupSelect]: www/examples/ex_popupselect.html
-[base_popupWindow]: www/examples/ex_popupwindow.html
-[base_select]: www/examples/base_select.html
-[base_list]: www/examples/base_list.html
-[base_selectList]: www/examples/ex_selectlist.html
-[base_scrollview]: www/examples/ex_scrollview.html
-[base_tree]: www/examples/ex_tree.html
-[base_tab]: www/examples/ex_tab.html
+[base_label]: ../www/examples/base_label.html
+[base_button]: ../www/examples/base_button.html
+[base_CountdownBtn]: ../www/examples/ex_countdownbtn.html
+[base_input]: ../www/examples/base_input.html
+[base_switch]: ../www/examples/ex_switch.html
+[base_checkbox]: ../www/examples/ex_checkbox.html
+[base_radio]: ../www/examples/ex_radio.html
+[base_keyboard]: ../www/examples/base_password.html
+[base_popupMenu]: ../www/examples/ex_popupmenu.html
+[base_popupSelect]: ../www/examples/ex_popupselect.html
+[base_popupWindow]: ../www/examples/ex_popupwindow.html
+[base_select]: ../www/examples/base_select.html
+[base_list]: ../www/examples/base_list.html
+[base_selectList]: ../www/examples/ex_selectlist.html
+[base_scrollview]: ../www/examples/ex_scrollview.html
+[base_tree]: ../www/examples/ex_tree.html
+[base_tab]: ../www/examples/ex_tab.html
 
-[rel_list+select_list+list]: www/examples/rel_list+select_list+list.html
+[rel_list+select_list+list]: ../www/examples/rel_list+select_list+list.html
 
-[base_filter]: www/examples/data_filter.html
-[base_dispatcher]: www/examples/data_dispatcher.html
-[base_forwarder]: www/examples/data_forwarder.html
-[base_mapping]: www/examples/data_mapping.html
+[base_filter]: ../www/examples/data_filter.html
+[base_dispatcher]: ../www/examples/data_dispatcher.html
+[base_forwarder]: ../www/examples/data_forwarder.html
+[base_mapping]: ../www/examples/data_mapping.html
 
-[base_form]: www/examples/base_form.html
-[base_page]: www/examples/base_page.html
+[base_form]: ../www/examples/base_form.html
+[base_page]: ../www/examples/base_page.html
 
-[base_window]:www/examples/windows/base_window.html
+[base_window]:../www/examples/windows/base_window.html
 
 [net_JS_tip]: https://github.com/pastryTeam/pastryTeam.github.io/issues/3
 
@@ -340,36 +340,36 @@
 [net_pastry-js]: #
 [net_pastry-ios]: https://github.com/pastryTeam/ios-template
 [net_pastry-android]: https://github.com/pastryTeam/android-template
-[net_pastry-test]: ./index.md
+[net_pastry-test]: ../index.md
 
 
 
-[md_hybrid]: ./ready/hybrid.md
+[md_hybrid]: ../ready/hybrid.md
 
-[md_cryptology]: ./ready/cryptology.md
+[md_cryptology]: ../ready/cryptology.md
 
-[md_abstract]: ./abstract/abstract.md
+[md_abstract]: ../abstract/abstract.md
 
-[md_quickstart]: ./index.md
+[md_quickstart]: ../index.md
 
-[md_quickstart-js]: ./quickstart/quickstart-js.md
-[md_quickstart-ios]: ./quickstart/quickstart-ios.md
-[md_quickstart-android]: ./quickstart/quickstart-android.md
-[md_quickstart-fo]: ./quickstart/quickstart-fo.md
+[md_quickstart-js]: ../quickstart/quickstart-js.md
+[md_quickstart-ios]: ../quickstart/quickstart-ios.md
+[md_quickstart-android]: ../quickstart/quickstart-android.md
+[md_quickstart-fo]: ../quickstart/quickstart-fo.md
 
-[md_hot-update]: ./hot/hot-update.md
+[md_hot-update]: ../hot/hot-update.md
 
-[md_fqa]: ./faq.md
+[md_fqa]: ../faq.md
 
-[md_pastry-cli]:./pastry-cli/bake.md
+[md_pastry-cli]:../pastry-cli/bake.md
 
-[md_plugin]: ./plugins/plugins.md
+[md_plugin]: ../plugins/plugins.md
 
-[md_plugin-develop]: ./plugins/plugins-develop.md
+[md_plugin-develop]: ../plugins/plugins-develop.md
 
-[md_pastry-js]: ./quickstart/pastry-js.md
+[md_pastry-js]: ../quickstart/pastry-js.md
 
-[md_xtools]: ./pastry-cli/XTools.md
+[md_xtools]: ../pastry-cli/XTools.md
 
 [net_blank]: https://github.com/pastryTeam/pastry-plugin-blankMain
 [net_side]: https://github.com/pastryTeam/pastry-plugin-sideMain

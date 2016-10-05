@@ -75,7 +75,9 @@
   - - - -
   * [密码学](ready/cryptology.md)
 
-[培训课程 new](learnCourse.md)
+[培训课程 new](train/learnCourse.md)
+
+<!--[项目管理课程 new](train/manageCourse.md)-->
 
 
 <!-- counter pixel for counting visitors -->
