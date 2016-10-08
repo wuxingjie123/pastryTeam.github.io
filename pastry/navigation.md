@@ -63,7 +63,7 @@
   * [iOS`待定`](abstract/abstract-ios.md)
   * [android`待定`](abstract/abstract-android.md)-->
 
-[平台下载](download.md)
+[平台下载 new](download.md)
   
 [常见问题](faq.md)
 
@@ -77,7 +77,7 @@
 
 [培训课程 new](train/learnCourse.md)
 
-<!--[项目管理课程 new](train/manageCourse.md)-->
+<!--[管理课程 new](train/manageCourse.md)-->
 
 
 <!-- counter pixel for counting visitors -->
