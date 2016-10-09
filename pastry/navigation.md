@@ -77,7 +77,7 @@
 
 [培训课程 new](train/learnCourse.md)
 
-<!--[管理课程 new](train/manageCourse.md)-->
+[理论课程 new](train/theoryCourse.md)
 
 
 <!-- counter pixel for counting visitors -->
