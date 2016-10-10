@@ -139,4 +139,6 @@
 ## 思维导图
 ----
 
-![高效团队关系图](/pastry/images/train/高效团队.png)
+[思维导图下载地址][net_download]
+
+[net_download]: /pastry/images/train/理论思维导图.png
