@@ -104,3 +104,14 @@
   
 ----
 ## Pastry平台使用的密码算法
+
+#### 应用场景
+
+* [公钥密码在Pastry平台的应用-会话握手][net_issues5]
+
+* [3DES在Pastry平台的应用-通讯请求、资源安全、热更新][net_issues4]
+
+
+[net_issues4]: https://github.com/pastryTeam/pastryTeam.github.io/issues/4
+
+[net_issues5]: https://github.com/pastryTeam/pastryTeam.github.io/issues/5
