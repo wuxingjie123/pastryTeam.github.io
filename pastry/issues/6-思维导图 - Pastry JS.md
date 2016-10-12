@@ -8,11 +8,7 @@
     
 * [x] Component 思维导图
 
-    ![Component思维导图][net_component]
-    
-    [Component思维导图 浏览地址][net_component_read]
-    
-    [Component思维导图 修改地址][net_component_update]
+    ![pastry wiki 里 pastry/issues/6-思维导图 - Pastry JS/2-Component 思维导图.mindnode](https://pastryteam.github.io/pastry/issues/0-images/6/6-2.png)
 
 * [ ] Template 思维导图
 
@@ -71,10 +67,6 @@
     [Ex思维导图 修改地址][net_ex_update]
 
 #10 思维导图 - Pastry平台整体结构
-
-[net_component]: https://www.processon.com/chart_image/57f21186e4b0300f4fd97ac3.png
-[net_component_read]: http://www.processon.com/view/link/57f39bb3e4b009c4af304de8
-[net_component_update]: https://www.processon.com/mindmap/57f2364ee4b0300f4fda2104
 
 [net_template]: #
 [net_template_read]: #
