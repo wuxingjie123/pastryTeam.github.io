@@ -66,10 +66,6 @@
 [net_template_read]: #
 [net_template_update]: #
 
-[net_browser]: https://www.processon.com/chart_image/57f73817e4b0300f4fec2c16.png
-[net_browser_read]: http://www.processon.com/view/link/57f36656e4b0300f4fdd4c58
-[net_browser_update]: https://www.processon.com/mindmap/57de2139e4b0a16a66d10e34
-
 [net_bridge]: #
 [net_bridge_read]: #
 [net_bridge_update]: #
