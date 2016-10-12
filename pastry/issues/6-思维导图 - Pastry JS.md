@@ -44,13 +44,9 @@
     
     [DependencyManager思维导图 修改地址][net_dependencyManager_update]
 
-* [ ] CONST 思维导图
+* [x] CONST 思维导图
 
-    ![CONST思维导图 待定][net_const]
-    
-    [CONST思维导图 浏览地址][net_const_read]
-    
-    [CONST思维导图 修改地址][net_const_update]
+    ![pastry wiki 里 pastry/issues/6-思维导图 - Pastry JS/8-CONST 思维导图.mindnode](https://pastryteam.github.io/pastry/issues/0-images/6/6-8.png)
 
 * [ ] Ex 思维导图
 
@@ -73,10 +69,6 @@
 [net_dependencyManager]: #
 [net_dependencyManager_read]: #
 [net_dependencyManager_update]: #
-
-[net_const]: #
-[net_const_read]: #
-[net_const_update]: #
     
 [net_ex]: #
 [net_ex_read]: #
