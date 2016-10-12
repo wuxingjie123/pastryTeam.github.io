@@ -78,6 +78,16 @@
     
     [Ex思维导图 修改地址][net_ex_update]
 
+- [x] Pastry平台 整体结构思维导图
+
+    ![pastry平台整体结构思维导图](https://pastryteam.github.io/pastry/issues/0-images/10/10-1.png)
+
+- [x] Pastry平台 工程基础模版思维导图
+
+    ![pastry平台工程基础模版思维导图](https://pastryteam.github.io/pastry/issues/0-images/10/10-2.png)
+
+#10 思维导图 - Pastry平台整体结构
+
 [net_pastry_js]: https://www.processon.com/chart_image/57fca2c7e4b0ace1816fd104.png
 [net_pastry_js_read]: http://www.processon.com/view/link/57fca2ede4b08d4fe9aabfff
 [net_pastry_js_update]: https://www.processon.com/mindmap/57fca2e3e4b0275a9a0eed40
