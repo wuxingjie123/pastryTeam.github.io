@@ -26,11 +26,7 @@
 
 * [x] Browser 思维导图
 
-    ![Browser思维导图][net_browser]
-    
-    [Browser思维导图 浏览地址][net_browser_read]
-    
-    [Browser思维导图 修改地址][net_browser_update]
+    ![pastry wiki 里 pastry/issues/6-思维导图 - Pastry JS/5-Browser 思维导图.mindnode](https://pastryteam.github.io/pastry/issues/0-images/6/6-5.png)
 
 * [ ] Bridge 思维导图
 
