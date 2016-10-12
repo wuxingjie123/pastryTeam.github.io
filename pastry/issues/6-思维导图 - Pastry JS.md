@@ -52,6 +52,10 @@
 
     ![pastry wiki 里 pastry/issues/6-思维导图 - Pastry JS/9-Ex 思维导图.mindnode](https://pastryteam.github.io/pastry/issues/0-images/6/6-9.png)
 
+* [ ] core 思维导图
+
+    ![pastry wiki 里 pastry/issues/6-思维导图 - Pastry JS/10-core 思维导图.mindnode](https://pastryteam.github.io/pastry/issues/0-images/6/6-10.png)
+
 #10 思维导图 - Pastry平台整体结构
 
 [net_template]: #
