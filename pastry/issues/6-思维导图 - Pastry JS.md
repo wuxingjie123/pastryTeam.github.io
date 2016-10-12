@@ -4,11 +4,7 @@
     
 * [x] api 思维导图
 
-    ![api思维导图][net_api]
-    
-    [api思维导图 浏览地址][net_api_read]
-    
-    [api思维导图 修改地址][net_api_update]
+    ![pastry wiki 里 pastry/issues/6-思维导图 - Pastry JS/1-api 思维导图.mindnode](https://pastryteam.github.io/pastry/issues/0-images/6/6-1.png)
     
 * [x] Component 思维导图
 
@@ -75,10 +71,6 @@
     [Ex思维导图 修改地址][net_ex_update]
 
 #10 思维导图 - Pastry平台整体结构
-
-[net_api]: https://www.processon.com/chart_image/57f86305e4b0300f4ff421a7.png
-[net_api_read]: http://www.processon.com/view/link/57f39b9de4b009c4af304d79
-[net_api_update]: https://www.processon.com/mindmap/57ec8ca8e4b0300f4fb9a8d2
 
 [net_component]: https://www.processon.com/chart_image/57f21186e4b0300f4fd97ac3.png
 [net_component_read]: http://www.processon.com/view/link/57f39bb3e4b009c4af304de8
