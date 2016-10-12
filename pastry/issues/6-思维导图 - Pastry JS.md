@@ -9,6 +9,8 @@
 * [x] Component 思维导图
 
     ![pastry wiki 里 pastry/issues/6-思维导图 - Pastry JS/2-Component 思维导图.mindnode](https://pastryteam.github.io/pastry/issues/0-images/6/6-2.png)
+    
+    [JS平台框架组件汇总 地址](https://pastryteam.github.io/pastry/#!plugins/plugins.md)
 
 * [ ] Template 思维导图
 
@@ -20,11 +22,7 @@
 
 * [x] Model 思维导图
 
-    ![Model思维导图][net_model]
-    
-    [Model思维导图 浏览地址][net_model_read]
-    
-    [Model思维导图 修改地址][net_model_update]
+    ![pastry wiki 里 pastry/issues/6-思维导图 - Pastry JS/4-Model 思维导图.mindnode](https://pastryteam.github.io/pastry/issues/0-images/6/6-4.png)
 
 * [x] Browser 思维导图
 
@@ -71,10 +69,6 @@
 [net_template]: #
 [net_template_read]: #
 [net_template_update]: #
-
-[net_model]: https://www.processon.com/chart_image/57ecc887e4b0300f4fbf578c.png
-[net_model_read]: http://www.processon.com/view/link/57f39bbce4b0300f4fde39f6
-[net_model_update]: https://www.processon.com/mindmap/57ece55ce4b009c4af1516c1
 
 [net_browser]: https://www.processon.com/chart_image/57f73817e4b0300f4fec2c16.png
 [net_browser_read]: http://www.processon.com/view/link/57f36656e4b0300f4fdd4c58
