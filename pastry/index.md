@@ -307,7 +307,7 @@
 
           pastry bake build android -m release -bc platforms/android/publish/build.json
 
-    
+    * [参考cordova 签名APP文档](https://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html#signing-an-app)
 
 ## Wiki文档本地化
 
