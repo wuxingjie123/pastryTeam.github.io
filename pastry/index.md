@@ -276,8 +276,16 @@
     * 测试人员通过修改 app 的 Setting 设置来连接不同的服务器；详见 [使用指南 iOS篇 - 开发模式配置][md_quickstart-ios]
 
   * android
+    
+    * 更新项目仓库里的项目代码到本地 ；
+    
+    * 执行 `pastry bake build android -m debug`
+    
+          cd 项目根目录
 
-    * `待定`
+          pastry bake build android -m release
+
+    * [参考cordova 签名APP文档](https://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html#signing-an-app)
 
 ### 发布流程
 
