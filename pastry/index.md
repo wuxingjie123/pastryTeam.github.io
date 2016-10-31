@@ -297,7 +297,17 @@
 
   * android
 
-    * `待定`
+    * `修改 android/res/raw/cbframework_config.cfg 文件的 server_base 为 真实服务器地址；`
+    
+    * 更新项目仓库里的项目代码到本地 ；
+    
+    * 执行 `pastry bake build android -m release -bc 证书配置json文件`
+    
+          cd 项目根目录
+
+          pastry bake build android -m release -bc platforms/android/publish/build.json
+
+    
 
 ## Wiki文档本地化
 
