@@ -265,13 +265,11 @@
 
     * 更新项目仓库里的项目代码到本地；
 
-    * 执行 `pastry bake build ios -m debug -si 描述文件名称` 命令,
-
-      CODE_SIGN_IDENTITY = "iPhone Developer: Min Tan (RWTVR85F43)";
+    * 执行 `pastry bake build ios -m debug` 命令,
     
           cd 项目根目录
 
-          pastry bake build ios -m debug -si 'iPhone Developer: Min Tan (RWTVR85F43)'
+          pastry bake build ios -m debug
 
     * 测试人员通过修改 app 的 Setting 设置来连接不同的服务器；详见 [使用指南 iOS篇 - 开发模式配置][md_quickstart-ios]
 
@@ -295,13 +293,13 @@
 
     * 更新项目仓库里的项目代码到本地；
 
-    * 执行 `pastry bake build ios -m release -si 描述文件名称` 命令,
+    * 执行 `pastry bake build ios -m release -bc 'platforms/ios/publish/build.json'` 命令,
 
-      CODE_SIGN_IDENTITY = "iPhone Developer: Min Tan (RWTVR85F43)";
+      修改 platforms/ios/publish/build.json 里的证书描述信息
     
           cd 项目根目录
 
-          pastry bake build ios -m release -si 'iPhone Developer: Min Tan (RWTVR85F43)'
+          pastry bake build ios -m release -bc 'platforms/ios/publish/build.json'
 
   * android
 
@@ -309,7 +307,9 @@
     
     * 更新项目仓库里的项目代码到本地 ；
     
-    * 执行 `pastry bake build android -m release -bc 证书配置json文件`
+    * 执行 `pastry bake build android -m release -bc 'platforms/android/publish/build.json'`
+
+      修改 platforms/android/publish/build.json 里的证书描述信息
     
           cd 项目根目录
 
@@ -331,7 +331,7 @@
 
         cd 下载目录/pastryTeam.github.io-master
         
-        http-server
+        http-server -p 8081
 
     4、输入地址 http://127.0.0.1:8081/pastry 即可离线读取 Wiki；
 

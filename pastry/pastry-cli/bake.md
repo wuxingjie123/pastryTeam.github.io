@@ -207,20 +207,21 @@
     选项：
       平台参数{ios、android}       平台参数
       -m{debug、release}         打包方式：debug用于测试，release用于生产
-      -si{描述文件名称}            描述文件名称
-
+      -si{描述文件名称}            描述文件名称 （已废弃）
+      -bc{签名证书配置文件}         设置ios/android的签名打包脚本路径，一般为 platforms/android/publish/build.json || platforms/ios/publish/build.json
+      -ri{重置config.xml的Id}      重置 ios 的 bundle id，只针对ios平台使用
 
 样例：
 
     # 进行 debug 编译
-    pastry bake build android -m debug
+    pastry bake build android -m debug -bc 'platforms/android/publish/build.json'
     
-    pastry bake build ios -m debug -si 描述文件名称
+    pastry bake build ios -m debug -bc 'platforms/ios/publish/build.json' -ri 'com.myBundleId'
 
     # 进行 release 编译
-    pastry bake build android -m release
+    pastry bake build android -m release -bc 'platforms/android/publish/build.json'
 
-    pastry bake build ios -m release -si 描述文件名称
+    pastry bake build ios -m release -bc 'platforms/ios/publish/build.json'  -ri 'com.myBundleId'
 
 ----
 ## cordova
