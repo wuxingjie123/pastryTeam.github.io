@@ -1,3 +1,10 @@
+- [x] JS端调用原生功能，原生功能无反应。（包含 console.log 无法在客户端输出日志）
+    - 原因
+        - JS端代码崩溃，导致无法继续运行
+    - 确认方式
+        - 真机配合浏览器进行单步调试，检查JS端是否调用非空数据，导致JS代码崩溃
+
+
 - [x] Browser.history_goto(pageId, option) 
     
     - option的refresh的initVal属性会覆盖Model的默认值设置，只要设置了initVal属性，所有Model的默认设置都不生效。
@@ -56,6 +63,10 @@
 
 - [x] form组件必须要有data-name属性，响应onsubmit事件时event.data显示按照data-name来，如果组件没有此属性，组件数据不会在event.data里；
 
+- [x] 触发组件的change,submit事件，可以用api.getModel('模型').trigger('change')事件代替；
+
+- [x] 指定组件触发 onSubmit 方法；onSubmitId = customId;
+    - $("customId").trigger(_.extend($.Exent("click"),{originalEvent:{}}));
 
 
 - [ ] datapicker有点问题，第二句的引用路径应该改为

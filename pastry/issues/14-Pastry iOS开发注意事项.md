@@ -1,0 +1,11 @@
+- [x] 关于 project.pbxproj 的 PRODUCT_BUNDLE_IDENTIFIER
+    
+    - 确保 project.pbxproj 不应该存在 PRODUCT_BUNDLE_IDENTIFIER 字段，否则，影响 Pastry CLI 使用 build.json方式自定义bundle id
+
+- [x] Pastry iOS 使用 platforms/ios/publish/build.json 配置开发者证书问题
+
+    - `删除 iOS 的 project.pbxproj 的 PRODUCT_BUNDLE_IDENTIFIER = com.xxxx; 保证使用 build.json方式自定义bundle id`
+
+    - 配置 build.json 里的 codeSignIdentity、provisioningProfile、developmentTeam、packageType 字段内容
+    
+    - 详细介绍参考 [http://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html#signing-an-app](http://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html#signing-an-app)     
