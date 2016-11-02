@@ -1,9 +1,12 @@
+- [x] html、js代码缩进设置：针对于 webStorm
+    
+    - ![webStorm设置截图](https://pastryteam.github.io/pastry/issues/0-images/3/3-1.jpeg)
+     
 - [x] JS端调用原生功能，原生功能无反应。（包含 console.log 无法在客户端输出日志）
     - 原因
         - JS端代码崩溃，导致无法继续运行
     - 确认方式
         - 真机配合浏览器进行单步调试，检查JS端是否调用非空数据，导致JS代码崩溃
-
 
 - [x] Browser.history_goto(pageId, option) 
     
@@ -67,6 +70,8 @@
 
 - [x] 指定组件触发 onSubmit 方法；onSubmitId = customId;
     - $("customId").trigger(_.extend($.Exent("click"),{originalEvent:{}}));
+
+- [ ]script 顺序的调整。将 script 调整到 html 标签后面。
 
 
 - [ ] datapicker有点问题，第二句的引用路径应该改为
