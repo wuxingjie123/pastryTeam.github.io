@@ -222,6 +222,9 @@
     pastry bake build android -m release -bc 'platforms/android/publish/build.json'
 
     pastry bake build ios -m release -bc 'platforms/ios/publish/build.json'  -ri 'com.myBundleId'
+   
+    
+* `注意删除项目中的 project.pbxproj 的 PRODUCT_BUNDLE_IDENTIFIER = com.**; 保证使用 cordova build.json方式自定义bundle id` 
 
 ----
 ## cordova

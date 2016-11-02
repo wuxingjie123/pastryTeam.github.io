@@ -264,6 +264,8 @@
   * iOS
 
     * 更新项目仓库里的项目代码到本地；
+   
+    * `注意删除项目中的 project.pbxproj 的 PRODUCT_BUNDLE_IDENTIFIER = com.**; 保证使用 cordova build.json方式自定义bundle id` 
 
     * 执行 `pastry bake build ios -m debug` 命令,
     
@@ -292,6 +294,8 @@
     * `修改 PastryFramework/PastryResources/release/System.plist 里的 list Item0 为 真实服务器地址;`
 
     * 更新项目仓库里的项目代码到本地；
+   
+    * `注意删除项目中的 project.pbxproj 的 PRODUCT_BUNDLE_IDENTIFIER = com.**; 保证使用 cordova build.json方式自定义bundle id` 
 
     * 执行 `pastry bake build ios -m release -bc 'platforms/ios/publish/build.json'` 命令,
 
