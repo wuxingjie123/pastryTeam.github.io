@@ -53,6 +53,8 @@
         - 配置 源码管理
         
             - 配置 SVN仓库
+            
+            - ![pastry wiki 里 pastry/issues/16-Jenkins 配置教程](https://pastryteam.github.io/pastry/issues/0-images/12/12-1.png)
         
         - 配置 构建触发器
             
