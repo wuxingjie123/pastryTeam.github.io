@@ -8,4 +8,10 @@
 
     - 配置 build.json 里的 codeSignIdentity、provisioningProfile、developmentTeam、packageType 字段内容
     
-    - 详细介绍参考 [http://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html#signing-an-app](http://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html#signing-an-app)     
+    - 字段详细介绍参考 [http://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html#signing-an-app](http://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html#signing-an-app)     
+
+- [x] 使用 Pastry CLI的 prepare 命令后，自定义的Cordova组件不能使用。
+    
+    - 原因：prepare 会将 platforms/ios/ios.json 里的 config_munge 里的属性将覆盖 config.xml 的 feature 属性。
+    
+    - `解决方法：保证 platforms/ios/ios.json 的 config_munge 属性与 config.xml 的 feature 属性保持一致。`
