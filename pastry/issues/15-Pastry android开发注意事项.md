@@ -1,3 +1,20 @@
+- [x] Android Studio 修改包名。
+    - 在 build.gradle 的 defaultConfig{} 中添加代码  `applicationId "新包名"`
+    
+    - 示例代码：新包名=com.newPackage
+    
+        ```
+        defaultConfig {
+        
+            applicationId "com.newPackage"
+            
+            versionCode cdvVersionCode ?: Integer.parseInt("" + privateHelpers.extractIntFromManifest("versionCode") + "0")
+            if (cdvMinSdkVersion != null) {
+                minSdkVersion cdvMinSdkVersion
+            }
+        }
+        ```
+        
 - [x] Pastry android 使用 platforms/android/publish/build.json 配置开发者证书问题
 
     - 配置 build.json 里的 keystore、storePassword、alias、password、keystoreType 字段内容
