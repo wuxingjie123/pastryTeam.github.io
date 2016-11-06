@@ -54,7 +54,7 @@
         
             - 配置 SVN仓库
             
-            - ![pastry wiki 里 pastry/issues/16-Jenkins 配置教程](https://pastryteam.github.io/pastry/issues/0-images/12/12-1.png)
+            - ![pastry wiki 里 pastry/issues/16-Jenkins 配置教程](https://pastryteam.github.io/pastry/issues/0-images/16/16-1.png)
         
         - 配置 构建触发器
             
@@ -65,8 +65,12 @@
             - 配置 轮询构建（Poll SCM）
                 
                 - 格式： H/10 * * * *   -> 每个 10 分钟进行一次轮询，有SVN提交，进行一次构建
+            
+            - ![pastry wiki 里 pastry/issues/16-Jenkins 配置教程](https://pastryteam.github.io/pastry/issues/0-images/16/16-2.png)
     
         - 配置 构建环境
+
+            - 配置 NodeJS 环境
         
         - 配置 构建步骤
     
