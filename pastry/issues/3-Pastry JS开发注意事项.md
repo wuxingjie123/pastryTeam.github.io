@@ -71,7 +71,36 @@
 - [x] 指定组件触发 onSubmit 方法；onSubmitId = customId;
     - $("customId").trigger(_.extend($.Exent("click"),{originalEvent:{}}));
 
-- [ ]script 顺序的调整。将 script 调整到 html 标签后面。
+- [x] select组件的api.getModel("模型").set有时候会不触发，用api.getComponent("模型").refresh(option)代替；
+
+- [x] event中的data-name与id设置为与接口文档相同的，则event.data直接赋值给上传对象即可；
+
+- [x] 信息采集页面下拉框点不到的问题，是因为标签头不统一的原因，统一改为
+
+```
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta http-equiv="Content-Type" content="text/html; charset=Utf-8"/>
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0"/>
+```
+
+- [x] 将数据校验放在一个js文件里去，相同的行为最好用相同的方法维护，防止出错不好维护；
+
+- [ ] 信息采集页面重复聚焦导致键盘弹出两次问题，在pastry/core/all.js里搜索下面的话，然后删掉
+
+```
+var n;"Android"===e.getOs()&&(n=a(":focus"),n[0]===t.target&&a(t.target).blur().focus())
+```
+
+- [ ] 报页面找不到os，
+$(function(param){...})改成function framework_ready(param){...}，并且将此函数调到bodyhtml下面；
+
+- [ ] 针对键盘没收回时当前页面与下一页错位的问题，在跳转browser.history_goto之前加一个500的延时；
+
+
+
+- [ ] script 顺序的调整。将 script 调整到 html 标签后面。
 
 
 - [ ] datapicker有点问题，第二句的引用路径应该改为
