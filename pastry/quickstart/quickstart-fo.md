@@ -83,7 +83,9 @@
         
     * 配置 allmenu.xml 的 menu 节点属性 minver 版本号。
     
-    * 原生 打开html时，对比 minver版本号 与 原生系统版本号：
+    * 原生 打开html（业务入口html在allmenu.xml的属性）时，对比 minver版本号 与 原生系统版本号：
+        
+        * minver版本号 = 空：不需要进行原生包更新
         
         * minver版本号 > 原生版本号：提供用户进行 原生包更新，不进入html页面。
         
@@ -123,7 +125,9 @@
         
     * 配置 allmenu.xml 的 menu 节点属性 minver 版本号。
         
-    * 原生 打开html时，对比 minver版本号 与 原生系统版本号：
+    * 原生 打开html（业务入口html在allmenu.xml的属性）时，对比 minver版本号 与 原生系统版本号：
+        
+        * minver版本号 = 空：不需要进行原生包更新
         
         * minver版本号 > 原生版本号：提供用户进行 原生包更新，不进入html页面。
         
