@@ -131,8 +131,8 @@
 |-----|-----|----|
 |data-main|项目配置依赖文件require|固定为pastry/main.js|
 |data-debug|项目调试选项|`强烈推荐使用 data-debug="@mockdata" `<br/>框架调试模块,发布时会去掉该属性 <br/>对应js文件保存路径为 根/pastry/debug 说明:<br/>前缀 ! :仅客户端生效 <br/>前缀 @ :仅网页生效 <br/>前缀 $ :仅网页且地址以file://开头生效 <br/>前缀 # :客户端、网页均不生效 <br/>无前缀:客户端、网页均生效|
-|data-lib|项目引用 库|引入框架/项目中定义的第三方库 <br/>说明：<br/>C:框架级  对应js文件保存路径为 根/pastry/lib/ <br/>E:项目级  对应js文件保存路径为 根/lib/ <br/>B:业务级  对应js文件保存路径为 当前路经/lib/ <br/>查找规则：components/组件名称/index.js |
-|data-components|项目引用 组件|引入框架/项目中定义的公共组件 <br/>说明：<br/>C:框架级  对应js文件保存路径为 根/pastry/components/ <br/>E:项目级  对应js文件保存路径为 根/components <br/>B:业务级 对应js文件保存路径为 当前路经/components/|
+|data-lib|项目引用 库|引入框架/项目中定义的第三方库 <br/>说明：<br/>C:框架级  对应js文件保存路径为 根/pastry/lib/ <br/>E:项目级  对应js文件保存路径为 根/lib/ <br/>B:业务级  对应js文件保存路径为 当前路经/lib/  |
+|data-components|项目引用 组件|引入框架/项目中定义的公共组件 <br/>说明：<br/>C:框架级  对应js文件保存路径为 根/pastry/components/ <br/>E:项目级  对应js文件保存路径为 根/components <br/>B:业务级 对应js文件保存路径为 当前路经/components/ <br/>查找规则：components/组件名称/index.js| 
 |data-css|项目引用 CSS|引入框架/项目中定义的CSS <br/>说明：<br/>C:框架级  对应css文件保存路径为 根/pastry/css <br/>E:项目级  对应css文件保存路径为 根/css <br/>B:业务级 对应css文件保存路径为 当前路径/css/|
 
 ----
