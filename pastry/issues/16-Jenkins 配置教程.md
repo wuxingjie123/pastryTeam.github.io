@@ -94,6 +94,20 @@
 # Jenkins环境深入理解
 
 - [x] 1. Jenkins相关配置文件路径
+
+    - Jenkins工作目录：/Users/Shared/Jenkins/Home
+    
+        - 项目目录：/jobs
+            
+            - 单个项目目录：/jobs/项目名称
+                
+                - 项目配置文件：/jobs/项目名称/config.xml
+                
+                - 项目编译目录：/jobs/项目名称/builds
+                
+                - 项目空间目录：/jobs/项目名称/workspace
+        
+        - 插件目录：/plugins
     
     - Jenkins环境配置文件：/Library/LaunchDaemons/org.jenkins-ci.plist
         
