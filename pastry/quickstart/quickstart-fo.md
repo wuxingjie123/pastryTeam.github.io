@@ -48,12 +48,6 @@
 
 ### `iOS 增量更新部署`
 
-* `配置 allmenu.xml 文件`
-    
-    * 配置 allmenu.xml 文件属性
-    
-    * 将 allmenu.xml 拷贝到 ptframework/data/iphone 目录
-
 * `html 不依赖 原生代码 的 原生包更新。`
     
     * 使用 pastry bake build 生成 ipa 包。
@@ -64,9 +58,25 @@
             
         * 将 data.zip 资源包 解压到 nodejs 的 ptframework/data/iphone 目录。｀注意不包含 data 目录｀
         
+        * `手动配置 allmenu.xml 文件保证 html 文件的更新`
+        
+            * 从 business.xml 文件中中拷贝对应的html 的版本号属性 version 到 allmenu.xml 文件的版本号属性 version。
+            
+            * 重新对 allmenu.xml 进行签名。
+            
+            * 将签名后的 allmenu.xml 拷贝到 ptframework/data/iphone 目录，覆盖掉 data.zip 解压得到的 allmenu.xml 文件。
+        
     * java 环境
             
         * 将 data.zip 资源包 解压到 fo 的 ptframework/data/iphone 目录。｀注意不包含 data 目录｀
+        
+        * `手动配置 allmenu.xml 文件保证 html 文件的更新`
+        
+            * 从 business.xml 文件中中拷贝对应的html 的版本号属性 version 到 allmenu.xml 文件的版本号属性 version。
+            
+            * 重新对 allmenu.xml 进行签名。
+            
+            * 将签名后的 allmenu.xml 拷贝到 ptframework/data/iphone 目录，覆盖掉 data.zip 解压得到的 allmenu.xml 文件。
     
     * 配置 测试增量更新 环境
             
@@ -95,12 +105,6 @@
 
 ### `android 增量更新部署`
 
-* `配置 allmenu.xml 文件`
-    
-    * 配置 allmenu.xml 文件属性
-    
-    * 将 allmenu.xml 拷贝到 ptframework/data/android 目录
-
 * `html 不依赖 原生代码 的 原生包更新。`
 
     * 使用 pastry bake build 生成 apk 包。
@@ -111,9 +115,25 @@
             
         * 将 data.zip 资源包 解压到 nodejs 的 ptframework/data/android 目录。｀注意不包含 data 目录｀
         
+        * `手动配置 allmenu.xml 文件保证 html 文件的更新`
+        
+            * 从 business.xml 文件中中拷贝对应的html 的版本号属性 version 到 allmenu.xml 文件的版本号属性 version。
+            
+            * 重新对 allmenu.xml 进行签名。
+            
+            * 将签名后的 allmenu.xml 拷贝到 ptframework/data/iphone 目录，覆盖掉 data.zip 解压得到的 allmenu.xml 文件。
+        
     * java 环境
         
         * 将 data.zip 资源包 解压到 fo 的 ptframework/data/android 目录。｀注意不包含 data 目录｀
+        
+        * `手动配置 allmenu.xml 文件保证 html 文件的更新`
+        
+            * 从 business.xml 文件中中拷贝对应的html 的版本号属性 version 到 allmenu.xml 文件的版本号属性 version。
+            
+            * 重新对 allmenu.xml 进行签名。
+            
+            * 将签名后的 allmenu.xml 拷贝到 ptframework/data/iphone 目录，覆盖掉 data.zip 解压得到的 allmenu.xml 文件。
     
     * 配置 测试增量更新 环境
     
