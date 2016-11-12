@@ -107,7 +107,7 @@
 
 #### 应用场景
 
-* [公钥密码在Pastry平台的应用-会话握手][net_issues5]
+* [公钥密码在Pastry平台的应用-会话握手、验证签名][net_issues5]
 
 * [3DES在Pastry平台的应用-通讯请求、资源安全、热更新][net_issues4]
 
