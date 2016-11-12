@@ -9,7 +9,7 @@
   * [android](quickstart/quickstart-android.md)
   * [前置](quickstart/quickstart-fo.md)
   - - - -
-  * [热更新](hot/hot-update.md)
+  * [增量更新](hot/hot-update.md)
   
   <!--* [使用IDE`不支持`](ide.md)-->
 
