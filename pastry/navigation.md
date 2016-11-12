@@ -12,6 +12,8 @@
   * [增量更新](hot/hot-update.md)
   - - - -
   * [持续集成](CI/jenkins.md)
+  - - - -
+  * [投产指南](product/production_specification.md)
   
   <!--* [使用IDE`不支持`](ide.md)-->
 
