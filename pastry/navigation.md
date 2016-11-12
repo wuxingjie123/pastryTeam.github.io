@@ -10,6 +10,8 @@
   * [前置](quickstart/quickstart-fo.md)
   - - - -
   * [增量更新](hot/hot-update.md)
+  - - - -
+  * [持续集成](CI/jenkins.md)
   
   <!--* [使用IDE`不支持`](ide.md)-->
 
