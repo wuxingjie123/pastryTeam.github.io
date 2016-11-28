@@ -55,11 +55,66 @@
 
 * iOS
     
-    * 配置 PastryFramework/PastryResources/release/certificate/cacert.pem
+    * 获取 https 证书
+        
+        * 导出 base64 的 cer证书
+        
+        * 通过 [cer转pem在线工具](https://www.myssl.cn/tools/merge-pem-cert.html)
+    
+    * 替换证书文件 PastryFramework/PastryResources/release/certificate/cacert.pem
 
 * android
     
-    * 待定：`配置 android/res/raw/cbframework_trustcerts.bks`
+    * 获取 https 证书
+        
+        * 导出 crt证书
+
+    * 配置 bcprov-ext-jdk15on-155.jar jar包
+
+        * 配置 Java SDK 1.6
+        
+        * [bcprov-ext-jdk15on-155.jar下载地址](http://download.csdn.net/detail/lkx779687789/9654809)
+        
+        * 配置jar到Java_Home路径 jre/lib/ext 路经下
+
+    * 将证书配置到 android/res/raw/cbframework_trustcerts.bks
+    
+    ``` 
+    // 证书导入bks文件
+    cd 证书存放目录
+    keytool -keystore 证书名称 -storetype BKS -provider org.bouncycastle.jce.provider.BouncyCastleProvider -storepass 证书密码 -importcert -trustcacerts -alias 证书别名 -file crt证书路径
+    
+    举例：
+    证书名称：cbframework_trustcerts.bks
+    证书密码：""
+    证书别名：alias_name
+    crt证书路径：tagert.crt
+    keytool -keystore cbframework_trustcerts.bks -storetype BKS -provider org.bouncycastle.jce.provider.BouncyCastleProvider -storepass "" -importcert -trustcacerts -alias alias_name -file tagert.crt
+
+    // 查看所有证书列表
+    cd 证书存放目录
+    keytool -keystore 证书名称 -storetype BKS -provider org.bouncycastle.jce.provider.BouncyCastleProvider -storepass 证书密码 -list -v
+    
+    举例：
+    证书名称：cbframework_trustcerts.bks
+    证书密码：""
+
+    cd 证书存放目录
+    keytool -keystore cbframework_trustcerts.bks -storetype BKS -provider org.bouncycastle.jce.provider.BouncyCastleProvider -storepass "" -list -v
+    
+    // 删除证书
+    cd 证书存放目录
+    keytool -keystore 证书名称 -storetype BKS -provider org.bouncycastle.jce.provider.BouncyCastleProvider -storepass 证书密码 -delete -alias 导入的证书别名
+    
+    举例：
+    证书名称：cbframework_trustcerts.bks
+    证书密码：""
+    导入的证书别名：alias_name
+    
+    cd 证书存放目录
+    keytool -keystore cbframework_trustcerts.bks -storetype BKS -provider org.bouncycastle.jce.provider.BouncyCastleProvider -storepass "" -delete -alias alias_name
+    
+    ```
 
 * 前置
 
@@ -112,6 +167,16 @@
         
         * 配置 pastry/tools/pastry-xtools/WEB-INF/cbframework/keystore/cbframework.key
 
+打包流程描述：
+
+    需要进行二次打包才能生成一个最终的产品包。（主要是针对 html 的版本管理）
+
+    1、第一次打包针对 html 文件进行签入 版本号；
+
+    2、手动修改 platforms/ios/platform_www/allmenu.xml 的版本号 与 html刚签入的版本号对应（最新版本号参见 business.xml 文件）
+
+    3、第二次打包针对 将allmenu.xml 加到 data.zip 中。
+    
 ----
 ## 配置 增量更新
 
